@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/style.css">
+<div class="layout">
+  {% include header.liquid %}
+asdf
+  <div class="row column">
+   {{ posts.length }}
+    {% for entry in entries %}
+      {{ entry.data.title }}
+    {% endfor %}
+  </div>
+
+</div>

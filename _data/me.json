@@ -1,0 +1,69 @@
+{
+  "title": "Steveostudios",
+  "name": "Steve Stone",
+  "bio": "<p>Hi. I’m Steve Stone. Father of three boys, husband of the most incredible woman in the world, and Christ-follower. I'm passionate about coffee, design, youth ministry, and making things.</p><p>I started out at Central Christian Church in Las Vegas doing video production while in attending UNLV's film school. Then God called me out to Louisville, Kentucky to work at Southeast Christian Church. My great friend Dave Harris and I started Digital Stache and created motion backgrounds and a few app-based games (Spin That Wheel, Scorekeep, Ready, Set Go). We also had a podcast for a few years called Church Tech Talk, ran a site called Stuff I Can Use (formerly Vine Resources), and put on a free conference for church tech folks called Gurus.</p><p>Now I work at Download Youth Ministry making apps that help youth workers, like Sidekick.</p>",
+  "location": "Louisville, KY",
+  "subtitle": "Developer. Designer. Youth Worker. Nerd.",
+  "work": [
+    {
+      "company": "Download Youth Ministry",
+      "title": "Director of Technology",
+      "dates": "08-2015 - Present"
+    },
+    {
+      "company": "Southeast Christian Church",
+      "title": "Creative Media Designer",
+      "dates": "08-2006 - 08-2015"
+    },
+    {
+      "company": "Central Christian Church",
+      "title": "Video Director",
+      "dates": "08-2001 - 08-2006"
+    },
+    {
+      "company": "Ethel M Chocolates",
+      "title": "CADD Operator",
+      "dates": "08-1999 - 08-2001"
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Nevada, Las Vegas",
+      "study": "Film/Cinematography",
+      "dates": "09-2002 - 08-2006"
+    },
+    {
+      "school": "Advanced Technologies Academy",
+      "study": "CADD/Architecture",
+      "dates": "09-1998 - 05-2002"
+    }
+  ],
+  "personality": {
+    "enneagram": "9w1",
+    "briggsMyers": "INFJ-T",
+    "strengthsFinder": ["Connectedness", "Ideation", "Belief", "Adaptation", "Includer"],
+    "workingGenius": ["Invention", "Tenacity", "Wonder", "Enablement", "Galvanizing", "Discernment"]
+  },
+  "socials": [
+    {
+      "network":"github",
+      "url":"https://github.com/steveostudios",
+      "icon": "img/icons/github.svg"
+    },
+    {
+      "network":"vimeo",
+      "url":"https://vimeo.com/steveostudios",
+      "icon": "img/icons/vimeo.svg"
+    },
+    {
+      "network":"dribbble",
+      "url":"https://dribbble.com/steveostudios",
+      "icon": "img/icons/dribbble.svg"
+    },
+    {
+      "network":"twitter",
+      "url":"https://twitter.com/steveostudios",
+      "icon": "img/icons/twitter.svg"
+    }
+  ]
+}
