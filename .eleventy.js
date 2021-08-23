@@ -1,14 +1,28 @@
+const pluginNavigation = require('@11ty/eleventy-navigation')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
+const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const markdownIt = require("markdown-it");
+const markdownitlinkatt = require("markdown-it-link-attributes");
+const markdownItAnchor = require("markdown-it-anchor");
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("css");
+
+  	eleventyConfig.addPlugin(pluginNavigation);
+    eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(pluginSyntaxHighlight);
+
+    eleventyConfig.setDataDeepMerge(true);
+
   eleventyConfig.setTemplateFormats([
     "liquid",
-    // "md",
+    "md",
     "jpg",
     "png",
     "svg",
     "css", // css is not yet a recognized template extension in Eleventy
   ]);
   
-  eleventyConfig.addPassthroughCopy("css");
 
   eleventyConfig.addFilter("getCurrentBooks", function (books) {
     return books.filter(book => book.progress)
@@ -54,6 +68,8 @@ module.exports = function (eleventyConfig) {
         </div>`
       ).join("");
   })
+
+  
 
   return {
     passthroughFileCopy: true,

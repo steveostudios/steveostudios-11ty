@@ -1,0 +1,89 @@
+<article><p>Testing is one of those things that I have shrugged off for a while. It’s like flossing. I know the benefits. People say that it’s easy. It will make Future-Steve invincible. And, I feel bad about <em>not</em> doing it. It just is one more thing that I am unsure of how to fit into my daily routine. So, with this new project I am working on I decided to do it right from the beginning.</p>
+<p>I’m going to show you how to do some basic testing. Our end goal for this post will be to write a test for the following module:</p>
+<pre><code>// index.js
+const isValidEmail = (email) =&gt; {
+  return (email !== null &amp;&amp; /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/.test(email)) ? true : false
+}
+</code></pre>
+<p>(Side note: I know that this regular expression is not perfect. There are thousands of these out there and with every one a <em>thousand-and-one critics.</em> That said, we’re gonna write some tests against this function.)</p>
+<p>We’re going to use <a href="https://mochajs.org/" title="Mocha">Mocha</a> for our testing framework. Honestly, to get started I looked for the most popular framework and went with that. I don’t know a whole lot about testing at this point, so I wanted to use something well documented and well used.</p>
+<p>We’re also going to use <a href="http://chaijs.com/" title="Chai">Chai</a>. From my understanding this is a Mocha plugin that just adds some assertions. It’s gonna make our tests more human-discernible.</p>
+<p>Let’s start by installing these:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i mocha -D<br><span class="token function">npm</span> i chai -D</code></pre>
+<p>…and open up our new <code>test.js</code> file.</p>
+<p>From here, we need to initiate our Javascript file and let it know what it’s supposed to do.</p>
+<pre><code>// test/test.js
+'use strict'
+const chai = require('chai')
+const login = require('../index')
+</code></pre>
+<p>Here we are using Chai like a plugin by requiring it. Also, we’re require the file we want to test. Makes sense, right?!</p>
+<p>Okay, now, let’s write our first <code>describe</code>. A <code>describe</code> tells Mocha how to treat a certain function.</p>
+<pre><code>// test/test.js
+describe('#isValidEmail', () =&gt; {
+  // we're going to put our actual test in here.
+}
+</code></pre>
+<p>Sweet. Now the first test we want to write is to make sure a “normal looking” email address (like “abc@def.com) ”returns true. So, in the describe let’s add our test. (the new stuff is in <strong>bold</strong>).</p>
+<pre><code>// test/test.js
+describe('#isValidEmail', () =&gt; {
+  it('should return true for abc@def.com', () =&gt; {
+    var result = login.isValidEmail('abc@def.com')
+    chai.expect(result).to.be.true
+  })
+}
+</code></pre>
+<p>Now, let’s break this down. The <code>it</code> line should read like a sentence, phrased with <em>“it should…”</em> and then what it should do. Treat this like a note about how the code should test. If the test fails you will see this, so it needs to be helpful as to what this test is actually testing.</p>
+<p>Next, we save the result of the function (with the fake email address) as a variable.</p>
+<p>Finally, we use Chai to describe what we want the result to look like. It’s crazy how readable this is!</p>
+<p>Chai expect[s][the] result to be true.</p>
+<p>BOOM! We wrote a test!</p>
+<p>…but how do we… <em>test it…</em></p>
+<p>It turns out this is ridiculously simple with npm. In your package.json, let’s add a test script</p>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br>...<br><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"test"</span><span class="token operator">:</span> <span class="token string">"mocha --reporter spec"</span><br><span class="token punctuation">}</span><br>...</code></pre>
+<p>Here we are telling npm that Mocha is our tester. Somehow it will find that <code>test.js</code> file. Now, if we run <code>npm test</code> in our terminal, Mocha should run the test file and should spit out some stuff!</p>
+<pre class="language-shell"><code class="language-shell"><span class="token operator">></span> mocha --reporter spec<br><br><span class="token comment">#isValidEmail</span><br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.com<br><br><span class="token number">1</span> passing <span class="token punctuation">(</span>9ms<span class="token punctuation">)</span></code></pre>
+<p>WHAT! This is freaking cool — and easy!</p>
+<p>Let’s add a few more tests for giggles:</p>
+<pre><code>// user forgot the `something@`
+it(&quot;should return false for abcdef.com&quot;, () =&gt; {
+  var result = login.isValidEmail(&quot;abcdef.com&quot;);
+  chai.expect(result).to.be.false;
+});
+
+// user forgot the `.com`
+it(&quot;should return false for abc@def&quot;, () =&gt; {
+  var result = login.isValidEmail(&quot;abc@def&quot;);
+  chai.expect(result).to.be.false;
+});
+
+// test for 2 character TLDs
+it(&quot;should return true for abc@def.co&quot;, () =&gt; {
+  var result = login.isValidEmail(&quot;abc@def.co&quot;);
+  chai.expect(result).to.be.true;
+});
+
+// test for country TLDs
+it(&quot;should return true for abc@def.co.uk&quot;, () =&gt; {
+  var result = login.isValidEmail(&quot;abc@def.co.uk&quot;);
+  chai.expect(result).to.be.true;
+});
+</code></pre>
+<p>and then run <code>npm test</code>:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token operator">></span> mocha --reporter spec<br><br><span class="token comment">#isValidEmail</span><br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.com<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">false</span> <span class="token keyword">for</span> abcdef.com<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">false</span> <span class="token keyword">for</span> abc@def<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.co<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.co.uk<br><br><span class="token number">5</span> passing <span class="token punctuation">(</span>26ms<span class="token punctuation">)</span></code></pre>
+<p>Sweet. Now, let’s say the Future-Steve rides in on his hover-board and messes something up with this function (because in the future I still don’t understand regular expressions!).</p>
+<pre><code>// index.js
+
+// removed the bold *(\.\w+)+$ from the old verion
+// which is the bit at the end that tell it that it needs the '.com'
+
+// Future-Steve's modified code
+const isValidEmail = (email) =&gt; {
+return (email !== null &amp;&amp; /^\w+([\.-]?\w+)\*@\w+([\.-]?\w+)/.test(email)) ? true : false
+}
+
+</code></pre>
+<p>When Future-Steve runs <code>npm test</code>:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token operator">></span> mocha --reporter spec<br><br><span class="token comment">#isValidEmail</span><br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.com<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">false</span> <span class="token keyword">for</span> abcdef.com <span class="token number">1</span><span class="token punctuation">)</span> should <span class="token builtin class-name">return</span> <span class="token boolean">false</span> <span class="token keyword">for</span> abc@def<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.co<br>✓ should <span class="token builtin class-name">return</span> <span class="token boolean">true</span> <span class="token keyword">for</span> abc@def.co.uk<br><br><span class="token number">4</span> passing <span class="token punctuation">(</span>26ms<span class="token punctuation">)</span><br><span class="token number">1</span> failing<br><br><span class="token number">1</span>. <span class="token comment">#isValidEmail should return false for abc@def:</span><br><br>   AssertionError: expected <span class="token boolean">true</span> to be <span class="token boolean">false</span><br><br>   - expected - actual<br><br>   -true<br>   +false<br><br>   at Context.it <span class="token punctuation">(</span>test/test.js:47:30<span class="token punctuation">)</span></code></pre>
+<p>Ha! Booyah Future-Steve! In your FACE! Future-Steve will know what he broke and exactly how he can fix it! Pretty cool!</p>
+</article>

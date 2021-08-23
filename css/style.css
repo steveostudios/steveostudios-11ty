@@ -46,6 +46,26 @@ body {
   min-height: 100vh;
 }
 
+.row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.row.column {
+  flex-direction: column;
+}
+
+.row>* {
+  flex: 1;
+}
+
+.row p {
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -97,25 +117,7 @@ header nav ul a:hover .icon svg {
 
 }
 
-.row {
-  display: flex;
-  width: 100%;
-  margin-bottom: 4rem;
-}
-
-.row.column {
-  flex-direction: column;
-}
-
-.row > * {
-  flex: 1;
-}
-
-.row p {
-      font-size: .875rem;
-      line-height: 1.5;
-}
-
+/* Aside */
 aside {
   max-width: 10rem;
   padding-left: 3rem;
@@ -179,7 +181,6 @@ aside .location .icon {
 }
 
 aside .location .icon svg {
-
   fill: var(--primary-color);
 }
 
@@ -200,6 +201,7 @@ aside .socials li a:hover img {
   opacity: 0.75;
 }
 
+/* Home */
 .history ul {
   display: flex;
   flex-direction: column;
@@ -209,15 +211,15 @@ aside .socials li a:hover img {
 }
 
 .history ul::before {
-      position: absolute;
-      display: block;
-      top: 0;
-      bottom: 0;
-      background-color: var(--trim);
-      left: 1rem;
-      width: 2px;
-      transform: translateX(-1px);
-      content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  background-color: var(--trim);
+  left: 1rem;
+  width: 2px;
+  transform: translateX(-1px);
+  content: "";
 }
 
 .history ul li {
@@ -255,6 +257,7 @@ aside .socials li a:hover img {
   border-radius: 9999px;
 }
 
+/* Books */
 .shelf h4 span {
   font-weight: 400;
   font-size: 0.875rem;
@@ -262,6 +265,7 @@ aside .socials li a:hover img {
 }
 
 .books {
+  padding: 0;
      display: grid;
      grid-gap: calc(1em + 2vw);
      grid-template-columns: 1fr 1fr;
@@ -286,11 +290,34 @@ aside .socials li a:hover img {
 }
 
 .books img {
-  /* min-width: 129px; */
   width: 100%;
   max-width: 156px;
   max-height: 200px;
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+/* Blog */
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.posts li {
+  border-bottom: 1px solid var(--trim);
+}
+
+.posts li a {
+  padding: 2rem 0;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  line-height: 1.5;
 }

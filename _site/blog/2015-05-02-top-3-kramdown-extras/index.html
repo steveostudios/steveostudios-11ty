@@ -1,0 +1,39 @@
+<article><p>Markdown is awesome and definitely one of the main reasons why I wanted to start blogging in Jekyll (yes, I know you can do Markdown in other platforms, but this is a little more literal which is why I think I like it).</p>
+<p>That said, I'm exploring other <em>extra</em> markdown features that I can do on my site, so I decided to list a few of my favorites.
+I'm using <a href="http://kramdown.gettalong.org/syntax.html">kramdown</a> as my markdown processor. It's the one that came with my theme so I can't say whether it's better than <a href="https://github.com/vmg/redcarpet">redcarpet</a> or not, but I'm oblivious as of the moment.</p>
+<h2>1. Footnotes</h2>
+<blockquote>
+<p>... a footnote marker can be created by placing the footnote name in square brackets. The footnote name has to start with a caret (^), followed by a word character or a digit and then optionally followed by other word characters, digits or dashes.</p>
+</blockquote>
+<p>For example:
+<code>This is some text.[^1]</code>
+translates to:</p>
+<p>This is some text.[^1]</p>
+<p>Where you want the footnotes to show up, simply put:</p>
+<p><code>[^1]: Some *crazy* footnote definition.</code></p>
+<p>{::comment}
+This text is completely ignored by kramdown - a comment in the text.
+{:/comment}</p>
+<p>(Look are the bottom of this page to see the rendered footnote)</p>
+<h2>2. Links</h2>
+<p>So far my favorite way to make links is a inline, using a reference number, and then creating a list at the bottom of my page.</p>
+<p>For example:
+<code>Here is a link to [Google][1].</code>
+translates to:
+Here is a link to <a href="http://google.com">Google</a>.</p>
+<p>At the bottom of the page, simply define the links:
+<code>[1]: http://google.com</code></p>
+<h2>3. Blockquotes</h2>
+<p>To make a blockquote, simply type a &gt; marker and then the quote</p>
+<p>For example:</p>
+<pre><code>&gt; “True humility is not thinking less of yourself; it is thinking of yourself less.”
+&gt; &lt;cite&gt;-― C.S. Lewis, *Mere Christianity*&lt;/cite&gt;
+</code></pre>
+<p>translates to:</p>
+<blockquote>
+<p>“True humility is not thinking less of yourself; it is thinking of yourself less.”
+<cite>-- C.S. Lewis, <em>Mere Christianity</em></cite></p>
+</blockquote>
+<hr>
+<p>[^1]: Some <em>crazy</em> footnote definition.</p>
+</article>

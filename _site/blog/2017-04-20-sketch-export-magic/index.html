@@ -1,0 +1,29 @@
+<article><p>When I was using Photoshop/Illustrator for my asset workflow I had to set up all kinds of tricks to make sure things wound up in the correct folder with the correct file name. You know the drill; The endless process of selecting the right artboards or layers to export, save dialogs, output settings, overwriting files, dragging and dropping to the correct asset folder. Ugh.</p>
+<p>Sketch has a few tricks up it’s sleeve that makes this process ridiculously easy and consistent. You can use the <em>layer name</em> to specify a directory that the asset will export to? Yup! It’s hands-down one of my favorite magic tricks of Sketch!</p>
+<p>Let’s say that you’ve made this super sweet icon.</p>
+<p><img src="./sketch-export-magic-1.jpg" alt="You’re right — that is a super sweet icon!"></p>
+<p>You’ve set it up to export an SVG (good job!).</p>
+<p><img src="./sketch-export-magic-2.jpg" alt="Yay!"></p>
+<p>You can use the layer name to specify not only the filename (myIcon), but the <em>output directory!</em></p>
+<p><img src="./sketch-export-magic-3.jpg" alt="These layer names look a little funky — almost like paths…"></p>
+<p>Sketch is ridiculously smart about this too!</p>
+<ul>
+<li>It will automatically overwrite your files by default.</li>
+<li>If the directory doesn’t exist it will create it for you.</li>
+<li>If layer name has several <code>/</code> then it will create all of the necessary directories that it needs.</li>
+<li>It even recognizes <code>../</code> as a parent directory and will traverse up! You can even do crazy complex traversing: <code>../../myFolderTwoFoldersBack</code>.</li>
+</ul>
+<p>Check out this configuration:
+<img src="./sketch-export-magic-4.jpg" alt="Look where all of these assets will go on a single export."></p>
+<h2>How to Export</h2>
+<p>When it comes to exporting, select the assets you want to export and then use the File &gt; Export (⇧+⌘+E) to export only the selected assets.</p>
+<p><img src="./sketch-export-magic-5.jpg" alt="Yea — I want that icon in all of those places!"></p>
+<p>Hit Export. Select the path that you’d like to output to:</p>
+<p><img src="./sketch-export-magic-6.jpg" alt="“Demo” — I’ll totally remember what that folder name is in 6 months…"></p>
+<p>In my case everything will be exported relative to the “Demo” directory!</p>
+<h2>Bonus trick</h2>
+<p>You can use this same trick <em>inside the export panel!</em> The following will export an SVG in all of those folders (like before), plus create a <code>pngs</code> folder and put all of those folders/files in there.</p>
+<p><img src="./sketch-export-magic-7.jpg" alt="Multiple outputs with different folders."></p>
+<p>Sketch is ridiculously cool. You can save a ton of time and frustration by setting up your structure <em>within Sketch</em>, then let your computer do all of the sorting for you. After-all, isn’t that what computers are for?</p>
+<p>Let me know if you have any other cool exporting tricks with Sketch!</p>
+</article>

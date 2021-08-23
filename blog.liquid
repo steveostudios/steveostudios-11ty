@@ -1,12 +1,14 @@
 <link rel="stylesheet" href="/css/style.css">
 <div class="layout">
   {% include header.liquid %}
-asdf
+
   <div class="row column">
-   {{ posts.length }}
-    {% for entry in entries %}
-      {{ entry.data.title }}
-    {% endfor %}
+    <ul class="posts">
+
+      {% for post in collections.posts reversed %}
+      <li><a href="{{ post.url }}"><div>{{ post.data.title }}</div><div>{{ post.data.date | date: "%B %d, %Y" }}</div></a></li>
+      {% endfor %}
+    </ul>
   </div>
 
 </div>

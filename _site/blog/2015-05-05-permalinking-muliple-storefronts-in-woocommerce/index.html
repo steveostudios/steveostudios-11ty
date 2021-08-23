@@ -1,0 +1,37 @@
+<article><p>I ran into an issue when I was modifying permalinks in Wordpress today. Specifically, I was trying to achieve the effect of creating multiple storefronts on a Wordpress Woocommerce site using product categories. In order to do that, ideally the urls would look differently than out of the box Wordpress and Woocommerce.</p>
+<h2>The idea</h2>
+<p>Here is how I'd like this to look.</p>
+<ul>
+<li><code>http://example.com/store</code> would be the overarching storefront.</li>
+<li><code>http://example.com/store/store-name</code> would be an individual store (replacing <em>store-name</em> with the product category name)</li>
+<li><code>http://example.com/store/store-name/products/product-name</code> would be an individual product belonging to that store (replacing <em>product-name</em> with the actual product name)</li>
+</ul>
+<p>Unfortunatly, I coudn't find a way to do this. Things got weird. Everytime I would go to <code>http://example.com/store/store-name</code> it would go to the straight to the first product in that category, bypassing the category page altogether.</p>
+<p>I did, however, come up with a second-best workflow that I'm okay with.</p>
+<h2>The solution</h2>
+<ul>
+<li><code>http://example.com/stores</code> would be the overarching storefront. Here one can see all of the &quot;stores&quot;.</li>
+<li><code>http://example.com/store/store-name</code> would be an individual store (replacing <em>store-name</em> with the product category name)</li>
+<li><code>http://example.com/products/store-name/products/product-name</code> would be an individual product belonging to that store (replacing <em>product-name</em> with the actual product name)</li>
+</ul>
+<p>I did this by changing the following:</p>
+<ul>
+<li>Pages &gt; Store page
+<ul>
+<li>Permalink to <code>http://example.com/stores</code></li>
+</ul>
+</li>
+<li>WooCommerce &gt; Settings &gt; Products &gt; Display
+<ul>
+<li>Shop Page Display: Show categories &amp; subcategories</li>
+</ul>
+</li>
+<li>Settings &gt; Permalinks
+<ul>
+<li>Product category base: <code>&quot;store&quot;</code></li>
+<li>Custom base: <code>&quot;/products/%product_cat%&quot;</code></li>
+</ul>
+</li>
+</ul>
+<p>That seemed to do the trick!</p>
+</article>

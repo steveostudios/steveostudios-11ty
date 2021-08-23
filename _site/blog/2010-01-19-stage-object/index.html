@@ -1,0 +1,19 @@
+<article><p>So the other day I discovered a little talked about object in Cinema 4D that I believe deserves more credit. Up until now, my workflow for my 3D animations has been:</p>
+<ol>
+<li>Create a scene</li>
+<li>Fly a camera through it</li>
+<li>Render it</li>
+<li>Create a new camera/fly through</li>
+<li>Render it</li>
+<li>Repeat until desired shots are met</li>
+<li>Then use Final Cut Pro to edit the renders together.</li>
+</ol>
+<p>One time I tried a new system, that kind-of worked; I created a camera, made my moves in order with one-frame camera moves that flew my camera to the next angle. I say kind-of because the extreme moves and bezier splines caused &quot;rubber-banding&quot;, where the camera becomes unpredictable. I knew there had to be a better way.</p>
+<p>Introducing the Stage object. Accessed through the Object -&gt; Scene menu, the Stage object allows you to drop in multiple cameras, skies, backgrounds, foregrounds and environments, key-framed in at certain times in your timeline. To use insert the stage object into your Object Manager by selecting it in the Object -&gt; Scene menu.</p>
+<p><img src="./stage-object-1.jpg" alt=""></p>
+<p>At your first desired camera in-point (probably frame 0) drag your first camera into the &quot;Camera&quot; Field in the Stage Attributes. Create a new keyframe by right-clicking (or Ctrl+clicking on a Mac) on the keyframe icon next to the Camera Attribute (it should turn red).</p>
+<p><img src="./stage-object-2.jpg" alt=""></p>
+<p>Go on down your timeline to your next shot and drag the second camera into the Camera Field in the Stage Attribute. Right click (or Ctrl+clicking on a Mac) on the keyframe icon next to the Camera Attribute to create a new keyframe for Camera-Dos!</p>
+<p>Repeat for as many shots as desired.</p>
+<p>It is important to note that these keyframes work the same as &quot;hold&quot; keyframes in After Effects, not standard keyframes, meaning there will be no &quot;tweening&quot; between the cameras, just a cut.</p>
+</article>

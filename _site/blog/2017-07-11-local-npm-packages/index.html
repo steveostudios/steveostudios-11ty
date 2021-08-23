@@ -1,0 +1,20 @@
+<article><p>There are a few scenarios when you may want to “publish” npm packages locally.</p>
+<ol>
+<li>Let’s say you’re working on a little module that you don’t really want up on the world-wide-web (at least yet).</li>
+<li>You may want to keep a package <em>private</em> but don’t yet have the mulah to fork over to npmjs.org to buy a private package subscription.</li>
+</ol>
+<p>Well it turns out it’s pretty easy to “host” a package locally while you’re developing it. Once you have the module made, including a <code>package.json</code> and all of it’s working features, you can add it to another project by doing this little number:</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i --save ./<span class="token punctuation">..</span>/packages/my-package -D</code></pre>
+<p>This will, in turn, add this to your <code>package.json</code>:</p>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br>  <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    ...<br>    <span class="token property">"my-package"</span><span class="token operator">:</span> <span class="token string">"file:../packages/my-package"</span><span class="token punctuation">,</span></code></pre>
+<p>Pretty sweat, huh?!</p>
+<h2>Major drawbacks</h2>
+<p>Now, this isn’t a perfect solution. But you can use it by yourself in development until you’re ready for the big time! Here are some of the drawbacks that I have found:</p>
+<h3>Updating is a bit of a pain</h3>
+<p>npm looks for semver version numbers. If you look above, you’ll notice that it doesn’t have them like a normal package. Therefore local packages don’t update automatically. If you make a change to your local dependency then you have to force update it. That’s okay. The file reference is saved in your <code>package.json</code>, so npm know where to find it. You’ll need to manually delete your <code>node_modules</code> folder and recreate it, ensuring that everything is up-to-date (including the local package you added).</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">rm</span> -rf node_modules<br><span class="token function">npm</span> <span class="token function">install</span><br><span class="token function">npm</span> start</code></pre>
+<h2>Doesn’t work for teams</h2>
+<p>You can’t “host” this on a server like this to share. I mean, you probably can, but it would be super inefficient and hacky. If you’re trying to do that then you should look into either paying $7/mo/user over at npm or setting up your own <a href="https://github.com/websperts/sinatra.js" title="Sinatra">Sinatra</a> server.</p>
+<p>It is <em>private</em> though! Ain’t nobody checking this code out.</p>
+<p>There you go. It turns out you can “publish” npm packages locally.</p>
+</article>
