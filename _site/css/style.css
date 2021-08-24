@@ -23,12 +23,12 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: 600;
-    font-size: .875em;
-    color: var(--black);
-    line-height: 1.5;
-    padding-bottom: .75rem;
-    margin: 0;
-  }
+  font-size: .875em;
+  color: var(--black);
+  line-height: 1.5;
+  padding-bottom: .75rem;
+  margin: 0;
+}
 
 body { 
   font-family: Roboto;
@@ -205,7 +205,6 @@ aside .location .name {
   flex: 1;
   margin-left: 0.25rem;
   font-size: 0.875rem;
-  font-weight: 400;
 }
 
 aside .location .icon {
@@ -333,7 +332,7 @@ aside .socials li a:hover img {
 
 .personalities .workingGenius ol li:nth-child(1),
 .personalities .workingGenius ol li:nth-child(2) {
- font-weight: 600;
+ font-weight: 400;
 }
 
 .personalities .workingGenius ol li:nth-child(3) ,
