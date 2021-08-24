@@ -1,14 +1,12 @@
-<link rel="stylesheet" href="/css/style.css">
-<div class="layout">
-  {% include header.liquid %}
+---
+title: Blog
+layout: base.liquid
+---
+<div class="row column">
+  <ul class="posts">
 
-  <div class="row column">
-    <ul class="posts">
-
-      {% for post in collections.posts reversed %}
-      <li><a href="{{ post.url }}"><div>{{ post.data.title }}</div><div>{{ post.data.date | date: "%B %d, %Y" }}</div></a></li>
-      {% endfor %}
-    </ul>
-  </div>
-
+    {% for post in collections.posts reversed %}
+    <li><a href="{{ post.url }}"><div>{{ post.data.title }}</div><div>{{ post.data.date | date: "%B %d, %Y" }}</div></a></li>
+    {% endfor %}
+  </ul>
 </div>

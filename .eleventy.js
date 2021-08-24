@@ -22,7 +22,8 @@ module.exports = function (eleventyConfig) {
     "svg",
     "css", // css is not yet a recognized template extension in Eleventy
   ]);
-  
+
+  // eleventyConfig.addLayoutAlias("post", "base.liquid");
 
   eleventyConfig.addFilter("getCurrentBooks", function (books) {
     return books.filter(book => book.progress)

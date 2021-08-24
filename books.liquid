@@ -1,21 +1,20 @@
-<link rel="stylesheet" href="/css/style.css">
-<div class="layout">
-  {% include header.liquid %}
-
-  <div class="row column">
-    <div class="shelf">
-      <h4>Currently reading</h4>
-      {%  assign currentlyReading = books | getCurrentBooks %}
-      <ul class="books">
-        {% for book in currentlyReading %}
-        <li>
-          <img src="/img/books/{{book.image}}" alt="{{ book.title }}" />
-          <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-      {% getBooks books %}
+---
+title: Books
+layout: base.liquid
+---
+<div class="row column">
+  <div class="shelf">
+    <h4>Currently reading</h4>
+    {%  assign currentlyReading = books | getCurrentBooks %}
+    <ul class="books">
+      {% for book in currentlyReading %}
+      <li>
+        <img src="/img/books/{{book.image}}" alt="{{ book.title }}" />
+        <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
-
+    {% getBooks books %}
 </div>
+

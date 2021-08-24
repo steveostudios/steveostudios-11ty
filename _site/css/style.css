@@ -44,6 +44,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
+  width: calc(100% - 4rem);
 }
 
 .row {
@@ -65,9 +66,29 @@ body {
   line-height: 1.5;
 }
 
+article p img {
+  max-width: 100%;
+}
+
+article pre {
+  margin: 2rem 0;
+  display: block;
+  overflow: scroll;
+  background-color: var(--trim);
+  padding: 0.5rem 1rem;
+}
+
+article pre code {
+}
+
+article table {
+
+}
+
 /* Header */
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -100,21 +121,30 @@ header nav ul a .icon svg {
 
 header nav ul a:hover {
   background: var(--black);
-  padding: 8px 32px;
   color: var(--white);
-  margin-left: 8px;
-  border-radius: 24px;
-  text-decoration: none;
-  font-family: Source Sans Pro;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header nav ul a:hover .icon svg {
   fill: var(--white) !important;
+}
 
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  header nav ul a .title {
+    display: none;
+  }
+  header nav ul a {
+    padding: 0.5rem 1.5rem;
+  }
+  header nav ul a .icon svg {
+    margin-right: 0;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header nav ul a .icon {
+    display: none;
+  }
 }
 
 /* Aside */
@@ -125,12 +155,15 @@ aside {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 aside .avatar {
   position: relative;
   display: inline-block;
   display: flex;
+  width: 10rem;
 }
 
 aside .avatar .swatch {
@@ -202,6 +235,19 @@ aside .socials li a:hover img {
 }
 
 /* Home */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .about {
+    flex-direction: column;
+  }
+
+  aside {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
 .history ul {
   display: flex;
   flex-direction: column;
@@ -255,6 +301,49 @@ aside .socials li a:hover img {
   display: inline-block;
   margin-right: 1rem;
   border-radius: 9999px;
+}
+
+.personalities {
+  flex-wrap: wrap;
+}
+
+.personalities > div {
+  min-width: 10rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.personalities svg {
+  height: 30%;
+  width: 30%;
+}
+
+.personalities span {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.personalities ol {
+  padding: 0;
+}
+
+.personalities .workingGenius ol li:nth-child(1),
+.personalities .workingGenius ol li:nth-child(2) {
+ font-weight: 600;
+}
+
+.personalities .workingGenius ol li:nth-child(3) ,
+.personalities .workingGenius ol li:nth-child(4) {
+  opacity: 0.5;
+}
+
+.personalities .workingGenius ol li:nth-child(5),
+.personalities .workingGenius ol li:nth-child(6) {
+  opacity: 0.25;
 }
 
 /* Books */
