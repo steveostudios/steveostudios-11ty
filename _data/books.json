@@ -1,5 +1,55 @@
 [
   {
+    "author": "Dallas Willard",
+    "pages": 428,
+    "url": "https://abookapart.com/products/cultivating-content-design",
+    "dateFinish": null,
+    "title": "The Divine Conspiracy",
+    "subtitle": "Discovering Our Hidden Life in God",
+    "image": "TheDivineConpiracy.jpg",
+    "dateStart": null
+  },
+  {
+    "author": "Steven D. Levitt & Stephen J. Dubner",
+    "pages": 320,
+    "url": "https://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0713998067/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
+    "dateFinish": null,
+    "title": "Freakonomics",
+    "subtitle": "A Rogue Economist Explores the Hidden Side of Everything",
+    "image": "Freakonomics.jpg",
+    "dateStart": null
+  },
+  {
+    "author": "Beth Dunn",
+    "pages": 54,
+    "url": "https://abookapart.com/products/cultivating-content-design",
+    "dateFinish": null,
+    "title": "Cultivating Content Design",
+    "image": "CultivatingContentDesign.jpg",
+    "dateStart": null
+  },
+  {
+    "author": "Krystal Higgins",
+    "pages": 130,
+    "url": "https://abookapart.com/products/better-onboarding",
+    "dateFinish": null,
+    "progress": 1,
+    "title": "Better Onboarding",
+    "image": "BetterOnboarding.jpg",
+    "dateStart": "2021-08-25"
+  },
+  {
+    "author": "David A. Vise",
+    "pages": 326,
+    "progress": 280,
+    "subtitle": "Inside the Hottest Business, Media and Technology Success of Our Time",
+    "dateFinish": null,
+    "url": "https://www.amazon.com/Google-Story-David-Vise/dp/055380457X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1629213436&sr=1-1",
+    "title": "The Google Story",
+    "image": "TheGoogleStory.jpg",
+    "dateStart": "2017-06-01"
+  },
+  {
     "author": "Dan Olsen",
     "pages": 336,
     "subtitle": "How to Innovate with Minimum Viable Products and Rapid Customer Feedback",
@@ -8,17 +58,6 @@
     "title": "The Lean Product Playbook",
     "image": "TheLeanProductPlaybook.jpg",
     "dateStart": "2021-06-29"
-  },
-  {
-    "author": "David A. Vise",
-    "pages": 326,
-    "progress": 244,
-    "subtitle": "Inside the Hottest Business, Media and Technology Success of Our Time",
-    "dateFinish": null,
-    "url": "https://www.amazon.com/Google-Story-David-Vise/dp/055380457X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1629213436&sr=1-1",
-    "title": "The Google Story",
-    "image": "TheGoogleStory.jpg",
-    "dateStart": "2017-06-01"
   },
   {
     "author": "Jason Garber",
@@ -37,24 +76,6 @@
     "title": "Presenting Design Work",
     "image": "PresentingDesignWork.jpg",
     "dateStart": "2021-07-13"
-  },
-  {
-    "author": "Beth Dunn",
-    "pages": 54,
-    "url": "https://abookapart.com/products/cultivating-content-design",
-    "dateFinish": null,
-    "title": "Cultivating Content Design",
-    "image": "CultivatingContentDesign.jpg",
-    "dateStart": null
-  },
-  {
-    "author": "Krystal Higgins",
-    "pages": 130,
-    "url": "https://abookapart.com/products/better-onboarding",
-    "dateFinish": null,
-    "title": "Better Onboarding",
-    "image": "BetterOnboarding.jpg",
-    "dateStart": null
   },
   {
     "author": "Kim Scott",
