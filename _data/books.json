@@ -2,6 +2,7 @@
   {
     "author": "Dallas Willard",
     "pages": 428,
+    "progress": 1,
     "url": "https://abookapart.com/products/cultivating-content-design",
     "dateFinish": null,
     "title": "The Divine Conspiracy",
@@ -12,6 +13,7 @@
   {
     "author": "Steven D. Levitt & Stephen J. Dubner",
     "pages": 320,
+    "progress": 48,
     "url": "https://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0713998067/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
     "dateFinish": null,
     "title": "Freakonomics",
@@ -33,7 +35,7 @@
     "pages": 130,
     "url": "https://abookapart.com/products/better-onboarding",
     "dateFinish": null,
-    "progress": 1,
+    "progress": 34,
     "title": "Better Onboarding",
     "image": "BetterOnboarding.jpg",
     "dateStart": "2021-08-25"

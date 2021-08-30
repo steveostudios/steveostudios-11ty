@@ -112,6 +112,10 @@ header nav ul a {
   align-items: center;
 }
 
+header nav ul a span {
+  display: flex;
+}
+
 header nav ul a .icon svg {
   width: 1.25rem;
   height: 1.25rem;
