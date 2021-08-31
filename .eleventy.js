@@ -58,16 +58,21 @@ module.exports = function (eleventyConfig) {
             </span>
           </h4>
           <ul class="books">
-            ${books.map(
-              (book) =>
-                `<li>
-                <img src="/img/books/${book.image}" alt="${book.title}" />
-              </li>`
-            ).join("")}
+            ${books
+              .map(
+                (book) =>
+                  `<li class="book-container">
+                    <div class="book page-count-${Math.floor(book.pages / 100)*100}">
+                      <img src="/img/books/${book.image}" alt="${book.title}" />
+                    </div>
+                  </li>`
+                )
+              .join("")}
           </ul>
         </div>
         </div>`
-      ).join("");
+      )
+      .join("");
   })
 
   

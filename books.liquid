@@ -8,8 +8,10 @@ layout: base.liquid
     {%  assign currentlyReading = books | getCurrentBooks %}
     <ul class="books">
       {% for book in currentlyReading %}
-      <li>
-        <img src="/img/books/{{book.image}}" alt="{{ book.title }}" />
+      <li class="book-container">
+        <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
+          <img src="/img/books/{{book.image}}" alt="{{ book.title }}" />
+        </div>
         <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
       </li>
       {% endfor %}
