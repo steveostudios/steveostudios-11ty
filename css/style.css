@@ -1,5 +1,6 @@
 :root {
   --primary-color: #eee841;
+  --blue: #2C7CCF;
   --black: #1f1f1f;
   --white: #e8eaef;
   --trim: #cfd8d1;
@@ -28,6 +29,15 @@ h3 {
   line-height: 1.5;
   padding-bottom: .75rem;
   margin: 0;
+}
+
+a, a:visited {
+ color: var(--blue);
+ text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 body { 
@@ -93,12 +103,17 @@ header {
   align-items: center;
 }
 
+header h1 a, header h1 a:visited, header h1 a:hover {
+  color: var(--black);
+  text-decoration: none;
+}
+
 header nav ul {
   display: flex;
   list-style: none;
 }
 
-header nav ul a {
+header nav ul a, header nav ul a:visited {
   background: var(--primary-color);
   padding: 8px 32px;
   color: var(--black);
@@ -126,6 +141,7 @@ header nav ul a .icon svg {
 header nav ul a:hover {
   background: var(--black);
   color: var(--white);
+  text-decoration: none;
 }
 
 header nav ul a:hover .icon svg {
