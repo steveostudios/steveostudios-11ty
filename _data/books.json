@@ -13,9 +13,8 @@
   {
     "author": "Steven D. Levitt & Stephen J. Dubner",
     "pages": 320,
-    "progress": 210,
     "url": "https://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0713998067/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=",
-    "dateFinish": null,
+    "dateFinish": "2021-09-11",
     "title": "Freakonomics",
     "subtitle": "A Rogue Economist Explores the Hidden Side of Everything",
     "image": "Freakonomics.jpg",
@@ -34,8 +33,7 @@
     "author": "Krystal Higgins",
     "pages": 130,
     "url": "https://abookapart.com/products/better-onboarding",
-    "dateFinish": null,
-    "progress": 108,
+    "dateFinish": "2021-09-11",
     "title": "Better Onboarding",
     "image": "BetterOnboarding.jpg",
     "dateStart": "2021-08-25"
