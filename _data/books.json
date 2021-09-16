@@ -1,14 +1,24 @@
 [
   {
+    "author": "Jackie Hill Perry",
+    "pages": 193,
+    "progress": 11,
+    "url": "https://www.amazon.com/Holier-Than-Thou-Holiness-Helps/dp/1535975717",
+    "dateFinish": null,
+    "title": "Holier Than Thou",
+    "subtitle": "How God's Holiness Helps Us Trust Him",
+    "image": "HolierThanThou.jpg",
+    "dateStart": "2021-09-13"
+  },{
     "author": "Dallas Willard",
     "pages": 428,
-    "progress": 1,
+    "progress": 34,
     "url": "https://abookapart.com/products/cultivating-content-design",
     "dateFinish": null,
     "title": "The Divine Conspiracy",
     "subtitle": "Discovering Our Hidden Life in God",
     "image": "TheDivineConspiracy.jpg",
-    "dateStart": null
+    "dateStart": "2021-09-13"
   },
   {
     "author": "Steven D. Levitt & Stephen J. Dubner",
@@ -18,7 +28,7 @@
     "title": "Freakonomics",
     "subtitle": "A Rogue Economist Explores the Hidden Side of Everything",
     "image": "Freakonomics.jpg",
-    "dateStart": null
+    "dateStart": "2021-"
   },
   {
     "author": "Beth Dunn",
