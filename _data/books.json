@@ -12,7 +12,7 @@
   },{
     "author": "Dallas Willard",
     "pages": 428,
-    "progress": 34,
+    "progress": 43,
     "url": "https://abookapart.com/products/cultivating-content-design",
     "dateFinish": null,
     "title": "The Divine Conspiracy",
@@ -33,11 +33,12 @@
   {
     "author": "Beth Dunn",
     "pages": 54,
+    "progress": 10,
     "url": "https://abookapart.com/products/cultivating-content-design",
     "dateFinish": null,
     "title": "Cultivating Content Design",
     "image": "CultivatingContentDesign.jpg",
-    "dateStart": null
+    "dateStart": "2021-09-17"
   },
   {
     "author": "Krystal Higgins",
