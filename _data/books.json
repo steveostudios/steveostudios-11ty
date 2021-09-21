@@ -951,6 +951,54 @@
     "dateStart": "2005-01-18"
   },
   {
+    "author": "Saint Augustine",
+    "pages": 75,
+    "dateFinish": "2007-01-11",
+    "title": "Handbook on Faith, Hope and Love",
+    "image": "HandbookOnFaithHopeAndLove.jpg",
+    "dateStart": "2007-01-11"
+  },
+  {
+    "author": "Thomas a Kempis",
+    "pages": 74,
+    "dateFinish": "2007-01-11",
+    "title": "The Imitation of Christ",
+    "image": "TheImitationOfChrist.jpg",
+    "dateStart": "2007-01-11"
+  },
+  {
+    "author": "John Wesley",
+    "pages": 150,
+    "dateFinish": "2007-01-11",
+    "title": "A Plain Account of Christian Perfection",
+    "image": "APlainAccountOfChristianPerfection.jpg",
+    "dateStart": "2007-01-11"
+  },
+  {
+    "author": "Charles Spurgeon",
+    "pages": 124,
+    "dateFinish": "2007-01-11",
+    "title": "Selections from the Spurgeon Archive",
+    "image": "SelectionsFromTheSpurgeonArchive.jpg",
+    "dateStart": "2007-01-11"
+  },
+  {
+    "author": "G.K. Chesterton",
+    "pages": 114,
+    "dateFinish": "2007-01-11",
+    "title": "Orthodoxy",
+    "image": "Orthodoxy.jpg",
+    "dateStart": "2007-01-11"
+  },
+  {
+    "author": "Blaise Pascal",
+    "pages": 123,
+    "dateFinish": "2007-01-11",
+    "title": "Foundations of the Christian Religion",
+    "image": "FoundationsOfTheChristianReligion.jpg",
+    "dateStart": "2007-01-11"
+  },
+  {
     "author": "Michael Yaconelli",
     "pages": 144,
     "subtitle": "God's Annoying Love for Imperfect People",
