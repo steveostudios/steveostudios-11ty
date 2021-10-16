@@ -1,5 +1,15 @@
 [
   {
+    "author": "Gene Kim, Kevin Behr, and George Spafford",
+    "pages": 345,
+    "subtitle": "A Novel about IT, DevOps, and Helping Your Business Win",
+    "dateFinish": null,
+    "title": "The Phoenix Project",
+    "image": "ThePhoenixProject.jpg",
+    "progress": 23,
+    "dateStart": "2021-10-16"
+  },
+  {
     "author": "Simon Sinek",
     "pages": 246,
     "subtitle": "How Great Leaders Inspire Everyone to Take Action",
