@@ -1,5 +1,15 @@
 [
   {
+    "author": "Gene Kim",
+    "pages": 352,
+    "progress": 58,
+    "subtitle": "A Novel about Developers, Digital Disruptions, and Thriving in the age of Data",
+    "dateFinish": null,
+    "title": "The Unicorn Project",
+    "image": "TheUnicornProject.jpg",
+    "dateStart": "2021-11-12"
+  },
+  {
     "author": "Eliyahu M. Goldratt",
     "pages": 274,
     "subtitle": "A Process of Ongoing Improvement",
@@ -44,7 +54,7 @@
     "dateFinish": null,
     "title": "The Divine Conspiracy",
     "image": "TheDivineConspiracy.jpg",
-    "progress": 138,
+    "progress": 140,
     "dateStart": "2021-09-13"
   },
   {
