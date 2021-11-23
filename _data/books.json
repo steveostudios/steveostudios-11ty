@@ -2,11 +2,11 @@
   {
     "author": "Gene Kim",
     "pages": 352,
-    "progress": 58,
     "subtitle": "A Novel about Developers, Digital Disruptions, and Thriving in the age of Data",
     "dateFinish": null,
     "title": "The Unicorn Project",
     "image": "TheUnicornProject.jpg",
+    "progress": 104,
     "dateStart": "2021-11-12"
   },
   {
@@ -70,20 +70,20 @@
   {
     "author": "Beth Dunn",
     "pages": 54,
-    "url": "https://abookapart.com/products/cultivating-content-design",
+    "dateStart": "2021-09-17",
     "dateFinish": "2021-10-06",
     "title": "Cultivating Content Design",
     "image": "CultivatingContentDesign.jpg",
-    "dateStart": "2021-09-17"
+    "url": "https://abookapart.com/products/cultivating-content-design"
   },
   {
     "author": "Krystal Higgins",
     "pages": 130,
-    "url": "https://abookapart.com/products/better-onboarding",
+    "dateStart": "2021-08-25",
     "dateFinish": "2021-09-11",
     "title": "Better Onboarding",
     "image": "BetterOnboarding.jpg",
-    "dateStart": "2021-08-25"
+    "url": "https://abookapart.com/products/better-onboarding"
   },
   {
     "author": "David A. Vise",
@@ -108,38 +108,38 @@
   {
     "author": "Jason Garber",
     "pages": 59,
-    "dateStart": "2021-07-13",
+    "url": "https://abookapart.com/products/practical-pair-programming",
     "dateFinish": "2021-07-13",
     "title": "Practical Pair Programming",
     "image": "PracticalPairProgramming.jpg",
-    "url": "https://abookapart.com/products/practical-pair-programming"
+    "dateStart": "2021-07-13"
   },
   {
     "author": "Donna Spencer",
     "pages": 52,
-    "url": "https://abookapart.com/products/presenting-design-work",
+    "dateStart": "2021-07-13",
     "dateFinish": "2021-08-16",
     "title": "Presenting Design Work",
     "image": "PresentingDesignWork.jpg",
-    "dateStart": "2021-07-13"
+    "url": "https://abookapart.com/products/presenting-design-work"
   },
   {
     "author": "Kim Scott",
     "pages": 246,
-    "dateStart": "2021-06-15",
+    "url": "https://www.amazon.com/Radical-Candor-KIM-SCOTT/dp/1509845380/ref=sr_1_6?crid=35LTOYU6HA6MH&dchild=1&keywords=radical+candor&qid=1623729589&sprefix=radical+can%2Caps%2C278&sr=8-6",
     "dateFinish": "2021-06-20",
     "title": "Radical Candor",
     "image": "RadicalCandor.jpg",
-    "url": "https://www.amazon.com/Radical-Candor-KIM-SCOTT/dp/1509845380/ref=sr_1_6?crid=35LTOYU6HA6MH&dchild=1&keywords=radical+candor&qid=1623729589&sprefix=radical+can%2Caps%2C278&sr=8-6"
+    "dateStart": "2021-06-15"
   },
   {
     "author": "Satya Nadella",
     "pages": 272,
-    "url": "https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=1HU6BOHPS46Z2&dchild=1&keywords=hit+refresh&qid=1623729842&sprefix=hit+ref%2Caps%2C174&sr=8-1",
+    "dateStart": "2021-07-21",
     "dateFinish": "2021-08-06",
     "title": "Hit Refresh",
     "image": "HitRefresh.jpg",
-    "dateStart": "2021-07-21"
+    "url": "https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=1HU6BOHPS46Z2&dchild=1&keywords=hit+refresh&qid=1623729842&sprefix=hit+ref%2Caps%2C174&sr=8-1"
   },
   {
     "author": "Paul Gilster",
@@ -154,38 +154,38 @@
   {
     "author": "Jamin Googin and Kyle Strobel",
     "pages": 272,
-    "dateStart": "2021-06-14",
+    "url": "https://www.amazon.com/Way-Dragon-Lamb-Searching-Abandoned/dp/140022523X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1623673504&sr=8-1",
     "dateFinish": "2021-06-07",
     "title": "The Way of the Dragon or the Way of the Lamb",
     "image": "TheWayOfTheDragonOrTheWayOfTheLamb.jpg",
-    "url": "https://www.amazon.com/Way-Dragon-Lamb-Searching-Abandoned/dp/140022523X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1623673504&sr=8-1"
+    "dateStart": "2021-06-14"
   },
   {
     "author": "Senongo Akpem",
     "pages": 161,
-    "url": "https://abookapart.com/products/cross-cultural-design",
+    "dateStart": "2021-06-21",
     "dateFinish": "2021-06-23",
     "title": "Cross-Cultural Design",
     "image": "CrossCulturalDesign.jpg",
-    "dateStart": "2021-06-21"
+    "url": "https://abookapart.com/products/cross-cultural-design"
   },
   {
     "author": "David Dylan Thomas",
     "pages": 106,
-    "dateStart": "2021-06-21",
+    "url": "https://abookapart.com/products/design-for-cognitive-bias",
     "dateFinish": "2021-06-28",
     "title": "Design for Cognitive Bias",
     "image": "DesignForCognitiveBias.jpg",
-    "url": "https://abookapart.com/products/design-for-cognitive-bias"
+    "dateStart": "2021-06-21"
   },
   {
     "author": "Tom Greenwood",
     "pages": 125,
-    "dateStart": "2021-08-17",
+    "url": "https://abookapart.com/products/sustainable-web-design",
     "dateFinish": "2021-08-23",
     "title": "Sustainable Web Design",
     "image": "SustainableWebDesign.jpg",
-    "url": "https://abookapart.com/products/sustainable-web-design"
+    "dateStart": "2021-08-17"
   },
   {
     "author": "Marty Cagan with Chris Jones",
@@ -281,11 +281,11 @@
   {
     "author": "Brad Frost",
     "pages": 285,
-    "url": "https://atomicdesign.bradfrost.com",
+    "dateStart": "2020-08-29",
     "dateFinish": "2020-09-08",
     "title": "Atomic Design",
     "image": "AtomicDesign.jpg",
-    "dateStart": "2020-08-29"
+    "url": "https://atomicdesign.bradfrost.com"
   },
   {
     "author": "Susan Cain",
