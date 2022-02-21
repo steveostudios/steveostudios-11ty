@@ -1,0 +1,47 @@
+h1 {
+  font-family: Raleway;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.875;
+}
+
+h2 {
+  font-family: Raleway;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.875;
+}
+
+h3 {
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1em;
+  color: var(--black);
+  line-height: 1;
+  padding-bottom: 0.25rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-color);
+  display: inline-block;
+}
+
+h4 {
+  font-family: Raleway;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--black);
+}
+
+a,
+a:visited {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

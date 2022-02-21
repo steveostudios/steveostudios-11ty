@@ -48,16 +48,16 @@ module.exports = function (eleventyConfig) {
       .reverse()
       .map(
         ([year, books]) =>
-          `<div class="row column"><div class="shelf">
-          <h4>
+          `<div class="row column"><div class="year content">
+          <h3>
             ${year}
             <span>books ${books.length}</span>
             <span>
               pages
               ${books.map((book) => book.pages).reduce((acc, cur) => acc + cur)}
             </span>
-          </h4>
-          <ul class="books">
+          </h3>
+          <ul class="shelf">
             ${books
               .map(
                 (book) =>

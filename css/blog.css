@@ -1,0 +1,22 @@
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.posts li {
+  border-bottom: 1px solid var(--trim);
+}
+
+.posts li a {
+  padding: 2rem 0;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  line-height: 1.5;
+}

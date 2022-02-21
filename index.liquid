@@ -2,15 +2,13 @@
 title: "Steve Stone"
 layout: base.liquid
 ---
-<div class="row about">{% include aside.liquid %}
-  <div>
+<div class="page about">
+  <div class="bio">
     <h3>About</h3>
     {{ me.bio }}
   </div>
-</div>
 
-<div class="history row">
-  <div class="history">
+  <div class="work history">
     <h3>Work History</h3>
     <ul>
       {% for work in me.work %}
@@ -25,7 +23,8 @@ layout: base.liquid
       {% endfor %}
     </ul>
   </div>
-  <div class="history">
+
+  <div class="education history">
     <h3>Education History</h3>
     <ul>
       {% for education in me.education %}
@@ -40,20 +39,20 @@ layout: base.liquid
       {% endfor %}
     </ul>
   </div>
-</div>
 
-<div class="personalities row">
-  <div>
+  <div class="enneagram personality">
     <h3>Enneagram</h3>
     {% include img/icons/enneagram.svg %}
     <span>{{ me.personality.enneagram}}</span>
   </div>
-  <div>
+
+  <div class="briggsMyers personality">
     <h3>Briggs-Myers</h3>
     {% include img/icons/briggsMyers.svg %}
     <span>{{ me.personality.briggsMyers}}</span>
   </div>
-  <div>
+
+  <div class="strengthsFinder personality">
     <h3>Strengths Finder</h3>
     {% include img/icons/strengthsFinder.svg %}
     <ol>
@@ -62,7 +61,8 @@ layout: base.liquid
       {% endfor %}
     </ol>
   </div>
-  <div class="workingGenius">
+
+  <div class="workingGenius personality">
     <h3>Working Genius</h3>
     {% include img/icons/workingGenius.svg %}
     <ol>
@@ -71,4 +71,5 @@ layout: base.liquid
       {% endfor %}
     </ol>
   </div>
+  
 </div>

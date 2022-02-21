@@ -2,11 +2,11 @@
 title: Books
 layout: base.liquid
 ---
-<div class="row column">
-  <div class="shelf">
-    <h4>Currently reading</h4>
+<div class="page books">
+  <div class="year content">
+    <h3>Currently reading</h3>
     {%  assign currentlyReading = books | getCurrentBooks %}
-    <ul class="books">
+    <ul class="shelf content">
       {% for book in currentlyReading %}
       <li class="book-container">
         <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">

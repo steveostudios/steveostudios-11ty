@@ -2,11 +2,8 @@
 title: Blog
 layout: base.liquid
 ---
-<div class="row column">
-  <ul class="posts">
-
+  <ul class="page posts">
     {% for post in collections.posts reversed %}
     <li><a href="{{ post.url }}"><div>{{ post.data.title }}</div><div>{{ post.data.date | date: "%B %d, %Y" }}</div></a></li>
     {% endfor %}
   </ul>
-</div>
