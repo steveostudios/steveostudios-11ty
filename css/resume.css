@@ -94,9 +94,15 @@
 
 .page.resume .work ul p {
   margin: 0 0 0.5rem 0;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--dark-grey);
   font-family: "Raleway", sans-serif;
+}
+
+.page.resume .work ul p span {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .page.resume .work ul ul {
@@ -276,6 +282,11 @@
 
   .page.resume .work ul ul {
     margin-bottom: 32px;
+  }
+
+  .page.resume .work ul p span {
+    margin-left: 4px;
+    font-size: 10px;
   }
 
   .page.resume .skills li {

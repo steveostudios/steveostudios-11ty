@@ -26,7 +26,7 @@ layout: resume-layout.liquid
       <li>
         <div>
           <h4>{{ work.title }}, {{ work.company }}</h4>
-          <p class="dates">{{ work.location }} -- {{ work.dates }}</p>
+          <p class="dates">{{ work.location }} <span>{{ work.dates }}</span></p>
           <ul>
             {% for task in work.description %}
               <li>{{ task }}</li>

@@ -110,7 +110,7 @@ header nav ul a .icon svg {
 }
 
 header nav ul a:hover {
-  background: var(--white);
+  background: var(--grey);
   color: var(--black);
   text-decoration: none;
 }
@@ -132,8 +132,7 @@ header .socials {
 header .socials li svg {
   width: 2rem;
   height: 2rem;
-  opacity: 0.5;
-  fill: var(--grey);
+  fill: var(--dark-grey);
 }
 
 header .socials li a:hover svg {
