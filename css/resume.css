@@ -55,6 +55,15 @@
   align-items: center;
 }
 
+.page.resume header .contact a,
+.page.resume header .contact a:visited {
+  color: var(--dark-grey);
+}
+.page.resume header .contact a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
 .page.resume header .contact svg {
   margin-left: 0.5rem;
   width: 1rem;

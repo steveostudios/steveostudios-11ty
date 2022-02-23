@@ -1,7 +1,3 @@
----
-title: Steve Stone
-layout: resume-layout.liquid
----
 <div class="page resume">
   <header>
     <img class="avatar" src="/img/steveostudios2.jpg" />
@@ -11,7 +7,12 @@ layout: resume-layout.liquid
     </div>
     <div class="contact">
       {% for item in me.contact %}
-        <div>{{ item.value }}{{ item.icon }}</div>
+        <div>{% if item.url %}
+          <a href="{{item.url}}">{{ item.value }}</a>
+          {% else %}
+          {{ item.value }}
+          {% endif %}
+          {{ item.icon }}</div>
       {% endfor %}
     </div>
     <div class="bio">
