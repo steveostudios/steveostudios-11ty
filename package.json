@@ -19,5 +19,8 @@
     "markdown-it": "^12.2.0",
     "markdown-it-anchor": "^8.1.2",
     "markdown-it-link-attributes": "^3.0.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-svg-contents": "^0.7.0"
   }
 }

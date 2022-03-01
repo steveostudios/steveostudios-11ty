@@ -4,6 +4,7 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require("markdown-it");
 const markdownitlinkatt = require("markdown-it-link-attributes");
 const markdownItAnchor = require("markdown-it-anchor");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
@@ -12,6 +13,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
+    eleventyConfig.addPlugin(svgContents);
     eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.setTemplateFormats([
@@ -22,6 +24,7 @@ module.exports = function (eleventyConfig) {
     "svg",
     "css", // css is not yet a recognized template extension in Eleventy
   ]);
+
 
   // eleventyConfig.addLayoutAlias("post", "base.liquid");
 

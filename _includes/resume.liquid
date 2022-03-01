@@ -12,7 +12,7 @@
           {% else %}
           {{ item.value }}
           {% endif %}
-          {{ item.icon }}</div>
+          {{ item.icon | svgContents: "icon" | safe }}</div>
       {% endfor %}
     </div>
     <div class="bio">
@@ -68,7 +68,7 @@
     <h3>Interests</h3>
     <ul>
       {% for interest in me.interests %}
-        <li>{{ interest.icon }}{{ interest.title }}</li>
+        <li>{{ interest.icon | svgContents: "icon" | safe }}{{ interest.title }}</li>
       {% endfor %}
     </ul>
   </div>
