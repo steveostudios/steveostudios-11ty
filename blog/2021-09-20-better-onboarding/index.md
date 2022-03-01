@@ -2,10 +2,13 @@
 title: Better Onboarding
 date: 2021-09-20
 tags: book
+book:
+  title: Better Onboarding
+  image: BetterOnboarding.jpg
+  author: Krystal Higgins
+  link: https://abookapart.com/products/better-onboarding
 ---
-![Better Onboarding](./../../img/books/BetterOnboarding.jpg)
-
-I just finished [Better Onboarding][] by Krystal Higgins. Krystal is a UX designer specializing in onboarding customers to products for companies like NVIDIA, eBay, and Google.
+I just finished _Better Onboarding_ by Krystal Higgins. Krystal is a UX designer specializing in onboarding customers to products for companies like NVIDIA, eBay, and Google.
 
 A lot of the main points in this book seem obvious when you read them, but, at least in the projects that I am apart, are rarely heeded to. Having all of this in one place was fun to read and think about. Definitely solidified some thoughts. I would highly recommend for anyone interested in getting users from not knowing what your product is to being proficient.
 
@@ -20,5 +23,3 @@ A lot of the main points in this book seem obvious when you read them, but, at l
 - On-boarding needs to continually be part of the process of product design. It rarely works well when it’s glued on at the end. It needs to be owed and revisited reguarly and tested by everyone from product to support to marketing.
 
 The book walks through how to build your product’s on-boarding journey as a team, using a stickynote method, how to test with users, and shows tons of examples of both good and bad UX for on-boarding. Super practical and thorough.
-
-[Better Onboarding]: https://abookapart.com/products/better-onboarding "Better Onboarding"

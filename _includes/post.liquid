@@ -3,19 +3,28 @@ layout: base.liquid
 ---
 <div class="page post">
   <h1>
-    {%- if tags contains "book" -%}
+    {%- if book -%}
       {{ "/img/icons/book-light.svg" | svgContents: "icon" | safe }}    {%- endif -%}
     {{ title }}
   </h1>
-  <p>{{ date | date: "%B %e, %Y"}}</p>
-  <!-- <ul>
-    {%- for tag in tags -%}
-      {% if tag != "posts" %}
-        <li>
-          {{ tag }}
-        </li>
-      {% endif %}
-    {%- endfor %}
-  </ul> -->
-  <article>{{ content | safe }}</article>
+  <h3>{{ date | date: "%B %e, %Y"}}</h3>
+  {%- assign classes = "content" -%}
+  {%- if book -%}
+    {%- assign classes = classes | append: " has-book" -%}
+  {%- endif -%}
+  <div class="{{ classes }}">
+    {%- if book -%}
+    <aside>
+      {%- if book.image -%}<img src="./../../img/books/{{ book.image }}" />{%- endif -%}
+      <div>
+        {%- if book.title -%}<h4>{{ book.title }}</h4>{%- endif -%}
+        {%- if book.author -%}<p>by {{ book.author }}</p>{%- endif -%}
+        {%- if book.link -%}<a href="{{ book.link }}">Get it here</a>{%- endif -%}
+      </div>
+    </aside>
+    {%- endif -%}
+    <article>
+      {{ content | safe }}
+    </article>
+  </div>
 </div>

@@ -98,14 +98,8 @@
       <div class="page post">
   <h1>Creating a Jekyll Workflow Part 1
   </h1>
-  <p>April 15, 2015</p>
-  <!-- <ul>
-        <li>
-          jekyll
-        </li>
-      
-  </ul> -->
-  <article><p>As a designer (aka programming noob), I want to create a workflow that simplifies some of the things that writing in Jekyll requires. I don't write in vim, I still have a conceptually hard time with git, and terminal still freaks me out. I wanted a workflow were I get the benefits of Jekyll, but with a designer mentality.
+  <h3>April 15, 2015</h3><div class="content"><article>
+      <p>As a designer (aka programming noob), I want to create a workflow that simplifies some of the things that writing in Jekyll requires. I don't write in vim, I still have a conceptually hard time with git, and terminal still freaks me out. I wanted a workflow were I get the benefits of Jekyll, but with a designer mentality.
 That said, starting terminal, finding the directory, running Jekyll and serving up localhost in my browser seems like it could be simplified (programmers are lazy, right?). So I set out to write a script to do this for me.</p>
 <p>I had trouble with just one script, so I actually wrote two, one cueing the other. These are just text files with the <code>.command</code> file extension. The first one I called <code>JekyllServe.command</code>.</p>
 <pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> /path/to/site/folder<br>jekyll serve</code></pre>
@@ -115,7 +109,9 @@ That said, starting terminal, finding the directory, running Jekyll and serving 
 <pre class="language-shell"><code class="language-shell"><span class="token function">open</span> /path/to/JekyllServe.command<br><span class="token function">sleep</span> <span class="token number">2</span><br><span class="token function">open</span> http://localhost:4000<br><span class="token builtin class-name">exit</span> <span class="token number">0</span></code></pre>
 <p>This is the actual &quot;app&quot; that I run. As you can see, when you double-click this it will first run the jekyll serve command from <code>JekyllServe.command</code>, then wait 2 second (for the server to finish starting), then open your browser to <code>http://localhost:4000</code>.</p>
 <p>I'm going to continue to perfect this later, like add a &quot;publish&quot; command, and hopefully knock this down to one file, but as of right now, here it is!</p>
-</article>
+
+    </article>
+  </div>
 </div>
 
     <footer>

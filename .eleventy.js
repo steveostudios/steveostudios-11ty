@@ -37,7 +37,6 @@ module.exports = function (eleventyConfig) {
       .filter((book) => book.dateFinish)
       .sort((a, b) => new Date(b.dateFinish) - new Date(a.dateFinish))
       .reduce((acc, cur) => {
-        console.log(acc[cur["dateFinish"]]);
         acc[new Date(cur["dateFinish"]).getFullYear()] = [
           ...(acc[new Date(cur["dateFinish"]).getFullYear()] || []),
           cur,

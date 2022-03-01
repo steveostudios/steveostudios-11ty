@@ -1,11 +1,15 @@
 ---
-title: The Mosaic Navigator - The Essential Guide to the Internet Interface
+title: The Mosaic Navigator
 date: 2021-08-23
-tags: ["book"]
+tags: book
+book:
+  title: The Mosaic Navigator
+  subtitle: The Essential Guide to the Internet Interface
+  image: TheMosaicNavigator.jpg
+  author: Paul Gilster
+  link: https://www.amazon.com/Mosaic-Navigator-Essential-Internet-Interface/dp/0471113360
 ---
-![The Mosaic Navigator](./../../img/books/TheMosaicNavigator.jpg)
-
-I just finished [The Mosaic Navigator][]: The Essential Guide to the Internet Interface. This was fun. It’s a manual from 1995 for Mosaic, the very first browser (pre-Chrome/Firefox/Safari/IE/Netscape!). Not only could it handle HTTP (websites), but it could also do User Groups, FTP, and TelNet, which was a huge deal back then. Fun fact (not in this book), Mozilla, the company behind Firefox, named their company to be the Mosaic (the market leader) killer, tying together “Mosaic” and “Godzilla”.
+I just finished _The Mosaic Navigator: The Essential Guide to the Internet Interface_. This was fun. It’s a manual from 1995 for Mosaic, the very first browser (pre-Chrome/Firefox/Safari/IE/Netscape!). Not only could it handle HTTP (websites), but it could also do User Groups, FTP, and TelNet, which was a huge deal back then. Fun fact (not in this book), Mozilla, the company behind Firefox, named their company to be the Mosaic (the market leader) killer, tying together “Mosaic” and “Godzilla”.
 
 Obviously there wasn’t much to pull from for today, but it was cool to see where the internet was in 1995 and contrast that with today.
 
@@ -30,6 +34,3 @@ I don’t recommend anyone else here waste their time with it, but I sure though
 Here is WiReD from 1995!
 
 ![WiReD](./wired.jpg)
-
-[The Mosaic Navigator]: https://abookapart.com/products/presenting-design-work "The Mosaic Navigator"
-

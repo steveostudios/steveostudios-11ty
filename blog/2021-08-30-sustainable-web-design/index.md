@@ -1,11 +1,14 @@
 ---
 title: Sustainable Web Design
 date: 2021-08-30
-tags: ["book"]
+tags: book
+book:
+  title: Sustainable Web Design
+  image: SustainableWebDesign.jpg
+  author: Tom Greenwood
+  link: https://abookapart.com/products/sustainable-web-design
 ---
-![Sustainable Web Design](./../../img/books/SustainableWebDesign.jpg)
-
-I just finished [Sustainable Web Design][] by Tom Greenwood. I was super excited when I picked this up. I assumed (I judged by the cover) that this was going to be about how, as a developer/designer I can do my job sustainably. Maybe some tricks about burnout, or meeting deadlines, or work/life balance.
+I just finished _Sustainable Web Design_ by Tom Greenwood. I was super excited when I picked this up. I assumed (I judged by the cover) that this was going to be about how, as a developer/designer I can do my job sustainably. Maybe some tricks about burnout, or meeting deadlines, or work/life balance.
 
 Boy, was I wrong! This book is actually a TOTALLY different topic! This book talks about the environmental impacts that our websites take on our planet, which I have never even considered. (I guess I should have guessed that byu the author’s last name!) There is a significant amount of energy to create websites, host them, run them 24/7/365, transmit them over the internet, and view them on users devices! And, a lot of this energy can be traced back to carbon emissions.
 
@@ -19,6 +22,4 @@ Boy, was I wrong! This book is actually a TOTALLY different topic! This book tal
 
 Anyway, not what I thought, but still a pretty good book. I definitely learned a lot and hope to be a little more efficient in the things I work on.
 
-[Sustainable Web Design]: https://abookapart.com/products/sustainable-web-design "Sustainable Web Design"
 [Website Carbon Calculator]: https://www.websitecarbon.com/ "Website Carbon Calculator"
-

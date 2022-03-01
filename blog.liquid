@@ -7,7 +7,7 @@ layout: base.liquid
       <li>
         <a href="{{ post.url }}">
           <div>
-            {%- if post.data.tags contains "book" -%}
+            {%- if post.data.book -%}
               {{ "/img/icons/book-light.svg" | svgContents: "icon" | safe }}
             {%- endif -%}
             {{ post.data.title }}

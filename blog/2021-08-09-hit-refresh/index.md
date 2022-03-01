@@ -1,11 +1,15 @@
 ---
 title: Hit Refresh
 date: 2021-08-09
-tags: ["book"]
----
-![Hit Refresh](./../../img/books/HitRefresh.jpg)
+tags: book
+book:
+  title: Hit Refresh
+  image: HitRefresh.jpg
+  author: Satya Nadella
+  link: https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=349OYUDQ3WQX0&dchild=1&keywords=hit+refresh&qid=1628528136&s=books&sprefix=hit+ref%2Caps%2C173&sr=1-1
 
-Just finished [Hit Refresh][] by Satya Nadella, the current CEO of Microsoft that came in after Steve Balmer. The book talks about how he is attempting to turn Microsoft from stagnation and the butt-of-jokes back to being innovative, empathetic, and a desired place to work. His method starts with changing the culture of the company, then innovate from there. Here are a few key takeaways:
+---
+Just finished _Hit Refresh_ by Satya Nadella, the current CEO of Microsoft that came in after Steve Balmer. The book talks about how he is attempting to turn Microsoft from stagnation and the butt-of-jokes back to being innovative, empathetic, and a desired place to work. His method starts with changing the culture of the company, then innovate from there. Here are a few key takeaways:
 
 ## CEO
 
@@ -32,6 +36,3 @@ E + SV + SR = T/t
 ```
 
 Empathy + shared values + Safety and reliability = trust over time
-
-[Hit Refresh]: https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=349OYUDQ3WQX0&dchild=1&keywords=hit+refresh&qid=1628528136&s=books&sprefix=hit+ref%2Caps%2C173&sr=1-1 "Hit Refresh"
-

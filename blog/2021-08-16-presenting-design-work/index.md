@@ -1,11 +1,14 @@
 ---
 title: Presenting Design Work
 date: 2021-08-16
-tags: ["book"]
+tags: book
+book:
+  title: Presenting Design Work
+  image: PresentingDesignWork.jpg
+  author: Donna Spencer
+  link: https://abookapart.com/products/presenting-design-work
 ---
-![Presenting Design Work](./../../img/books/PresentingDesignWork.jpg)
-
-I just finished [Presenting Design Work][] by Donna Spencer. Its a small book, but pretty good. I don’t get to do a lot of design work these days, but thought it would be a fun and easy read.
+I just finished _Presenting Design Work_ by Donna Spencer. Its a small book, but pretty good. I don’t get to do a lot of design work these days, but thought it would be a fun and easy read.
 
 A couple of points I walked away with:
 
@@ -16,6 +19,3 @@ A couple of points I walked away with:
 3. When you present, don’t walk through and describe features. Your audience can do that on their own time. Instead, tell an engaging narrative from the user’s perspective.
 
 4. Set up clear expectations and a channel to receive and work through feedback. Teach your client or team how to give relevant and useful feedback and communicate decisions back to them so they are on the same page before you iterate.
-
-[Presenting Design Work]: https://abookapart.com/products/presenting-design-work "Presenting Design Work"
-
