@@ -1,0 +1,39 @@
+---
+layout: layouts/base.liquid
+---
+<div class="page post">
+  <h1>
+    {%- if book -%}
+      {{ "/src/img/icons/book-light.svg" | svgContents: "icon" | safe }}    {%- endif -%}
+    {{ title }}
+  </h1>
+  <h3>{{ date | date: "%B %e, %Y"}}</h3>
+  {%- assign classes = "content" -%}
+  {%- if book -%}
+    {%- assign classes = classes | append: " has-book" -%}
+  {%- endif -%}
+  <div class="{{ classes }}">
+    {%- if book -%}
+      {%- assign book_data = books | getBook: book -%}
+      <aside>
+        {%- if book_data.image -%}
+          <img src="./../../img/books/{{ book_data.image }}" />
+        {%- endif -%}
+        <div>
+          {%- if book_data.title -%}
+            <h4>{{ book_data.title }}</h4>
+          {%- endif -%}
+          {%- if book_data.author -%}
+            <p>by {{ book_data.author }}</p>
+          {%- endif -%}
+          {%- if book_data.url -%}
+            <a href="{{ book_data.url }}">Get it here</a>
+          {%- endif -%}
+        </div>
+      </aside>
+    {%- endif -%}
+    <article>
+      {{ content | safe }}
+    </article>
+  </div>
+</div>

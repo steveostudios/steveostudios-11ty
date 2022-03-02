@@ -1,32 +1,23 @@
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const markdownIt = require("markdown-it");
-const markdownitlinkatt = require("markdown-it-link-attributes");
-const markdownItAnchor = require("markdown-it-anchor");
 const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/blog/**/*.jpg")
+  
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(svgContents);
+  eleventyConfig.setDataDeepMerge(true);
 
-  	eleventyConfig.addPlugin(pluginNavigation);
-    eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(pluginSyntaxHighlight);
-
-    eleventyConfig.addPlugin(svgContents);
-    eleventyConfig.setDataDeepMerge(true);
-
-  eleventyConfig.setTemplateFormats([
-    "liquid",
-    "md",
-    "jpg",
-    "png",
-    "svg",
-    "css", // css is not yet a recognized template extension in Eleventy
-  ]);
-
-
-  // eleventyConfig.addLayoutAlias("post", "base.liquid");
+  // return a single book from the title
+  eleventyConfig.addFilter("getBook", function (books, title) {
+    return books.find(book => book.title.toLowerCase() === title.toLowerCase());
+  })
 
   eleventyConfig.addFilter("getCurrentBooks", function (books) {
     return books.filter(book => book.progress)
@@ -77,9 +68,11 @@ module.exports = function (eleventyConfig) {
       .join("");
   })
 
-  
-
   return {
     passthroughFileCopy: true,
+    dir: {
+      input: "src",
+      output: "public",
+    },
   };
 };

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "eleventy build",
+    "dev": "DEBUG=Eleventy* eleventy build"
   },
   "author": {
     "name": "Steve Stone",
