@@ -45,7 +45,8 @@
     "title": "The Phoenix Project",
     "image": "ThePhoenixProject.jpg",
     "dateStart": "2021-10-16",
-    "url": "https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592"
+    "url": "https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592",
+    "stars": 4.5
   },
   {
     "author": "Simon Sinek",
@@ -54,7 +55,8 @@
     "dateFinish": "2021-10-17",
     "title": "Start with Why",
     "image": "StartWithWhy.jpg",
-    "dateStart": "2021-09-28"
+    "dateStart": "2021-09-28",
+    "stars": 5
   },
   {
     "author": "Jackie Hill Perry",

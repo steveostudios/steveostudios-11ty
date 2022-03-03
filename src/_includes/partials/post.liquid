@@ -4,7 +4,8 @@ layout: layouts/base.liquid
 <div class="page post">
   <h1>
     {%- if book -%}
-      {{ "/src/img/icons/book-light.svg" | svgContents: "icon" | safe }}    {%- endif -%}
+      {{ "/src/img/icons/book-light.svg" | svgContents: "icon" | safe }}
+    {%- endif -%}
     {{ title }}
   </h1>
   <h3>{{ date | date: "%B %e, %Y"}}</h3>
@@ -28,6 +29,26 @@ layout: layouts/base.liquid
           {%- endif -%}
           {%- if book_data.url -%}
             <a href="{{ book_data.url }}">Get it here</a>
+          {%- endif -%}
+
+          {%- if book_data.stars -%}
+            <div class="stars">
+              <div class="stars-back">
+                {% for i in (1..5) %}
+                  {{ "/src/img/icons/star-solid.svg" | svgContents: "icon" | safe }}
+                {% endfor %}
+              </div>
+              <div class="stars-front">
+                {% assign full_stars = book_data.stars | floor %}
+                {% assign half_star = book_data.stars | divided_by: 0.5 | modulo: 2 %}
+                {% for i in (1..full_stars) %}
+                  {{ "/src/img/icons/star-solid.svg" | svgContents: "icon" | safe }}
+                {% endfor %}
+                {%- if half_star == "1" -%}
+                  {{ "/src/img/icons/star-half-solid.svg" | svgContents: "icon" | safe }}
+                {%- endif -%}
+                </div>
+            </div>
           {%- endif -%}
         </div>
       </aside>
