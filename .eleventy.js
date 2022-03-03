@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/blog/**/*.jpg")
-  
+
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -19,53 +19,37 @@ module.exports = function (eleventyConfig) {
     return books.find(book => book.title.toLowerCase() === title.toLowerCase());
   })
 
-  eleventyConfig.addFilter("getCurrentBooks", function (books) {
-    return books.filter(book => book.progress)
-  })
 
-  eleventyConfig.addShortcode("getBooks", function(books) {
-    const booksByYear = books
-      .filter((book) => book.dateFinish)
-      .sort((a, b) => new Date(b.dateFinish) - new Date(a.dateFinish))
-      .reduce((acc, cur) => {
+  // return books by year
+  eleventyConfig.addFilter("getBooksByYear", function (books) {
+    // get finished books
+    const getYears = books
+      .filter((book) => book.dateFinish) // filter only finished books
+      .sort((a, b) => new Date(b.dateFinish) - new Date(a.dateFinish)) // sort by finish date
+      .reduce((acc, cur) => { // add them to arrays by year
         acc[new Date(cur["dateFinish"]).getFullYear()] = [
           ...(acc[new Date(cur["dateFinish"]).getFullYear()] || []),
           cur,
         ];
         return acc;
-      }, {});
+      }, {})
 
+    // get currently reading books
+    // throw them in front of the read books
+    const getYearsPlusCurrent = {current: books.filter(book => book.progress), ...getYears};
 
-
-    return Object.entries(booksByYear)
-      .reverse()
-      .map(
-        ([year, books]) =>
-          `<div class="row column"><div class="year content">
-          <h3>
-            ${year}
-            <span>books ${books.length}</span>
-            <span>
-              pages
-              ${books.map((book) => book.pages).reduce((acc, cur) => acc + cur)}
-            </span>
-          </h3>
-          <ul class="shelf">
-            ${books
-              .map(
-                (book) =>
-                  `<li class="book-container">
-                    <div class="book page-count-${Math.floor(book.pages / 100)*100}">
-                      <img src="/img/books/${book.image}" alt="${book.title}" />
-                    </div>
-                  </li>`
-                )
-              .join("")}
-          </ul>
-        </div>
-        </div>`
-      )
-      .join("");
+    // pass clean data to get view
+    const bookObject = Object.entries(getYearsPlusCurrent) // put into array
+    .reverse() // sort reverse (recent first)
+    .map(([year, books]) => // add meta for each year
+      ({
+        year: year,
+        items: [...books],
+        bookCount: books.length,
+        pageCount: books.reduce((acc, cur) => acc + cur.pages, 0)
+      })
+    )
+    return bookObject;
   })
 
   return {

@@ -1,0 +1,28 @@
+---
+title: Books
+---
+<div class="page books">
+  <div class="year content">
+    {% assign book_object = books | getBooksByYear %}
+    {% for year in book_object %}
+      {% if year.year == "current" %}
+        <h3>Currently reading</h3>
+      {% else %}
+        <h3>{{ year.year }}<span>{{ year.bookCount }} books</span><span>{{ year.pageCount }} pages</span></h3>
+      {% endif %}
+      <ul class="shelf">
+        {% for book in year.items %}
+          <li class="book-container">
+            <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
+              <img src="/img/books/{{ book.image }}" alt="{{ book.title }}" />
+            </div>
+            {% if book.progress %}
+              <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+
+</div>
