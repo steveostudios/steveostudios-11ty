@@ -99,7 +99,32 @@ margin-bottom: 2rem;
   transform: translateZ(10px);
 }
 
+.shelf .book-container a {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ transform-style: preserve-3d;
+}
+.shelf .book-container a .dot {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: -0.5rem;
+  right: -0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transform: translateZ(20px);
 
+}
+
+.shelf .book-container a .dot svg {
+  fill: var(--white);
+  height: 1rem;
+}
 
 .shelf .book-container .book::after {
   position: absolute;
