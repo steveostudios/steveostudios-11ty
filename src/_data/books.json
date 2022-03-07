@@ -28,7 +28,7 @@
     "url": "https://abookapart.com/products/seo-for-everyone",
     "title": "SEO for Everyone",
     "image": "SEOForEveryone.jpg",
-    "progress": 106,
+    "progress": 146,
     "dateStart": "2022-02-21"
   },
   {
@@ -38,7 +38,10 @@
     "dateFinish": "2022-02-15",
     "title": "Things to Make and Do in the Fourth Dimension",
     "image": "ThingsToMakeAndDoInTheFouthDimension.jpg",
-    "dateStart": "2022-01-26"
+    "dateStart": "2022-01-26",
+    "url": "https://www.amazon.com/Things-Make-Fourth-Dimension-Mathematicians/dp/0374535639",
+    "post": "2022-02-15-things-to-make-and-do-in-the-fourth-dimension",
+    "stars": 4
   },
   {
     "author": "Gene Kim",
@@ -114,7 +117,8 @@
     "title": "Freakonomics",
     "image": "Freakonomics.jpg",
     "dateStart": "2021-01-01",
-    "post": "2021-09-14-freakonomics"
+    "post": "2021-09-14-freakonomics",
+    "stars": 3.5
   },
   {
     "author": "Beth Dunn",
@@ -134,7 +138,8 @@
     "title": "Better Onboarding",
     "image": "BetterOnboarding.jpg",
     "url": "https://abookapart.com/products/better-onboarding",
-    "post": "2021-09-20-better-onboarding"
+    "post": "2021-09-20-better-onboarding",
+    "stars": 4
   },
   {
     "author": "David A. Vise",
@@ -193,7 +198,8 @@
     "title": "Hit Refresh",
     "image": "HitRefresh.jpg",
     "url": "https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=1HU6BOHPS46Z2&dchild=1&keywords=hit+refresh&qid=1623729842&sprefix=hit+ref%2Caps%2C174&sr=8-1",
-    "post": "2021-08-09-hit-refresh"
+    "post": "2021-08-09-hit-refresh",
+    "stars": 4
   },
   {
     "author": "Paul Gilster",
