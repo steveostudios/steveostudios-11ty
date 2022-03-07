@@ -47,7 +47,10 @@
     "dateFinish": "2022-02-18",
     "title": "The Unicorn Project",
     "image": "TheUnicornProject.jpg",
-    "dateStart": "2021-11-12"
+    "dateStart": "2021-11-12",
+    "url": "https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving-ebook/dp/B07QT9QR41",
+    "stars": 4.5,
+    "post": "2022-02-18-the-unicorn-project"
   },
   {
     "author": "Eliyahu M. Goldratt",
