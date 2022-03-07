@@ -15,10 +15,17 @@
   text-decoration: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-family: Source Sans Pro;
+  align-items: flex-start;
+  font-family: Raleway;
   font-weight: 600;
   line-height: 1.5;
+  flex-direction: column;
+}
+
+.posts li a .date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--dark-grey);
 }
 
 .posts li a svg {
@@ -106,6 +113,10 @@
 }
 
 @media (min-width: 768px) {
+  .posts li a {
+    flex-direction: row;
+  }
+
   .post .content.has-book {
     grid-template-columns: 12rem auto;
     grid-template-rows: auto;
