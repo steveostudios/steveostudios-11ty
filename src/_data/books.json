@@ -17,19 +17,19 @@
     "title": "Love Does",
     "subtitle": "Discover a Secretly Incredible Life in an Ordinary World",
     "image": "LoveDoes.jpg",
-    "progress": 16,
+    "progress": 66,
     "dateStart": "2022-03-01",
     "url": "https://www.amazon.com/Love-Does-Discover-Secretly-Incredible-ebook/dp/B0078FA8HU/ref=sr_1_1?crid=31A3QQN8S8U5&keywords=love+does&qid=1646338113&sprefix=love+d%2Caps%2C228&sr=8-1"
   },
   {
     "author": "Rebekah Baggs and Chris Corak",
     "pages": 173,
-    "dateFinish": null,
+    "dateFinish": "2022-03-08",
     "url": "https://abookapart.com/products/seo-for-everyone",
     "title": "SEO for Everyone",
     "image": "SEOForEveryone.jpg",
-    "progress": 146,
-    "dateStart": "2022-02-21"
+    "dateStart": "2022-02-21",
+    "stars": 4
   },
   {
     "author": "Matt Parker",
@@ -91,12 +91,12 @@
     "author": "Jackie Hill Perry",
     "pages": 193,
     "subtitle": "How God's Holiness Helps Us Trust Him",
-    "dateFinish": null,
+    "dateFinish": "2022-02-08",
     "url": "https://www.amazon.com/Holier-Than-Thou-Holiness-Helps/dp/1535975717",
     "title": "Holier Than Thou",
     "image": "HolierThanThou.jpg",
-    "progress": 150,
-    "dateStart": "2021-09-13"
+    "dateStart": "2021-09-13",
+    "stars": 5
   },
   {
     "author": "Dallas Willard",
