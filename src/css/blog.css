@@ -48,6 +48,23 @@
   /* display: flex; */
 }
 
+.post table {
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+}
+
+.post table th {
+font-family: Raleway;
+font-weight: 800;
+}
+
+.post table td,
+.post table th {
+  border: 1px solid #999;
+  padding: 0.5rem 1rem;
+}
+
 .post .content.has-book {
   display: grid;
   grid-template-rows: 120px auto;

@@ -7,7 +7,7 @@
     "title": "Practical Object-Oriented Design",
     "subtitle": "An Agile Primer Using Ruby",
     "image": "PracticalObjectOrientedDesign.jpg",
-    "progress": 4,
+    "progress": 18,
     "dateStart": "2022-03-02"
   },
   {
@@ -29,7 +29,8 @@
     "title": "SEO for Everyone",
     "image": "SEOForEveryone.jpg",
     "dateStart": "2022-02-21",
-    "stars": 4
+    "stars": 4,
+    "post": "2022-03-08-seo-for-everyone"
   },
   {
     "author": "Matt Parker",
@@ -91,12 +92,13 @@
     "author": "Jackie Hill Perry",
     "pages": 193,
     "subtitle": "How God's Holiness Helps Us Trust Him",
-    "dateFinish": "2022-02-08",
+    "dateFinish": "2022-03-08",
     "url": "https://www.amazon.com/Holier-Than-Thou-Holiness-Helps/dp/1535975717",
     "title": "Holier Than Thou",
     "image": "HolierThanThou.jpg",
     "dateStart": "2021-09-13",
-    "stars": 5
+    "stars": 5,
+    "post": "2022-03-08-holier-than-thou"
   },
   {
     "author": "Dallas Willard",
