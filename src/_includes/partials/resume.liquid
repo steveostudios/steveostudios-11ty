@@ -16,7 +16,11 @@
       {% endfor %}
     </div>
     <div class="bio">
-      {{ me.resumeBio }}
+      {% if resumeBio %}
+        {{ resumeBio}}
+      {% else %}
+        {{ me.resumeBio }}
+      {% endif %}
     </div>
   </header>
 
