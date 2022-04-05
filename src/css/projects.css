@@ -109,8 +109,8 @@
   cursor: pointer;
   opacity: 0.6;
   border: 2px solid var(--trim);
-  min-width: 2rem;
-  min-height: 2rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   border-radius: 1rem;
 }
 
