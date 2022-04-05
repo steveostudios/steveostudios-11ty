@@ -150,7 +150,7 @@
     },
     {
       "title": "Software Development",
-      "apps": ["VSCode", "Javascript", "React", "Git", "Node", "Electron", "Node", "SQL"]
+      "apps": ["VSCode", "Javascript", "React", "Git", "Node", "Electron", "Redux", "SQL"]
     }
   ]
 }

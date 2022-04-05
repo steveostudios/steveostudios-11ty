@@ -5,7 +5,8 @@ const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/projects/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/blog/**/*.jpg")
 
   eleventyConfig.addPlugin(pluginNavigation);
@@ -19,6 +20,16 @@ module.exports = function (eleventyConfig) {
     return books.find(book => book.title.toLowerCase() === title.toLowerCase());
   })
 
+  eleventyConfig.addCollection("projects", (collections) => {
+    // get all posts by tag 'post'
+    return (
+      collections
+        .getFilteredByTag("project")
+        // exclude all drafts
+        .filter((post) => !Boolean(post.data.draft))
+        .reverse()
+    );
+  });
 
   // return books by year
   eleventyConfig.addFilter("getBooksByYear", function (books) {

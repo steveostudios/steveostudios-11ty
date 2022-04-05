@@ -85,7 +85,7 @@ header nav ul {
 header nav ul a,
 header nav ul a:visited {
   background: var(--primary-color);
-  padding: 8px 32px;
+  padding: 0.5rem 1rem;
   color: var(--black);
   margin-left: 8px;
   border-radius: 24px;
@@ -105,7 +105,7 @@ header nav ul a span {
 header nav ul a .icon svg {
   width: 1.25rem;
   height: 1.25rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   fill: var(--black) !important;
 }
 

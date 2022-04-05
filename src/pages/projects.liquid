@@ -1,0 +1,43 @@
+---
+title: Projects
+---
+  <ul class="page projects">
+    {%- for project in collections.projects -%}
+      <li>
+        <a href="{{ project.url }}">
+          <img src="{{ project.url }}{{ project.data.slider | first }}" />
+          <div>
+            <h2>
+              {{ project.data.title }}
+            </h2>
+            <p class="client">{{ project.data.client }}</p>
+            {%- if project.data.stack -%}
+              <ul class="stack">
+                {%- if project.data.stack.front -%}
+                  {% for item in project.data.stack.front %}
+                    <li class="front">
+                      {{ item }}
+                    </li>
+                  {% endfor %}
+                {%- endif -%}
+                {%- if project.data.stack.back -%}
+                  {% for item in project.data.stack.back %}
+                    <li class="back">
+                      {{ item }}
+                    </li>
+                  {% endfor %}
+                {%- endif -%}
+                {%- if project.data.stack.host -%}
+                  {% for item in project.data.stack.host %}
+                    <li class="host">
+                      {{ item }}
+                    </li>
+                  {% endfor %}
+                {%- endif -%}
+              </ul>
+            {%- endif -%}
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>

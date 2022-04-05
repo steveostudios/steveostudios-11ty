@@ -1,0 +1,42 @@
+<aside>
+  {%- if stack.front -%}
+    <section>
+      <h4>Front End</h4>
+      <ul>
+        {% for item in stack.front %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {%- endif -%}
+  {%- if stack.back -%}
+    <section>
+      <h4>Back End</h4>
+      <ul>
+        {% for item in stack.back %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {%- endif -%}
+  {%- if stack.host -%}
+    <section>
+      <h4>Hosting</h4>
+      <ul>
+        {% for item in stack.host %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {%- endif -%}
+  {%- if url -%}
+    <section>
+      <a href="{{ url }}">Go to site</a>
+    </section>
+  {%- endif -%}
+  {%- if repo -%}
+    <section>
+      <a href="{{ repo }}">Go to repo</a>
+    </section>
+  {%- endif -%}
+</aside>
