@@ -1,13 +1,13 @@
  <div class="slider">
-        {% for slide in slider %}
-          {% if forloop.first == true %}
-            <input type="radio" name="slide-switch" id="{{ slide }}" checked="checked" />
-          {% else %}
-            <input type="radio" name="slide-switch" id="{{ slide }}" />
-          {% endif %}
-          <label for="{{ slide }}">
-            <img src="{{ page.url }}{{ slide }}">
-          </label>
-          <img src="{{ page.url }}{{ slide }}">
-        {% endfor %}
-      </div>
+  {% for slide in slider %}
+    {% if forloop.first == true %}
+      <input type="radio" name="slide-switch" id="{{ slide }}" checked="checked" />
+    {% else %}
+      <input type="radio" name="slide-switch" id="{{ slide }}" />
+    {% endif %}
+    <label for="{{ slide }}">
+      <img src="{{ page.url }}{{ slide }}">
+    </label>
+    <img src="{{ page.url }}{{ slide }}">
+  {% endfor %}
+</div>
