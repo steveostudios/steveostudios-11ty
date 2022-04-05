@@ -1,55 +1,36 @@
 ---
 title: Escape Your Phone
-date: 2022-02-18
+date: 2021-01-19
 tags: project
-draft: true
 client: Download Youth Ministry
 slider:
   - screen1.jpg
   - screen2.jpg
+  - screen3.jpg
 stack:
   host:
     - Netlify
   front:
     - React
     - React Router
+hiddenurl: https://escape49309228497.dymgames.com/
+hiddenrepo: https://github.com/downloadyouthministry/escape-room-phone
 ---
 
-Sidekick is a presentation software, similar to ProPresenter or Powerpoint, that allows you to play games, like spin a wheel, play Family Feud, keep score, or pick a random (or not so random) kid. It's part of Download Youth Ministry's Gold Membership and standalone Sidekick membership. It's used in tons of churches every week.
+## Overview
 
-Sidekick uses Electron so we can talk between a control interface to a display interface, to that the audience can't see behind the curtain.
+After the wild success of [Escape the North Pole](/projects/escape-room-north-pole), we at DYM set out to make another room. This one we wanted to be a little more evergreen instead of limited to a season.
 
-Files (games) can be exported, shared, and imported on different devices. They can even be sold on the DYM store. All files are stored locally, automatically saved, and rapidly accessible for off-the-cuff gameplay.
+Like the other escape room, the idea is that this is played collaboratively via Zoom breakouts with your youth group. If you need a hint, you can go to the main Zoom room and ask the leader. In each room you will find clues to unlock screen allowing you to move to the next screen. When you reach the end, you get a secret phrase to tell your leader.
 
-## The Idea
+There is no "collecting items". Individuals who unlock a room can freely give their team a link to the newly unlocked room so they can continue to collaborate.
 
-Sidekick is the latest in a line of projects that I've been working on, starting with a Flash app called Spin that Wheel. We've always wanted to make a presentation software that did the things you can't do with other apps.
+For this one, we wanted the story to be that you were sucked into your phone and the evil voice-assistant wanted to trap in you in there. You have to use clues found in the "apps" to advance to the next screen.
 
-Sidekick's predecessor, DYM Games, was built with jQuery and state management was awful to deal with. We'd seen success with it, but with every additional builder and feature it seemed development time was increasing exponentially. On top of that, the most common feature request was that people wanted to switch back and forth between games.
+## Behind the Scenes
 
-During Christmas break, 2017, I was playing around React. After a few hours, it became apparent that rebuilding DYM Games as a new app in React would allow us to add a ton of features faster! We also were able to add a ton of new features, combine common code within builders, make the app faster, and 
+There are 6 "pre-rooms", which have a video that have instructions and move the plot forward. There are 6 home screen (rooms) with apps filled with clues and red-herrings and puzzles. In order to keep all of this organized I needed to create a design style and organization system to handle the sheer quantity of content. I had to make username/password, pin-code, a slew of toggle "settings", a snake game, and multi-question, timed quiz components. It was super fun!
 
-## Version 1.0
+Some of the hardest parts were trying to responsively put a phone on the screen. This had to work on any device, which could also be a phone! This caused some weird scrolling behavior and issues with mobile Safari. I also struggled with a good pattern unlock. I tried several components I found online, but none worked in the weird phone-inception. I even tried writing my own and we ran out of time.
 
-Version 1.0 was launched July 26, 2018 (just over 6 months later). It included 10 fully-customizable "builders", which are like apps within the app.
-
-- Boxes: A random box picker.
-- Emoji Hunt: An Emoji slot machine.
-- Wheel of Destiny: A completely customizable spinny-wheel.
-- Pick Me: An easy people picker complete with odds!
-- Leaderboard: Keep score with up to 10 teams.
-- Survey Says: A Family Feud-style game builder.
-- Countdown Maker: Customizable countdowns in seconds!
-- Pixelate: Customizable "Image guessing" game without Photoshop!
-- Trivia: Full-featured, multiple-choice game builder.
-- Photo Fury: A fully-customizable, fast-paced, random image picker.
-
-It also included 45 built in games, a library system that allowed you switch between games quickly.
-
-## Limitations
-
-1. The audience cannot know what you're doing, so there needed to be independent control and display windows.
-2. We wanted the app to work offline, incase you happen to be at camp or in a church basement.
-3. The UI has to be easy enough to train a volunteer that has never used Sidekick in a matter of minutes to feel confident.
-4. The games have to auto-save incase of the app crashing or switching quickly between games.
-5. Files (stored locally) had to work in newer versions of the app.
+It was really fun. Like the other one I got to help write the scripts, collaborate with the designers, and do all the code myself!

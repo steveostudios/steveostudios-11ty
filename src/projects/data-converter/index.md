@@ -23,7 +23,7 @@ repo: https://github.com/downloadyouthministry/data-convert
 
 Data Converter is an internal tool I created to help our team perform routine data parsing and conversions. It's really a catch all for a few different tools that need to be distributed but don't deserve their own domain. All of the parsing work is run locally in the browser, as to prohibit transferring sensitive data to a server.
 
-The project static pages, running React and React Router. The I use a few dependancies to make the nuts and bolts work (`export-to-csv`, `fast-xml-parser`, `file-saver`, `json-2-csv`, `bible-passage-reference-parser` to name a few.) It also uses the [DYM Design System](/portfolio/design-system/), brought in as a Github Package. It's hosted on Netlify.
+The project static pages, running React and React Router. The I use a few dependancies to make the nuts and bolts work (`export-to-csv`, `fast-xml-parser`, `file-saver`, `json-2-csv`, `bible-passage-reference-parser` to name a few.) It also uses the [DYM Design System](/projects/design-system/), brought in as a Github Package. It's hosted on Netlify.
 
 ## Customers
 
