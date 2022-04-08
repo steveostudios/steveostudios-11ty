@@ -13,6 +13,7 @@ stack:
   front:
     - React
     - React Router
+    - Styled Components
 hiddenurl: https://escape49309228497.dymgames.com/
 hiddenrepo: https://github.com/downloadyouthministry/escape-room-phone
 ---

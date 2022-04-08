@@ -13,6 +13,7 @@ stack:
   front:
     - React
     - React Router
+    - Styled Components
 hiddenurl: https://escape32452345243.dymgames.com/
 hiddenrepo: https://github.com/downloadyouthministry/escape-room-north-pole
 ---

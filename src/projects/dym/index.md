@@ -22,41 +22,14 @@ stack:
     - Rhino JS
 ---
 
-Sidekick is a presentation software, similar to ProPresenter or Powerpoint, that allows you to play games, like spin a wheel, play Family Feud, keep score, or pick a random (or not so random) kid. It's part of Download Youth Ministry's Gold Membership and standalone Sidekick membership. It's used in tons of churches every week.
+## Overview
 
-Sidekick uses Electron so we can talk between a control interface to a display interface, to that the audience can't see behind the curtain.
+Download Youth Ministry is an E-Commerce website that takes in product submissions from youth workers, and cleans and edits them, and then sells them. The author makes a percentage. DYM also has a pretty incredible membership program that offers almost matched store credit to the membership fee, discounts in the store, and access to some pretty neat tools for youth workers (like [Sidekick](/projects/sidekick)). We release dozens of products a week.
 
-Files (games) can be exported, shared, and imported on different devices. They can even be sold on the DYM store. All files are stored locally, automatically saved, and rapidly accessible for off-the-cuff gameplay.
+## Behind the Scenes
 
-## The Idea
+Download Youth Ministry has been through some changes. I was part of the original MVP, when it was built on WooCommerce and Wordpress. I got to build the author dashboard, which helped authors know how well their resources were helping other youth workers. We also launched the membership program back then.
 
-Sidekick is the latest in a line of projects that I've been working on, starting with a Flash app called Spin that Wheel. We've always wanted to make a presentation software that did the things you can't do with other apps.
+DYM's site then went through a phase in Magento, which I had pretty minimal involvement in. At the time I was focused on Newsletter, DYM Games, [Sidekick](/projects/sidekick), and our Pipeline app.
 
-Sidekick's predecessor, DYM Games, was built with jQuery and state management was awful to deal with. We'd seen success with it, but with every additional builder and feature it seemed development time was increasing exponentially. On top of that, the most common feature request was that people wanted to switch back and forth between games.
-
-During Christmas break, 2017, I was playing around React. After a few hours, it became apparent that rebuilding DYM Games as a new app in React would allow us to add a ton of features faster! We also were able to add a ton of new features, combine common code within builders, make the app faster, and 
-
-## Version 1.0
-
-Version 1.0 was launched July 26, 2018 (just over 6 months later). It included 10 fully-customizable "builders", which are like apps within the app.
-
-- Boxes: A random box picker.
-- Emoji Hunt: An Emoji slot machine.
-- Wheel of Destiny: A completely customizable spinny-wheel.
-- Pick Me: An easy people picker complete with odds!
-- Leaderboard: Keep score with up to 10 teams.
-- Survey Says: A Family Feud-style game builder.
-- Countdown Maker: Customizable countdowns in seconds!
-- Pixelate: Customizable "Image guessing" game without Photoshop!
-- Trivia: Full-featured, multiple-choice game builder.
-- Photo Fury: A fully-customizable, fast-paced, random image picker.
-
-It also included 45 built in games, a library system that allowed you switch between games quickly.
-
-## Limitations
-
-1. The audience cannot know what you're doing, so there needed to be independent control and display windows.
-2. We wanted the app to work offline, incase you happen to be at camp or in a church basement.
-3. The UI has to be easy enough to train a volunteer that has never used Sidekick in a matter of minutes to feel confident.
-4. The games have to auto-save incase of the app crashing or switching quickly between games.
-5. Files (stored locally) had to work in newer versions of the app.
+Finally, we rebuilt the entire site in SalesForce Commerce Cloud. My involvement started with only getting the API to work with our membership apps. After launch we had significant issues and my role changed to diagnosing and fixing things that were poorly handled by our original systems integrator. I mainly handled helping our new SI with troubleshooting and acting as a translator for the team, but also solved a few tickets as well. 
