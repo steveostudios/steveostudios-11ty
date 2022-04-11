@@ -3,11 +3,8 @@ title: Ready, Set, Go!
 date: 2011-05-20
 tags: project
 client: Digital Stache
-draft: true
 slider:
   - screen1.jpg
-  - screen2.jpg
-  - screen3.jpg
 stack:
   host:
     - Adobe Air
@@ -17,7 +14,7 @@ stack:
 
 ## Overview
 
-Ready, Set, Go! was our third and ended up being the final app we built at Digital Stache. It's a simple countdown maker. You can set the time and choose a theme. It had a few other tricks as well. Ready, Set, Go! was free because we wanted people to see how easy it was and try our other games.
+Ready, Set, Go! was our third and ended up being the final app we built at Digital Stache. It's a simple countdown maker. You can set the time and choose a theme. It had a few other tricks as well. Ready, Set, Go! was free because we wanted people to see how easy it was to use and try our other apps.
 
 ## Behind the Scenes
 
