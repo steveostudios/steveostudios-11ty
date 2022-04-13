@@ -1,5 +1,42 @@
 [
   {
+    "title": "Crazy Love",
+    "subtitle": "Overwhelmed by a Relentless God",
+    "author": "Francis Chan",
+    "pages": 205,
+    "url": "https://www.amazon.com/Crazy-Love-Overwhelmed-Relentless-God/dp/1434768511/ref=sr_1_3?keywords=crazy+love+by+francis+chan&qid=1649882430&sprefix=crazy+love%2Caps%2C85&sr=8-3",
+    "image": "CrazyLove.jpg"
+  },
+  {
+    "title": "Hero on a Mission",
+    "subtitle": "A Path to a Meaningful Life",
+    "author": "Donald Miller",
+    "pages": 224,
+    "url": "https://www.amazon.com/Hero-Mission-Path-Meaningful-Life/dp/1400226945/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1649879682&sr=8-1",
+    "image": "HeroOnAMission.jpg"
+  },
+  {
+    "title": "Responsible JavaScript",
+    "author": "Jeremy Wagner",
+    "pages": 195,
+    "url": "https://abookapart.com/products/responsible-javascript",
+    "image": "ResponsibleJavaScript.jpg"
+  },
+  {
+    "title": "Design for Safety",
+    "author": "Eva PenzeyMoog",
+    "pages": 143,
+    "url": "https://abookapart.com/products/design-for-safety",
+    "image": "DesignForSafety.jpg"
+  },
+  {
+    "title": "Voice Content and Usability",
+    "author": "Preston So",
+    "pages": 131,
+    "url": "https://abookapart.com/products/voice-content-and-usability",
+    "image": "VoiceContentAndUsability.jpg"
+  },
+  {
     "author": "Sandi Metz",
     "pages": 255,
     "dateFinish": null,
@@ -13,11 +50,10 @@
   {
     "author": "Bob Goff",
     "pages": 224,
-    "dateFinish": null,
+    "dateFinish": "2022-04-13",
     "title": "Love Does",
     "subtitle": "Discover a Secretly Incredible Life in an Ordinary World",
     "image": "LoveDoes.jpg",
-    "progress": 159,
     "dateStart": "2022-03-01",
     "url": "https://www.amazon.com/Love-Does-Discover-Secretly-Incredible-ebook/dp/B0078FA8HU/ref=sr_1_1?crid=31A3QQN8S8U5&keywords=love+does&qid=1646338113&sprefix=love+d%2Caps%2C228&sr=8-1"
   },
