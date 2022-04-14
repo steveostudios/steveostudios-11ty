@@ -19,6 +19,7 @@ stack:
   back:
     - Java
     - Rhino JS
+url: https://downloadyouthministry.com
 ---
 
 ## Overview
@@ -29,7 +30,7 @@ Download Youth Ministry is an E-Commerce website that takes in product submissio
 
 Download Youth Ministry has been through some drastic iterations. I was part of the original MVP, when it was built on WooCommerce and Wordpress. I got to build the author dashboard, which helped authors know how well their resources were helping other youth workers. We also launched the membership program back on Wordpress.
 
-DYM's site then went through a phase in Magento, which I had pretty minimal involvement in. At the time I was focused on Newsletter, DYM Games, [Sidekick](/projects/sidekick), and our [Pipeline app](/projects/pipeline).
+DYM's site then went through a phase in Magento, which I had pretty minimal involvement in. At the time I was focused on Newsletter, DYM Games, [Leader Training Library](/projects/leader-training-library), [Sidekick](/projects/sidekick), and our [Pipeline app](/projects/pipeline).
 
 In 2020 we rebuilt the entire site in SalesForce Commerce Cloud.
 
