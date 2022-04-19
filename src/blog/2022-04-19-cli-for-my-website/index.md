@@ -1,7 +1,7 @@
 ---
 title: CLI for my website
 date: 2022-04-19
-tags: 
+tags:
   - CLI
   - web
 ---
@@ -26,6 +26,7 @@ This will prompt for all of the questions in order to add a new book to my colle
 
 One cool thing is that it will as for a URL and an image URL. For the image URL it will download the image, resize, convert to JPG and compress it for my site.
 
+![site book new](./new.jpg)
 ## Start a book
 
 ```shell
@@ -36,6 +37,8 @@ I've picked up a new book, cracked it open and started a few pages.
 
 The will look at all of the books I have not yet started, move it to the "currently reading" and note the date
 
+![site book start](./start.jpg)
+
 ## Read a book
 
 ```shell
@@ -44,6 +47,8 @@ $ site book read
 
 This will look at all of the books I am in the middle of and ask which book and where I'm at.
 
+![site book read](./read.jpg)
+
 ## Finish a book
 
 ```shell
@@ -51,3 +56,5 @@ $ site book finish
 ```
 
 This will move a book to the "finished" state, and log the necessary things. Next I need it to do some sort of happy dance!
+
+![site book finish](./finish.jpg)
