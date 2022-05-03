@@ -58,3 +58,5 @@ $ site book finish
 This will move a book to the "finished" state, and log the necessary things. Next I need it to do some sort of happy dance!
 
 ![site book finish](./finish.jpg)
+
+The source code can be found on [Github](https://github.com/steveostudios/steveostudios-cli).
