@@ -78,7 +78,7 @@
   content: attr(data-text); /* here's the magic */
   position:absolute;
   z-index: 0;
-  top:50%;
+  top:0;
   left: -1px;
   min-width:16px;
   padding:4px;
@@ -93,13 +93,29 @@
   display:none;
 }
 
+.bookStats .bargraph .year-container:after {
+  content: "";
+  position:absolute;
+  left: calc(50% - 1px);
+  top:18px;
+  bottom: 0;
+  border-right:1px solid var(--grey);
+  display:none;
+}
+
 .bookStats .bargraph .year-container:hover:before {
+  display: flex;
+  z-index: 3;
+}
+.bookStats .bargraph .year-container:hover:after {
   display: flex;
   z-index: 1;
 }
 
 .bookStats .bargraph .year {
   width: 100%;
+  position: relative;
+  z-index: 2;
   white-space: nowrap;
   background-color: var(--primary-color);
   border-radius: 4px 4px 0 0;
