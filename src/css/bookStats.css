@@ -1,0 +1,151 @@
+.bookStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, auto);
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.bookStats h4 {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+
+.bookStats p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.bookStats > div {
+  justify-self: center;
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bookStats .list {
+  justify-content: flex-start;
+}
+
+.bookStats .list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookStats .list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookStats .list li strong {
+  font-weight: bold;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  width: 110px;
+  margin-right: 1rem;
+  font-size: 0.85rem;
+  display: block;
+  color: var(--dark-grey);
+}
+
+.bookStats .bargraph {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bookStats .bargraph li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookStats .bargraph .year-container {
+  height: 100px;
+  background-color: var(--trim);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 2px;
+  width: 18px;
+  position: relative;
+}
+
+.bookStats .bargraph .year-container:before {
+  content: attr(data-text); /* here's the magic */
+  position:absolute;
+  z-index: 0;
+  top:50%;
+  left: -1px;
+  min-width:16px;
+  padding:4px;
+  font-size: 0.65rem;
+  border-radius:4px;
+  background:var(--dark-grey);
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display:none;
+}
+
+.bookStats .bargraph .year-container:hover:before {
+  display: flex;
+  z-index: 1;
+}
+
+.bookStats .bargraph .year {
+  width: 100%;
+  white-space: nowrap;
+  background-color: var(--primary-color);
+  border-radius: 4px 4px 0 0;
+}
+
+.bookStats .bargraph .label {
+  margin-top: 0.5rem;
+  width: 18px;
+  line-height: 22px;
+  white-space: nowrap;
+  align-self: flex-end;
+  writing-mode: vertical-lr;
+  text-align: start;
+  transform: scale(-1, -1);
+  font-size: 0.65rem;
+  color: var(--dark-grey);
+  height: 50px;
+  text-align: right;
+}
+
+.bookStats .bargraph-books .year {
+  height: calc(var(--books) * 2px);
+  background-color: rgb(calc(233 - var(--books)) calc(162 - var(--books)) calc(10 - var(--books)));
+}
+
+.bookStats .bargraph-pages .year {
+  height: calc(var(--pages) * 0.008px);
+  background-color: rgb(calc(233 - (var(--pages) * 0.003)) calc(162 - (var(--pages) * 0.003)) calc(10 - (var(--pages) * 0.003)));
+}
+
+@media (min-width: 900px) {
+  .bookStats {
+    grid-template-columns: repeat(2, auto);
+  }
+  .bookStats > div {
+    justify-self: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bookStats {
+    grid-template-columns: repeat(3, auto);
+  }
+  .bookStats > div {
+    justify-self: flex-start;
+    j
+  }
+}
+

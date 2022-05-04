@@ -1,0 +1,40 @@
+{% assign books = book_object.books | reverse %}
+{% assign mostPages = books | max: "pageCount" %}
+{% assign mostBooks = books | max: "bookCount" %}
+<div class="bookStats">
+  <div>
+    <h4>Books by Year</h4>
+    <ul class="bargraph bargraph-books">
+      {% for year in books %}
+      <li>
+        <div class="year-container" data-text="{{ year.bookCount | number_with_delimiter }}">
+          <div class="year {{ year.year }}" style="--books: {{ year.bookCount }};"></div>
+        </div>
+        <div class="label">{{ year.year }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h4>Pages by Year</h4>
+    <ul class="bargraph bargraph-pages">
+      {% for year in books %}
+      <li>
+        <div class="year-container" data-text="{{ year.pageCount | number_with_delimiter }}">
+          <div class="year {{ year.year }}" style="--pages: {{ year.pageCount }};"></div>
+          </div>
+        <div class="label">{{ year.year }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="list">
+    <h4>Stats</h4>
+    <ul>
+      <li><strong>All Books</strong>{{ book_object.finishedBooks | number_with_delimiter }} books</li>
+      <li><strong>All Pages</strong>{{ book_object.finishedPages | number_with_delimiter }} pages</li>
+      <li><strong>Most Books</strong>{{ mostBooks.bookCount | number_with_delimiter }} books ({{ mostBooks.year }})</li>
+      <li><strong>Most Pages</strong>{{ mostPages.pageCount | number_with_delimiter }} pages ({{ mostPages.year }})</li>
+    </ul>
+  </div>
+</div>

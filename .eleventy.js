@@ -31,6 +31,20 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addLiquidFilter("reverse", (collection) => {
+    const arr = [...collection];
+    return arr.reverse();
+  })
+
+  eleventyConfig.addLiquidFilter("number_with_delimiter", (num) => {
+    return Number(num).toLocaleString();
+  });
+
+  eleventyConfig.addLiquidFilter("max", (collection, prop) => {
+    const arr = [...collection].sort((a, b) => a[prop] > b[prop] ? 1 : -1);
+    return arr.reverse()[0];
+  })
+
   // return books by year
   eleventyConfig.addFilter("getBooksByYear", function (books) {
     // get finished books
@@ -60,7 +74,15 @@ module.exports = function (eleventyConfig) {
         pageCount: books.reduce((acc, cur) => acc + cur.pages, 0)
       })
     )
-    return bookObject;
+
+
+    return {
+      books: bookObject,
+      finishedBooks: books.filter((book) => book.dateFinish).length,
+      finishedPages: books
+        .filter((book) => book.dateFinish)
+        .reduce((acc, cur) => acc + cur.pages, 0),
+    };
   })
 
   return {
