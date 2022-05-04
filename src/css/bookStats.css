@@ -76,31 +76,31 @@
 
 .bookStats .bargraph .year-container:before {
   content: attr(data-text); /* here's the magic */
-  position:absolute;
+  position: absolute;
   z-index: 0;
-  top:0;
+  top: -4px;
   left: -1px;
-  min-width:16px;
-  padding:4px;
+  min-width: 16px;
+  padding: 4px;
   font-size: 0.65rem;
-  border-radius:4px;
-  background:var(--dark-grey);
+  border-radius: 4px;
+  background: var(--dark-grey);
   color: var(--white);
   text-align: center;
   align-items: center;
   align-content: center;
   justify-content: center;
-  display:none;
+  display: none;
 }
 
 .bookStats .bargraph .year-container:after {
   content: "";
-  position:absolute;
+  position: absolute;
   left: calc(50% - 1px);
-  top:18px;
+  top: 18px;
   bottom: 0;
-  border-right:1px solid var(--grey);
-  display:none;
+  border-right: 1px solid var(--grey);
+  display: none;
 }
 
 .bookStats .bargraph .year-container:hover:before {
