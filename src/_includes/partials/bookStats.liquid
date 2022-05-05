@@ -1,9 +1,14 @@
 {% assign books = book_object.books | reverse %}
 {% assign mostPages = books | max: "pageCount" %}
 {% assign mostBooks = books | max: "bookCount" %}
+<label class="toggle bookStats-toggle" for="toggle">
+  <input type="checkbox" name="toggle" id="toggle">
+  <span class="slider"></span>
+  <span class="icon">{{ "/src/img/icons/chart-simple-solid.svg" | svgContents: "icon" | safe }}</span>
+</label>
 <div class="bookStats">
   <div>
-    <h4>Books by Year</h4>
+    <h4>Books by Years</h4>
     <ul class="bargraph bargraph-books">
       {% for year in books %}
       <li>
@@ -38,3 +43,15 @@
     </ul>
   </div>
 </div>
+
+<script>
+  const toggle = document.getElementById('toggle');
+  toggle.addEventListener("change", function (e) {
+    const stats = document.getElementsByClassName("bookStats")[0];
+    if (toggle.checked) {
+      stats.classList.add("active");
+    } else {
+      stats.classList.remove("active");
+    }
+  })
+</script>

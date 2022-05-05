@@ -4,6 +4,22 @@
   margin-bottom: 2rem;
   align-items: flex-start;
   gap: 1rem;
+  position: relative;
+  /* max-height: 0; */
+  height: 0;
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  clear: both;
+}
+
+.bookStats-toggle {
+  float: right;
+}
+
+.bookStats.active {
+  height: 185px;
+  /* max-height: 200px; */
+  overflow-y: scroll;
 }
 
 .bookStats h4 {
@@ -19,9 +35,13 @@
 .bookStats > div {
   justify-self: center;
   display: flex;
-  max-width: 400px;
+  max-width: 420px;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.bookStats .bookStats-toggle {
+  grid-column: span 3;
 }
 
 .bookStats .list {
@@ -70,7 +90,7 @@
   display: flex;
   align-items: flex-end;
   padding: 0 2px;
-  width: 18px;
+  width: 14px;
   position: relative;
 }
 
@@ -97,7 +117,7 @@
   content: "";
   position: absolute;
   left: calc(50% - 1px);
-  top: 18px;
+  top: 20px;
   bottom: 0;
   border-right: 1px solid var(--grey);
   display: none;
@@ -153,6 +173,10 @@
   .bookStats > div {
     justify-self: flex-start;
   }
+
+  .bookStats .bargraph .year-container {
+    width: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -161,7 +185,6 @@
   }
   .bookStats > div {
     justify-self: flex-start;
-    j
   }
 }
 
