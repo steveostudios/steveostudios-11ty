@@ -6,7 +6,7 @@
     "pages": 205,
     "url": "https://www.amazon.com/Crazy-Love-Overwhelmed-Relentless-God/dp/1434768511/ref=sr_1_3?keywords=crazy+love+by+francis+chan&qid=1649882430&sprefix=crazy+love%2Caps%2C85&sr=8-3",
     "image": "CrazyLove.jpg",
-    "progress": 65,
+    "progress": 82,
     "dateStart": "2022-04-19"
   },
   {
@@ -23,8 +23,8 @@
     "pages": 195,
     "url": "https://abookapart.com/products/responsible-javascript",
     "image": "ResponsibleJavaScript.jpg",
-    "progress": 73,
-    "dateStart": "2022-05-01"
+    "dateStart": "2022-05-01",
+    "dateFinish": "2022-05-10"
   },
   {
     "title": "Design for Safety",
