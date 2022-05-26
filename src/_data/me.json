@@ -1,7 +1,7 @@
 {
   "title": "Steveostudios",
   "name": "Steve Stone",
-  "bio": "<p>Hi. I’m Steve Stone. Father of three boys, husband of the most incredible woman in the world, and Christ-follower. I'm passionate about coffee, design, youth ministry, and making things.</p><p>I started out at <a href='https://www.centralonline.tv/'>Central Christian Church</a> in Las Vegas doing video production while in attending UNLV's film school. Then God called me out to Louisville, Kentucky to work at <a href='https://www.southeastchristian.org/home'>Southeast Christian Church</a>. My great friend Dave Harris and I started Digital Stache and created motion backgrounds and a few app-based games (Spin That Wheel, Scorekeep, Ready, Set Go). We also had a podcast for a few years called <a href='https://churchtechtalk.com'>Church Tech Talk</a>, ran a site called Stuff I Can Use (formerly Vine Resources), and put on a free conference for church tech folks called Gurus.</p><p>Now I work at <a href='https://www.downloadyouthministry.com/'>Download Youth Ministry</a> making apps that help youth workers, like <a href='https://sidekick.tv/'>Sidekick</a>.</p>",
+  "bio": "<p>Hi. I’m Steve Stone. Father of three boys, husband of the most incredible woman in the world, and Christ-follower. I'm passionate about coffee, design, youth ministry, and making things.</p><p>I started out at <a href='https://www.centralonline.tv/'>Central Christian Church</a> in Las Vegas doing video production while in attending UNLV's film school. Then God called me out to Louisville, Kentucky to work at <a href='https://www.southeastchristian.org/home'>Southeast Christian Church</a>. My great friend Dave Harris and I started Digital Stache and created motion backgrounds and a few app-based games (Spin That Wheel, Scorekeep, Ready, Set Go). We also had a podcast for a few years called <a href='https://churchtechtalk.com'>Church Tech Talk</a>, ran a site called Stuff I Can Use (formerly Vine Resources), and put on a free conference for church tech folks called Gurus.</p><p>I then worked at <a href='https://www.downloadyouthministry.com/'>Download Youth Ministry</a> making apps that help youth workers, like <a href='https://sidekick.tv/'>Sidekick</a>.</p><p>I just started working at <a href='https://playlister.app'>Playlister</a> where I hope to contribute to the incredible tools they make to help churches.</p>",
   "location": "Louisville, KY",
   "subtitle": "Developer. Designer. Youth Worker. Nerd.",
   "contact": [{
@@ -25,9 +25,16 @@
     }
   ],
   "work": [{
+      "company": "Playlister",
+      "title": "Senior Software Engineer",
+      "dates": "05/2022 - Present",
+      "location": "Remote, Louisville, KY",
+      "description": []
+    },
+    {
       "company": "Download Youth Ministry",
       "title": "Director of Technology",
-      "dates": "08/2015 - Present",
+      "dates": "08/2015 - 05/2022",
       "location": "Remote, Louisville, KY",
       "description": [
         "Designed and developed a fully-customizable presentation/games app called <a href=\"https://sidekick.tv\">Sidekick</a> to help youth workers have fun in their services.",
