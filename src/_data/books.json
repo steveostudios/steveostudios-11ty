@@ -6,7 +6,7 @@
     "pages": 384,
     "url": "https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs-dp-1250183863/dp/1250183863/ref=dp_ob_image_bk",
     "image": "ExtremeOwnership.jpg",
-    "progress": 40,
+    "progress": 65,
     "dateStart": "2022-05-25"
   },
   {
@@ -50,7 +50,7 @@
     "url": "https://abookapart.com/products/voice-content-and-usability",
     "image": "VoiceContentAndUsability.jpg",
     "dateStart": "2022-05-20",
-    "progress": 47
+    "dateFinish": "2022-06-01"
   },
   {
     "author": "Sandi Metz",
