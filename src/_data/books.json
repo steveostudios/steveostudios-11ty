@@ -16,7 +16,7 @@
     "pages": 205,
     "url": "https://www.amazon.com/Crazy-Love-Overwhelmed-Relentless-God/dp/1434768511/ref=sr_1_3?keywords=crazy+love+by+francis+chan&qid=1649882430&sprefix=crazy+love%2Caps%2C85&sr=8-3",
     "image": "CrazyLove.jpg",
-    "progress": 110,
+    "progress": 127,
     "dateStart": "2022-04-19"
   },
   {
@@ -55,12 +55,11 @@
   {
     "author": "Sandi Metz",
     "pages": 255,
-    "dateFinish": null,
+    "dateFinish": "2022-05-15",
     "url": "https://www.amazon.com/Practical-Object-Oriented-Design-Agile-Primer/dp/0134456475/ref=sr_1_1?keywords=practical+object+oriented+design+in+ruby&qid=1646338335&sprefix=practical+o%2Caps%2C127&sr=8-1",
     "title": "Practical Object-Oriented Design",
     "subtitle": "An Agile Primer Using Ruby",
     "image": "PracticalObjectOrientedDesign.jpg",
-    "progress": 193,
     "dateStart": "2022-03-02"
   },
   {
