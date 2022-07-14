@@ -7,7 +7,7 @@
     "url": "https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012",
     "image": "CreativityInc.jpg",
     "dateStart": "2022-07-13",
-    "progress": 9
+    "progress": 20
   }, 
   {
     "title": "Extreme Ownership",
@@ -165,11 +165,10 @@
     "author": "Dallas Willard",
     "pages": 428,
     "subtitle": "Discovering Our Hidden Life in God",
-    "dateFinish": null,
     "title": "The Divine Conspiracy",
     "image": "TheDivineConspiracy.jpg",
-    "progress": 390,
-    "dateStart": "2021-09-13"
+    "dateStart": "2021-09-13",
+    "dateFinish": "2022-07-14"
   },
   {
     "author": "Steven D. Levitt & Stephen J. Dubner",
