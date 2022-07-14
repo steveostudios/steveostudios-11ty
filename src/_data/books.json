@@ -1,5 +1,15 @@
 [
   {
+    "title": "Creativity, Inc.",
+    "subtitle": "Overcoming the Unseen Forces That Stand in the Way of True Inspiration",
+    "author": "Ed Catmull",
+    "pages": 368,
+    "url": "https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012",
+    "image": "CreativityInc.jpg",
+    "dateStart": "2022-07-13",
+    "progress": 9
+  }, 
+  {
     "title": "Extreme Ownership",
     "subtitle": "How U.S. Navy Seals LEAD and WIN",
     "author": "Jocko Willink and Leif Babin",
@@ -158,7 +168,7 @@
     "dateFinish": null,
     "title": "The Divine Conspiracy",
     "image": "TheDivineConspiracy.jpg",
-    "progress": 353,
+    "progress": 390,
     "dateStart": "2021-09-13"
   },
   {
