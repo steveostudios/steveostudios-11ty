@@ -7,7 +7,7 @@
     "url": "https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012",
     "image": "CreativityInc.jpg",
     "dateStart": "2022-07-13",
-    "progress": 85
+    "progress": 145
   }, 
   {
     "title": "Extreme Ownership",
@@ -51,7 +51,9 @@
     "author": "Eva PenzeyMoog",
     "pages": 143,
     "url": "https://abookapart.com/products/design-for-safety",
-    "image": "DesignForSafety.jpg"
+    "image": "DesignForSafety.jpg",
+    "dateStart": "2022-07-18",
+    "progress": 4
   },
   {
     "title": "Voice Content and Usability",
