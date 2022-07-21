@@ -1,5 +1,15 @@
 [
   {
+    "title": "The Obstacle Is the Way",
+    "subtitle": "The Timeless Art of Turning Trials into Triumph",
+    "author": "Ryan Holiday",
+    "pages": 224,
+    "url": "https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358",
+    "image": "TheObstacleIsTheWay.jpg",
+    "dateStart": "2022-07-21",
+    "progress": 6
+  }, 
+  {
     "title": "Creativity, Inc.",
     "subtitle": "Overcoming the Unseen Forces That Stand in the Way of True Inspiration",
     "author": "Ed Catmull",
@@ -7,7 +17,7 @@
     "url": "https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012",
     "image": "CreativityInc.jpg",
     "dateStart": "2022-07-13",
-    "progress": 188
+    "progress": 242
   }, 
   {
     "title": "Extreme Ownership",
@@ -53,7 +63,7 @@
     "url": "https://abookapart.com/products/design-for-safety",
     "image": "DesignForSafety.jpg",
     "dateStart": "2022-07-18",
-    "progress": 88
+    "progress": 99
   },
   {
     "title": "Voice Content and Usability",
