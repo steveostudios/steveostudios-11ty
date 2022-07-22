@@ -7,7 +7,7 @@
     "url": "https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358",
     "image": "TheObstacleIsTheWay.jpg",
     "dateStart": "2022-07-21",
-    "progress": 6
+    "progress": 26
   }, 
   {
     "title": "Creativity, Inc.",
@@ -17,7 +17,7 @@
     "url": "https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012",
     "image": "CreativityInc.jpg",
     "dateStart": "2022-07-13",
-    "progress": 242
+    "progress": 274
   }, 
   {
     "title": "Extreme Ownership",
@@ -63,7 +63,7 @@
     "url": "https://abookapart.com/products/design-for-safety",
     "image": "DesignForSafety.jpg",
     "dateStart": "2022-07-18",
-    "progress": 99
+    "dateFinish": "2022-07-22"
   },
   {
     "title": "Voice Content and Usability",
