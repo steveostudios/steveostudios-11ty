@@ -3,11 +3,11 @@
     "title": "The Obstacle Is the Way",
     "subtitle": "The Timeless Art of Turning Trials into Triumph",
     "author": "Ryan Holiday",
-    "pages": 224,
+    "pages": 202,
     "url": "https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358",
     "image": "TheObstacleIsTheWay.jpg",
     "dateStart": "2022-07-21",
-    "progress": 64
+    "progress": 92
   }, 
   {
     "title": "Creativity, Inc.",
@@ -47,7 +47,7 @@
     "url": "https://www.amazon.com/Hero-Mission-Path-Meaningful-Life/dp/1400226945/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1649879682&sr=8-1",
     "image": "HeroOnAMission.jpg",
     "dateStart": "2022-07-23",
-    "progress": 30
+    "progress": 48
   },
   {
     "title": "Responsible JavaScript",
