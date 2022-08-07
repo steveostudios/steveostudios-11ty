@@ -1,5 +1,21 @@
 [
   {
+    "title": "You Should Write a Book",
+    "author": "Katel LeDu and Maria Marquis",
+    "pages": 146,
+    "url": "https://abookapart.com/products/you-should-write-a-book",
+    "image": "YouShouldWriteABook.jpg",
+    "dateStart": "2022-08-05",
+    "progress": 65
+  },
+  {
+    "title": "Leading Content Design",
+    "author": "Rachel McConnell",
+    "pages": 139,
+    "url": "https://abookapart.com/products/leading-content-design",
+    "image": "LeadingContentDesign.jpg"
+  },
+  {
     "title": "Finding God's Life for My Will",
     "subtitle": "His Presence Is the Plan",
     "author": "Mike Donehey",
@@ -7,7 +23,7 @@
     "url": "https://www.amazon.com/Finding-Gods-Life-My-Will/dp/0525652817",
     "image": "FindingGodsLifeForMyWill.jpg",
     "dateStart": "2022-07-30",
-    "progress": 178
+    "dateFinish": "2022-08-05"
   }, 
   {
     "title": "The Obstacle Is the Way",
