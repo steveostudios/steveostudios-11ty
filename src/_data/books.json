@@ -15,7 +15,7 @@
     "url": "https://www.amazon.com/dp/0063046067?psc=1&ref=ppx_yo2ov_dt_b_product_details",
     "image": "Build.jpg",
     "dateStart": "2022-08-16",
-    "progress": 5
+    "progress": 42
   },
   {
     "title": "Rest and War",
@@ -25,7 +25,7 @@
     "url": "https://www.amazon.com/dp/0785248315?psc=1&ref=ppx_yo2ov_dt_b_product_details",
     "image": "RestAndWar.jpg",
     "dateStart": "2022-08-11",
-    "progress": 190
+    "dateFinish": "2022-08-17" 
   },
   {
     "title": "Leading Content Design",
