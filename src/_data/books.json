@@ -7,6 +7,25 @@
     "url": "https://www.amazon.com/One-Time-Unexpected-Wants-Change/dp/0801094917",
     "image": "OneAtATime.jpg",
     "dateStart": null
+  }, 
+  {
+    "title": "The End of Me",
+    "author": "Kyle Idleman",
+    "subtitle": "Where Real Life in the Upside-Down Ways of Jesus Begins",
+    "pages": 224,
+    "url": "https://www.amazon.com/End-Me-Where-Upside-Down-Begins/dp/1434707075",
+    "image": "TheEndOfMe.jpg",
+    "dateStart": null
+  },  
+  {
+    "title": "The Man in the High Castle",
+    "author": "Philip K. Dick",
+    "subtitle": "The Unexpected Way God Wants to Use You to Change the World",
+    "pages": 288,
+    "url": "https://www.amazon.com/Man-High-Castle-Philip-Dick/dp/0547572484",
+    "image": "TheManInTheHighCastle.jpg",
+    "dateStart": "2022-08-20",
+    "progress": 130
   },
   {
     "title": "Build",
@@ -15,7 +34,7 @@
     "url": "https://www.amazon.com/dp/0063046067?psc=1&ref=ppx_yo2ov_dt_b_product_details",
     "image": "Build.jpg",
     "dateStart": "2022-08-16",
-    "progress": 180
+    "progress": 214
   },
   {
     "title": "Rest and War",
