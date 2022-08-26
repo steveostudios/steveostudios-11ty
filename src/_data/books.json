@@ -1,5 +1,13 @@
 [
   {
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "pages": 565,
+    "url": "https://www.amazon.com/dp/0553380958",
+    "image": "SnowCrash.jpg",
+    "dateStart": null
+  }, 
+  {
     "title": "One at a Time",
     "author": "Kyle Idleman",
     "subtitle": "The Unexpected Way God Wants to Use You to Change the World",
@@ -15,7 +23,8 @@
     "pages": 224,
     "url": "https://www.amazon.com/End-Me-Where-Upside-Down-Begins/dp/1434707075",
     "image": "TheEndOfMe.jpg",
-    "dateStart": null
+    "dateStart": "2022-08-26",
+    "progress": 20
   },  
   {
     "title": "The Man in the High Castle",
@@ -25,7 +34,7 @@
     "url": "https://www.amazon.com/Man-High-Castle-Philip-Dick/dp/0547572484",
     "image": "TheManInTheHighCastle.jpg",
     "dateStart": "2022-08-20",
-    "progress": 176
+    "dateFinish": "2022-0825"
   },
   {
     "title": "Build",
@@ -34,7 +43,7 @@
     "url": "https://www.amazon.com/dp/0063046067?psc=1&ref=ppx_yo2ov_dt_b_product_details",
     "image": "Build.jpg",
     "dateStart": "2022-08-16",
-    "progress": 291
+    "progress": 322
   },
   {
     "title": "Rest and War",
