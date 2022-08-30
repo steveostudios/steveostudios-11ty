@@ -23,6 +23,14 @@ title: Books
               {% else %}
                 <img src="/img/books/{{ book.image }}" alt="{{ book.title }}" />
               {% endif %}
+              {% if book.stars %}
+                <div class="stars">
+                {% assign book.stars = book.stars | plus: 0 %}
+                {% for i in (1..book.stars) %}
+                {{ "/src/img/icons/star-solid.svg" | svgContents: "icon" | safe }}
+                {% endfor %}
+                </div>
+              {% endif %}
             </div>
             {% if book.progress %}
               <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>

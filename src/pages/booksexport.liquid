@@ -1,0 +1,29 @@
+---
+title: Books
+---
+<div class="page books">
+  <table>
+    <thead>
+      <th>ISBN</th>
+      <th>Title</th>
+      <th>Date Start</th>
+      <th>Date Finish</th>
+      <th>Stars</th>
+      <th>Review</th>
+      <th>Post</th>
+    </thead>
+    <tbody>
+    {% for book in books %}
+      <tr>
+        <td>{{book.isbn}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.dateStart}}</td>
+        <td>{{book.dateFinish}}</td>
+        <td>{{book.stars}}</td>   
+        <td>{% if book.review %}√{% endif %}</td>     
+        <td>{% if book.post %}√{% endif %}</td>     
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
