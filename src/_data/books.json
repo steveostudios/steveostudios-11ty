@@ -2073,7 +2073,8 @@
     "dateFinish": "2008-05-02",
     "title": "Your First Two Years in Youth Ministry",
     "image": "YourFirstTwoYearsInYM.jpg",
-    "dateStart": "2008-05-02"
+    "dateStart": "2008-05-02",
+    "stars": 5
   },
   {
     "author": "Doug Fields",
@@ -2082,7 +2083,8 @@
     "dateFinish": "2011-11-30",
     "title": "Refuel",
     "image": "Refuel.jpg",
-    "dateStart": "2011-11-30"
+    "dateStart": "2011-11-30",
+    "stars": 3
   },
   {
     "author": "Jud Wilhite",
@@ -2090,7 +2092,8 @@
     "dateStart": "2002-06-02",
     "pages": 160,
     "image": "FaithThatGoesTheDistance.jpg",
-    "dateFinish": "2002-06-02"
+    "dateFinish": "2002-06-02",
+    "stars": 3
   },
   {
     "author": "Jud Wilhite",
@@ -2098,7 +2101,8 @@
     "dateStart": "2003-07-02",
     "pages": 144,
     "image": "LoveThatGoesTheDistance.jpg",
-    "dateFinish": "2003-07-02"
+    "dateFinish": "2003-07-02",
+    "stars": 3
   },
   {
     "author": "Jud Wilhite",
@@ -2106,7 +2110,8 @@
     "dateStart": "2007-03-07",
     "pages": 224,
     "image": "Stripped.jpg",
-    "dateFinish": "2007-03-07"
+    "dateFinish": "2007-03-07",
+    "stars": 3
   },
   {
     "author": "Rob Bell",
@@ -2114,7 +2119,8 @@
     "dateStart": "2009-03-07",
     "pages": 208,
     "image": "SexGod.jpg",
-    "dateFinish": "2009-03-07"
+    "dateFinish": "2009-03-07",
+    "stars": 4
   },
   {
     "author": "John Ortberg",
@@ -2122,7 +2128,8 @@
     "dateStart": "2004-01-02",
     "pages": 212,
     "image": "IfYouWantToWalkOnWater.jpg",
-    "dateFinish": "2004-01-02"
+    "dateFinish": "2004-01-02",
+    "stars": 2
   },
   {
     "author": "Lee Strobel",
@@ -2130,7 +2137,8 @@
     "dateStart": "2003-08-08",
     "pages": 336,
     "image": "TheCaseForChrist.jpg",
-    "dateFinish": "2003-08-08"
+    "dateFinish": "2003-08-08",
+    "stars": 5
   },
   {
     "author": "Daniel H. Pink",
@@ -2139,7 +2147,9 @@
     "dateFinish": "2012-04-03",
     "title": "Drive",
     "image": "Drive.jpg",
-    "dateStart": "2012-04-03"
+    "dateStart": "2012-04-03",
+    "stars": 3,
+    "isbn": "9781101524381"
   },
   {
     "author": "C.S. Lewis",
@@ -2156,7 +2166,9 @@
     "dateFinish": "2011-08-08",
     "title": "A Million Miles in a Thousand Years",
     "image": "AMillionMilesInAThousandYears.jpg",
-    "dateStart": "2011-08-08"
+    "dateStart": "2011-08-08",
+    "stars": 5,
+    "isbn": "9781400202980"
   },
   {
     "author": "Rick McKinley",
@@ -2165,7 +2177,9 @@
     "dateFinish": "2006-08-08",
     "title": "This Beautiful Mess",
     "image": "ThisBeautifulMess.jpg",
-    "dateStart": "2006-08-08"
+    "dateStart": "2006-08-08",
+    "stars": 4,
+    "isbn": "9781601425690"
   },
   {
     "author": "N.T. Wright",
@@ -2174,7 +2188,9 @@
     "dateFinish": "2010-01-14",
     "title": "Simply Christian",
     "image": "SimplyChristian.jpg",
-    "dateStart": "2010-01-14"
+    "dateStart": "2010-01-14",
+    "stars": 4,
+    "isbn": "9780060872700"
   },
   {
     "author": "Jim Cymbala, Dean Merrill",
@@ -2201,7 +2217,9 @@
     "dateFinish": "2009-02-02",
     "title": "Fresh Wind, Fresh Fire",
     "image": "FreshWindFreshFire.jpg",
-    "dateStart": "2009-02-02"
+    "dateStart": "2009-02-02",
+    "stars": 4,
+    "isbn": "9780310350606"
   },
   {
     "author": "Bob Russell",
@@ -2210,7 +2228,9 @@
     "dateFinish": "2010-10-10",
     "title": "When God Builds a Church",
     "image": "WhenGodBuildsAChurch.jpg",
-    "dateStart": "2010-10-10"
+    "dateStart": "2010-10-10",
+    "stars": 4,
+    "isbn": "9781501125256"
   },
   {
     "author": "Kenneth D. Boa, Robert M. Jr. Bowman",
@@ -2219,7 +2239,9 @@
     "dateFinish": "2005-05-05",
     "title": "20 Compelling Evidences That God Exists",
     "image": "20CompellingEvidencesThatGodExists.jpg",
-    "dateStart": "2005-05-05"
+    "dateStart": "2005-05-05",
+    "stars": 3,
+    "isbn": "9781589193062"
   },
   {
     "author": "C.S. Lewis",
@@ -2227,7 +2249,9 @@
     "dateStart": "2007-03-02",
     "pages": 76,
     "image": "AGriefObserved.jpg",
-    "dateFinish": "2007-03-02"
+    "dateFinish": "2007-03-02",
+    "stars": 4,
+    "isbn": "9780060652388"
   },
   {
     "author": "C.S. Lewis",
@@ -2235,7 +2259,9 @@
     "dateStart": "2004-05-11",
     "pages": 294,
     "image": "Miracles.jpg",
-    "dateFinish": "2004-05-11"
+    "dateFinish": "2004-05-11",
+    "stars": 3,
+    "isbn": "9780060653019"
   },
   {
     "author": "Gregory A Boyd, Edward K Boyd",
@@ -2244,7 +2270,9 @@
     "dateFinish": "2008-08-30",
     "title": "Letters From a Skeptic",
     "image": "LettersFromASkeptic.jpg",
-    "dateStart": "2008-08-30"
+    "dateStart": "2008-08-30",
+    "stars": 3,
+    "isbn": "9781564762443"
   },
   {
     "author": "Rob Bell",
@@ -2254,6 +2282,7 @@
     "title": "Jesus Wants to Save Christians",
     "image": "JesusWantsToSaveChristians.jpg",
     "dateStart": "2008-12-12",
+    "stars": 4,
     "isbn": "9780310275022"
   },
   {
@@ -2263,7 +2292,9 @@
     "dateFinish": "2010-05-05",
     "title": "Eat this book",
     "image": "EatThisBook.jpg",
-    "dateStart": "2010-05-05"
+    "stars": 4,
+    "dateStart": "2010-05-05",
+    "isbn": "9780802829481"
   },
   {
     "author": "David Crowder and Mike Hogan",
@@ -2273,6 +2304,7 @@
     "title": "Everybody Wants to Go to Heaven, but Nobody Wants to Die",
     "image": "EverybodyWantsToGoToHeaven.jpg",
     "dateStart": "2008-09-12",
+    "stars": 4,
     "isbn": "9780977748006"
   }
 ]
