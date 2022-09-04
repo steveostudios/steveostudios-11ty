@@ -6,7 +6,7 @@
     "url": "https://www.amazon.com/dp/0553380958",
     "image": "SnowCrash.jpg",
     "dateStart": "2022-08-27",
-    "progress": 65,
+    "progress": 190,
     "isbn": "9783596705597"
   }, 
   {
@@ -74,7 +74,8 @@
     "image": "LeadingContentDesign.jpg",
     "dateStart": "2022-08-09",
     "dateFinish": "2022-08-15",
-    "isbn": "9781952616174"
+    "isbn": "9781952616174",
+    "stars": 3
   },
   {
     "title": "You Should Write a Book",
@@ -156,7 +157,8 @@
     "image": "HeroOnAMission.jpg",
     "dateStart": "2022-07-23",
     "dateFinish": "2022-08-09",
-    "isbn": "9781400226948"
+    "isbn": "9781400226948",
+    "stars": 4
   },
   {
     "title": "Responsible JavaScript",
@@ -166,7 +168,8 @@
     "image": "ResponsibleJavaScript.jpg",
     "dateStart": "2022-05-01",
     "dateFinish": "2022-05-10",
-    "isbn": "9781952616112"
+    "isbn": "9781952616112",
+    "stars": 4
   },
   {
     "title": "Design for Safety",
@@ -176,7 +179,8 @@
     "image": "DesignForSafety.jpg",
     "dateStart": "2022-07-18",
     "dateFinish": "2022-07-22",
-    "isbn": "9781952616099"
+    "isbn": "9781952616099",
+    "stars": 3
   },
   {
     "title": "Voice Content and Usability",
@@ -186,7 +190,8 @@
     "image": "VoiceContentAndUsability.jpg",
     "dateStart": "2022-05-20",
     "dateFinish": "2022-06-01",
-    "isbn": "9781952616013"
+    "isbn": "9781952616013",
+    "stars": 2
   },
   {
     "author": "Sandi Metz",
@@ -197,7 +202,8 @@
     "subtitle": "An Agile Primer Using Ruby",
     "image": "PracticalObjectOrientedDesign.jpg",
     "dateStart": "2022-03-02",
-    "isbn": "9780134456478"
+    "isbn": "9780134456478",
+    "stars": 3
   },
   {
     "author": "Bob Goff",
@@ -208,7 +214,8 @@
     "image": "LoveDoes.jpg",
     "dateStart": "2022-03-01",
     "url": "https://www.amazon.com/Love-Does-Discover-Secretly-Incredible-ebook/dp/B0078FA8HU/ref=sr_1_1?crid=31A3QQN8S8U5&keywords=love+does&qid=1646338113&sprefix=love+d%2Caps%2C228&sr=8-1",
-    "isbn": "9781400203758"
+    "isbn": "9781400203758",
+    "stars": 4
   },
   {
     "author": "Rebekah Baggs and Chris Corak",
@@ -220,7 +227,8 @@
     "dateStart": "2022-02-21",
     "stars": 4,
     "post": "2022-03-08-seo-for-everyone",
-    "isbn": "9781952616075"
+    "isbn": "9781952616075",
+    "stars": 4
   },
   {
     "author": "Matt Parker",
@@ -256,7 +264,8 @@
     "title": "The Goal",
     "image": "TheGoal.jpg",
     "dateStart": "2021-10-30",
-    "isbn": "9780884271956"
+    "isbn": "9780884271956",
+    "stars": 3
   },
   {
     "author": "Gene Kim, Kevin Behr, and George Spafford",
@@ -329,7 +338,8 @@
     "image": "CultivatingContentDesign.jpg",
     "url": "https://abookapart.com/products/cultivating-content-design",
     "post": "2021-10-25-cultivating-content-design",
-    "isbn": "9781952616068"
+    "isbn": "9781952616068",
+    "stars": 3
   },
   {
     "author": "Krystal Higgins",
@@ -341,7 +351,8 @@
     "url": "https://abookapart.com/products/better-onboarding",
     "post": "2021-09-20-better-onboarding",
     "stars": 4,
-    "isbn": "9781937557812"
+    "isbn": "9781937557812",
+    "stars": 4
   },
   {
     "author": "David A. Vise",
@@ -353,7 +364,8 @@
     "image": "TheGoogleStory.jpg",
     "dateStart": "2017-06-01",
     "post": "2021-09-08-the-google-story",
-    "isbn": "9780553383669"
+    "isbn": "9780553383669",
+    "stars": 3
   },
   {
     "author": "Dan Olsen",
@@ -364,7 +376,8 @@
     "title": "The Lean Product Playbook",
     "image": "TheLeanProductPlaybook.jpg",
     "dateStart": "2021-06-29",
-    "isbn": "9781118960875"
+    "isbn": "9781118960875",
+    "stars": 4
   },
   {
     "author": "Jason Garber",
@@ -374,7 +387,8 @@
     "title": "Practical Pair Programming",
     "image": "PracticalPairProgramming.jpg",
     "dateStart": "2021-07-13",
-    "isbn": "9781937557959"
+    "isbn": "9781937557959",
+    "stars": 4
   },
   {
     "author": "Donna Spencer",
@@ -385,7 +399,8 @@
     "image": "PresentingDesignWork.jpg",
     "url": "https://abookapart.com/products/presenting-design-work",
     "post": "2021-08-16-presenting-design-work",
-    "isbn": "9781937557805"
+    "isbn": "9781937557805",
+    "stars": 3
   },
   {
     "author": "Kim Scott",
@@ -395,7 +410,8 @@
     "title": "Radical Candor",
     "image": "RadicalCandor.jpg",
     "dateStart": "2021-06-15",
-    "isbn": "9781509845385"
+    "isbn": "9781509845385",
+    "stars": 5
   },
   {
     "author": "Satya Nadella",
@@ -407,7 +423,8 @@
     "url": "https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=1HU6BOHPS46Z2&dchild=1&keywords=hit+refresh&qid=1623729842&sprefix=hit+ref%2Caps%2C174&sr=8-1",
     "post": "2021-08-09-hit-refresh",
     "stars": 4,
-    "isbn": "9780062652508"
+    "isbn": "9780062652508",
+    "stars": 4
   },
   {
     "author": "Paul Gilster",
@@ -419,7 +436,8 @@
     "image": "TheMosaicNavigator.jpg",
     "url": "https://www.amazon.com/Mosaic-Navigator-Essential-Internet-Interface/dp/0471113360",
     "post": "2021-08-23-the-mosaic-navigator",
-    "isbn": "9780471113362"
+    "isbn": "9780471113362",
+    "stars": 3
   },
   {
     "author": "Jamin Googin and Kyle Strobel",
@@ -429,7 +447,8 @@
     "title": "The Way of the Dragon or the Way of the Lamb",
     "image": "TheWayOfTheDragonOrTheWayOfTheLamb.jpg",
     "dateStart": "2021-06-14",
-    "isbn": "9780718022358"
+    "isbn": "9780718022358",
+    "stars": 5
   },
   {
     "author": "Senongo Akpem",
@@ -439,7 +458,8 @@
     "title": "Cross-Cultural Design",
     "image": "CrossCulturalDesign.jpg",
     "url": "https://abookapart.com/products/cross-cultural-design",
-    "isbn": "9781937557867"
+    "isbn": "9781937557867",
+    "stars": 3
   },
   {
     "author": "David Dylan Thomas",
@@ -470,7 +490,8 @@
     "title": "Empowered",
     "image": "Empowered.jpg",
     "dateStart": "2021-01-05",
-    "isbn": "9781119691297"
+    "isbn": "9781119691297",
+    "stars": 4
   },
   {
     "author": "John Piper",
@@ -481,7 +502,8 @@
     "title": "Brothers, We Are Not Professionals",
     "image": "BrothersWeAreNotProfessionals.jpg",
     "url": "https://www.amazon.com/Brothers-We-Are-Not-Professionals/dp/1433678829/ref=sr_1_1?gclid=Cj0KCQjw5rbsBRCFARIsAGEYRwfPvDmU8RZQ6vd54DMZQQljqkls7SrGDyRxY4tquX6YKL7ogsDbPIAaAsMsEALw_wcB&hvadid=241658431181&hvdev=c&hvlocphy=9052432&hvnetw=g&hvpos=1t1&hvqmt=e&hvrand=4861461604014654878&hvtargid=kwd-131506102&hydadcr=8294_10376136&keywords=brothers+we+are+not+professionals&qid=1569594051&sr=8-1",
-    "isbn": "9780805426205"
+    "isbn": "9780805426205",
+    "stars": 4
   },
   {
     "pages": 81,
@@ -490,7 +512,8 @@
     "image": "TheElementsOfContentStrategy.jpg",
     "dateStart": "2021-02-18",
     "dateFinish": "2021-03-12",
-    "isbn": "9780984442553"
+    "isbn": "9780984442553",
+    "stars": 3
   },
   {
     "pages": 97,
@@ -499,7 +522,8 @@
     "image": "SASSForWebDesigners.jpg",
     "dateStart": "2021-05-08",
     "dateFinish": "2021-05-09",
-    "isbn": "9781937557126"
+    "isbn": "9781937557126",
+    "stars": 2
   },
   {
     "pages": 137,
@@ -508,7 +532,8 @@
     "image": "DesignIsAJob.jpg",
     "dateStart": "2021-04-28",
     "dateFinish": "2021-05-07",
-    "isbn": "9781937557041"
+    "isbn": "9781937557041",
+    "stars": 5
   },
   {
     "pages": 130,
@@ -517,7 +542,8 @@
     "image": "MobileFirst.jpg",
     "dateStart": "2021-04-23",
     "dateFinish": "2021-04-27",
-    "isbn": "9781937557027"
+    "isbn": "9781937557027",
+    "stars": 4
   },
   {
     "pages": 126,
@@ -584,7 +610,8 @@
     "image": "Quiet.jpg",
     "publisher": "Broadway Books",
     "url": "https://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153",
-    "isbn": "9780307352156"
+    "isbn": "9780307352156",
+    "stars": 4
   },
   {
     "author": "Mike Brown",
@@ -595,7 +622,8 @@
     "image": "HowIKilledPlutoAndWhyItHadItComing.jpg",
     "publisher": "Random House",
     "url": "https://www.amazon.com/How-Killed-Pluto-Why-Coming/dp/0385531109",
-    "isbn": "9780385531108"
+    "isbn": "9780385531108",
+    "stars": 5
   },
   {
     "author": "Clive Thompson",
@@ -606,7 +634,8 @@
     "image": "Coders.jpg",
     "publisher": "Penguin Press",
     "url": "https://www.amazon.com/Coders-Making-Tribe-Remaking-World/dp/0735220565/",
-    "isbn": "9780735220560"
+    "isbn": "9780735220560",
+    "stars": 4
   },
   {
     "author": "Mike Monteiro",
@@ -617,7 +646,8 @@
     "image": "YoureMyFavoriteClient.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/youre-my-favorite-client",
-    "isbn": "9781937557140"
+    "isbn": "9781937557140",
+    "stars": 4
   },
   {
     "author": "Geri Coady",
@@ -628,7 +658,8 @@
     "image": "ColorAccessibilityWorkflows.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/color-accessibility-workflows",
-    "isbn":"9871937557577"
+    "isbn":"9871937557577",
+    "stars": 4
   },
   {
     "author": "Rachel Andrews",
@@ -639,7 +670,8 @@
     "image": "GetReadyForCSSGridLayout.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/get-ready-for-css-grid-layout",
-    "isbn":"9781937557683"
+    "isbn":"9781937557683",
+    "stars": 3
   },
   {
     "author": "Dan Mall",
@@ -650,7 +682,8 @@
     "image": "PricingDesign.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/pricing-design",
-    "isbn":"9781937557362"
+    "isbn":"9781937557362",
+    "stars": 4
   },
   {
     "author": "Scott Kubie",
@@ -661,7 +694,8 @@
     "image": "WritingForDesigners.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/writing-for-designers",
-    "isbn":"9781937557799"
+    "isbn":"9781937557799",
+    "stars": 3
   },
   {
     "author": "Karen McGrane",
@@ -672,7 +706,8 @@
     "image": "GoingResponsive.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/going-responsive",
-    "isbn": "9781937557300"
+    "isbn": "9781937557300",
+    "stars": 4
   },
   {
     "author": "Lisa Maria Marquis",
@@ -683,7 +718,8 @@
     "image": "EverydayInformationArchitecture.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/everyday-information-architecture",
-    "isbn":"9781937557744"
+    "isbn":"9781937557744",
+    "stars": 4
   },
   {
     "author": "Karen McGrane",
@@ -694,7 +730,8 @@
     "image": "ContentStrategyForMobile.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/content-strategy-for-mobile",
-    "isbn":"9781937557089"
+    "isbn":"9781937557089",
+    "stars": 3
   },
   {
     "author": "Lara Callender Hogan",
@@ -705,7 +742,8 @@
     "image": "ResilentManagement.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/resilient-management",
-    "isbn":"9781937557829"
+    "isbn":"9781937557829",
+    "stars": 5
   },
   {
     "author": "Ethan Marcotte",
@@ -716,7 +754,8 @@
     "image": "ResponsiveDesignPatternsAndPrinciples.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/responsive-design-patterns-principlesg",
-    "isbn":"9781937557331"
+    "isbn":"9781937557331",
+    "stars": 4
   },
   {
     "author": "Douglas Stone and Sheila Heen",
@@ -740,7 +779,8 @@
     "image": "AccessibilityForEveryone.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/accessibility-for-everyone",
-    "isbn":"9781937557614"
+    "isbn":"9781937557614",
+    "stars": 4
   },
   {
     "author": "Tim Brown",
@@ -751,7 +791,8 @@
     "image": "FlexibleTypesetting.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/flexible-typesetting",
-    "isbn":"9781937557706"
+    "isbn":"9781937557706",
+    "stars": 3
   },
   {
     "author": "Lara Callender Hogan",
@@ -762,7 +803,8 @@
     "image": "DemistifyingPublicSpeaking.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/demystifying-public-speaking",
-    "isbn":"9781937557522"
+    "isbn":"9781937557522",
+    "stars": 3
   },
   {
     "author": "Peter Larson and Kristin Donnan",
@@ -773,7 +815,8 @@
     "image": "RexAppeal.jpg",
     "publisher": "Invisible Cities Press Llc",
     "url": "https://www.amazon.com/Rex-Appeal-Amazing-Dinosaur-Changed/dp/1931229384",
-    "isbn":"9791931229073"
+    "isbn":"9791931229073",
+    "stars": 5
   },
   {
     "author": "Robert C. Martin",
@@ -785,7 +828,8 @@
     "image": "CleanCode.jpg",
     "publisher": "Prentice Hall",
     "url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=as_li_ss_tl?ie=UTF8&qid=1532031940&sr=8-3&keywords=clean+code&linkCode=ll1&tag=steveostudi0c-20&linkId=3a849aca23fa18d512c11cad44ed6526",
-    "isbn": "9780132350884"
+    "isbn": "9780132350884",
+    "stars": 4
   },
   {
     "author": "Rachel Nabors",
@@ -796,7 +840,8 @@
     "image": "AnimationAtWork.png",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/animation-at-work",
-    "isbn": "9781937557591"
+    "isbn": "9781937557591",
+    "stars": 4
   },
   {
     "author": "Mat Marquis",
@@ -995,7 +1040,8 @@
     "title": "Practical Design Discovery",
     "image": "PracticalDesignDiscovery.png",
     "publisher": "A Book Apart",
-    "url": "https://abookapart.com/products/practical-design-discovery"
+    "url": "https://abookapart.com/products/practical-design-discovery",
+    "stars": 3
   },
   {
     "author": "Nicholas C. Zakas",
@@ -1040,7 +1086,8 @@
     "title": "Responsive Web Design",
     "image": "ResponsiveWebDesign.png",
     "publisher": "A Book Apart",
-    "url": "https://abookapart.com/products/responsive-web-design"
+    "url": "https://abookapart.com/products/responsive-web-design",
+    "stars": 3
   },
   {
     "author": "Steve Case",
@@ -1051,7 +1098,8 @@
     "title": "The Third Wave",
     "image": "TheThirdWave.jpg",
     "publisher": "Simon & Schuster",
-    "url": "https://www.amazon.com/gp/product/150113258X/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=steveostudi0c-20&linkId=67ea54caaf69f89104e5e71d6077da94"
+    "url": "https://www.amazon.com/gp/product/150113258X/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=steveostudi0c-20&linkId=67ea54caaf69f89104e5e71d6077da94",
+    "stars": 4
   },
   {
     "author": "Erika Hall",
@@ -1061,7 +1109,8 @@
     "title": "Just Enough Research",
     "image": "JustEnoughResearch.png",
     "publisher": "A Book Apart",
-    "url": "https://abookapart.com/products/just-enough-research"
+    "url": "https://abookapart.com/products/just-enough-research",
+    "stars": 4
   },
   {
     "author": "Aarron Walter",
@@ -1071,7 +1120,8 @@
     "title": "Designing for Emotion",
     "image": "DesigningForEmotion.png",
     "publisher": "A Book Apart",
-    "url": "https://abookapart.com/products/designing-for-emotion"
+    "url": "https://abookapart.com/products/designing-for-emotion",
+    "stars": 4
   },
   {
     "author": "Eric Meyer and Sara Wachter-Boettcher",
@@ -1081,7 +1131,8 @@
     "title": "Design for Real Life",
     "image": "DesignForRealLife.png",
     "publisher": "A Book Apart",
-    "url": "https://abookapart.com/products/design-for-real-life"
+    "url": "https://abookapart.com/products/design-for-real-life",
+    "stars": 4
   },
   {
     "author": "Mat Marquis",
@@ -1122,10 +1173,9 @@
   {
     "author": "Kyle Simpson",
     "pages": 296,
-    "subtitle": "Async & Performance",
+    "title": "You Don't Know JS: Async & Performance",
     "dateFinish": "2016-02-19",
     "dateStart": "2016-02-19",
-    "title": "You Don't Know JS",
     "image": "YouDontKnowJSAsyncAndPerformance.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Performance-ebook/dp/B00TXVCJ7O/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-6&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=704aab462580c75d1dcb02f8429155c0"
@@ -1133,10 +1183,9 @@
   {
     "author": "Kyle Simpson",
     "pages": 198,
-    "subtitle": "Types & Grammar",
     "dateFinish": "2016-02-18",
     "dateStart": "2016-02-18",
-    "title": "You Don't Know JS",
+    "title": "You Don't Know JS: Types & Grammar",
     "image": "YouDontKnowJSTypesAndGrammar.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Grammar/dp/1491904194/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-4&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=c2ff425aad937a761a3ffc888bfd69bb"
@@ -1144,10 +1193,9 @@
   {
     "author": "Kyle Simpson",
     "pages": 278,
-    "subtitle": "ES6 & Beyond",
     "dateFinish": "2016-02-20",
     "dateStart": "2016-02-20",
-    "title": "You Don't Know JS",
+    "title": "You Don't Know JS: ES6 & Beyond",
     "image": "YouDontKnowJSES6AndBeyond.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Beyond/dp/1491904240/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-5&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=456e4c3109e981dcb9fa0756da4ca3be"
@@ -1155,10 +1203,9 @@
   {
     "author": "Kyle Simpson",
     "pages": 98,
-    "subtitle": "Scope & Closures",
     "dateFinish": "2016-02-16",
     "dateStart": "2016-02-16",
-    "title": "You Don't Know JS",
+    "title": "You Don't Know JS: Scope & Closures",
     "image": "YouDontKnowJSScopeAndClosures.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Closures/dp/1449335586/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-2&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=a99c946afd2dc42e794eaa616ace0dec"
@@ -1166,10 +1213,9 @@
   {
     "author": "Kyle Simpson",
     "pages": 174,
-    "subtitle": "this & Object Prototypes",
     "dateFinish": "2016-02-17",
     "dateStart": "2016-02-17",
-    "title": "You Don't Know JS",
+    "title": "You Don't Know JS: this & Object Prototypes",
     "image": "YouDontKnowJSThisAndObjectPrototypes.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Prototypes/dp/1491904151/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-3&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=146c129765a14c99d6b84d770b51f970"
@@ -1177,10 +1223,9 @@
   {
     "author": "Kyle Simpson",
     "pages": 88,
-    "subtitle": "Up & Going",
     "dateFinish": "2016-02-15",
     "dateStart": "2016-02-15",
-    "title": "You Don't Know JS",
+    "title": "You Don't Know JS: Up & Going",
     "image": "YouDontKnowJSUpAndGoing.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-1&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=640e8b51b5da0f9863662f31be4eb666"
