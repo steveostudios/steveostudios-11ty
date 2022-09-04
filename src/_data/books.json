@@ -469,7 +469,8 @@
     "title": "Design for Cognitive Bias",
     "image": "DesignForCognitiveBias.jpg",
     "dateStart": "2021-06-21",
-    "isbn": "9781937557973"
+    "isbn": "9781937557973",
+    "stars": 4
   },
   {
     "author": "Tom Greenwood",
@@ -480,7 +481,8 @@
     "image": "SustainableWebDesign.jpg",
     "dateStart": "2021-08-17",
     "post": "2021-08-30-sustainable-web-design",
-    "isbn": "9781952616037"
+    "isbn": "9781952616037",
+    "stars": 4
   },
   {
     "author": "Marty Cagan with Chris Jones",
@@ -552,7 +554,8 @@
     "image": "ExpressiveDesignSystems.jpg",
     "dateStart": "2021-05-26",
     "dateFinish": "2021-05-26",
-    "isbn": "9781937557843"
+    "isbn": "9781937557843",
+    "stars": 4
   },
   {
     "pages": 169,
@@ -561,7 +564,8 @@
     "image": "DesigningForTouch.jpg",
     "dateStart": "2021-05-19",
     "dateFinish": "2021-05-25",
-    "isbn":"9781937557287"
+    "isbn":"9781937557287",
+    "stars": 3
   },
   {
     "pages": 188,
@@ -570,7 +574,8 @@
     "image": "ResponsibleResponsiveDesign.jpg",
     "dateStart": "2021-05-10",
     "dateFinish": "2021-05-18",
-    "isbn": "9781937557164"
+    "isbn": "9781937557164",
+    "stars": 3
   },
   {
     "pages": 370,
@@ -579,7 +584,8 @@
     "image": "SecretsOfAJavaScriptNinja.jpg",
     "dateStart": "2020-09-07",
     "dateFinish": "2021-01-20",
-    "isbn": "9781933988696"
+    "isbn": "9781933988696",
+    "stars": 4
   },
   {
     "pages": 352,
@@ -588,7 +594,8 @@
     "image": "HarmonyOfTheGospels.jpg",
     "dateStart": "2020-03-01",
     "dateFinish": "2020-10-09",
-    "isbn": "006063524X"
+    "isbn": "006063524X",
+    "stars": 5
   },
   {
     "author": "Brad Frost",
@@ -598,7 +605,8 @@
     "title": "Atomic Design",
     "image": "AtomicDesign.jpg",
     "url": "https://atomicdesign.bradfrost.com",
-    "isbn": "9780998296616"
+    "isbn": "9780998296616",
+    "stars": 4
   },
   {
     "author": "Susan Cain",
