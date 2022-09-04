@@ -1178,7 +1178,8 @@
     "dateStart": "2016-02-19",
     "image": "YouDontKnowJSAsyncAndPerformance.jpg",
     "publisher": "O'Reilly",
-    "url": "https://www.amazon.com/You-Dont-Know-JS-Performance-ebook/dp/B00TXVCJ7O/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-6&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=704aab462580c75d1dcb02f8429155c0"
+    "url": "https://www.amazon.com/You-Dont-Know-JS-Performance-ebook/dp/B00TXVCJ7O/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-6&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=704aab462580c75d1dcb02f8429155c0",
+    "stars": 5
   },
   {
     "author": "Kyle Simpson",
@@ -1188,7 +1189,8 @@
     "title": "You Don't Know JS: Types & Grammar",
     "image": "YouDontKnowJSTypesAndGrammar.jpg",
     "publisher": "O'Reilly",
-    "url": "https://www.amazon.com/You-Dont-Know-JS-Grammar/dp/1491904194/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-4&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=c2ff425aad937a761a3ffc888bfd69bb"
+    "url": "https://www.amazon.com/You-Dont-Know-JS-Grammar/dp/1491904194/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-4&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=c2ff425aad937a761a3ffc888bfd69bb",
+    "stars": 5
   },
   {
     "author": "Kyle Simpson",
@@ -1198,7 +1200,8 @@
     "title": "You Don't Know JS: ES6 & Beyond",
     "image": "YouDontKnowJSES6AndBeyond.jpg",
     "publisher": "O'Reilly",
-    "url": "https://www.amazon.com/You-Dont-Know-JS-Beyond/dp/1491904240/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-5&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=456e4c3109e981dcb9fa0756da4ca3be"
+    "url": "https://www.amazon.com/You-Dont-Know-JS-Beyond/dp/1491904240/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-5&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=456e4c3109e981dcb9fa0756da4ca3be",
+    "stars": 5
   },
   {
     "author": "Kyle Simpson",
@@ -1208,7 +1211,8 @@
     "title": "You Don't Know JS: Scope & Closures",
     "image": "YouDontKnowJSScopeAndClosures.jpg",
     "publisher": "O'Reilly",
-    "url": "https://www.amazon.com/You-Dont-Know-JS-Closures/dp/1449335586/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-2&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=a99c946afd2dc42e794eaa616ace0dec"
+    "url": "https://www.amazon.com/You-Dont-Know-JS-Closures/dp/1449335586/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-2&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=a99c946afd2dc42e794eaa616ace0dec",
+    "stars": 5
   },
   {
     "author": "Kyle Simpson",
@@ -1218,7 +1222,8 @@
     "title": "You Don't Know JS: this & Object Prototypes",
     "image": "YouDontKnowJSThisAndObjectPrototypes.jpg",
     "publisher": "O'Reilly",
-    "url": "https://www.amazon.com/You-Dont-Know-JS-Prototypes/dp/1491904151/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-3&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=146c129765a14c99d6b84d770b51f970"
+    "url": "https://www.amazon.com/You-Dont-Know-JS-Prototypes/dp/1491904151/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-3&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=146c129765a14c99d6b84d770b51f970",
+    "stars": 5
   },
   {
     "author": "Kyle Simpson",
@@ -1228,7 +1233,8 @@
     "title": "You Don't Know JS: Up & Going",
     "image": "YouDontKnowJSUpAndGoing.jpg",
     "publisher": "O'Reilly",
-    "url": "https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-1&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=640e8b51b5da0f9863662f31be4eb666"
+    "url": "https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-1&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=640e8b51b5da0f9863662f31be4eb666",
+    "stars": 5
   },
   {
     "author": "Jake Knapp, John Zeratsky, and Brandon Kowitz",
@@ -1239,7 +1245,8 @@
     "title": "Sprint",
     "image": "Sprint.jpg",
     "publisher": "Simon & Schuster",
-    "url": "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/ref=as_li_ss_tl?ie=UTF8&qid=1531075696&sr=8-2&keywords=sprint&linkCode=ll1&tag=steveostudi0c-20&linkId=6d131932f77600def106419e0a205f69"
+    "url": "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/ref=as_li_ss_tl?ie=UTF8&qid=1531075696&sr=8-2&keywords=sprint&linkCode=ll1&tag=steveostudi0c-20&linkId=6d131932f77600def106419e0a205f69",
+    "stars": 4
   },
   {
     "author": "William Lane Craig, John Dominic Crossan, Paul Copan (editor)",
@@ -1248,7 +1255,8 @@
     "dateFinish": "2006-01-24",
     "title": "Will the Real Jesus Please Stand Up?",
     "image": "WillTheRealJesusPleaseStandUp.jpg",
-    "dateStart": "2006-01-24"
+    "dateStart": "2006-01-24",
+    "stars": 3
   },
   {
     "author": "Lee Strobel",
@@ -1257,7 +1265,8 @@
     "dateFinish": "2005-04-25",
     "title": "The Case for Easter",
     "image": "TheCaseForEaster.jpg",
-    "dateStart": "2005-04-25"
+    "dateStart": "2005-04-25",
+    "stars": 2
   },
   {
     "author": "Max Lucado",
@@ -1266,7 +1275,8 @@
     "dateFinish": "2005-04-10",
     "title": "Come Thirsty",
     "image": "ComeThirsty.jpg",
-    "dateStart": "2005-04-10"
+    "dateStart": "2005-04-10",
+    "stars": 3
   },
   {
     "author": "Max Lucado",
@@ -1275,7 +1285,8 @@
     "dateFinish": "2005-01-01",
     "title": "Traveling Light",
     "image": "TravelingLight.jpg",
-    "dateStart": "2005-01-01"
+    "dateStart": "2005-01-01",
+    "stars": 3
   },
   {
     "author": "Ted Dekker",
@@ -1283,7 +1294,8 @@
     "dateStart": "2004-10-12",
     "pages": 512,
     "image": "ThunderOfHeaven.jpg",
-    "dateFinish": "2004-10-12"
+    "dateFinish": "2004-10-12",
+    "stars": 3
   },
   {
     "author": "Ted Dekker",
@@ -1291,7 +1303,8 @@
     "dateStart": "2004-10-12",
     "pages": 400,
     "image": "Thr3e.jpg",
-    "dateFinish": "2004-10-12"
+    "dateFinish": "2004-10-12",
+    "stars": 3
   },
   {
     "author": "Ted Dekker",
@@ -1299,7 +1312,8 @@
     "dateStart": "2004-01-24",
     "pages": 400,
     "image": "Blink.jpg",
-    "dateFinish": "2004-01-24"
+    "dateFinish": "2004-01-24",
+    "stars": 3
   },
   {
     "author": "John Ortberg",
@@ -1308,7 +1322,8 @@
     "dateFinish": "2004-06-24",
     "title": "The Life You've Always Wanted",
     "image": "TheLifeYouveAlwaysWanted.jpg",
-    "dateStart": "2004-06-24"
+    "dateStart": "2004-06-24",
+    "stars": 2
   },
   {
     "author": "Dan Brown",
@@ -1316,7 +1331,8 @@
     "dateStart": "2004-05-11",
     "pages": 416,
     "image": "TheDaVinciCode.jpg",
-    "dateFinish": "2004-05-11"
+    "dateFinish": "2004-05-11",
+    "stars": 3
   },
   {
     "author": "Rob Bell",
@@ -1325,7 +1341,8 @@
     "dateFinish": "2004-10-11",
     "title": "Velvet Elvis",
     "image": "VelvetElvis.jpg",
-    "dateStart": "2004-10-11"
+    "dateStart": "2004-10-11",
+    "stars": 3
   },
   {
     "author": "David Crowder",
@@ -1334,7 +1351,8 @@
     "dateFinish": "2006-11-18",
     "title": "Praise Habit",
     "image": "PraiseHabit.jpg",
-    "dateStart": "2006-11-18"
+    "dateStart": "2006-11-18",
+    "stars": 4
   },
   {
     "author": "Steven D. Katz",
@@ -1343,7 +1361,8 @@
     "dateFinish": "2005-01-18",
     "title": "Film Directing Shot by Shot",
     "image": "FilmDirectingShotByShot.jpg",
-    "dateStart": "2005-01-18"
+    "dateStart": "2005-01-18",
+    "stars": 4
   },
   {
     "pages": 75,
@@ -1351,7 +1370,8 @@
     "title": "Handbook on Faith, Hope and Love",
     "image": "HandbookOnFaithHopeAndLove.jpg",
     "dateStart": "2007-01-11",
-    "dateFinish": "2007-01-11"
+    "dateFinish": "2007-01-11",
+    "stars": 3
   },
   {
     "pages": 74,
@@ -1359,7 +1379,8 @@
     "title": "The Imitation of Christ",
     "image": "TheImitationOfChrist.jpg",
     "dateStart": "2007-01-11",
-    "dateFinish": "2007-01-11"
+    "dateFinish": "2007-01-11",
+    "stars": 4
   },
   {
     "pages": 150,
@@ -1367,7 +1388,8 @@
     "title": "A Plain Account of Christian Perfection",
     "image": "APlainAccountOfChristianPerfection.jpg",
     "dateStart": "2007-01-11",
-    "dateFinish": "2007-01-11"
+    "dateFinish": "2007-01-11",
+    "stars": 4
   },
   {
     "pages": 124,
@@ -1375,7 +1397,8 @@
     "title": "Selections from the Spurgeon Archive",
     "image": "SelectionsFromTheSpurgeonArchive.jpg",
     "dateStart": "2007-01-11",
-    "dateFinish": "2007-01-11"
+    "dateFinish": "2007-01-11",
+    "stars": 4
   },
   {
     "pages": 114,
@@ -1383,7 +1406,8 @@
     "title": "Orthodoxy",
     "image": "Orthodoxy.jpg",
     "dateStart": "2007-01-11",
-    "dateFinish": "2007-01-11"
+    "dateFinish": "2007-01-11",
+    "stars": 5
   },
   {
     "pages": 123,
@@ -1391,7 +1415,8 @@
     "title": "Foundations of the Christian Religion",
     "image": "FoundationsOfTheChristianReligion.jpg",
     "dateStart": "2007-01-11",
-    "dateFinish": "2007-01-11"
+    "dateFinish": "2007-01-11",
+    "stars": 4
   },
   {
     "author": "Michael Yaconelli",
@@ -1400,7 +1425,8 @@
     "dateFinish": "2004-01-22",
     "title": "Messy Spirituality",
     "image": "MessySpirituality.jpg",
-    "dateStart": "2004-01-22"
+    "dateStart": "2004-01-22",
+    "stars": 4
   },
   {
     "author": "Seay Garrett",
@@ -1408,7 +1434,8 @@
     "dateStart": "2007-04-24",
     "pages": 173,
     "image": "TheGospelReloaded.jpg",
-    "dateFinish": "2007-04-24"
+    "dateFinish": "2007-04-24",
+    "stars": 2
   },
   {
     "author": "Phil Vischer",
@@ -1417,7 +1444,8 @@
     "dateFinish": "2011-02-12",
     "title": "Me, Myself & Bob",
     "image": "MeMyselfAndBob.jpg",
-    "dateStart": "2011-02-12"
+    "dateStart": "2011-02-12",
+    "stars": 5
   },
   {
     "author": "Michael J. Wilkins",
@@ -1426,7 +1454,8 @@
     "dateFinish": "2005-04-04",
     "title": "Jesus Under Fire",
     "image": "JesusUnderFire.jpg",
-    "dateStart": "2005-04-04"
+    "dateStart": "2005-04-04",
+    "stars": 3
   },
   {
     "author": "J.P. Moreland",
@@ -1435,7 +1464,8 @@
     "dateFinish": "2005-04-23",
     "title": "Scaling the Secular City",
     "image": "ScalingTheSecularCity.jpg",
-    "dateStart": "2005-04-23"
+    "dateStart": "2005-04-23",
+    "stars": 4
   },
   {
     "author": "Walter Murch",
@@ -1443,7 +1473,8 @@
     "dateStart": "2006-01-24",
     "pages": 146,
     "image": "InTheBlinkOfAnEye.jpg",
-    "dateFinish": "2006-01-24"
+    "dateFinish": "2006-01-24",
+    "stars": 5
   },
   {
     "author": "Ted Dekker",
@@ -1451,7 +1482,8 @@
     "dateStart": "2005-02-05",
     "pages": 400,
     "image": "Obsessed.jpg",
-    "dateFinish": "2005-02-05"
+    "dateFinish": "2005-02-05",
+    "stars": 4
   },
   {
     "author": "J.P. Moreland",
@@ -1460,7 +1492,8 @@
     "dateFinish": "2005-03-09",
     "title": "Love Your God with All Your Mind",
     "image": "LoveYourGodWithAllYourMind.jpg",
-    "dateStart": "2005-03-09"
+    "dateStart": "2005-03-09",
+    "stars": 4
   },
   {
     "author": "George Orwell",
@@ -1468,7 +1501,8 @@
     "dateStart": "2006-05-11",
     "pages": 140,
     "image": "AnimalFarm.jpg",
-    "dateFinish": "2006-05-11"
+    "dateFinish": "2006-05-11",
+    "stars": 4
   },
   {
     "author": "George Orwell",
@@ -1476,7 +1510,8 @@
     "dateStart": "2005-10-28",
     "pages": 328,
     "image": "1984.jpg",
-    "dateFinish": "2005-10-28"
+    "dateFinish": "2005-10-28",
+    "stars": 4
   },
   {
     "author": "Robert Rodríguez",
@@ -1485,7 +1520,8 @@
     "dateFinish": "2005-02-23",
     "title": "Rebel Without a Crew",
     "image": "RebelWithoutACrew.jpg",
-    "dateStart": "2005-02-23"
+    "dateStart": "2005-02-23",
+    "stars": 5
   },
   {
     "author": "Christopher Vogler",
@@ -1494,7 +1530,8 @@
     "dateFinish": "2006-01-25",
     "title": "The Writer's Journey",
     "image": "TheWritersJourney.jpg",
-    "dateStart": "2006-01-25"
+    "dateStart": "2006-01-25",
+    "stars": 5
   },
   {
     "author": "Michael Yaconelli",
@@ -1503,7 +1540,8 @@
     "dateFinish": "2007-03-16",
     "title": "Stories of Emergence",
     "image": "StoriesOfEmergence.jpg",
-    "dateStart": "2007-03-16"
+    "dateStart": "2007-03-16",
+    "stars": 3
   },
   {
     "author": "Frank E. Peretti",
@@ -1511,7 +1549,8 @@
     "dateStart": "2007-05-21",
     "pages": 386,
     "image": "House.jpg",
-    "dateFinish": "2007-05-21"
+    "dateFinish": "2007-05-21",
+    "stars": 3
   },
   {
     "author": "Frank E. Peretti",
@@ -1519,7 +1558,8 @@
     "dateStart": "2005-05-27",
     "pages": 80,
     "image": "TheWoundedSpirit.jpg",
-    "dateFinish": "2005-05-27"
+    "dateFinish": "2005-05-27",
+    "stars": 2
   },
   {
     "author": "Frank E. Peretti",
@@ -1528,7 +1568,8 @@
     "dateFinish": "2005-05-27",
     "title": "Hangman's Curse",
     "image": "HangmansCurse.jpg",
-    "dateStart": "2005-05-27"
+    "dateStart": "2005-05-27",
+    "stars": 2
   },
   {
     "author": "Frank E. Peretti",
@@ -1536,7 +1577,8 @@
     "dateStart": "2005-05-27",
     "pages": 550,
     "image": "TheOath.jpg",
-    "dateFinish": "2005-05-27"
+    "dateFinish": "2005-05-27",
+    "stars": 4
   },
   {
     "author": "Frank E. Peretti",
@@ -1544,7 +1586,8 @@
     "dateStart": "2005-05-16",
     "pages": 451,
     "image": "Monster.jpg",
-    "dateFinish": "2005-05-16"
+    "dateFinish": "2005-05-16",
+    "stars": 3
   },
   {
     "author": "Frank E. Peretti",
@@ -1553,7 +1596,8 @@
     "dateFinish": "2005-05-27",
     "title": "Nightmare Academy",
     "image": "NightmareAcademy.jpg",
-    "dateStart": "2005-05-27"
+    "dateStart": "2005-05-27",
+    "stars": 2
   },
   {
     "author": "Frank E. Peretti",
@@ -1561,7 +1605,8 @@
     "dateStart": "2005-06-12",
     "pages": 519,
     "image": "TheVisitation.jpg",
-    "dateFinish": "2005-06-12"
+    "dateFinish": "2005-06-12",
+    "stars": 4
   },
   {
     "author": "Max Lucado",
@@ -1570,7 +1615,8 @@
     "dateFinish": "2005-12-05",
     "title": "Turn",
     "image": "Turn.jpg",
-    "dateStart": "2005-12-05"
+    "dateStart": "2005-12-05",
+    "stars": 3
   },
   {
     "author": "Max Lucado",
@@ -1579,7 +1625,8 @@
     "dateFinish": "2004-04-21",
     "title": "Next Door Savior",
     "image": "NextDoorSavior.jpg",
-    "dateStart": "2004-04-21"
+    "dateStart": "2004-04-21",
+    "stars": 3
   },
   {
     "author": "Brian D. McLaren",
@@ -1588,7 +1635,8 @@
     "dateFinish": "2007-11-08",
     "title": "More Ready Than You Realize",
     "image": "MoreReadyThanYouRealize.jpg",
-    "dateStart": "2007-11-08"
+    "dateStart": "2007-11-08",
+    "stars": 4
   },
   {
     "author": "Brian D. McLaren",
@@ -1597,7 +1645,8 @@
     "dateFinish": "2004-09-01",
     "title": "The Story We Find Ourselves in",
     "image": "TheStoryWeFindOurselvesIn.jpg",
-    "dateStart": "2004-09-01"
+    "dateStart": "2004-09-01",
+    "stars": 5
   },
   {
     "author": "Brian D. McLaren",
@@ -1606,7 +1655,8 @@
     "dateFinish": "2004-04-07",
     "title": "A New Kind of Christian",
     "image": "ANewKindOfChristian.jpg",
-    "dateStart": "2004-04-07"
+    "dateStart": "2004-04-07",
+    "stars": 5
   },
   {
     "author": "Brian D. McLaren",
@@ -1615,7 +1665,8 @@
     "dateFinish": "2004-10-12",
     "title": "Finding Faith",
     "image": "FindingFaith.jpg",
-    "dateStart": "2004-10-12"
+    "dateStart": "2004-10-12",
+    "stars": 5
   },
   {
     "author": "Brian D. McLaren",
@@ -1624,7 +1675,8 @@
     "dateFinish": "2006-05-11",
     "title": "The Church on the Other Side",
     "image": "TheChurchOnTheOtherSide.jpg",
-    "dateStart": "2006-05-11"
+    "dateStart": "2006-05-11",
+    "stars": 4
   },
   {
     "author": "Brian D. McLaren",
@@ -1633,7 +1685,8 @@
     "dateFinish": "2007-01-11",
     "title": "A Generous Orthodoxy",
     "image": "AGenerousOrthodoxy.jpg",
-    "dateStart": "2007-01-11"
+    "dateStart": "2007-01-11",
+    "stars": 5
   },
   {
     "author": "John Piper",
