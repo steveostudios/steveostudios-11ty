@@ -15,13 +15,11 @@ title: Books
         {% for book in year.items %}
           <li class="book-container">
             <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
+                <img src="/img/books/{{ book.image }}" alt="{{ book.title }}" />
               {% if book.post %}
                 <a href="/blog/{{ book.post }}">
-                  <img src="/img/books/{{ book.image }}" alt="{{ book.title }}" />
                   <div class="dot">{{ "/src/img/icons/link-light.svg" | svgContents: "icon" | safe }}</div>
                 </a>
-              {% else %}
-                <img src="/img/books/{{ book.image }}" alt="{{ book.title }}" />
               {% endif %}
               {% if book.stars %}
                 <div class="stars">
