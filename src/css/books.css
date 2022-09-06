@@ -59,7 +59,8 @@ margin-bottom: 2rem;
   transform: translateX(122px) translateZ(-18px) rotateY(90deg);
 }
 
-.shelf .book-container .book.page-count-0 img {
+.shelf .book-container .book.page-count-0 img,
+.shelf .book-container .book.page-count-0 .dark {
   transform: translateZ(-12px);
 }
 
@@ -68,7 +69,8 @@ margin-bottom: 2rem;
   transform: translateX(118px) translateZ(-16px) rotateY(90deg);
 }
 
-.shelf .book-container .book.page-count-100 img {
+.shelf .book-container .book.page-count-100 img,
+.shelf .book-container .book.page-count-100 .dark {
   transform: translateZ(-4px);
 }
 
@@ -77,7 +79,8 @@ margin-bottom: 2rem;
   transform: translateX(114px) translateZ(-14px) rotateY(90deg);
 }
 
-.shelf .book-container .book.page-count-200 img {
+.shelf .book-container .book.page-count-200 img,
+.shelf .book-container .book.page-count-200 .dark {
   transform: translateZ(2px);
 }
 
@@ -86,7 +89,8 @@ margin-bottom: 2rem;
   transform: translateX(112px) translateZ(-12px) rotateY(90deg);
 }
 
-.shelf .book-container .book.page-count-300 img {
+.shelf .book-container .book.page-count-300 img,
+.shelf .book-container .book.page-count-300 .dark {
   transform: translateZ(6px);
 }
 
@@ -95,8 +99,19 @@ margin-bottom: 2rem;
   transform: translateX(108px) translateZ(-10px) rotateY(90deg);
 }
 
-.shelf .book-container .book.page-count-400 img {
+.shelf .book-container .book.page-count-400 img,
+.shelf .book-container .book.page-count-400 .dark {
   transform: translateZ(10px);
+}
+
+.shelf .book-container .book.page-count-500::before {
+  width: 42px;
+  transform: translateX(104px) translateZ(-8px) rotateY(90deg);
+}
+
+.shelf .book-container .book.page-count-500 img,
+.shelf .book-container .book.page-count-500 .dark {
+  transform: translateZ(14px);
 }
 
 .shelf .book-container a {
@@ -126,24 +141,65 @@ margin-bottom: 2rem;
   height: 1rem;
 }
 
+.shelf .book-container .dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--black);
+  opacity: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.book-container .book:hover .dark {
+  opacity: 0.75;
+}
+
+.shelf .book-container .data {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(25px);
+  color: var(--white);
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s ease;
+  padding: 1rem;
+  z-index: 100;
+  
+}
+
+.shelf .book-container .data h3 {
+  color: var(--white);
+  border-bottom: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.shelf .book-container .data p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.675rem;
+}
 
 .shelf .book-container .stars {
   position: absolute;
-  bottom: 0.5rem;
-  width: 100%;
+  bottom: 1rem;
+  width: calc(100% - 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
   transform: translateZ(20px);
-  opacity: 0;
-  transition: 0.5s ease;
   fill: var(--primary-color);
   stroke-width: 4px;
   stroke: var(--black);
 }
 
 .shelf .book-container .stars svg {
-  width: 1.5rem;
+  width: 1rem;
 }
 
 .shelf .book-container .book::after {
@@ -163,8 +219,9 @@ margin-bottom: 2rem;
   transform: rotateY(0deg);
 }
 
-.book-container .book:hover .stars{
+.book-container .book:hover .data{
 opacity: 1;
+
 }
 
 .shelf progress {

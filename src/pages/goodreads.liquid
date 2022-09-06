@@ -1,0 +1,20 @@
+---
+title: Goodreads
+---
+<div class="page books">
+  <div class="year content">
+      test    
+        {% for book in goodreads.items %}
+          <li class="book-container">
+            <div class="book">
+                {{ book.content}}
+              
+             
+            </div>
+            
+          </li>
+        {% endfor %}
+    
+  </div>
+
+</div>

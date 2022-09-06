@@ -16,10 +16,24 @@ title: Books
           <li class="book-container">
             <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
                 <img src="/img/books/{{ book.image }}" alt="{{ book.title }}" />
+                  <div class="dark"></div>
               {% if book.post %}
                 <a href="/blog/{{ book.post }}">
                   <div class="dot">{{ "/src/img/icons/link-light.svg" | svgContents: "icon" | safe }}</div>
                 </a>
+              {% endif %}
+              <div class="data">
+              {% if book.title %}
+                <h3>{{ book.title }}</h3>
+              {% endif %}
+              {% if book.author %}
+                <p>{{ book.author }}</p>
+              {% endif %}
+              {% if book.pages %}
+                <p>{% if book.progress %}{{book.progress}}/{% endif %}{{ book.pages }} pgs</p>
+              {% endif %}
+               {% if book.dateFinish %}
+                <p>{{ book.dateFinish }}</p>
               {% endif %}
               {% if book.stars %}
                 <div class="stars">
@@ -29,6 +43,7 @@ title: Books
                 {% endfor %}
                 </div>
               {% endif %}
+              </div>
             </div>
             {% if book.progress %}
               <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>

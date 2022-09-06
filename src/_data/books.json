@@ -6,7 +6,7 @@
     "url": "https://www.amazon.com/dp/0553380958",
     "image": "SnowCrash.jpg",
     "dateStart": "2022-08-27",
-    "progress": 190,
+    "progress": 247,
     "isbn": "9783596705597"
   }, 
   {
@@ -27,7 +27,7 @@
     "url": "https://www.amazon.com/End-Me-Where-Upside-Down-Begins/dp/1434707075",
     "image": "TheEndOfMe.jpg",
     "dateStart": "2022-08-26",
-    "progress": 88,
+    "progress": 154,
     "isbn": "9781434707079"
   },  
   {
@@ -955,7 +955,8 @@
     "dateStart": "2018-11-28",
     "publisher": "IVP Books",
     "stars": 4,
-    "url": "https://www.amazon.com/Road-Back-You-Enneagram-Self-Discovery/dp/0830846190/ref=as_li_ss_tl?ie=UTF8&qid=1543860912&sr=8-3&keywords=the+road+back+to+you&linkCode=ll1&tag=steveostudi0c-20&linkId=409b18dc228d5de0a227b1215679d077&language=en_US"
+    "url": "https://www.amazon.com/Road-Back-You-Enneagram-Self-Discovery/dp/0830846190/ref=as_li_ss_tl?ie=UTF8&qid=1543860912&sr=8-3&keywords=the+road+back+to+you&linkCode=ll1&tag=steveostudi0c-20&linkId=409b18dc228d5de0a227b1215679d077&language=en_US",
+    "isbn": "9780830846191"
   },
   {
     "author": "Jason Santa Maria",
@@ -967,7 +968,8 @@
     "image": "OnWebTypography.png",
     "publisher": "A Book Apart",
     "stars": 4,
-    "url": "https://abookapart.com/products/on-web-typography"
+    "url": "https://abookapart.com/products/on-web-typography",
+    "isbn": "9781937557065"
   },
   {
     "author": "Bram Stein",
@@ -979,7 +981,8 @@
     "image": "WebfontHandbook.png",
     "publisher": "A Book Apart",
     "stars": 4,
-    "url": "https://abookapart.com/products/webfont-handbook"
+    "url": "https://abookapart.com/products/webfont-handbook",
+    "isbn": "9781937557645"
   },
   {
     "author": "Jason Fried and David Heinemeier Hansson",
@@ -991,7 +994,8 @@
     "image": "Remote.jpg",
     "publisher": "Crown Business",
     "stars": 3,
-    "url": "https://www.amazon.com/gp/product/0804137501/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=&linkId=8a406edc2fe9394925c4e61b826ebf96"
+    "url": "https://www.amazon.com/gp/product/0804137501/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=&linkId=8a406edc2fe9394925c4e61b826ebf96",
+    "isbn": "9780804137508"
   },
   {
     "author": "Erika Hall",
@@ -1003,7 +1007,8 @@
     "image": "ConversationalDesign.png",
     "publisher": "A Book Apart",
     "stars": 4,
-    "url": "https://abookapart.com/products/conversational-design"
+    "url": "https://abookapart.com/products/conversational-design",
+    "isbn": "9781937557676"
   },
   {
     "author": "Rachael Andrew",
@@ -1015,7 +1020,8 @@
     "image": "TheNewCSSLayout.png",
     "publisher": "A Book Apart",
     "stars": 4,
-    "url": "https://abookapart.com/products/the-new-css-layout"
+    "url": "https://abookapart.com/products/the-new-css-layout",
+    "isbn": "9781937557683"
   },
   {
     "author": "Douglas Crockford",
@@ -1027,7 +1033,8 @@
     "image": "JavaScriptTheGoodParts.jpg",
     "publisher": "O'Reilly | Yahoo! Press",
     "stars": 5,
-    "url": "https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=as_li_ss_tl?ie=UTF8&qid=1530649753&sr=8-1&keywords=javascript+the+good+parts&linkCode=ll1&tag=steveostudi0c-20&linkId=d126a9b8a6d772ee0c6532f35c44c388"
+    "url": "https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=as_li_ss_tl?ie=UTF8&qid=1530649753&sr=8-1&keywords=javascript+the+good+parts&linkCode=ll1&tag=steveostudi0c-20&linkId=d126a9b8a6d772ee0c6532f35c44c388",
+    "isbn": "9780596517748"
   },
   {
     "author": "Steven Krugg",
@@ -1038,7 +1045,8 @@
     "title": "Rocket Surgery Made Easy",
     "image": "RocketSurgeryMadeEasy.jpg",
     "stars": 5,
-    "url": "https://www.amazon.com/Rocket-Surgery-Made-Easy-Yourself/dp/0321657292/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1530649852&sr=1-1&keywords=rocket+surgery+made+easy+steve+krug&linkCode=ll1&tag=steveostudi0c-20&linkId=031fcb032fd2ff1c178fd7ddb322a43c"
+    "url": "https://www.amazon.com/Rocket-Surgery-Made-Easy-Yourself/dp/0321657292/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1530649852&sr=1-1&keywords=rocket+surgery+made+easy+steve+krug&linkCode=ll1&tag=steveostudi0c-20&linkId=031fcb032fd2ff1c178fd7ddb322a43c",
+    "isbn": "9780321657299"
   },
   {
     "author": "Dan Brown",
@@ -1049,7 +1057,8 @@
     "image": "PracticalDesignDiscovery.png",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/practical-design-discovery",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781937557447"
   },
   {
     "author": "Nicholas C. Zakas",
@@ -1061,7 +1070,8 @@
     "image": "HighPerformanceJavaScript.jpg",
     "publisher": "O'Reilly | Yahoo! Press",
     "stars": 3,
-    "url": "https://www.amazon.com/High-Performance-JavaScript-Application-Interfaces/dp/059680279X/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1530649973&sr=1-3&keywords=high+performance+javascript&linkCode=ll1&tag=steveostudi0c-20&linkId=d770f21677181e67376ded3f912e5d36"
+    "url": "https://www.amazon.com/High-Performance-JavaScript-Application-Interfaces/dp/059680279X/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1530649973&sr=1-3&keywords=high+performance+javascript&linkCode=ll1&tag=steveostudi0c-20&linkId=d770f21677181e67376ded3f912e5d36",
+    "isbn": "9780596802790"
   },
   {
     "author": "Jeremy Keith and Rachel Andrew",
@@ -1073,7 +1083,8 @@
     "image": "HTML5ForWebDesigners.png",
     "publisher": "A Book Apart",
     "stars": 2,
-    "url": "https://abookapart.com/products/1e-html5-for-web-designers"
+    "url": "https://abookapart.com/products/1e-html5-for-web-designers",
+    "isbn": "9780984442508"
   },
   {
     "author": "Dan Cederholm",
@@ -1084,7 +1095,8 @@
     "image": "CSS3ForWebDesigners.png",
     "publisher": "A Book Apart",
     "stars": 5,
-    "url": "https://abookapart.com/products/css3-for-web-designers"
+    "url": "https://abookapart.com/products/css3-for-web-designers",
+    "isbn": "9780984442522"
   },
   {
     "author": "Ethan Marcotte",
@@ -1095,7 +1107,8 @@
     "image": "ResponsiveWebDesign.png",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/responsive-web-design",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780984442577"
   },
   {
     "author": "Steve Case",
@@ -1107,7 +1120,8 @@
     "image": "TheThirdWave.jpg",
     "publisher": "Simon & Schuster",
     "url": "https://www.amazon.com/gp/product/150113258X/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=steveostudi0c-20&linkId=67ea54caaf69f89104e5e71d6077da94",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781501132582"
   },
   {
     "author": "Erika Hall",
@@ -1118,7 +1132,8 @@
     "image": "JustEnoughResearch.png",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/just-enough-research",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781937557102"
   },
   {
     "author": "Aarron Walter",
@@ -1129,7 +1144,8 @@
     "image": "DesigningForEmotion.png",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/designing-for-emotion",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781937557003"
   },
   {
     "author": "Eric Meyer and Sara Wachter-Boettcher",
@@ -1140,7 +1156,8 @@
     "image": "DesignForRealLife.png",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/design-for-real-life",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781937557409"
   },
   {
     "author": "Mat Marquis",
@@ -1152,7 +1169,8 @@
     "image": "JavaScriptForWebDesigners.png",
     "publisher": "A Book Apart",
     "stars": 3,
-    "url": "https://abookapart.com/products/javascript-for-web-designers"
+    "url": "https://abookapart.com/products/javascript-for-web-designers",
+    "isbn": "9781937557461"
   },
   {
     "author": "David Demaree",
@@ -1164,7 +1182,8 @@
     "image": "GitForHumans.png",
     "publisher": "A Book Apart",
     "stars": 5,
-    "url": "https://abookapart.com/products/git-for-humans"
+    "url": "https://abookapart.com/products/git-for-humans",
+    "isbn": "9781937557386"
   },
   {
     "author": "Chris Coyier",
@@ -1176,7 +1195,8 @@
     "image": "PracticalSVG.png",
     "publisher": "A Book Apart",
     "stars": 4,
-    "url": "https://abookapart.com/products/practical-svg"
+    "url": "https://abookapart.com/products/practical-svg",
+    "isbn": "9781937557423"
   },
   {
     "author": "Kyle Simpson",
@@ -1187,7 +1207,8 @@
     "image": "YouDontKnowJSAsyncAndPerformance.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Performance-ebook/dp/B00TXVCJ7O/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-6&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=704aab462580c75d1dcb02f8429155c0",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781491904220"
   },
   {
     "author": "Kyle Simpson",
@@ -1198,7 +1219,8 @@
     "image": "YouDontKnowJSTypesAndGrammar.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Grammar/dp/1491904194/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-4&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=c2ff425aad937a761a3ffc888bfd69bb",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781491904190"
   },
   {
     "author": "Kyle Simpson",
@@ -1209,7 +1231,8 @@
     "image": "YouDontKnowJSES6AndBeyond.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Beyond/dp/1491904240/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-5&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=456e4c3109e981dcb9fa0756da4ca3be",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781491904244"
   },
   {
     "author": "Kyle Simpson",
@@ -1220,7 +1243,8 @@
     "image": "YouDontKnowJSScopeAndClosures.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Closures/dp/1449335586/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-2&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=a99c946afd2dc42e794eaa616ace0dec",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781449335588"
   },
   {
     "author": "Kyle Simpson",
@@ -1231,7 +1255,8 @@
     "image": "YouDontKnowJSThisAndObjectPrototypes.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Prototypes/dp/1491904151/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-3&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=146c129765a14c99d6b84d770b51f970",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781491904152"
   },
   {
     "author": "Kyle Simpson",
@@ -1242,7 +1267,8 @@
     "image": "YouDontKnowJSUpAndGoing.jpg",
     "publisher": "O'Reilly",
     "url": "https://www.amazon.com/You-Dont-Know-JS-Going/dp/1491924462/ref=as_li_ss_tl?ie=UTF8&qid=1530674071&sr=8-1&keywords=you+don't+know+js&linkCode=ll1&tag=steveostudi0c-20&linkId=640e8b51b5da0f9863662f31be4eb666",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781491924464"
   },
   {
     "author": "Jake Knapp, John Zeratsky, and Brandon Kowitz",
@@ -1254,7 +1280,8 @@
     "image": "Sprint.jpg",
     "publisher": "Simon & Schuster",
     "url": "https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/ref=as_li_ss_tl?ie=UTF8&qid=1531075696&sr=8-2&keywords=sprint&linkCode=ll1&tag=steveostudi0c-20&linkId=6d131932f77600def106419e0a205f69",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781501121746"
   },
   {
     "author": "William Lane Craig, John Dominic Crossan, Paul Copan (editor)",
@@ -1264,7 +1291,8 @@
     "title": "Will the Real Jesus Please Stand Up?",
     "image": "WillTheRealJesusPleaseStandUp.jpg",
     "dateStart": "2006-01-24",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780801021756"
   },
   {
     "author": "Lee Strobel",
@@ -1274,7 +1302,8 @@
     "title": "The Case for Easter",
     "image": "TheCaseForEaster.jpg",
     "dateStart": "2005-04-25",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780000007728"
   },
   {
     "author": "Max Lucado",
@@ -1284,7 +1313,8 @@
     "title": "Come Thirsty",
     "image": "ComeThirsty.jpg",
     "dateStart": "2005-04-10",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849947315"
   },
   {
     "author": "Max Lucado",
@@ -1294,7 +1324,8 @@
     "title": "Traveling Light",
     "image": "TravelingLight.jpg",
     "dateStart": "2005-01-01",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849913457"
   },
   {
     "author": "Ted Dekker",
@@ -1303,7 +1334,8 @@
     "pages": 512,
     "image": "ThunderOfHeaven.jpg",
     "dateFinish": "2004-10-12",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849945175"
   },
   {
     "author": "Ted Dekker",
@@ -1312,7 +1344,8 @@
     "pages": 400,
     "image": "Thr3e.jpg",
     "dateFinish": "2004-10-12",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849945120"
   },
   {
     "author": "Ted Dekker",
@@ -1321,7 +1354,8 @@
     "pages": 400,
     "image": "Blink.jpg",
     "dateFinish": "2004-01-24",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849945113"
   },
   {
     "author": "John Ortberg",
@@ -1331,7 +1365,8 @@
     "title": "The Life You've Always Wanted",
     "image": "TheLifeYouveAlwaysWanted.jpg",
     "dateStart": "2004-06-24",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780310246954"
   },
   {
     "author": "Dan Brown",
@@ -1340,7 +1375,8 @@
     "pages": 416,
     "image": "TheDaVinciCode.jpg",
     "dateFinish": "2004-05-11",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781400079179"
   },
   {
     "author": "Rob Bell",
@@ -1350,7 +1386,8 @@
     "title": "Velvet Elvis",
     "image": "VelvetElvis.jpg",
     "dateStart": "2004-10-11",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310263456"
   },
   {
     "author": "David Crowder",
@@ -1360,7 +1397,8 @@
     "title": "Praise Habit",
     "image": "PraiseHabit.jpg",
     "dateStart": "2006-11-18",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781576836705"
   },
   {
     "author": "Steven D. Katz",
@@ -1370,7 +1408,8 @@
     "title": "Film Directing Shot by Shot",
     "image": "FilmDirectingShotByShot.jpg",
     "dateStart": "2005-01-18",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780941188104"
   },
   {
     "pages": 75,
@@ -1379,7 +1418,8 @@
     "image": "HandbookOnFaithHopeAndLove.jpg",
     "dateStart": "2007-01-11",
     "dateFinish": "2007-01-11",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780977616701"
   },
   {
     "pages": 74,
@@ -1388,7 +1428,8 @@
     "image": "TheImitationOfChrist.jpg",
     "dateStart": "2007-01-11",
     "dateFinish": "2007-01-11",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780977616718"
   },
   {
     "pages": 150,
@@ -1397,7 +1438,8 @@
     "image": "APlainAccountOfChristianPerfection.jpg",
     "dateStart": "2007-01-11",
     "dateFinish": "2007-01-11",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780977616725"
   },
   {
     "pages": 124,
@@ -1406,7 +1448,8 @@
     "image": "SelectionsFromTheSpurgeonArchive.jpg",
     "dateStart": "2007-01-11",
     "dateFinish": "2007-01-11",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780977616732"
   },
   {
     "pages": 114,
@@ -1415,7 +1458,8 @@
     "image": "Orthodoxy.jpg",
     "dateStart": "2007-01-11",
     "dateFinish": "2007-01-11",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780977616749"
   },
   {
     "pages": 123,
@@ -1424,7 +1468,8 @@
     "image": "FoundationsOfTheChristianReligion.jpg",
     "dateStart": "2007-01-11",
     "dateFinish": "2007-01-11",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780977616770"
   },
   {
     "author": "Michael Yaconelli",
@@ -1434,7 +1479,8 @@
     "title": "Messy Spirituality",
     "image": "MessySpirituality.jpg",
     "dateStart": "2004-01-22",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780310235330"
   },
   {
     "author": "Seay Garrett",
@@ -1443,7 +1489,8 @@
     "pages": 173,
     "image": "TheGospelReloaded.jpg",
     "dateFinish": "2007-04-24",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9781576834787"
   },
   {
     "author": "Phil Vischer",
@@ -1453,7 +1500,8 @@
     "title": "Me, Myself & Bob",
     "image": "MeMyselfAndBob.jpg",
     "dateStart": "2011-02-12",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780785222071"
   },
   {
     "author": "Michael J. Wilkins",
@@ -1463,7 +1511,8 @@
     "title": "Jesus Under Fire",
     "image": "JesusUnderFire.jpg",
     "dateStart": "2005-04-04",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310211396"
   },
   {
     "author": "J.P. Moreland",
@@ -1473,7 +1522,8 @@
     "title": "Scaling the Secular City",
     "image": "ScalingTheSecularCity.jpg",
     "dateStart": "2005-04-23",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780801062223"
   },
   {
     "author": "Walter Murch",
@@ -1482,7 +1532,8 @@
     "pages": 146,
     "image": "InTheBlinkOfAnEye.jpg",
     "dateFinish": "2006-01-24",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781879505230"
   },
   {
     "author": "Ted Dekker",
@@ -1491,7 +1542,8 @@
     "pages": 400,
     "image": "Obsessed.jpg",
     "dateFinish": "2005-02-05",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781595540782"
   },
   {
     "author": "J.P. Moreland",
@@ -1501,7 +1553,8 @@
     "title": "Love Your God with All Your Mind",
     "image": "LoveYourGodWithAllYourMind.jpg",
     "dateStart": "2005-03-09",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781576830161"
   },
   {
     "author": "George Orwell",
@@ -1510,7 +1563,8 @@
     "pages": 140,
     "image": "AnimalFarm.jpg",
     "dateFinish": "2006-05-11",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9798782012397"
   },
   {
     "author": "George Orwell",
@@ -1519,7 +1573,8 @@
     "pages": 328,
     "image": "1984.jpg",
     "dateFinish": "2005-10-28",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780451524935"
   },
   {
     "author": "Robert Rodríguez",
@@ -1529,7 +1584,8 @@
     "title": "Rebel Without a Crew",
     "image": "RebelWithoutACrew.jpg",
     "dateStart": "2005-02-23",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780452271876"
   },
   {
     "author": "Christopher Vogler",
@@ -1539,7 +1595,8 @@
     "title": "The Writer's Journey",
     "image": "TheWritersJourney.jpg",
     "dateStart": "2006-01-25",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780941188708"
   },
   {
     "author": "Michael Yaconelli",
@@ -1549,7 +1606,8 @@
     "title": "Stories of Emergence",
     "image": "StoriesOfEmergence.jpg",
     "dateStart": "2007-03-16",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310253860"
   },
   {
     "author": "Frank E. Peretti",
@@ -1558,7 +1616,8 @@
     "pages": 386,
     "image": "House.jpg",
     "dateFinish": "2007-05-21",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780739468098"
   },
   {
     "author": "Frank E. Peretti",
@@ -1567,7 +1626,8 @@
     "pages": 80,
     "image": "TheWoundedSpirit.jpg",
     "dateFinish": "2005-05-27",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780849916731"
   },
   {
     "author": "Frank E. Peretti",
@@ -1577,7 +1637,8 @@
     "title": "Hangman's Curse",
     "image": "HangmansCurse.jpg",
     "dateStart": "2005-05-27",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780849976162"
   },
   {
     "author": "Frank E. Peretti",
@@ -1586,7 +1647,8 @@
     "pages": 550,
     "image": "TheOath.jpg",
     "dateFinish": "2005-05-27",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781401685232"
   },
   {
     "author": "Frank E. Peretti",
@@ -1595,7 +1657,8 @@
     "pages": 451,
     "image": "Monster.jpg",
     "dateFinish": "2005-05-16",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781401685218"
   },
   {
     "author": "Frank E. Peretti",
@@ -1605,7 +1668,8 @@
     "title": "Nightmare Academy",
     "image": "NightmareAcademy.jpg",
     "dateStart": "2005-05-27",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780849976179"
   },
   {
     "author": "Frank E. Peretti",
@@ -1614,7 +1678,8 @@
     "pages": 519,
     "image": "TheVisitation.jpg",
     "dateFinish": "2005-06-12",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781401685225"
   },
   {
     "author": "Max Lucado",
@@ -1624,7 +1689,8 @@
     "title": "Turn",
     "image": "Turn.jpg",
     "dateStart": "2005-12-05",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781590524503"
   },
   {
     "author": "Max Lucado",
@@ -1634,7 +1700,8 @@
     "title": "Next Door Savior",
     "image": "NextDoorSavior.jpg",
     "dateStart": "2004-04-21",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849917608"
   },
   {
     "author": "Brian D. McLaren",
@@ -1644,7 +1711,8 @@
     "title": "More Ready Than You Realize",
     "image": "MoreReadyThanYouRealize.jpg",
     "dateStart": "2007-11-08",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780310239642"
   },
   {
     "author": "Brian D. McLaren",
@@ -1654,7 +1722,8 @@
     "title": "The Story We Find Ourselves in",
     "image": "TheStoryWeFindOurselvesIn.jpg",
     "dateStart": "2004-09-01",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780787963873"
   },
   {
     "author": "Brian D. McLaren",
@@ -1664,7 +1733,8 @@
     "title": "A New Kind of Christian",
     "image": "ANewKindOfChristian.jpg",
     "dateStart": "2004-04-07",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780787955991"
   },
   {
     "author": "Brian D. McLaren",
@@ -1674,7 +1744,8 @@
     "title": "Finding Faith",
     "image": "FindingFaith.jpg",
     "dateStart": "2004-10-12",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780310272670"
   },
   {
     "author": "Brian D. McLaren",
@@ -1684,7 +1755,8 @@
     "title": "The Church on the Other Side",
     "image": "TheChurchOnTheOtherSide.jpg",
     "dateStart": "2006-05-11",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780310252191"
   },
   {
     "author": "Brian D. McLaren",
@@ -1694,7 +1766,8 @@
     "title": "A Generous Orthodoxy",
     "image": "AGenerousOrthodoxy.jpg",
     "dateStart": "2007-01-11",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780310258032"
   },
   {
     "author": "John Piper",
@@ -1703,7 +1776,8 @@
     "pages": 192,
     "image": "DontWasteYourLife.jpg",
     "dateFinish": "2007-10-31",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781581344981"
   },
   {
     "author": "John Piper",
@@ -1712,7 +1786,8 @@
     "pages": 128,
     "image": "FiftyReasonsWhyJesusCameToDie.jpg",
     "dateFinish": "2009-11-18",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781581347883"
   },
   {
     "author": "Lee Strobel",
@@ -1722,7 +1797,8 @@
     "title": "The Case for Faith",
     "image": "TheCaseForFaith.jpg",
     "dateStart": "2005-03-09",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780310234692"
   },
   {
     "author": "Lee Strobel",
@@ -1732,7 +1808,8 @@
     "title": "The Case for a Creator",
     "image": "TheCaseForACreator.jpg",
     "dateStart": "2005-02-13",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780310240501"
   },
   {
     "author": "Ted Dekker",
@@ -1742,7 +1819,8 @@
     "title": "White",
     "image": "White.jpg",
     "dateStart": "2004-03-03",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781595547323"
   },
   {
     "author": "Ted Dekker",
@@ -1752,7 +1830,8 @@
     "title": "Red",
     "image": "Red.jpg",
     "dateStart": "2004-02-02",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781595547316"
   },
   {
     "author": "Ted Dekker",
@@ -1762,7 +1841,8 @@
     "title": "Black",
     "image": "Black.jpg",
     "dateStart": "2004-02-02",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781595547309"
   },
   {
     "author": "Donald Miller",
@@ -1772,7 +1852,8 @@
     "title": "Blue Like Jazz",
     "image": "BlueLikeJazz.jpg",
     "dateStart": "2005-06-07",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780785263708"
   },
   {
     "author": "Donald Miller",
@@ -1781,7 +1862,8 @@
     "pages": 272,
     "image": "SearchingForGodKnowsWhat.jpg",
     "dateFinish": "2005-06-17",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781400202751"
   },
   {
     "author": "Donald Miller",
@@ -1791,7 +1873,8 @@
     "title": "To Own a Dragon",
     "image": "ToOwnADragon.jpg",
     "dateStart": "2007-08-07",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9781576837313"
   },
   {
     "author": "Donald Miller",
@@ -1801,7 +1884,8 @@
     "title": "Through Painted Deserts",
     "image": "ThroughPaintedDeserts.jpg",
     "dateStart": "2006-04-30",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780785209829"
   },
   {
     "author": "Kyle Lake",
@@ -1811,17 +1895,19 @@
     "title": "Understanding God's Will",
     "image": "UnderstandingGodsWill.jpg",
     "dateStart": "2005-06-17",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780974694269"
   },
   {
     "author": "Kyle Lake",
     "pages": 181,
     "subtitle": "A Fresh Approach to Conversation With God",
     "dateFinish": "2007-10-31",
-    "title": "(RE)Understanding Prayer",
+    "title": "(RE) Understanding Prayer",
     "image": "ReUnderstandingPrayer.jpg",
     "dateStart": "2007-10-31",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780976364269"
   },
   {
     "author": "Blake Snyder",
@@ -1831,7 +1917,8 @@
     "title": "Save the Cat",
     "image": "SaveTheCat.jpg",
     "dateStart": "2006-02-10",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781932907001"
   },
   {
     "author": "Syd Field",
@@ -1841,7 +1928,8 @@
     "title": "Selling a Screenplay",
     "image": "SellingAScreenplay.jpg",
     "dateStart": "2006-03-02",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780440502449"
   },
   {
     "author": "Pete Greig",
@@ -1851,7 +1939,8 @@
     "title": "Red Moon Rising",
     "image": "RedMoonRising.jpg",
     "dateStart": "2006-10-01",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780972927666"
   },
   {
     "author": "Pete Greig",
@@ -1861,7 +1950,8 @@
     "title": "The Vision And The Vow",
     "image": "TheVisionAndTheVow.jpg",
     "dateStart": "2005-12-25",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780972927628"
   },
   {
     "author": "Michael J. Behe",
@@ -1871,7 +1961,8 @@
     "title": "Darwin's Black Box",
     "image": "DarwinsBlackBox.jpg",
     "dateStart": "2005-05-24",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780684834931"
   },
   {
     "author": "Dennis Schaefer",
@@ -1881,7 +1972,8 @@
     "title": "Masters of Light",
     "image": "MastersOfLight.jpg",
     "dateStart": "2006-02-26",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780520053366"
   },
   {
     "author": "Edward Dmytryk",
@@ -1890,7 +1982,8 @@
     "pages": 310,
     "image": "ItsAHellOfALife.jpg",
     "dateFinish": "2006-03-08",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780812907858"
   },
   {
     "author": "Jarrett Stevens",
@@ -1899,7 +1992,8 @@
     "pages": 183,
     "image": "TheDeityFormerlyKnownAsGod.jpg",
     "dateFinish": "2006-10-01",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310271147"
   },
   {
     "author": "Dave Burchett",
@@ -1909,7 +2003,8 @@
     "title": "When Bad Christians Happen to Good People",
     "image": "WhenBadChristiansHappenToGoodPeople.jpg",
     "dateStart": "2004-02-03",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781578564903"
   },
   {
     "author": "Roy H. Williams",
@@ -1918,7 +2013,8 @@
     "pages": 244,
     "image": "TheWizardOfAds.jpg",
     "dateFinish": "2011-10-09",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781885167323"
   },
   {
     "author": "C.S. Lewis",
@@ -1928,7 +2024,8 @@
     "title": "Out of the Silent Planet",
     "image": "OutOfTheSilentPlanet.jpg",
     "dateStart": "2007-05-21",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780743234900"
   },
   {
     "author": "C.S. Lewis",
@@ -1938,7 +2035,8 @@
     "title": "That Hideous Strength",
     "image": "TheHideousStrength.jpg",
     "dateStart": "2007-08-17",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780684823850"
   },
   {
     "author": "C.S. Lewis",
@@ -1948,7 +2046,8 @@
     "title": "Perelandra",
     "image": "Perelandra.jpg",
     "dateStart": "2007-06-20",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780684823829"
   },
   {
     "author": "C.S. Lewis",
@@ -1957,7 +2056,8 @@
     "pages": 209,
     "image": "TheScrewtapeLetters.jpg",
     "dateFinish": "2004-02-03",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780060652937"
   },
   {
     "author": "C.S. Lewis",
@@ -1966,7 +2066,8 @@
     "pages": 176,
     "image": "TheProblemOfPain.jpg",
     "dateFinish": "2004-04-21",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780060652968"
   },
   {
     "author": "C.S. Lewis",
@@ -1975,7 +2076,8 @@
     "pages": 160,
     "image": "TheGreatDivorce.jpg",
     "dateFinish": "2004-04-21",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780060652951"
   },
   {
     "author": "C.S. Lewis",
@@ -1985,16 +2087,78 @@
     "title": "Surprised by Joy",
     "image": "SurprisedByJoy.jpg",
     "dateStart": "2005-04-21",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780884863427"
   },
   {
     "author": "C.S. Lewis",
-    "title": "The Chronicles of Narnia (Box Set)",
+    "title": "The Magicians Nephew",
     "dateStart": "2005-01-17",
-    "pages": 1632,
+    "pages": 221,
     "image": "TheChroniclesOfNarnia.jpg",
     "dateFinish": "2005-01-17",
-    "stars": 5
+    "stars": 5,
+    "isbn": "046594005991"
+  },
+  {
+    "author": "C.S. Lewis",
+    "title": "The Lion, The Witch, and the Wardrobe",
+    "dateStart": "2005-01-17",
+    "pages": 206,
+    "image": "TheChroniclesOfNarnia.jpg",
+    "dateFinish": "2005-01-17",
+    "stars": 5,
+    "isbn": "046594005953"
+  },
+  {
+    "author": "C.S. Lewis",
+    "title": "The Horse and His Boy",
+    "dateStart": "2005-01-17",
+    "pages": 241,
+    "image": "TheChroniclesOfNarnia.jpg",
+    "dateFinish": "2005-01-17",
+    "stars": 5,
+    "isbn": "046594005991"
+  },
+  {
+    "author": "C.S. Lewis",
+    "title": "Prince Caspian",
+    "dateStart": "2005-01-17",
+    "pages": 238,
+    "image": "TheChroniclesOfNarnia.jpg",
+    "dateFinish": "2005-01-17",
+    "stars": 5,
+    "isbn": "046594005991"
+  },
+  {
+    "author": "C.S. Lewis",
+    "title": "The Voyage of the Dawn Treader",
+    "dateStart": "2005-01-17",
+    "pages": 271,
+    "image": "TheChroniclesOfNarnia.jpg",
+    "dateFinish": "2005-01-17",
+    "stars": 5,
+    "isbn": "046594005991"
+  },
+  {
+    "author": "C.S. Lewis",
+    "title": "The Silver Chair",
+    "dateStart": "2005-01-17",
+    "pages": 257,
+    "image": "TheChroniclesOfNarnia.jpg",
+    "dateFinish": "2005-01-17",
+    "stars": 5,
+    "isbn": "046594005991"
+  },
+  {
+    "author": "C.S. Lewis",
+    "title": "The Last Battle",
+    "dateStart": "2005-01-17",
+    "pages": 228,
+    "image": "TheChroniclesOfNarnia.jpg",
+    "dateFinish": "2005-01-17",
+    "stars": 5,
+    "isbn": "046594005991"
   },
   {
     "author": "C.S. Lewis",
@@ -2014,7 +2178,8 @@
     "title": "Out of the Question...Into the Mystery",
     "image": "OutOfTheQuestion.jpg",
     "dateStart": "2007-04-24",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781578566471"
   },
   {
     "author": "Matthew Paul Turner",
@@ -2024,7 +2189,8 @@
     "title": "The Coffeehouse Gospel",
     "image": "TheCoffeehouseGospel.jpg",
     "dateStart": "2005-06-07",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780974694283"
   },
   {
     "author": "John Bolin",
@@ -2034,7 +2200,8 @@
     "title": "The Two Doors of Heaven",
     "image": "TheTwoDoorsOfHeaven.jpg",
     "dateStart": "2007-02-10",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9781590522646"
   },
   {
     "author": "James Alexander Langteaux",
@@ -2044,7 +2211,8 @@
     "title": "God.com",
     "image": "GodCom.jpg",
     "dateStart": "2004-02-21",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781576737071"
   },
   {
     "author": "Craig L. Blomberg",
@@ -2053,7 +2221,8 @@
     "pages": 416,
     "image": "TheHistoricalReliabilityOfTheGospels.jpg",
     "dateFinish": "2005-04-23",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780877849926"
   },
   {
     "author": "Steven Pressfield",
@@ -2063,7 +2232,8 @@
     "title": "The War of Art",
     "image": "TheWarOfArt.jpg",
     "dateStart": "2009-05-22",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780446691437"
   },
   {
     "author": "Steve Taylor",
@@ -2073,7 +2243,8 @@
     "title": "The Out of Bounds Church?",
     "image": "TheOutOfBoundsChurch.jpg",
     "dateStart": "2006-01-15",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310259046"
   },
   {
     "author": "David Mamet",
@@ -2082,7 +2253,8 @@
     "pages": 128,
     "image": "OnDirectingFilm.jpg",
     "dateFinish": "2006-03-06",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780140127225"
   },
   {
     "author": "Gareth Higgins",
@@ -2092,7 +2264,8 @@
     "title": "How Movies Helped Save My Soul",
     "image": "HowMoviesHelpedSaveMySoal.jpg",
     "dateStart": "2005-12-28",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780971457690"
   },
   {
     "author": "Molly Haskell",
@@ -2102,7 +2275,8 @@
     "title": "From Reverence to Rape",
     "image": "FromReverenceToRape.jpg",
     "dateStart": "2006-01-24",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780226318851"
   },
   {
     "author": "John Alton",
@@ -2111,7 +2285,8 @@
     "pages": 248,
     "image": "PaintingWithLight.jpg",
     "dateFinish": "2006-01-26",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780520089495"
   },
   {
     "author": "Steven Ascher",
@@ -2120,7 +2295,8 @@
     "pages": 624,
     "image": "TheFilmmakersHandbook.jpg",
     "dateFinish": "2005-01-25",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780452279575"
   },
   {
     "author": "Malcom Gladwell",
@@ -2130,7 +2306,8 @@
     "title": "Blink",
     "image": "BlinkGladwell.jpg",
     "dateStart": "2007-04-09",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780316010665"
   },
   {
     "author": "Malcolm Gladwell",
@@ -2140,7 +2317,8 @@
     "title": "The Tipping Point",
     "image": "TheTippingPoint.jpg",
     "dateStart": "2004-06-06",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780316346627"
   },
   {
     "author": "Francine Rivers",
@@ -2149,7 +2327,8 @@
     "pages": 479,
     "image": "RedeemingLove.jpg",
     "dateFinish": "2006-06-17",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781590525135"
   },
   {
     "author": "Rick Warren",
@@ -2159,7 +2338,8 @@
     "title": "The Purpose Driven Life",
     "image": "ThePurposeDrivenLife.jpg",
     "dateStart": "2003-10-08",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780310276999"
   },
   {
     "author": "Erwin Raphael McManus",
@@ -2169,7 +2349,8 @@
     "title": "The Barbarian Way",
     "image": "TheBarbarianWay.jpg",
     "dateStart": "2007-01-27",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780785264323"
   },
   {
     "author": "Tom Rath",
@@ -2178,7 +2359,8 @@
     "pages": 175,
     "image": "StrengthsFinder.jpg",
     "dateFinish": "2008-08-08",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9781595620156"
   },
   {
     "author": "John Bunyan",
@@ -2187,7 +2369,8 @@
     "pages": 96,
     "image": "ThePilgrimsProgress.jpg",
     "dateFinish": "2006-03-03",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781593106843"
   },
   {
     "author": "Lois Lowry",
@@ -2196,7 +2379,8 @@
     "pages": 192,
     "image": "TheGiver.jpg",
     "dateFinish": "2006-04-17",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780544336261"
   },
   {
     "author": "Tony Jones",
@@ -2206,7 +2390,8 @@
     "title": "Read, Think, Pray, Live",
     "image": "ReadThinkPrayLive.jpg",
     "dateStart": "2007-03-16",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781576834534"
   },
   {
     "author": "Peter Jenkins",
@@ -2215,7 +2400,8 @@
     "pages": 291,
     "image": "AWalkAcrossAmerica.jpg",
     "dateFinish": "2006-01-17",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780060959555"
   },
   {
     "author": "Steve Case",
@@ -2225,7 +2411,8 @@
     "title": "God Is Here",
     "image": "GodIsHere.jpg",
     "dateStart": "2006-12-02",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781666736847"
   },
   {
     "author": "Doug Fields",
@@ -2235,7 +2422,8 @@
     "title": "Your First Two Years in Youth Ministry",
     "image": "YourFirstTwoYearsInYM.jpg",
     "dateStart": "2008-05-02",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780310240457"
   },
   {
     "author": "Doug Fields",
@@ -2245,7 +2433,8 @@
     "title": "Refuel",
     "image": "Refuel.jpg",
     "dateStart": "2011-11-30",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780849920547"
   },
   {
     "author": "Jud Wilhite",
@@ -2254,7 +2443,8 @@
     "pages": 160,
     "image": "FaithThatGoesTheDistance.jpg",
     "dateFinish": "2002-06-02",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780801012372"
   },
   {
     "author": "Jud Wilhite",
@@ -2263,7 +2453,8 @@
     "pages": 144,
     "image": "LoveThatGoesTheDistance.jpg",
     "dateFinish": "2003-07-02",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780801064647"
   },
   {
     "author": "Jud Wilhite",
@@ -2272,7 +2463,8 @@
     "pages": 224,
     "image": "Stripped.jpg",
     "dateFinish": "2007-03-07",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9781590527399"
   },
   {
     "author": "Rob Bell",
@@ -2281,7 +2473,8 @@
     "pages": 208,
     "image": "SexGod.jpg",
     "dateFinish": "2009-03-07",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780310263463"
   },
   {
     "author": "John Ortberg",
@@ -2290,7 +2483,8 @@
     "pages": 212,
     "image": "IfYouWantToWalkOnWater.jpg",
     "dateFinish": "2004-01-02",
-    "stars": 2
+    "stars": 2,
+    "isbn": "9780310228639"
   },
   {
     "author": "Lee Strobel",
@@ -2299,7 +2493,8 @@
     "pages": 336,
     "image": "TheCaseForChrist.jpg",
     "dateFinish": "2003-08-08",
-    "stars": 5
+    "stars": 5,
+    "isbn": "9780802727879"
   },
   {
     "author": "Daniel H. Pink",
@@ -2319,7 +2514,8 @@
     "pages": 192,
     "image": "TheFourLoves.jpg",
     "dateFinish": "2008-03-02",
-    "stars": 4
+    "stars": 4,
+    "isbn": "9780884863427"
   },
   {
     "author": "Donald Miller",
@@ -2341,7 +2537,7 @@
     "image": "ThisBeautifulMess.jpg",
     "dateStart": "2006-08-08",
     "stars": 4,
-    "isbn": "9781601425690"
+    "isbn": "9781590525012"
   },
   {
     "author": "N.T. Wright",
@@ -2352,7 +2548,7 @@
     "image": "SimplyChristian.jpg",
     "dateStart": "2010-01-14",
     "stars": 4,
-    "isbn": "9780060872700"
+    "isbn": "9780060507152"
   },
   {
     "author": "Jim Cymbala, Dean Merrill",
@@ -2362,7 +2558,8 @@
     "title": "Fresh Power",
     "image": "FreshPower.jpg",
     "dateStart": "2010-05-05",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310230083"
   },
   {
     "author": "Jim Cymbala, Dean Merrill",
@@ -2372,7 +2569,8 @@
     "title": "Fresh Faith",
     "image": "FreshFaith.jpg",
     "dateStart": "2009-10-10",
-    "stars": 3
+    "stars": 3,
+    "isbn": "9780310230076"
   },
   {
     "author": "Jim Cymbala, Dean Merrill",
