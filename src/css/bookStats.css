@@ -79,10 +79,6 @@
   .bookStats > div {
     justify-self: flex-start;
   }
-
-  .bookStats .bargraph .year-container {
-    width: 18px;
-  }
 }
 
 @media (min-width: 1200px) {

@@ -7,7 +7,7 @@
     "url": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299",
     "image": "AtomicHabits.jpg",
     "dateStart": "2022-09-08",
-    "progress": 42,
+    "progress": 58,
     "isbn": "9780735211292"
   }, 
   {
@@ -17,7 +17,7 @@
     "url": "https://www.amazon.com/dp/0553380958",
     "image": "SnowCrash.jpg",
     "dateStart": "2022-08-27",
-    "progress": 530,
+    "dateFinish": "2022-09-12",
     "isbn": "9783596705597"
   },
   {
@@ -27,7 +27,8 @@
     "pages": 256,
     "url": "https://www.amazon.com/One-Time-Unexpected-Wants-Change/dp/0801094917",
     "image": "OneAtATime.jpg",
-    "dateStart": null,
+    "dateStart": "2022-09-12",
+    "progress": 32,
     "isbn": "9780801094910"
   }, 
   {
