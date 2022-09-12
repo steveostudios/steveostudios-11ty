@@ -1,14 +1,25 @@
 [
   {
+    "title": "Atomic Habits",
+    "subtitle": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+    "author": "James Clear",
+    "pages": 320,
+    "url": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299",
+    "image": "AtomicHabits.jpg",
+    "dateStart": "2022-09-08",
+    "progress": 42,
+    "isbn": "9780735211292"
+  }, 
+  {
     "title": "Snow Crash",
     "author": "Neal Stephenson",
     "pages": 565,
     "url": "https://www.amazon.com/dp/0553380958",
     "image": "SnowCrash.jpg",
     "dateStart": "2022-08-27",
-    "progress": 296,
+    "progress": 530,
     "isbn": "9783596705597"
-  }, 
+  },
   {
     "title": "One at a Time",
     "author": "Kyle Idleman",
