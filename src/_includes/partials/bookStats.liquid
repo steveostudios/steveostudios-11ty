@@ -9,29 +9,11 @@
 <div class="bookStats">
   <div>
     <h4>Books by Years</h4>
-    <ul class="bargraph bargraph-books">
-      {% for year in books %}
-      <li>
-        <div class="year-container" data-text="{{ year.bookCount | number_with_delimiter }}">
-          <div class="year {{ year.year }}" style="--books: {{ year.bookCount }};"></div>
-        </div>
-        <div class="label">{{ year.year }}</div>
-      </li>
-      {% endfor %}
-    </ul>
+    {% booksByYearSVG books %}
   </div>
   <div>
     <h4>Pages by Year</h4>
-    <ul class="bargraph bargraph-pages">
-      {% for year in books %}
-      <li>
-        <div class="year-container" data-text="{{ year.pageCount | number_with_delimiter }}">
-          <div class="year {{ year.year }}" style="--pages: {{ year.pageCount }};"></div>
-          </div>
-        <div class="label">{{ year.year }}</div>
-      </li>
-      {% endfor %}
-    </ul>
+    {% pagesByYearSVG books %}
   </div>
   <div class="list">
     <h4>Stats</h4>

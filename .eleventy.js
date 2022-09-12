@@ -85,6 +85,61 @@ module.exports = function (eleventyConfig) {
     };
   })
 
+  const graphSVG = (data, prop, options) => {
+    const viewBox = {w: 420, h: 150};
+    // get rid of 'current'
+    data = data.filter(item => item.year !== "current").sort((a,b) => a.year - b.year)
+    
+    // get bounds
+    const firstYear = data[0].year;
+    const lastYear = data[data.length - 1].year;
+    const steps = lastYear - firstYear + 1;
+
+    // create array with empty dates
+    const filledInBooks = Array.from({length: steps}).map((newItem, i) => {
+      const match = data.find(item => parseInt(item.year) === i + parseInt(firstYear));
+      return match || {year: (i + parseInt(firstYear)).toString(), items: [], bookCount: 0, pageCount: 0}
+    })
+
+    // boundaries
+    const graphHeight = [...filledInBooks].sort((a,b) => b[prop] - a[prop])[0][prop];
+    const divisions = {h: viewBox.w / (steps - 1), v: viewBox.h / graphHeight};
+    const offset = 1;
+
+    const horLinesGap = options?.gap || 5;
+
+    // svg elements
+    const horLines = [...Array(Math.ceil(graphHeight /horLinesGap))].map((item, i) => `<line x1="0" x2="${viewBox.w}" y1="${viewBox.h - (divisions.v * i *horLinesGap)}" y2="${viewBox.h - (divisions.v * i *horLinesGap)}" stroke="var(--grey)" stroke-width="0.5" stroke-linecap="square"></line>`)
+    const points = filledInBooks.map((item, i) => [(item.year - firstYear) * divisions.h, (graphHeight - item[prop]) * divisions.v]);
+    const fillPath = `${points.join(" ").replace("NaN", (filledInBooks.length + 1 + offset) * divisions.h)} ${viewBox.w },${viewBox.h} 0, ${viewBox.h}`;
+    const linePath = points.join(" ").replace("NaN", (filledInBooks.length + 1 + offset) * divisions.h)
+
+    const text = points.map((item, i) => `<text x="${item[0]}" y="${viewBox.h + 5}" style="font-size: 10px; text-orientation: mixed;writing-mode: vertical-rl; fill: var(--dark-grey);">${filledInBooks[i].year}</text>`)
+    const circles = points.map((item, i) => `
+    <g class="point">
+      <circle cx="${item[0]}" cy="${item[1]}" r="4" stroke-width="2" stroke="var(--white)" fill="var(--dark-grey)" transform-origin="center"/>
+      <text x="${item[0]}" y="${item[1] - 10}" style="font-size: 10px; fill: var(--grey);">${filledInBooks[i][prop]}</text>
+    </g>`
+    );
+
+    return `<svg viewBox="-5 -5 ${viewBox.w +10} ${viewBox.h + 30}" width="${viewBox.w}" height="${viewBox.h + 30}">
+    ${horLines}
+    <polyline fill="var(--primary-color)" style="opacity: 0.4;" stroke-width="0" points="${fillPath}"/>
+    <polyline fill="none" stroke="var(--primary-color)" stroke-width="2" points="${linePath}"/>
+    ${circles}
+
+    ${text}
+    </svg>`;
+  }
+
+  eleventyConfig.addLiquidShortcode("booksByYearSVG", (books) => {
+    return graphSVG(books, 'bookCount')
+  })
+
+  eleventyConfig.addLiquidShortcode("pagesByYearSVG", (books) => {
+    return graphSVG(books, 'pageCount', {gap: 1000});
+  })
+
   return {
     passthroughFileCopy: true,
     dir: {
