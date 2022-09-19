@@ -17,7 +17,7 @@
 }
 
 .bookStats.active {
-  height: 185px;
+  height: 240px;
   /* max-height: 200px; */
   overflow-y: scroll;
 }
@@ -30,6 +30,48 @@
 .bookStats p {
   margin: 0 0 1rem 0;
   padding: 0;
+}
+
+.bookStats svg .year .value {
+  font-size: 10px;
+  paint-order: stroke;
+  fill: var(--dark-grey);
+  stroke: var(--white);
+  stroke-width: 3px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+}
+
+.bookStats svg .year .xyear {
+  font-size: 10px;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  fill: var(--grey);
+}
+
+.bookStats svg .year .dot {
+  fill: var(--dark-grey);
+  stroke: var(--white);
+  stroke-width: 2px;
+  transform-origin: center;
+}
+
+.bookStats svg .line {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-width: 2px;
+}
+
+.bookStats svg .fill {
+  fill: var(--primary-color);
+  opacity: 0.4;
+  stroke-width: 0;
+}
+
+.bookStats svg .horizontal {
+  stroke: var(--grey);
+  stroke-width: 0.5;
+  stroke-linecap: square;
 }
 
 .bookStats > div {

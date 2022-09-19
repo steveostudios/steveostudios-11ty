@@ -85,12 +85,25 @@ module.exports = function (eleventyConfig) {
     };
   })
 
+  const year = (year, value, x, y, h, position) => {
+    return `
+      <g class="year ${year}">
+        <circle class="dot" cx="${x}" cy="${y}" r="4"/>
+        <text class="value" x="${x}" y="${y - 8}" text-anchor="${position}">${value}</text>
+        <text class="xyear" x="${x}" y="${h + 5}">${year}</text>
+      </g>
+    `;
+  }
+
   const graphSVG = (data, prop, options) => {
-    const viewBox = {w: 420, h: 150};
-    // get rid of 'current'
+    const viewBox = {w: 420, h: 180}; // how big the SVG is
+    const graphDims = {x: 5, y: 20, w: 410, h: 130}; // how big the "graph" portion is in the SVG
+    const horLinesGap = options?.gap || 5;
+
+    // get rid of 'current' since they are not finished books
     data = data.filter(item => item.year !== "current").sort((a,b) => a.year - b.year)
     
-    // get bounds
+    // get bounds (fills in years where I didn't read)
     const firstYear = data[0].year;
     const lastYear = data[data.length - 1].year;
     const steps = lastYear - firstYear + 1;
@@ -103,32 +116,23 @@ module.exports = function (eleventyConfig) {
 
     // boundaries
     const graphHeight = [...filledInBooks].sort((a,b) => b[prop] - a[prop])[0][prop];
-    const divisions = {h: viewBox.w / (steps - 1), v: viewBox.h / graphHeight};
-    const offset = 1;
-
-    const horLinesGap = options?.gap || 5;
+    const divisions = {h: graphDims.w / (steps - 1), v: graphDims.h / graphHeight};
 
     // svg elements
-    const horLines = [...Array(Math.ceil(graphHeight /horLinesGap))].map((item, i) => `<line x1="0" x2="${viewBox.w}" y1="${viewBox.h - (divisions.v * i *horLinesGap)}" y2="${viewBox.h - (divisions.v * i *horLinesGap)}" stroke="var(--grey)" stroke-width="0.5" stroke-linecap="square"></line>`)
-    const points = filledInBooks.map((item, i) => [(item.year - firstYear) * divisions.h, (graphHeight - item[prop]) * divisions.v]);
-    const fillPath = `${points.join(" ").replace("NaN", (filledInBooks.length + 1 + offset) * divisions.h)} ${viewBox.w },${viewBox.h} 0, ${viewBox.h}`;
-    const linePath = points.join(" ").replace("NaN", (filledInBooks.length + 1 + offset) * divisions.h)
+    const horLines = [...Array(Math.ceil(graphHeight /horLinesGap))].map((item, i) => `<line class="horizontal" x1="${graphDims.x}" x2="${graphDims.w + graphDims.x}" y1="${graphDims.h - (divisions.v * i *horLinesGap) + graphDims.y}" y2="${graphDims.h - (divisions.v * i *horLinesGap) + graphDims.y}"></line>`)
+    const points = filledInBooks.map((item, i) => [(item.year - firstYear) * divisions.h + graphDims.x, (graphHeight - item[prop]) * divisions.v + graphDims.y]);
+    const fillPath = `${points.join(" ").replace("NaN", (filledInBooks.length) * divisions.h)} ${graphDims.w + graphDims.x},${graphDims.h + graphDims.y} 0, ${graphDims.h + graphDims.y}`;
+    const linePath = points.join(" ").replace("NaN", (filledInBooks.length) * divisions.h)
 
-    const text = points.map((item, i) => `<text x="${item[0]}" y="${viewBox.h + 5}" style="font-size: 10px; text-orientation: mixed;writing-mode: vertical-rl; fill: var(--dark-grey);">${filledInBooks[i].year}</text>`)
-    const circles = points.map((item, i) => `
-    <g class="point">
-      <circle cx="${item[0]}" cy="${item[1]}" r="4" stroke-width="2" stroke="var(--white)" fill="var(--dark-grey)" transform-origin="center"/>
-      <text x="${item[0]}" y="${item[1] - 10}" style="font-size: 10px; fill: var(--grey);">${filledInBooks[i][prop]}</text>
-    </g>`
-    );
+    const years = points.map((item, i) => year(filledInBooks[i].year, filledInBooks[i][prop], item[0], item[1], graphDims.h + graphDims.y, i === 0 ? "start" : i === filledInBooks.length - 1 ? "end" : "middle"))
+    console.log(years);
 
-    return `<svg viewBox="-5 -5 ${viewBox.w +10} ${viewBox.h + 30}" width="${viewBox.w}" height="${viewBox.h + 30}">
+    return `<svg viewBox="0 0 ${viewBox.w} ${viewBox.h}" width="${viewBox.w}" height="${viewBox.h}">
     ${horLines}
-    <polyline fill="var(--primary-color)" style="opacity: 0.4;" stroke-width="0" points="${fillPath}"/>
-    <polyline fill="none" stroke="var(--primary-color)" stroke-width="2" points="${linePath}"/>
-    ${circles}
+    <polyline class="fill" points="${fillPath}"/>
+    <polyline class="line" points="${linePath}"/>
+    ${years}
 
-    ${text}
     </svg>`;
   }
 

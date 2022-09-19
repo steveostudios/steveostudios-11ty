@@ -277,16 +277,3 @@ opacity: 1;
   }
 }
 
-.point circle {
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
-  transition: all 0.2s ease;
-}
-.point:hover circle { 
-  transform: scale(3);
-}
-
-.point text {
-  text-align: center;
-  text-anchor: middle;
-}
