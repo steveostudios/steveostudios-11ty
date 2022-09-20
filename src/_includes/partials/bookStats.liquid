@@ -1,6 +1,15 @@
 {% assign books = book_object.books | reverse %}
 {% assign mostPages = books | max: "pageCount" %}
 {% assign mostBooks = books | max: "bookCount" %}
+{% assign current = book_object.books | first %}
+{% assign current_progress = 0 %}
+{% assign current_total = 0 %}
+{% for item in current.items %}
+  {% assign current_progress = current_progress | plus: item.progress %}
+  {% assign current_total = current_total | plus: item.pages %}
+{% endfor %}
+{% assign this_year = book_object.books | slice: 1, 1  | first %}
+
 <label class="toggle bookStats-toggle" for="toggle">
   <input type="checkbox" name="toggle" id="toggle">
   <span class="slider"></span>
@@ -18,10 +27,14 @@
   <div class="list">
     <h4>Stats</h4>
     <ul>
-      <li><strong>All Books</strong>{{ book_object.finishedBooks | number_with_delimiter }} books</li>
-      <li><strong>All Pages</strong>{{ book_object.finishedPages | number_with_delimiter }} pages</li>
-      <li><strong>Most Books</strong>{{ mostBooks.bookCount | number_with_delimiter }} books ({{ mostBooks.year }})</li>
-      <li><strong>Most Pages</strong>{{ mostPages.pageCount | number_with_delimiter }} pages ({{ mostPages.year }})</li>
+      <li><div class="prop">All Books</div><div class="line"></div><div class="attr">{{ book_object.finishedBooks | number_with_delimiter }} books</div></li>
+      <li><div class="prop">All Pages</div><div class="line"></div><div class="attr">{{ book_object.finishedPages | number_with_delimiter }} pages</div></li>
+      <li><div class="prop">Most Books</div><div class="line"></div><div class="attr">{{ mostBooks.bookCount | number_with_delimiter }} books ({{ mostBooks.year }})</div></li>
+      <li><div class="prop">Most Pages</div><div class="line"></div><div class="attr">{{ mostPages.pageCount | number_with_delimiter }} pages ({{ mostPages.year }})</div></li>
+      <li><div class="prop">Current Books</div><div class="line"></div><div class="attr">{{ current.items.size | number_with_delimiter }} books</div></li>
+      <li><div class="prop">Current Pages</div><div class="line"></div><div class="attr">{{ current_progress | number_with_delimiter }}/{{ current_total | number_with_delimiter }} pages</div></li>
+      <li><div class="prop">This Year Books</div><div class="line"></div><div class="attr">{{ this_year.bookCount | number_with_delimiter }} books</div></li>
+      <li><div class="prop">This Year Pages</div><div class="line"></div><div class="attr">{{ this_year.pageCount | number_with_delimiter }} pages</div></li>
     </ul>
   </div>
 </div>

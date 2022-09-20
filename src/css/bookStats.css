@@ -1,6 +1,6 @@
 .bookStats {
   display: grid;
-  grid-template-columns: repeat(auto-fill, auto);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   margin-bottom: 2rem;
   align-items: flex-start;
   gap: 1rem;
@@ -10,6 +10,7 @@
   transition: all 0.25s ease-in-out;
   overflow: hidden;
   clear: both;
+  width: 100%;
 }
 
 .bookStats-toggle {
@@ -75,9 +76,8 @@
 }
 
 .bookStats > div {
-  justify-self: center;
+  /* justify-self: center; */
   display: flex;
-  max-width: 420px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -88,30 +88,33 @@
 
 .bookStats .list {
   justify-content: flex-start;
+  width: 100%;
 }
 
 .bookStats .list ul {
   list-style: none;
   padding: 0;
+  flex: 1;
   margin: 0;
 }
 
 .bookStats .list li {
   display: flex;
   justify-content: space-between;
-}
-
-.bookStats .list li strong {
-  font-weight: bold;
-  font-family: "Raleway";
-  text-transform: uppercase;
-  width: 110px;
-  margin-right: 1rem;
   font-size: 0.85rem;
-  display: block;
   color: var(--dark-grey);
+  gap: 1rem;
 }
 
+.bookStats .list li .prop {
+  color: var(--grey);
+}
+
+.bookStats .list li .line {
+  flex: 1;
+  height: 0.5rem;
+  border-bottom: 1px solid var(--trim);
+}
 
 
 @media (min-width: 900px) {
@@ -125,7 +128,7 @@
 
 @media (min-width: 1200px) {
   .bookStats {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
   .bookStats > div {
     justify-self: flex-start;

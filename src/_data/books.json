@@ -6,7 +6,7 @@
     "url": "https://www.amazon.com/Secret-Lives-Color-Kassia-Clair/dp/0143131141",
     "image": "TheSecretLivesOfColor.jpg",
     "dateStart": "2022-09-14",
-    "progress": 135,
+    "progress": 168,
     "isbn": "9780143131144"
   }, {
     "title": "Atomic Habits",
@@ -16,7 +16,7 @@
     "url": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299",
     "image": "AtomicHabits.jpg",
     "dateStart": "2022-09-08",
-    "progress": 140,
+    "progress": 158,
     "isbn": "9780735211292"
   }, 
   {
@@ -37,7 +37,7 @@
     "url": "https://www.amazon.com/One-Time-Unexpected-Wants-Change/dp/0801094917",
     "image": "OneAtATime.jpg",
     "dateStart": "2022-09-12",
-    "progress": 216,
+    "dateFinish": "2022-09-20",
     "isbn": "9780801094910"
   }, 
   {

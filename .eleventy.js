@@ -127,7 +127,7 @@ module.exports = function (eleventyConfig) {
     const years = points.map((item, i) => year(filledInBooks[i].year, filledInBooks[i][prop], item[0], item[1], graphDims.h + graphDims.y, i === 0 ? "start" : i === filledInBooks.length - 1 ? "end" : "middle"))
     console.log(years);
 
-    return `<svg viewBox="0 0 ${viewBox.w} ${viewBox.h}" width="${viewBox.w}" height="${viewBox.h}">
+    return `<svg viewBox="0 0 ${viewBox.w} ${viewBox.h}" width="100%" height="${viewBox.h}">
     ${horLines}
     <polyline class="fill" points="${fillPath}"/>
     <polyline class="line" points="${linePath}"/>
