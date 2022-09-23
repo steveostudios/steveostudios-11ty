@@ -1,14 +1,49 @@
 [
   {
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "pages": 384,
+    "url": "https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/030788743X",
+    "image": "ReadyPlayerOne.jpg",
+    "isbn": "9780307887436"
+  },
+  {
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "pages": 368,
+    "url": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654",
+    "image": "TheDesignOfEverydayThings.jpg",
+    "isbn": "9780465050659"
+  },
+  {
+    "title": "Inspired",
+    "author": "Marty Cagan",
+    "pages": 368,
+    "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
+    "image": "Inspired.jpg",
+    "isbn": "9781119387503"
+  },
+  {
+    "title": "Erasing Hell",
+    "author": "Francis Chan and Preston Sprinkle",
+    "pages": 208,
+    "url": "https://www.amazon.com/Erasing-Hell-About-Eternity-Things/dp/0781407257",
+    "image": "ErasingHell.jpg",
+    "dateStart": "2022-09-23",
+    "progress": 20, 
+    "isbn": "9780781407250"
+  },
+  {
     "title": "The Secret Lives of Color",
     "author": "Kassia St. Clair",
     "pages": 320,
     "url": "https://www.amazon.com/Secret-Lives-Color-Kassia-Clair/dp/0143131141",
     "image": "TheSecretLivesOfColor.jpg",
     "dateStart": "2022-09-14",
-    "progress": 196,
+    "progress": 239,
     "isbn": "9780143131144"
-  }, {
+  },
+  {
     "title": "Atomic Habits",
     "subtitle": "An Easy & Proven Way to Build Good Habits & Break Bad Ones",
     "author": "James Clear",
@@ -16,7 +51,7 @@
     "url": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299",
     "image": "AtomicHabits.jpg",
     "dateStart": "2022-09-08",
-    "progress": 194,
+    "dateFinish": "2022-09-23",
     "isbn": "9780735211292"
   }, 
   {
