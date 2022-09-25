@@ -5,7 +5,9 @@
     "pages": 384,
     "url": "https://www.amazon.com/Ready-Player-One-Ernest-Cline/dp/030788743X",
     "image": "ReadyPlayerOne.jpg",
-    "isbn": "9780307887436"
+    "isbn": "9780307887436",
+    "dateStart": "2022-09-24",
+    "progress": 12
   },
   {
     "title": "The Design of Everyday Things",
