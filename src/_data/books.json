@@ -8,7 +8,18 @@
     "image": "ReadyPlayerOne.jpg",
     "isbn": "9780307887436",
     "dateStart": "2022-09-24",
-    "progress": 76
+    "progress": 115
+  },
+  {
+    "title": "Inspired",
+    "fiction": false,
+    "author": "Marty Cagan",
+    "pages": 368,
+    "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
+    "image": "Inspired.jpg",
+    "dateStart": "2022-09-26",
+    "progress": 51,
+    "isbn": "9781119387503"
   },
   {
     "title": "The Design of Everyday Things",
@@ -20,17 +31,6 @@
     "isbn": "9780465050659"
   },
   {
-    "title": "Inspired",
-    "fiction": false,
-    "author": "Marty Cagan",
-    "pages": 368,
-    "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
-    "image": "Inspired.jpg",
-    "dateStart": "2022-09-26",
-    "progress": 30,
-    "isbn": "9781119387503"
-  },
-  {
     "title": "Erasing Hell",
     "fiction": false,
     "author": "Francis Chan and Preston Sprinkle",
@@ -38,7 +38,7 @@
     "url": "https://www.amazon.com/Erasing-Hell-About-Eternity-Things/dp/0781407257",
     "image": "ErasingHell.jpg",
     "dateStart": "2022-09-23",
-    "progress": 128, 
+    "dateFinish": "2022-09-27", 
     "isbn": "9780781407250"
   },
   {
