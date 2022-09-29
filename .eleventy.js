@@ -143,6 +143,74 @@ module.exports = function (eleventyConfig) {
     return graphSVG(books, 'pageCount', {gap: 1000});
   })
 
+  const pieChart = (data) => {
+    const viewBox = {w: 420, h: 180}; // how big the SVG is
+
+    let colors = [ '#0f688a', '#89cae2', '#67afc9', '#dedcd6' ];
+    const total = data.reduce((prev, curr) => {
+      return prev + curr.value
+    }, 0);
+
+    const slices = data.map((item, i ) => {return {
+      color: colors[i],
+      value: item.value,
+      title: item.title,
+      percent: item.value / total
+    }})
+
+    let cumulativePercent = 0;
+    
+    function getCoordinatesForPercent(percent) {
+      const x = Math.cos(2 * Math.PI * percent);
+      const y = Math.sin(2 * Math.PI * percent);
+      return [x, y];
+    }
+    
+    const pieces = slices.map((slice, i) => {
+      // destructuring assignment sets the two variables at once
+      const [startX, startY] = getCoordinatesForPercent(cumulativePercent);
+      
+      // each slice starts where the last slice ended, so keep a cumulative percent
+      cumulativePercent += slice.percent;
+      
+      const [endX, endY] = getCoordinatesForPercent(cumulativePercent);
+    
+      // if the slice is more than 50%, take the large arc (the long way around)
+      const largeArcFlag = slice.percent > .5 ? 1 : 0;
+    
+      // create an array and join it just for code readability
+      pathData = [
+        `M ${startX} ${startY}`, // Move
+        `A 1 1 0 ${largeArcFlag} 1 ${endX} ${endY}`, // Arc
+        `L 0 0`, // Line
+      ].join(' ');
+
+      return `<path d="${pathData}" fill="${colors[i]}"></path>`
+    })
+
+    const legend = slices.map((item, i) => {
+      return `<g>
+        <rect x="1.4" y="${-1 + (i * 0.25)}" width="0.2" height="0.2" fill="${item.color}" />
+        <text x="1.65" y="${-0.8125 + (i * 0.25)}" style="font-size: 0.2px;">${item.title}</text>
+      </g>`;
+    }).join("")
+
+
+    return `<svg height="${viewBox.h}" width="${viewBox.w}" viewBox="0 -1 2 2" style="border:1px solid gray; ">
+      ${pieces}
+      ${legend}
+    </svg>`
+  }
+
+  eleventyConfig.addLiquidShortcode("fictionPieChart", () => {
+    return pieChart([
+      {title: "Fiction", value: 10},
+      {title: "-pseudoFiction", value: 20},
+      {title: "Non-Fiction", value: 10},
+      {title: "Non-Fiction", value: 10}
+    ])
+  })
+
   return {
     passthroughFileCopy: true,
     dir: {

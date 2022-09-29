@@ -10,6 +10,7 @@
 {% endfor %}
 {% assign this_year = book_object.books | slice: 1, 1  | first %}
 
+{% comment %} {% fictionPieChart %} {% endcomment %}
 <label class="toggle bookStats-toggle" for="toggle">
   <input type="checkbox" name="toggle" id="toggle">
   <span class="slider"></span>

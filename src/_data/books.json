@@ -8,7 +8,19 @@
     "image": "ReadyPlayerOne.jpg",
     "isbn": "9780307887436",
     "dateStart": "2022-09-24",
-    "progress": 115
+    "progress": 225
+  },
+  {
+    "title": "Fix Your Eyes",
+    "subtitle": "How Our Study of God Shapes Our Worship of Him",
+    "fiction": false,
+    "author": "Any Gannett",
+    "pages": 240,
+    "url": "https://www.amazon.com/Fix-Your-Eyes-Shapes-Worship/dp/1087730546",
+    "image": "FixYourEyes.jpg",
+    "isbn": "9781087730547",
+    "dateStart": "2022-09-28",
+    "progress": 18
   },
   {
     "title": "Inspired",
@@ -18,7 +30,7 @@
     "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
     "image": "Inspired.jpg",
     "dateStart": "2022-09-26",
-    "progress": 51,
+    "progress": 88,
     "isbn": "9781119387503"
   },
   {
