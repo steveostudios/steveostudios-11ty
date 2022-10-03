@@ -8,7 +8,7 @@
     "image": "ReadyPlayerOne.jpg",
     "isbn": "9780307887436",
     "dateStart": "2022-09-24",
-    "progress": 225
+    "dateFinish": "2022-10-03"
   },
   {
     "title": "Fix Your Eyes",
@@ -20,7 +20,7 @@
     "image": "FixYourEyes.jpg",
     "isbn": "9781087730547",
     "dateStart": "2022-09-28",
-    "progress": 18
+    "progress": 116
   },
   {
     "title": "Inspired",
@@ -30,7 +30,7 @@
     "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
     "image": "Inspired.jpg",
     "dateStart": "2022-09-26",
-    "progress": 88,
+    "progress": 107,
     "isbn": "9781119387503"
   },
   {
