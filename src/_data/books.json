@@ -20,7 +20,7 @@
     "image": "FixYourEyes.jpg",
     "isbn": "9781087730547",
     "dateStart": "2022-09-28",
-    "progress": 116
+    "progress": 159
   },
   {
     "title": "Inspired",
@@ -50,7 +50,7 @@
     "url": "https://www.amazon.com/Erasing-Hell-About-Eternity-Things/dp/0781407257",
     "image": "ErasingHell.jpg",
     "dateStart": "2022-09-23",
-    "dateFinish": "2022-09-27", 
+    "dateFinish": "2022-09-27",
     "isbn": "9780781407250"
   },
   {
@@ -75,7 +75,7 @@
     "dateStart": "2022-09-08",
     "dateFinish": "2022-09-23",
     "isbn": "9780735211292"
-  }, 
+  },
   {
     "title": "Snow Crash",
     "fiction": true,
@@ -98,7 +98,7 @@
     "dateStart": "2022-09-12",
     "dateFinish": "2022-09-20",
     "isbn": "9780801094910"
-  }, 
+  },
   {
     "title": "The End of Me",
     "fiction": false,
@@ -110,7 +110,7 @@
     "dateStart": "2022-08-26",
     "dateFinish": "2022-09-07",
     "isbn": "9781434707079"
-  },  
+  },
   {
     "title": "The Man in the High Castle",
     "fiction": true,
@@ -186,7 +186,7 @@
     "dateFinish": "2022-08-05",
     "isbn": "9780525652816",
     "stars": 5
-  }, 
+  },
   {
     "title": "The Obstacle Is the Way",
     "fiction": false,
@@ -199,7 +199,7 @@
     "dateFinish": "2022-07-28",
     "isbn": "9781591846352",
     "stars": 3
-  }, 
+  },
   {
     "title": "Creativity, Inc.",
     "fiction": false,
@@ -212,7 +212,7 @@
     "dateFinish": "2022-07-23",
     "isbn": "9780812993011",
     "stars": 5
-  }, 
+  },
   {
     "title": "Extreme Ownership",
     "fiction": false,
@@ -325,8 +325,7 @@
     "dateStart": "2022-02-21",
     "stars": 4,
     "post": "2022-03-08-seo-for-everyone",
-    "isbn": "9781952616075",
-    "stars": 4
+    "isbn": "9781952616075"
   },
   {
     "author": "Matt Parker",
@@ -340,7 +339,7 @@
     "url": "https://www.amazon.com/Things-Make-Fourth-Dimension-Mathematicians/dp/0374535639",
     "post": "2022-02-15-things-to-make-and-do-in-the-fourth-dimension",
     "stars": 4,
-    "isbn":9780374535636
+    "isbn": 9780374535636
   },
   {
     "author": "Gene Kim",
@@ -459,8 +458,7 @@
     "url": "https://abookapart.com/products/better-onboarding",
     "post": "2021-09-20-better-onboarding",
     "stars": 4,
-    "isbn": "9781937557812",
-    "stars": 4
+    "isbn": "9781937557812"
   },
   {
     "author": "David A. Vise",
@@ -537,8 +535,7 @@
     "url": "https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Everyone-ebook/dp/B01HOT5SQA/ref=sr_1_1?crid=1HU6BOHPS46Z2&dchild=1&keywords=hit+refresh&qid=1623729842&sprefix=hit+ref%2Caps%2C174&sr=8-1",
     "post": "2021-08-09-hit-refresh",
     "stars": 4,
-    "isbn": "9780062652508",
-    "stars": 4
+    "isbn": "9780062652508"
   },
   {
     "author": "Paul Gilster",
@@ -691,7 +688,7 @@
     "image": "DesigningForTouch.jpg",
     "dateStart": "2021-05-19",
     "dateFinish": "2021-05-25",
-    "isbn":"9781937557287",
+    "isbn": "9781937557287",
     "stars": 3
   },
   {
@@ -802,7 +799,7 @@
     "image": "ColorAccessibilityWorkflows.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/color-accessibility-workflows",
-    "isbn":"9871937557577",
+    "isbn": "9871937557577",
     "stars": 4
   },
   {
@@ -815,7 +812,7 @@
     "image": "GetReadyForCSSGridLayout.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/get-ready-for-css-grid-layout",
-    "isbn":"9781937557683",
+    "isbn": "9781937557683",
     "stars": 3
   },
   {
@@ -828,7 +825,7 @@
     "image": "PricingDesign.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/pricing-design",
-    "isbn":"9781937557362",
+    "isbn": "9781937557362",
     "stars": 4
   },
   {
@@ -841,7 +838,7 @@
     "image": "WritingForDesigners.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/writing-for-designers",
-    "isbn":"9781937557799",
+    "isbn": "9781937557799",
     "stars": 3
   },
   {
@@ -867,7 +864,7 @@
     "image": "EverydayInformationArchitecture.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/everyday-information-architecture",
-    "isbn":"9781937557744",
+    "isbn": "9781937557744",
     "stars": 4
   },
   {
@@ -880,7 +877,7 @@
     "image": "ContentStrategyForMobile.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/content-strategy-for-mobile",
-    "isbn":"9781937557089",
+    "isbn": "9781937557089",
     "stars": 3
   },
   {
@@ -893,7 +890,7 @@
     "image": "ResilentManagement.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/resilient-management",
-    "isbn":"9781937557829",
+    "isbn": "9781937557829",
     "stars": 5
   },
   {
@@ -906,7 +903,7 @@
     "image": "ResponsiveDesignPatternsAndPrinciples.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/responsive-design-patterns-principlesg",
-    "isbn":"9781937557331",
+    "isbn": "9781937557331",
     "stars": 4
   },
   {
@@ -921,7 +918,7 @@
     "publisher": "Penguin Books",
     "stars": 5,
     "url": "https://www.amazon.com/Thanks-Feedback-Science-Receiving-Well/dp/0143127136/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=",
-    "isbn":"9780143127130"
+    "isbn": "9780143127130"
   },
   {
     "author": "Laura Kalbag",
@@ -933,7 +930,7 @@
     "image": "AccessibilityForEveryone.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/accessibility-for-everyone",
-    "isbn":"9781937557614",
+    "isbn": "9781937557614",
     "stars": 4
   },
   {
@@ -946,7 +943,7 @@
     "image": "FlexibleTypesetting.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/flexible-typesetting",
-    "isbn":"9781937557706",
+    "isbn": "9781937557706",
     "stars": 3
   },
   {
@@ -959,7 +956,7 @@
     "image": "DemistifyingPublicSpeaking.jpg",
     "publisher": "A Book Apart",
     "url": "https://abookapart.com/products/demystifying-public-speaking",
-    "isbn":"9781937557522",
+    "isbn": "9781937557522",
     "stars": 3
   },
   {
@@ -972,7 +969,7 @@
     "image": "RexAppeal.jpg",
     "publisher": "Invisible Cities Press Llc",
     "url": "https://www.amazon.com/Rex-Appeal-Amazing-Dinosaur-Changed/dp/1931229384",
-    "isbn":"9791931229073",
+    "isbn": "9791931229073",
     "stars": 5
   },
   {
@@ -1042,7 +1039,7 @@
     "publisher": "A Book Apart",
     "stars": 3,
     "url": "https://abookapart.com/products/making-sense-of-color-management",
-    "isbn":"9781937557515"
+    "isbn": "9781937557515"
   },
   {
     "author": "John Doerr",
@@ -1071,7 +1068,7 @@
     "publisher": "A Book Apart",
     "stars": 4,
     "url": "https://abookapart.com/products/progressive-web-apps",
-    "isbn":"9781937557720"
+    "isbn": "9781937557720"
   },
   {
     "author": "Jeremy Keith",
@@ -2889,8 +2886,7 @@
     "image": "FreshWindFreshFire.jpg",
     "dateStart": "2009-02-02",
     "stars": 4,
-    "isbn": "9780310350606",
-    "stars": 4
+    "isbn": "9780310350606"
   },
   {
     "author": "Bob Russell",
