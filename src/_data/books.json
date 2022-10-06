@@ -40,7 +40,9 @@
     "pages": 368,
     "url": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654",
     "image": "TheDesignOfEverydayThings.jpg",
-    "isbn": "9780465050659"
+    "isbn": "9780465050659",
+    "progress": 36,
+    "dateStart": "2022-10-03"
   },
   {
     "title": "Erasing Hell",
