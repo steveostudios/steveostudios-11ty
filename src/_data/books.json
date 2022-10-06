@@ -1,5 +1,35 @@
 [
   {
+    "isbn": 9780553418026,
+    "pages": 387,
+    "title": "The Martian",
+    "authors": "Andy Weir",
+    "image": "TheMartian.jpg",
+    "subtitle": "A Novel"
+  },
+  {
+    "isbn": 9780781408233,
+    "title": "Multiply",
+    "authors": "Francis Chan, Mark Beuving",
+    "image": "Multiply.jpg",
+    "subtitle": "disciples making disciples"
+  },
+  {
+    "isbn": 9780787960759,
+    "pages": 229,
+    "title": "The five dysfunctions of a team",
+    "authors": "Patrick Lencioni",
+    "image": "TheFiveDysfunctionsOfATeam.jpg",
+    "subtitle": "a leadership fable"
+  },
+  {
+    "isbn": 9780345404473,
+    "pages": 244,
+    "title": "Do androids dream of electric sheep?",
+    "authors": "Philip K. Dick",
+    "image": "DoAndroidsDreamOfElectricSheep?.jpg"
+  },
+  {
     "title": "Ready Player One",
     "fiction": true,
     "author": "Ernest Cline",
@@ -22,7 +52,7 @@
     "image": "FixYourEyes.jpg",
     "isbn": "9781087730547",
     "dateStart": "2022-09-28",
-    "progress": 159
+    "progress": 172
   },
   {
     "title": "Inspired",
