@@ -152,10 +152,6 @@ margin-bottom: 2rem;
   transition: 0.25s ease-in-out;
 }
 
-.book-container .book:hover .dark {
-  opacity: 0.75;
-}
-
 .shelf .book-container .data {
   position: absolute;
   top: 0;
@@ -169,7 +165,6 @@ margin-bottom: 2rem;
   transition: 0.5s ease;
   padding: 1rem;
   z-index: -1;
-  
 }
 
 .shelf .book-container .data h3 {
@@ -213,16 +208,6 @@ margin-bottom: 2rem;
   background-color: #01060f;
   border-radius: 0 2px 2px 0;
   box-shadow: -10px 0 50px 10px #aaaaaa;
-}
-
-.book-container .book:hover {
-  transform: rotateY(0deg);
-}
-
-.book-container .book:hover .data{
-opacity: 1;
-z-index: 100;
-
 }
 
 .shelf progress {
@@ -270,6 +255,23 @@ z-index: 100;
   border-radius: 0 2px 2px 0;
   box-shadow: 5px 5px 20px #aaaaaa;
   background-color: #01060f;
+}
+
+.book-container input {
+  position: absolute;
+}
+
+.book-container input:checked + .book {
+  transform: rotateY(0deg);
+}
+
+.book-container input:checked + .book .dark {
+  opacity: 0.75;
+}
+
+.book-container input:checked + .book .data{
+  opacity: 1;
+  z-index: 100;
 }
 
 @media (min-width: 30em) {

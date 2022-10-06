@@ -49,7 +49,7 @@ header .content .avatar {
 header .content h1 {
   font-size: 2.5rem;
   padding: 0;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
 }
 
 header .content h1 a,
@@ -129,8 +129,9 @@ header .socials {
 }
 
 header .socials li svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.25rem;
   fill: var(--dark-grey);
 }
 
