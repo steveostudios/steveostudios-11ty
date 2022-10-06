@@ -33,6 +33,5 @@ footer .content {
   justify-content: flex-end;
   text-transform: uppercase;
   color: var(--grey);
-  font-family: "Raleway", sans-serif;
   padding-bottom: 2rem;
 }

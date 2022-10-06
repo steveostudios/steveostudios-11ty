@@ -81,7 +81,6 @@
   position: relative;
   padding-top: 55%;
   display: flex;
-  margin-bottom: 4rem;
   max-width: calc(100vw - 4rem);
   justify-content: center;
 }
@@ -162,7 +161,6 @@
 }
 
 .project .content h2 {
-  padding-top: 2rem;
   text-transform: none;
 }
 
@@ -182,7 +180,6 @@
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.5rem 1rem;
-  font-family: Raleway;
 }
 
 @media only screen and (max-width: 479px) {

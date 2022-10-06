@@ -16,14 +16,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-family: Raleway;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
   flex-direction: column;
 }
 
 .posts li a .date {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.875rem;
   color: var(--dark-grey);
 }
@@ -43,9 +42,18 @@
 }
 
 
-.post .content {
+.post h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
 
-  /* display: flex; */
+.post p {
+  margin-top: 0;
+}
+
+.post .content {
 }
 
 .post table {
@@ -55,8 +63,7 @@
 }
 
 .post table th {
-font-family: Raleway;
-font-weight: 800;
+font-weight: 700;
 }
 
 .post table td,
