@@ -8,7 +8,9 @@
     "image": "ReadyPlayerOne.jpg",
     "isbn": "9780307887436",
     "dateStart": "2022-09-24",
-    "dateFinish": "2022-10-03"
+    "dateFinish": "2022-10-03",
+    "stars": 5,
+    "post": "2022-10-03-ready-player-one"
   },
   {
     "title": "Fix Your Eyes",
@@ -53,6 +55,7 @@
     "image": "ErasingHell.jpg",
     "dateStart": "2022-09-23",
     "dateFinish": "2022-09-27",
+    "stars": 5,
     "isbn": "9780781407250"
   },
   {
@@ -64,6 +67,7 @@
     "image": "TheSecretLivesOfColor.jpg",
     "dateStart": "2022-09-14",
     "dateFinish": "2022-09-24",
+    "stars": 5,
     "isbn": "9780143131144"
   },
   {
@@ -76,6 +80,7 @@
     "image": "AtomicHabits.jpg",
     "dateStart": "2022-09-08",
     "dateFinish": "2022-09-23",
+    "stars": 4,
     "isbn": "9780735211292"
   },
   {
@@ -87,6 +92,7 @@
     "image": "SnowCrash.jpg",
     "dateStart": "2022-08-27",
     "dateFinish": "2022-09-12",
+    "stars": 4,
     "isbn": "9783596705597"
   },
   {
@@ -99,6 +105,7 @@
     "image": "OneAtATime.jpg",
     "dateStart": "2022-09-12",
     "dateFinish": "2022-09-20",
+    "stars": 4,
     "isbn": "9780801094910"
   },
   {
@@ -111,6 +118,7 @@
     "image": "TheEndOfMe.jpg",
     "dateStart": "2022-08-26",
     "dateFinish": "2022-09-07",
+    "stars": 4,
     "isbn": "9781434707079"
   },
   {

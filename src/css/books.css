@@ -269,6 +269,10 @@ margin-bottom: 2rem;
   opacity: 0.75;
 }
 
+.book-container p {
+  line-height: 1;
+}
+
 .book-container input:checked + .book .data{
   opacity: 1;
   z-index: 100;
