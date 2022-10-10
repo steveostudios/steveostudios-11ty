@@ -27,7 +27,9 @@
     "pages": 244,
     "title": "Do androids dream of electric sheep?",
     "authors": "Philip K. Dick",
-    "image": "DoAndroidsDreamOfElectricSheep.jpg"
+    "image": "DoAndroidsDreamOfElectricSheep.jpg",
+    "progress": 35,
+    "dateStart": "2022-10-07"
   },
   {
     "title": "Ready Player One",
@@ -52,7 +54,8 @@
     "image": "FixYourEyes.jpg",
     "isbn": "9781087730547",
     "dateStart": "2022-09-28",
-    "progress": 172
+    "stars": 5,
+    "dateFinish": "2022-10-07"
   },
   {
     "title": "Inspired",
@@ -62,7 +65,7 @@
     "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
     "image": "Inspired.jpg",
     "dateStart": "2022-09-26",
-    "progress": 107,
+    "progress": 129,
     "isbn": "9781119387503"
   },
   {
