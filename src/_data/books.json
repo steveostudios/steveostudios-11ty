@@ -5,7 +5,9 @@
     "title": "The Martian",
     "authors": "Andy Weir",
     "image": "TheMartian.jpg",
-    "subtitle": "A Novel"
+    "subtitle": "A Novel",
+    "progress": 80,
+    "dateStart": "2022-10-20"
   },
   {
     "isbn": 9780781408233,
@@ -28,8 +30,9 @@
     "title": "Do androids dream of electric sheep?",
     "authors": "Philip K. Dick",
     "image": "DoAndroidsDreamOfElectricSheep.jpg",
-    "progress": 165,
-    "dateStart": "2022-10-07"
+    "dateStart": "2022-10-07",
+    "stars": 4,
+    "dateFinish": "2022-10-20"
   },
   {
     "title": "Ready Player One",
@@ -65,8 +68,9 @@
     "url": "https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507",
     "image": "Inspired.jpg",
     "dateStart": "2022-09-26",
-    "progress": 286,
-    "isbn": "9781119387503"
+    "isbn": "9781119387503",
+    "stars": 4,
+    "dateFinish": "2022-10-20"
   },
   {
     "title": "The Design of Everyday Things",
@@ -76,7 +80,7 @@
     "url": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654",
     "image": "TheDesignOfEverydayThings.jpg",
     "isbn": "9780465050659",
-    "progress": 95,
+    "progress": 122,
     "dateStart": "2022-10-03"
   },
   {
