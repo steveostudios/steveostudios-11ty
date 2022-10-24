@@ -6,8 +6,9 @@
     "authors": "Andy Weir",
     "image": "TheMartian.jpg",
     "subtitle": "A Novel",
-    "progress": 80,
-    "dateStart": "2022-10-20"
+    "dateStart": "2022-10-20",
+    "stars": 5,
+    "dateFinish": "2022-10-24"
   },
   {
     "isbn": 9780781408233,
@@ -80,7 +81,7 @@
     "url": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654",
     "image": "TheDesignOfEverydayThings.jpg",
     "isbn": "9780465050659",
-    "progress": 122,
+    "progress": 161,
     "dateStart": "2022-10-03"
   },
   {
