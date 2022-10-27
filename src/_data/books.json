@@ -1,5 +1,30 @@
 [
   {
+    "isbn": 9780310331933,
+    "title": "Not a fan",
+    "authors": "Kyle Idleman",
+    "image": "Notafan.jpg",
+    "subtitle": "becoming a completely committed follower of Jesus",
+    "progress": 18,
+    "pages": 215,
+    "dateStart": "2022-10-27"
+  },
+  {
+    "isbn": 9780316204361,
+    "title": "David and Goliath",
+    "authors": "Malcolm Gladwell",
+    "image": "DavidandGoliath.jpg",
+    "subtitle": "underdogs, misfits, and the art of battling giants",
+    "pages": 305
+  },
+  {
+    "isbn": 9780553448122,
+    "title": "Artemis",
+    "authors": "Andy Weir, Rosario Dawson",
+    "image": "Artemis.jpg",
+    "pages": 305
+  },
+  {
     "isbn": 9780553418026,
     "pages": 387,
     "title": "The Martian",
@@ -8,7 +33,8 @@
     "subtitle": "A Novel",
     "dateStart": "2022-10-20",
     "stars": 5,
-    "dateFinish": "2022-10-24"
+    "dateFinish": "2022-10-24",
+    "post": "2022-10-26-the-martian"
   },
   {
     "isbn": 9780781408233,
@@ -23,7 +49,9 @@
     "title": "The five dysfunctions of a team",
     "authors": "Patrick Lencioni",
     "image": "TheFiveDysfunctionsOfATeam.jpg",
-    "subtitle": "a leadership fable"
+    "subtitle": "a leadership fable",
+    "progress": 10,
+    "dateStart": "2022-10-27"
   },
   {
     "isbn": 9780345404473,
@@ -81,8 +109,9 @@
     "url": "https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654",
     "image": "TheDesignOfEverydayThings.jpg",
     "isbn": "9780465050659",
-    "progress": 161,
-    "dateStart": "2022-10-03"
+    "dateStart": "2022-10-03",
+    "stars": 3,
+    "dateFinish": "2022-10-27"
   },
   {
     "title": "Erasing Hell",
