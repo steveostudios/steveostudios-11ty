@@ -1,11 +1,20 @@
 [
   {
+    "isbn": 9780310247456,
+    "pages": 304,
+    "title": "Boundaries",
+    "authors": "Dr. Henry Cloud, Dr. John Townsend",
+    "image": "Boundaries.jpg",
+    "progress": 85,
+    "dateStart": "2022-10-30"
+  },
+  {
     "isbn": 9780310331933,
     "title": "Not a fan",
     "authors": "Kyle Idleman",
     "image": "Notafan.jpg",
     "subtitle": "becoming a completely committed follower of Jesus",
-    "progress": 18,
+    "progress": 128,
     "pages": 215,
     "dateStart": "2022-10-27"
   },
@@ -50,8 +59,9 @@
     "authors": "Patrick Lencioni",
     "image": "TheFiveDysfunctionsOfATeam.jpg",
     "subtitle": "a leadership fable",
-    "progress": 10,
-    "dateStart": "2022-10-27"
+    "dateStart": "2022-10-27",
+    "stars": 4,
+    "dateFinish": "2022-10-31"
   },
   {
     "isbn": 9780345404473,
