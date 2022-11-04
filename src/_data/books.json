@@ -5,7 +5,7 @@
     "title": "Boundaries",
     "authors": "Dr. Henry Cloud, Dr. John Townsend",
     "image": "Boundaries.jpg",
-    "progress": 85,
+    "progress": 119,
     "dateStart": "2022-10-30"
   },
   {
@@ -14,9 +14,10 @@
     "authors": "Kyle Idleman",
     "image": "Notafan.jpg",
     "subtitle": "becoming a completely committed follower of Jesus",
-    "progress": 128,
     "pages": 215,
-    "dateStart": "2022-10-27"
+    "dateStart": "2022-10-27",
+    "stars": 5,
+    "dateFinish": "2022-11-04"
   },
   {
     "isbn": 9780316204361,
@@ -24,7 +25,9 @@
     "authors": "Malcolm Gladwell",
     "image": "DavidandGoliath.jpg",
     "subtitle": "underdogs, misfits, and the art of battling giants",
-    "pages": 305
+    "pages": 305,
+    "progress": 62,
+    "dateStart": "2022-11-02"
   },
   {
     "isbn": 9780553448122,
