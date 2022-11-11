@@ -5,7 +5,7 @@
     "title": "Boundaries",
     "authors": "Dr. Henry Cloud, Dr. John Townsend",
     "image": "Boundaries.jpg",
-    "progress": 153,
+    "progress": 170,
     "dateStart": "2022-10-30"
   },
   {
@@ -26,7 +26,7 @@
     "image": "DavidandGoliath.jpg",
     "subtitle": "underdogs, misfits, and the art of battling giants",
     "pages": 305,
-    "progress": 166,
+    "progress": 197,
     "dateStart": "2022-11-02"
   },
   {
@@ -35,8 +35,9 @@
     "authors": "Andy Weir, Rosario Dawson",
     "image": "Artemis.jpg",
     "pages": 305,
-    "progress": 26,
-    "dateStart": "2022-11-07"
+    "dateStart": "2022-11-07",
+    "stars": 2,
+    "dateFinish": "2022-11-11"
   },
   {
     "isbn": 9780553418026,
