@@ -1,12 +1,23 @@
 [
   {
+    "isbn": 9781591843115,
+    "title": "The referral engine",
+    "authors": "John Jantsch",
+    "image": "Thereferralengine.jpg",
+    "subtitle": "teaching your business how to market itself",
+    "progress": 32,
+    "pages": 243,
+    "dateStart": "2022-11-13"
+  },
+  {
     "isbn": 9780310247456,
     "pages": 304,
     "title": "Boundaries",
     "authors": "Dr. Henry Cloud, Dr. John Townsend",
     "image": "Boundaries.jpg",
-    "progress": 170,
-    "dateStart": "2022-10-30"
+    "dateStart": "2022-10-30",
+    "stars": 4,
+    "dateFinish": "2022-11-15"
   },
   {
     "isbn": 9780310331933,
@@ -26,8 +37,9 @@
     "image": "DavidandGoliath.jpg",
     "subtitle": "underdogs, misfits, and the art of battling giants",
     "pages": 305,
-    "progress": 197,
-    "dateStart": "2022-11-02"
+    "dateStart": "2022-11-02",
+    "stars": 5,
+    "dateFinish": "2022-11-13"
   },
   {
     "isbn": 9780553448122,
