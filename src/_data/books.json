@@ -55,8 +55,9 @@
     "pages": 496,
     "image": "ProjectHailMary.jpg",
     "subtitle": "A Novel",
-    "progress": 135,
-    "dateStart": "2022-11-19"
+    "dateStart": "2022-11-19",
+    "stars": 4,
+    "dateFinish": "2022-11-29"
   },
   {
     "isbn": 9781591843115,
@@ -64,7 +65,7 @@
     "authors": "John Jantsch",
     "image": "Thereferralengine.jpg",
     "subtitle": "Teaching Your Business How to Market Itself",
-    "progress": 91,
+    "progress": 147,
     "pages": 243,
     "dateStart": "2022-11-13"
   },
