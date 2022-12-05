@@ -5,7 +5,9 @@
     "authors": "Kyle Idleman",
     "pages": 218,
     "image": "Aha.jpg",
-    "subtitle": "Awakening, Honesty, Action: the God Moment That Changes Everything"
+    "subtitle": "Awakening, Honesty, Action: the God Moment That Changes Everything",
+    "progress": 46,
+    "dateStart": "2022-12-04"
   },
   {
     "isbn": 9781434767950,
@@ -65,9 +67,10 @@
     "authors": "John Jantsch",
     "image": "Thereferralengine.jpg",
     "subtitle": "Teaching Your Business How to Market Itself",
-    "progress": 147,
     "pages": 243,
-    "dateStart": "2022-11-13"
+    "dateStart": "2022-11-13",
+    "stars": 2,
+    "dateFinish": "2022-12-05"
   },
   {
     "isbn": 9780310247456,
