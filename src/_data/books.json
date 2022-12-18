@@ -1,5 +1,15 @@
 [
   {
+    "isbn": 9780785240853,
+    "title": "Book Called You",
+    "authors": "Matthew Stephen Brown",
+    "pages": 202,
+    "image": "BookCalledYou.jpg",
+    "subtitle": "Understanding the Enneagram from a Grace-filled, Biblical Perspective",
+    "progress": 20,
+    "dateStart": "2022-12-15"
+  },
+  {
     "isbn": 9780781410496,
     "title": "Aha",
     "authors": "Kyle Idleman",
@@ -48,8 +58,9 @@
     "pages": 250,
     "image": "Traction.jpg",
     "subtitle": "Get a Grip on Your Business",
-    "progress": 130,
-    "dateStart": "2022-11-21"
+    "dateStart": "2022-11-21",
+    "stars": 4,
+    "dateFinish": "2022-12-18"
   },
   {
     "isbn": 9780593135228,
