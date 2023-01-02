@@ -1,12 +1,103 @@
 [
   {
+    "isbn": 9780593201770,
+    "title": "Chapterhouse",
+    "authors": "Frank Herbert, Scott Brick, Jane Carr, Katherine Kellgren, Euan Morton",
+    "pages": 512,
+    "image": "Chapterhouse.jpg",
+    "subtitle": "Dune"
+  },
+  {
+    "isbn": 9780593201763,
+    "title": "Heretics of Dune",
+    "authors": "Frank Herbert, Bill Ransom, Simon Vance, Domingo Santos, Guy Abadia",
+    "pages": 560,
+    "image": "HereticsofDune.jpg"
+  },
+  {
+    "isbn": 9780593201756,
+    "title": "God Emperor of Dune",
+    "authors": "Frank Herbert, Simon Vance, Scott Brick, Katherine Kellgren, Guy Abadia",
+    "pages": 496,
+    "image": "GodEmperorofDune.jpg"
+  },
+  {
+    "isbn": 9780593201749,
+    "title": "Children of Dune",
+    "authors": "Frank Herbert",
+    "pages": 496,
+    "image": "ChildrenofDune.jpg"
+  },
+  {
+    "isbn": 9780593201732,
+    "title": "Dune Messiah",
+    "authors": "Frank Herbert, Michel Demuth",
+    "pages": 304,
+    "image": "DuneMessiah.jpg"
+  },
+  {
+    "isbn": 9780441013593,
+    "title": "Dune",
+    "authors": "Frank Herbert",
+    "pages": 528,
+    "image": "Dune.jpg"
+  },
+  {
+    "isbn": 9780887305191,
+    "title": "Crossing the Chasm",
+    "authors": "Geoffrey A. Moore",
+    "pages": 223,
+    "image": "CrossingtheChasm.jpg",
+    "subtitle": "Marketing and Selling Technology Products to Mainstream Customers"
+  },
+  {
+    "isbn": 9780241360231,
+    "title": "Humble Pi",
+    "authors": "Matt Parker",
+    "pages": 336,
+    "image": "HumblePi.jpg",
+    "subtitle": "A Comedy of Maths Errors"
+  },
+  {
+    "isbn": 9780807014264,
+    "title": "Man's Search for Meaning",
+    "authors": "Viktor E. Frankl",
+    "pages": 165,
+    "image": "MansSearchforMeaning.jpg"
+  },
+  {
+    "isbn": 9780525653097,
+    "title": "Ruthless Elimination of Hurry",
+    "authors": "John Mark Comer",
+    "pages": 304,
+    "image": "RuthlessEliminationofHurry.jpg",
+    "subtitle": "How to Stay Emotionally Healthy and Spiritually Alive in the Chaos of the Modern"
+  },
+  {
+    "isbn": 9781942303190,
+    "title": "Design Is Storytelling",
+    "authors": "Ellen Lupton",
+    "pages": 159,
+    "image": "DesignIsStorytelling.jpg"
+  },
+  {
+    "isbn": 9780345391803,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "authors": "Douglas Adams",
+    "pages": 216,
+    "image": "TheHitchhikersGuidetotheGalaxy.jpg",
+    "dateStart": "2022-12-27",
+    "stars": 4,
+    "dateFinish": "2022-12-31"
+  },
+  {
     "isbn": 9780785240853,
     "title": "Book Called You",
     "authors": "Matthew Stephen Brown",
     "pages": 202,
     "image": "BookCalledYou.jpg",
     "subtitle": "Understanding the Enneagram from a Grace-filled, Biblical Perspective",
-    "progress": 20,
+    "progress": 169,
     "dateStart": "2022-12-15"
   },
   {
@@ -41,7 +132,9 @@
     "authors": "Ernest Cline",
     "pages": 384,
     "image": "ReadyPlayerTwo.jpg",
-    "subtitle": "A Novel"
+    "subtitle": "A Novel",
+    "progress": 140,
+    "dateStart": "2022-12-21"
   },
   {
     "isbn": 9780066620992,
