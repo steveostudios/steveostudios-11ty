@@ -97,8 +97,9 @@
     "pages": 202,
     "image": "BookCalledYou.jpg",
     "subtitle": "Understanding the Enneagram from a Grace-filled, Biblical Perspective",
-    "progress": 169,
-    "dateStart": "2022-12-15"
+    "dateStart": "2022-12-15",
+    "stars": 2,
+    "dateFinish": "2023-01-03"
   },
   {
     "isbn": 9780781410496,
@@ -133,7 +134,7 @@
     "pages": 384,
     "image": "ReadyPlayerTwo.jpg",
     "subtitle": "A Novel",
-    "progress": 140,
+    "progress": 161,
     "dateStart": "2022-12-21"
   },
   {
@@ -142,7 +143,9 @@
     "authors": "Collins, James C.",
     "pages": 300,
     "image": "GoodtoGreat.jpg",
-    "subtitle": "Why Some Companies Make the Leap--and Others Don't"
+    "subtitle": "Why Some Companies Make the Leap--and Others Don't",
+    "progress": 1,
+    "dateStart": "2023-01-03"
   },
   {
     "isbn": 9781936661831,
