@@ -63,7 +63,9 @@
     "title": "Man's Search for Meaning",
     "authors": "Viktor E. Frankl",
     "pages": 165,
-    "image": "MansSearchforMeaning.jpg"
+    "image": "MansSearchforMeaning.jpg",
+    "progress": 8,
+    "dateStart": "2023-01-13"
   },
   {
     "isbn": 9780525653097,
@@ -145,7 +147,7 @@
     "pages": 300,
     "image": "GoodtoGreat.jpg",
     "subtitle": "Why Some Companies Make the Leap--and Others Don't",
-    "progress": 104,
+    "progress": 143,
     "dateStart": "2023-01-03"
   },
   {
