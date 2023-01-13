@@ -1,5 +1,15 @@
 [
   {
+    "isbn": 9781118899014,
+    "title": "A Beautiful Constraint",
+    "authors": "Adam Morgan",
+    "pages": 277,
+    "image": "ABeautifulConstraint.jpg",
+    "subtitle": "How to Transform Your Limitations into Advantages, and Why It's Everyone's Business",
+    "progress": 1,
+    "dateStart": "2023-01-13"
+  },
+  {
     "isbn": 9780593201770,
     "title": "Chapterhouse",
     "authors": "Frank Herbert, Scott Brick, Jane Carr, Katherine Kellgren, Euan Morton",
