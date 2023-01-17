@@ -1,4 +1,20 @@
-[
+[ 
+  {
+    "title": "Ark",
+    "author": "Veronica Roth",
+    "dateStart": "2023-01-15",
+    "dateFinish": "2023-01-16",
+    "image": "Ark.jpg",
+    "pages": 45
+  },
+  {
+    "title": "Summer Frost",
+    "author": "Blake Crouch",
+    "dateStart": "2023-01-16",
+    "dateFinish": "2023-01-17",
+    "image": "SummerFrost.jpg",
+    "pages": 75
+  },
   {
     "isbn": 9781118899014,
     "title": "A Beautiful Constraint",
@@ -74,7 +90,7 @@
     "authors": "Viktor E. Frankl",
     "pages": 165,
     "image": "MansSearchforMeaning.jpg",
-    "progress": 8,
+    "progress": 69,
     "dateStart": "2023-01-13"
   },
   {
