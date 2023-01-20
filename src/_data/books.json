@@ -1,11 +1,21 @@
-[ 
+[
+  {
+    "isbn": 9780553213515,
+    "title": "The Time Machine",
+    "authors": "H. G. Wells",
+    "pages": 128,
+    "image": "TheTimeMachine.jpg",
+    "dateStart": "2023-01-20",
+    "progress": 20
+  },
   {
     "title": "Ark",
     "author": "Veronica Roth",
     "dateStart": "2023-01-15",
     "dateFinish": "2023-01-16",
     "image": "Ark.jpg",
-    "pages": 45
+    "pages": 45,
+    "stars": 3
   },
   {
     "title": "Summer Frost",
@@ -13,7 +23,44 @@
     "dateStart": "2023-01-16",
     "dateFinish": "2023-01-17",
     "image": "SummerFrost.jpg",
-    "pages": 75
+    "pages": 75,
+    "stars": 5
+  },
+  {
+    "title": "Emergency Skin",
+    "author": "N.K. Jemisin",
+    "dateStart": "2023-01-18",
+    "dateFinish": "2023-01-18",
+    "image": "EmergencySkin.jpg",
+    "pages": 38,
+    "stars": 5
+  },
+  {
+    "title": "Randomize",
+    "author": "Andy Weir",
+    "dateStart": "2023-01-19",
+    "dateFinish": "2023-01-19",
+    "image": "Randomize.jpg",
+    "pages": 31,
+    "stars": 4
+  },
+  {
+    "title": "You Have Arrived at Your Destination",
+    "author": "Amor Towles",
+    "dateStart": "2023-01-19",
+    "dateFinish": "2023-01-19",
+    "image": "YouHaveArrivedAtYourDestination.jpg",
+    "pages": 54,
+    "stars": 4
+  },
+  {
+    "title": "The Last Conversation",
+    "author": "Paul Tremblay",
+    "dateStart": "2023-01-18",
+    "dateFinish": "2023-01-18",
+    "image": "TheLastConversation.jpg",
+    "pages": 67,
+    "stars": 4
   },
   {
     "isbn": 9781118899014,
@@ -22,7 +69,7 @@
     "pages": 277,
     "image": "ABeautifulConstraint.jpg",
     "subtitle": "How to Transform Your Limitations into Advantages, and Why It's Everyone's Business",
-    "progress": 1,
+    "progress": 4,
     "dateStart": "2023-01-13"
   },
   {
@@ -90,8 +137,9 @@
     "authors": "Viktor E. Frankl",
     "pages": 165,
     "image": "MansSearchforMeaning.jpg",
-    "progress": 69,
-    "dateStart": "2023-01-13"
+    "dateStart": "2023-01-13",
+    "stars": 5,
+    "dateFinish": "2023-01-20"
   },
   {
     "isbn": 9780525653097,
