@@ -1,12 +1,22 @@
 [
   {
+    "isbn": 9783903352612,
+    "title": "Meditations",
+    "authors": "Marcus Aurelius",
+    "pages": 231,
+    "image": "Meditations.jpg",
+    "progress": 115,
+    "dateStart": "2023-01-23"
+  },
+  {
     "isbn": 9780553213515,
     "title": "The Time Machine",
     "authors": "H. G. Wells",
     "pages": 128,
     "image": "TheTimeMachine.jpg",
     "dateStart": "2023-01-20",
-    "progress": 20
+    "stars": 4,
+    "dateFinish": "2023-01-21"
   },
   {
     "title": "Ark",
@@ -69,7 +79,7 @@
     "pages": 277,
     "image": "ABeautifulConstraint.jpg",
     "subtitle": "How to Transform Your Limitations into Advantages, and Why It's Everyone's Business",
-    "progress": 4,
+    "progress": 33,
     "dateStart": "2023-01-13"
   },
   {
@@ -194,7 +204,9 @@
     "authors": "Francis Chan",
     "pages": 186,
     "image": "ForgottenGod.jpg",
-    "subtitle": "Reversing Our Tragic Neglect of the Holy Spirit"
+    "subtitle": "Reversing Our Tragic Neglect of the Holy Spirit",
+    "progress": 63,
+    "dateStart": "2023-01-28"
   },
   {
     "isbn": 9781591843122,
@@ -221,8 +233,9 @@
     "pages": 300,
     "image": "GoodtoGreat.jpg",
     "subtitle": "Why Some Companies Make the Leap--and Others Don't",
-    "progress": 143,
-    "dateStart": "2023-01-03"
+    "dateStart": "2023-01-03",
+    "stars": 4,
+    "dateFinish": "2023-01-25"
   },
   {
     "isbn": 9781936661831,
