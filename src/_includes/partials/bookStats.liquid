@@ -28,14 +28,16 @@
   <div class="list">
     <h4>Stats</h4>
     <ul>
-      <li><div class="prop">All Books</div><div class="line"></div><div class="attr">{{ book_object.finishedBooks | number_with_delimiter }} books</div></li>
-      <li><div class="prop">All Pages</div><div class="line"></div><div class="attr">{{ book_object.finishedPages | number_with_delimiter }} pages</div></li>
       <li><div class="prop">Most Books</div><div class="line"></div><div class="attr">{{ mostBooks.bookCount | number_with_delimiter }} books ({{ mostBooks.year }})</div></li>
       <li><div class="prop">Most Pages</div><div class="line"></div><div class="attr">{{ mostPages.pageCount | number_with_delimiter }} pages ({{ mostPages.year }})</div></li>
       <li><div class="prop">Current Books</div><div class="line"></div><div class="attr">{{ current.items.size | number_with_delimiter }} books</div></li>
       <li><div class="prop">Current Pages</div><div class="line"></div><div class="attr">{{ current_progress | number_with_delimiter }}/{{ current_total | number_with_delimiter }} pages</div></li>
       <li><div class="prop">This Year Books</div><div class="line"></div><div class="attr">{{ this_year.bookCount | number_with_delimiter }} books</div></li>
       <li><div class="prop">This Year Pages</div><div class="line"></div><div class="attr">{{ this_year.pageCount | number_with_delimiter }} pages</div></li>
+      <li><div class="prop">This Year Book Rank</div><div class="line"></div><div class="attr">{{ book_object.bookRank | to_ordinal }}</div></li>
+      <li><div class="prop">This Year Pages Rank</div><div class="line"></div><div class="attr">{{ book_object.pageRank | to_ordinal }}</div></li>
+      <li><div class="prop">All Books</div><div class="line"></div><div class="attr">{{ book_object.finishedBooks | number_with_delimiter }} books</div></li>
+      <li><div class="prop">All Pages</div><div class="line"></div><div class="attr">{{ book_object.finishedPages | number_with_delimiter }} pages</div></li>
     </ul>
   </div>
 </div>
