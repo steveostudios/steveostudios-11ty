@@ -88,31 +88,35 @@
   width: 100%;
 }
 
-.bookStats .list ul {
+
+.bookStats .list table {
   list-style: none;
   padding: 0;
   flex: 1;
   margin: 0;
 }
 
-.bookStats .list li {
-  display: flex;
+.bookStats .list table tr {
   justify-content: space-between;
   font-size: 0.85rem;
   color: var(--dark-grey);
   gap: 1rem;
 }
 
-.bookStats .list li .prop {
-  color: var(--grey);
+.bookStats .list table tr:first-of-type {
+  font-size: 0.75rem;
 }
 
-.bookStats .list li .line {
-  flex: 1;
+.bookStats .list table tr td {
+  text-align: right;
   height: 0.5rem;
   border-bottom: 1px solid var(--trim);
 }
 
+.bookStats .list table tr td:first-of-type {
+  text-align: left;
+  color: var(--grey);
+}
 
 @media (min-width: 900px) {
   .bookStats {
