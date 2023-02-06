@@ -15,7 +15,7 @@ layout: layouts/base.liquid
   {%- endif -%}
   <div class="{{ classes }}">
     {%- if book -%}
-      {%- assign book_data = books | getBook: book -%}
+      {%- assign book_data = books.allBooks | getBook: book -%}
       <aside>
         {%- if book_data.image -%}
           <img src="./../../img/books/{{ book_data.image }}" />

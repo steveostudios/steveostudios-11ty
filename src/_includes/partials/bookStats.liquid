@@ -1,16 +1,5 @@
-{% assign books = book_object.books | reverse %}
-{% assign mostPages = books | max: "pageCount" %}
-{% assign mostBooks = books | max: "bookCount" %}
-{% assign current = book_object.books | first %}
-{% assign current_progress = 0 %}
-{% assign current_total = 0 %}
-{% for item in current.items %}
-  {% assign current_progress = current_progress | plus: item.progress %}
-  {% assign current_total = current_total | plus: item.pages %}
-{% endfor %}
-{% assign this_year = book_object.books | slice: 1, 1  | first %}
+{% assign years = books.years | reverse %}
 
-{% comment %} {% fictionPieChart %} {% endcomment %}
 <label class="toggle bookStats-toggle" for="toggle">
   <input type="checkbox" name="toggle" id="toggle">
   <span class="slider"></span>
@@ -19,11 +8,11 @@
 <div class="bookStats">
   <div>
     <h4>Books by Years</h4>
-    {% booksByYearSVG books %}
+    {% booksByYearSVG years %}
   </div>
   <div>
     <h4>Pages by Year</h4>
-    {% pagesByYearSVG books %}
+    {% pagesByYearSVG years %}
   </div>
   <div class="list">
     <h4>Stats</h4>
@@ -35,23 +24,23 @@
       </tr>
       <tr>
         <td>Most</td>
-        <td>{{ mostBooks.bookCount | number_with_delimiter }} ({{ mostBooks.year }})</td>
-        <td>{{ mostPages.pageCount | number_with_delimiter }} ({{ mostPages.year }})</td>
+        <td>{{ books.stats.bestYearBooks.bookCount | number_with_delimiter }} ({{ books.stats.bestYearBooks.year }})</td>
+        <td>{{ books.stats.bestYearPages.pageCount | number_with_delimiter }} ({{ books.stats.bestYearPages.year }})</td>
       </tr>
       <tr>
         <td>Current</td>
-        <td>{{ current.items.size | number_with_delimiter }}</td>
-        <td>{{ current_progress | number_with_delimiter }}/{{ current_total | number_with_delimiter }}</td>
+        <td>{{ books.stats.currentlyReadingBooks | number_with_delimiter }}</td>
+        <td>{{ books.stats.currentlyReadingProgress | number_with_delimiter }}/{{ books.stats.currentlyReadingPages | number_with_delimiter }}</td>
       </tr>
       <tr>
         <td>This Year</td>
-        <td>{{ this_year.bookCount | number_with_delimiter }} ({{ book_object.bookRank | to_ordinal }})</td>
-        <td>{{ this_year.pageCount | number_with_delimiter }} ({{ book_object.pageRank | to_ordinal }})</td>
+        <td>{{ books.stats.thisYear.bookCount | number_with_delimiter }} ({{ books.stats.currentBookRank | to_ordinal }})</td>
+        <td>{{ books.stats.thisYear.pageCount | number_with_delimiter }} ({{ books.stats.currentPageRank | to_ordinal }})</td>
       </tr>
       <tr>
         <td>All Time</td>
-        <td>{{ book_object.finishedBooks | number_with_delimiter }}</td>
-        <td>{{ book_object.finishedPages | number_with_delimiter }}</td>
+        <td>{{ books.stats.totalBooks | number_with_delimiter }}</td>
+        <td>{{ books.stats.totalPages | number_with_delimiter }}</td>
       </tr>
     </table>
   </div>

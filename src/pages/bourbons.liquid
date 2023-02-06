@@ -1,0 +1,17 @@
+---
+title: Bourbon
+tags: bourbons
+---
+  <div class="page bourbons">
+    {% for bourbon in bourbons %}
+      <div>
+      {% if bourbon['Image'][0].thumbnails.large.url %}
+        <img src="{{ bourbon['Image'][0].thumbnails.large.url}}" alt="{{ bourbon['Name'] }}" />
+        {% else %}
+          {{ "/src/img/icons/bottle.svg" | svgContents: "icon" | safe }}
+        {% endif %}
+        {{ bourbon["Name"] }}
+        <div>{{ bourbon["Volume"]}}ml | {{ bourbon["Proof"]}} Proof</div>
+      </div>
+    {% endfor %}
+  </div>

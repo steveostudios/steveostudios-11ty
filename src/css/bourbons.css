@@ -1,0 +1,41 @@
+.page.bourbons {
+  padding: 0;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  font-size: .875em;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  line-height: 1.2;
+  list-style: none;
+}
+
+.page.bourbons > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  width: 10rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.page.bourbons > div img {
+  width: auto;
+  height: 100px;
+  background-color: white;
+}
+
+.page.bourbons > div svg {
+  fill: var(--dark-grey);
+}
+
+@media (min-width: 30em) {
+  .page.bourbons {
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  }
+}
+

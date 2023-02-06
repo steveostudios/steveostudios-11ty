@@ -8,6 +8,8 @@
 @import url("projects.css");
 @import url("resume.css");
 @import url("toggle.css");
+@import url("bourbons.css");
+
 
 :root {
   --primary-color: #e9a20a;

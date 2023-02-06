@@ -23,6 +23,9 @@
     "markdown-it-link-attributes": "^3.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "airtable": "^0.11.6",
+    "dotenv": "^16.0.3",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "rss-parser": "^3.12.0"
   }

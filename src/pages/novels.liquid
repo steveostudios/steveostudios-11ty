@@ -3,8 +3,9 @@ title: Books
 ---
 <div class="page books">
   <div class="year content">
+    {% assign book_object = books  %}
     {% include partials/bookStats.liquid %}
-    {% for year in books.years %}
+    {% for year in novels.years %}
       {% if year.year == "current" %}
         <h3>Currently reading</h3>
       {% else %}
