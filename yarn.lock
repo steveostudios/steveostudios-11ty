@@ -1892,6 +1892,11 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
+"netlify-plugin-cache@^1.0.3":
+  "integrity" "sha512-CTOwNWrTOP59T6y6unxQNnp1WX702v2R/faR5peSH94ebrYfyY4zT5IsRcIiHKq57jXeyCrhy0GLuTN8ktzuQg=="
+  "resolved" "https://registry.npmjs.org/netlify-plugin-cache/-/netlify-plugin-cache-1.0.3.tgz"
+  "version" "1.0.3"
+
 "node-abi@^3.3.0":
   "integrity" "sha512-HkwdiLzE/LeuOMIQq/dJq70oNyRc88+wt5CH/RXYseE00LkA/c4PkS6Ti1vE4OHYUiKjkwuxjWq9pItgrz8UJw=="
   "resolved" "https://registry.npmjs.org/node-abi/-/node-abi-3.32.0.tgz"
