@@ -21,7 +21,7 @@ async function imageShortcode(src, alt, dir) {
   let metadata = await Image(src, {
     widths: [600],
     formats: ["jpeg"],
-    outputDir: `./src/img/${dir}`,
+    outputDir: `./img/${dir}`,
     urlPath: `/img/${dir}`,
   });
 
@@ -32,6 +32,7 @@ async function imageShortcode(src, alt, dir) {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("src/projects/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/blog/**/*.jpg");
 
