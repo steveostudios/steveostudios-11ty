@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "Filtered View",
+			"uri": "fildir:/"
 		}
 	],
 	"settings": {

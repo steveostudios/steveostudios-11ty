@@ -4,9 +4,12 @@ tags: bourbons
 ---
   <div class="page bourbons">
     {% for bourbon in bourbons %}
+      {% assign src = bourbon['Image'][0].thumbnails.large.url %}
+      {% assign alt = bourbon['Name'] %}
+      
       <div>
-      {% if bourbon['Image'][0].thumbnails.large.url %}
-        <img src="{{ bourbon['Image'][0].thumbnails.large.url}}" alt="{{ bourbon['Name'] }}" />
+        {% if src %}
+        {% image src, alt, "bourbons" %}
         {% else %}
           {{ "/src/img/icons/bottle.svg" | svgContents: "icon" | safe }}
         {% endif %}
