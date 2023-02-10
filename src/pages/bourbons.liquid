@@ -8,13 +8,26 @@ tags: bourbons
       {% assign alt = bourbon['Name'] %}
       
       <div>
+        {% if bourbon['Single Barrel'] %}
+          <div class="single-barrel">
+            {{ "/src/img/icons/barrel.svg" | svgContents: "icon" | safe }}
+          </div>
+        {% endif %}
+        {% if bourbon['Rye'] %}
+          <div class="rye">
+            {{ "/src/img/icons/rye.svg" | svgContents: "icon" | safe }}
+          </div>
+        {% endif %}
         {% if src %}
-        {% image src, alt, "bourbons" %}
+          {% image src, alt, "bourbons" %}
         {% else %}
           {{ "/src/img/icons/bottle.svg" | svgContents: "icon" | safe }}
         {% endif %}
-        {{ bourbon["Name"] }}
-        <div>{{ bourbon["Volume"]}}ml | {{ bourbon["Proof"]}} Proof</div>
+        <h3>{{ bourbon["Name"] }}</h3>
+        {% if bourbon['BnB'] %}
+          {{ "/src/img/icons/bottledinbond.svg" | svgContents: "icon" | safe }}
+        {% endif %}
+        <span>{{ bourbon["Volume"]}}ml | {{ bourbon["Proof"]}} Proof</span>
       </div>
     {% endfor %}
   </div>

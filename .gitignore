@@ -2,6 +2,5 @@ node_modules
 public
 .env
 .cache
-src/img/books
-src/img/bourbons
-img
+img/books
+img/bourbons

@@ -10,7 +10,6 @@ const Image = require("@11ty/eleventy-img");
 const { numWithDelimiter, numToOrdinal } = require("./utils/numbers");
 const { reverse, max } = require("./utils/collections");
 const { lineGraph } = require("./utils/graph");
-const collections = require("./utils/collections");
 
 async function imageShortcode(src, alt, dir) {
   if (alt === undefined) {
@@ -19,7 +18,7 @@ async function imageShortcode(src, alt, dir) {
   }
 
   let metadata = await Image(src, {
-    widths: [600],
+    widths: [200],
     formats: ["jpeg"],
     urlPath: `/img/${dir}`,
     outputDir: `./public/img/${dir}`,
@@ -40,24 +39,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(svgContents);
+
   eleventyConfig.setDataDeepMerge(true);
 
-  // useful for debugging
-  eleventyConfig.addFilter(
-    "debug",
-    (content) => `<pre>${inspect(content)}</pre>`
-  );
-
-  // return a single book from the title
-  eleventyConfig.addFilter("getBook", function (books, title) {
-    // console.log(books);
-    return books.find(
-      (book) => book.title.toLowerCase() === title.toLowerCase()
-    );
-  });
-
+  // Collections
   eleventyConfig.addCollection("projects", (collections) => {
-    // get all posts by tag 'post'
+    // get all posts by tag 'projects'
     return (
       collections
         .getFilteredByTag("project")
@@ -67,8 +54,16 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addLiquidFilter("reverse", (collection) =>
-    reverse(collection)
+  // Filters
+  // useful for debugging
+  eleventyConfig.addFilter(
+    "debug",
+    (content) => `<pre>${inspect(content)}</pre>`
+  );
+
+  // return a single book from the title
+  eleventyConfig.addFilter("getBook", (books, title) =>
+    books.find((book) => book.title.toLowerCase() === title.toLowerCase())
   );
 
   eleventyConfig.addLiquidFilter("number_with_delimiter", (num) =>
@@ -81,6 +76,11 @@ module.exports = function (eleventyConfig) {
     max(collection, prop)
   );
 
+  eleventyConfig.addLiquidFilter("reverse", (collection) =>
+    reverse(collection)
+  );
+
+  // Shortcodes
   eleventyConfig.addLiquidShortcode("booksByYearSVG", (books) =>
     lineGraph(books, "bookCount")
   );
@@ -91,6 +91,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
+  // Return
   return {
     passthroughFileCopy: true,
     dir: {

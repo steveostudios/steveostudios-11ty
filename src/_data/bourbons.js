@@ -7,5 +7,9 @@ module.exports = async () => {
     process.env.AIRTABLE_BASE_BOURBON_BASE,
     process.env.AIRTABLE_BASE_BOURBON_TABLE
   );
-  return results;
+  console.log(results);
+
+  return results
+    .filter((item) => item["Finished"] !== true)
+    .sort((a, b) => (a["Name"] > b["Name"] ? 1 : -1));
 };
