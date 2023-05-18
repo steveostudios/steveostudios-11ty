@@ -7,7 +7,6 @@ module.exports = async () => {
     process.env.AIRTABLE_BASE_BOURBON_BASE,
     process.env.AIRTABLE_BASE_BOURBON_TABLE
   );
-  console.log(results);
 
   return results
     .filter((item) => item["Finished"] !== true)

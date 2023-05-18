@@ -8,56 +8,13 @@ title: Books
       {% if year.year == "current" %}
         <h3>Currently reading</h3>
       {% else %}
-        <h3>{{ year.year }}<span>{{ year.bookCount }} books</span><span>{{ year.pageCount }} pages</span></h3>
+        <h3>{{ year.year }}<span>{{ year.bookCount | number_with_delimiter }} books</span><span>{{ year.pageCount | number_with_delimiter }} pages</span></h3>
       {% endif %}
       <ul class="shelf">
         {% for book in year.items %}
-          {% assign src = book['cover'][0].thumbnails.large.url %}
-          {% assign alt = book['title'] %}
-          <label>
-            <li class="book-container">
-              <input type="radio" name="book" />
-              <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
-                {% if src %}
-                  {% image src, alt, "books" %}
-                {% endif %}      
-                <div class="dark"></div>
-                {% if book.post %}
-                  <a href="/blog/{{ book.post }}">
-                    <div class="dot">{{ "/src/img/icons/link-light.svg" | svgContents: "icon" | safe }}</div>
-                  </a>
-                {% endif %}
-                <div class="data">
-                {% if book.title %}
-                  <h3>{{ book.title }}</h3>
-                {% endif %}
-                {% if book.author %}
-                  <p>{{ book.author }}</p>
-                {% endif %}
-                {% if book.pages %}
-                  <p>{% if book.progress %}{{book.progress}}/{% endif %}{{ book.pages }} pgs</p>
-                {% endif %}
-                {% if book.dateFinish %}
-                  <p>{{ book.dateFinish }}</p>
-                {% endif %}
-                {% if book.stars %}
-                  <div class="stars">
-                  {% assign book.stars = book.stars | plus: 0 %}
-                  {% for i in (1..book.stars) %}
-                  {{ "/src/img/icons/star-solid.svg" | svgContents: "icon" | safe }}
-                  {% endfor %}
-                  </div>
-                {% endif %}
-                </div>
-              </div>
-              {% if book.progress %}
-                <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
-              {% endif %}
-            </li>
-          </label>
+          {% include partials/book.liquid %}
         {% endfor %}
       </ul>
     {% endfor %}
   </div>
-
 </div>
