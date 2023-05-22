@@ -1,7 +1,7 @@
 ---
 title: Cultivating Content Design
 date: 2021-10-25
-tags: book
+tags: poop
 book: Cultivating Content Design
 ---
 

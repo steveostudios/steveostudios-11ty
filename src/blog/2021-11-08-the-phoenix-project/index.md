@@ -2,7 +2,7 @@
 title: The Phoenix Project
 date: 2021-11-08
 book: The Phoenix Project
-tags: book
+tags: poop
 ---
 
 I just finished _The Phoenix Project_ by Gene Kim, Kevin Behr, and George Spafford. It’s a business book hidden inside a fictional narrative, which was fun.

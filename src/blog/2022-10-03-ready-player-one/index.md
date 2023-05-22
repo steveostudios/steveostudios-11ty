@@ -2,7 +2,7 @@
 title: Ready Player One
 date: 2022-10-03
 book: Ready Player One
-tags: book
+tags: poop
 ---
 
 This book was a ton of fun. I had initially thought that since it was made into a movie that it might be too mainstream or fluffy. After a few recommendations I gave it a shot and dang.

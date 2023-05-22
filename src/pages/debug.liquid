@@ -1,9 +1,13 @@
 ---
 title: Debug
 ---
-<div class="page books">
-<div>
+<div class="page">
 {{ page | debug }}
+{{ collections.all[0].template.templateData.globalData | debug }}
 {% comment %} {{ collections.all[0].template.templateData.globalData | debug }} {% endcomment %}
-{{ collections.poop | debug }}
+{% comment %} {{ collections.poop[0].template.templateData | debug }} {% endcomment %}
+{% comment %} {{ collections.tagGroup | debug }}
+{{ books.allBooks }}
+-----
+{{ bourbons}} {% endcomment %}
 </div>

@@ -1,7 +1,7 @@
 ---
 title: The Mosaic Navigator
 date: 2021-08-23
-tags: book
+tags: poop
 book: The Mosaic Navigator
 ---
 

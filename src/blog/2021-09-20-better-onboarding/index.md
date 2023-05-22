@@ -1,7 +1,7 @@
 ---
 title: Better Onboarding
 date: 2021-09-20
-tags: book
+tags: poop
 book: Better Onboarding
 ---
 
@@ -15,7 +15,7 @@ A lot of the main points in this book seem obvious when you read them, but, at l
 
 - **Unsupported Immersion** (ex: no instructions, expecting the user to figure it out without guided help) is also rarely helpful. You’re expecting your users to be committed enough with the future reward to figure this out. Unless your product is simple, this will likely have a falloff.
 
-- The answer is **Guided Interaction** (think a video game where the first level is a tutorial) is helpful because users earn their understanding of your product. With Guided Interaction they  not only learn the mechanics but _feel_ the reward of your product, hopefully enticing them to want more. There is obviously a lot of nuance here, I’m oversimplifying.
+- The answer is **Guided Interaction** (think a video game where the first level is a tutorial) is helpful because users earn their understanding of your product. With Guided Interaction they not only learn the mechanics but _feel_ the reward of your product, hopefully enticing them to want more. There is obviously a lot of nuance here, I’m oversimplifying.
 
 - On-boarding needs to continually be part of the process of product design. It rarely works well when it’s glued on at the end. It needs to be owed and revisited reguarly and tested by everyone from product to support to marketing.
 

@@ -1,11 +1,11 @@
 ---
 title: Freakonomics
 date: 2021-09-14
-tags: book
+tags: poop
 book: Freakonomics
 ---
 
-I just finished _Freakonomics: A Rogue Economist Explores the Hidden Side of Everything_ by Steven D. Levitt and Stephen J. Dubner. A fun and quirky book. I’ve listened to interviews from the Freakonomics guys before and I really admire their creativity when it comes to interpreting insights from data. The book feels a little dated (It was written in 2005, this second edition was published in 2011. Everything seems that way if it was written pre-2016!), but the stories hold up. The book dives into theories on how things are connected when they seemingly shouldn’t be. It uses data from some unlikely sources and it’s fun to see how they interpret the data to suppor their theories. 
+I just finished _Freakonomics: A Rogue Economist Explores the Hidden Side of Everything_ by Steven D. Levitt and Stephen J. Dubner. A fun and quirky book. I’ve listened to interviews from the Freakonomics guys before and I really admire their creativity when it comes to interpreting insights from data. The book feels a little dated (It was written in 2005, this second edition was published in 2011. Everything seems that way if it was written pre-2016!), but the stories hold up. The book dives into theories on how things are connected when they seemingly shouldn’t be. It uses data from some unlikely sources and it’s fun to see how they interpret the data to suppor their theories.
 
 For example:
 
@@ -15,4 +15,4 @@ For example:
 - How the 40% crime drop in the 90's may not have been caused by the war on drugs, policing, policies, or the economy (hint: It might be caused by _Rowe vs Wade_!)
 - What makes a great parent, and what doesn’t seem to matter.
 - Does a person’s first name determine their future economic status?
-It was pretty crazy. The authors admit, even relish in the fact that there is no unifying theme of the book, just observations of data about our world and the weird way it seems to work.
+  It was pretty crazy. The authors admit, even relish in the fact that there is no unifying theme of the book, just observations of data about our world and the weird way it seems to work.

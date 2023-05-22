@@ -2,7 +2,7 @@
 title: SEO for Everyone
 date: 2022-02-18
 book: SEO for Everyone
-tags: book
+tags: poop
 ---
 
 I just finished _SEO for Everyone_ by Rebekah Baggs and Chris Corak. I am not an SEO expert, but I am an "everyone"! This book states upfront that this is not a manual to "hack" your SEO and get better results. Gaming the system for a crawler to get you more hits will give you short-term gain, but ultimately you'll suffer if your content is not what users want.
@@ -13,18 +13,17 @@ I had a few takeaways:
 
 We don't fully know Google's PageRank algorithm. From lots of trial and error, folks have been able to see what seems to be ranking higher. What we've seen is that in 2019 Google drastically changed their PageRank algorithm to focus more on indicators that match _intent_ instead of gaming for keywords. Google wants pages to actually deliver what users want, instead of what crawlers can read.
 
-| 2014 | 2019 |
-| --- | --- |
-| Inbound Anchor Text | Intent Matching |
-| Link Quantity | Brand Authority |
-| Brand Authority | Link Quantity |
-| User/Usage Signals | User/Usage Signals |
-| Keyboard Matching | Comprehensiveness |
-| Intent Matching |Content Structure |
-| Content Structure | Inbound Anchor Text |
-| Comprehensiveness | Content Accuracy |
-| Content Accuracy | Keyboard Matching |
-
+| 2014                | 2019                |
+| ------------------- | ------------------- |
+| Inbound Anchor Text | Intent Matching     |
+| Link Quantity       | Brand Authority     |
+| Brand Authority     | Link Quantity       |
+| User/Usage Signals  | User/Usage Signals  |
+| Keyboard Matching   | Comprehensiveness   |
+| Intent Matching     | Content Structure   |
+| Content Structure   | Inbound Anchor Text |
+| Comprehensiveness   | Content Accuracy    |
+| Content Accuracy    | Keyboard Matching   |
 
 As you can see, this is way less about what your links say or what keyword you have in the `<head>`. Google is trying to see that you mean and then give you results.
 

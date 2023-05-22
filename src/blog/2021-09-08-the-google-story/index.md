@@ -1,7 +1,7 @@
 ---
 title: The Google Story
 date: 2021-09-08
-tags: book
+tags: poop
 book: The Google Story
 ---
 

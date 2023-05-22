@@ -2,7 +2,7 @@
 title: Holier Than Thou
 date: 2022-02-18
 book: Holier Than Thou
-tags: book
+tags: poop
 ---
 
 I just finished _Holier than Thou_ by Jackie Hill Perry. This book is amazing. I wish I could stay in this book way longer. I may reread it in the future.

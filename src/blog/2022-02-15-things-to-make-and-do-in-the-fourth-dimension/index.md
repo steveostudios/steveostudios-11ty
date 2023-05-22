@@ -2,7 +2,7 @@
 title: Things to Make and Do in the Fourth Dimension
 date: 2022-02-18
 book: Things to Make and Do in the Fourth Dimension
-tags: book
+tags: poop
 ---
 
 I just finished _Things to Make and Do in the Fourth Dimension_ by Matt Parker. It's a math book. I read it for fun. Yea.
