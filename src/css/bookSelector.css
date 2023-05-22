@@ -1,0 +1,53 @@
+.book-selector {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.book-selector .group {
+  display: flex;
+  gap: 2px;
+}
+
+.book-selector input[type="checkbox"] {
+  display: none;
+}
+.book-selector input[type="checkbox"] + label {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  fill: var(--primary-color);
+  background: var(--white);
+  padding: 2px 4px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.book-selector input[type="checkbox"]:not(:checked) + label:hover {
+  background-color: var(--trim);
+}
+.book-selector input[type="checkbox"] + label:active,
+.book-selector input[type="checkbox"]:checked + label {
+  background: var(--primary-color);
+  color: var(--white);
+  fill: var(--white);
+}
+
+.book-selector button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--black);
+  border: 1px solid var(--primary-color);
+  background: var(--white);
+  padding: 2px 4px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.book-selector svg {
+  width: 0.875rem;
+}

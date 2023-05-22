@@ -1,15 +1,20 @@
 {% assign src = book['cover'][0].thumbnails.large.url %}
 {% assign alt = book['title'] %}
+{% if book.fiction %}
+{% assign fiction = "fiction" %}
+{% else %}
+{% assign fiction = "nonfiction" %}
+{% endif %}
 
 <label>
-  <li class="book-container">
+  <li class="book {{ fiction }}">
     <input type="radio" name="book" />
-    <div class="book page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
+    <div class="book-wrapper page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
       {% if src %}
         {% image src, alt, "books" %}
       {% endif %}      
       <div class="dark"></div>
-      {% if book.post %}
+      {% if book.review %}
         <a href="/blog/{{ book.post }}">
           <div class="dot">{{ "/src/img/icons/link-light.svg" | svgContents: "icon" | safe }}</div>
         </a>

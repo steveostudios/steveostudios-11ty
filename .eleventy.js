@@ -91,6 +91,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
+  // https://nodejs.org/api/util.html#util_util_inspect_object_options
+  const inspect = require("util").inspect;
+
+  module.exports = (eleventyConfig) => {
+    eleventyConfig.addFilter(
+      "debug",
+      (content) => `<pre>${inspect(content)}</pre>`
+    );
+    // ...
+  };
+
   // Return
   return {
     passthroughFileCopy: true,

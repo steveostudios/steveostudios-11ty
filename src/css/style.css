@@ -3,17 +3,18 @@
 @import url("footer.css");
 @import url("about.css");
 @import url("books.css");
+@import url("book.css");
 @import url("bookStats.css");
+@import url("bookSelector.css");
 @import url("blog.css");
 @import url("projects.css");
 @import url("resume.css");
 @import url("toggle.css");
 @import url("bourbons.css");
 
-
 :root {
   --primary-color: #e9a20a;
-  --blue: #2C7CCF;
+  --blue: #2c7ccf;
   --black: #1f1f1f;
   --white: #f6f7f8;
   --trim: #cfd8d1;
@@ -21,18 +22,18 @@
   --dark-grey: #545658;
 }
 
-body { 
+body {
   background: var(--white);
   margin: 0;
   padding: 0;
   min-height: 100vh;
-    font-variant-numeric: lining-nums;
-    -moz-font-feature-settings: "lnum"1;
-    -moz-font-feature-settings: "lnum=1";
-    -ms-font-feature-settings: "lnum"1;
-    -o-font-feature-settings: "lnum"1;
-    -webkit-font-feature-settings: "lnum"1;
-    font-feature-settings: "lnum"1;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum" 1;
+  -moz-font-feature-settings: "lnum=1";
+  -ms-font-feature-settings: "lnum" 1;
+  -o-font-feature-settings: "lnum" 1;
+  -webkit-font-feature-settings: "lnum" 1;
+  font-feature-settings: "lnum" 1;
 }
 
 .layout {
