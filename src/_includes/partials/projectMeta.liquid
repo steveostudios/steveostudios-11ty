@@ -1,29 +1,29 @@
 <aside>
-  {%- if stack.front -%}
+  {%- if project.front_end -%}
     <section>
       <h4>Front End</h4>
       <ul>
-        {% for item in stack.front %}
+        {% for item in project.front_end %}
         <li>{{ item }}</li>
         {% endfor %}
       </ul>
     </section>
   {%- endif -%}
-  {%- if stack.back -%}
+  {%- if project.back_end -%}
     <section>
       <h4>Back End</h4>
       <ul>
-        {% for item in stack.back %}
+        {% for item in project.back_end %}
         <li>{{ item }}</li>
         {% endfor %}
       </ul>
     </section>
   {%- endif -%}
-  {%- if stack.host -%}
+  {%- if project.host -%}
     <section>
       <h4>Hosting</h4>
       <ul>
-        {% for item in stack.host %}
+        {% for item in project.host %}
         <li>{{ item }}</li>
         {% endfor %}
       </ul>

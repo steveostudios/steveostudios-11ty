@@ -1,0 +1,12 @@
+---
+layout: layouts/resume.liquid
+pagination:
+    data: resumes
+    size: 1
+    alias: resume
+permalink: "resume/{{ resume.name | slugify }}/"
+---
+<div class="page resume">
+  {% include 'partials/resume' %}
+</div>
+

@@ -1,18 +1,14 @@
 {% assign years = books.years | reverse %}
+{% assign stats = collections.stats %}
 
-<label class="toggle bookStats-toggle" for="toggle">
-  <input type="checkbox" name="toggle" id="toggle">
-  <span class="slider"></span>
-  <span class="icon">{{ "/src/img/icons/chart-simple-solid.svg" | svgContents: "icon" | safe }}</span>
-</label>
-<div class="bookStats">
+<div class="bookStats active">
   <div>
     <h4>Books by Years</h4>
-    {% booksByYearSVG years %}
+    {% booksByYearSVG stats.yearStats %}
   </div>
   <div>
     <h4>Pages by Year</h4>
-    {% pagesByYearSVG years %}
+    {% pagesByYearSVG stats.yearStats %}
   </div>
   <div class="list">
     <h4>Stats</h4>
@@ -24,27 +20,32 @@
       </tr>
       <tr>
         <td>Most</td>
-        <td>{{ books.stats.bestYearBooks.bookCount | number_with_delimiter }} ({{ books.stats.bestYearBooks.year }})</td>
-        <td>{{ books.stats.bestYearPages.pageCount | number_with_delimiter }} ({{ books.stats.bestYearPages.year }})</td>
-      </tr>
+        <td>{{ stats.mostBooksBooks | number_with_delimiter }} ({{ stats.mostBooksYear }})</td>
+        <td>{{ stats.mostPagesPages | number_with_delimiter }} ({{ stats.mostPagesYear }})</td>
       <tr>
         <td>Current</td>
-        <td>{{ books.stats.currentlyReadingBooks | number_with_delimiter }}</td>
-        <td>{{ books.stats.currentlyReadingProgress | number_with_delimiter }}/{{ books.stats.currentlyReadingPages | number_with_delimiter }}</td>
+        <td>{{ stats.currentlyReadingBooks | number_with_delimiter }}</td>
+        <td>{{ stats.currentlyReadingProgress | number_with_delimiter }}/{{ stats.currentlyReadingPages | number_with_delimiter }}</td>
       </tr>
       <tr>
         <td>This Year</td>
-        <td>{{ books.stats.thisYear.bookCount | number_with_delimiter }} ({{ books.stats.currentBookRank | to_ordinal }})</td>
-        <td>{{ books.stats.thisYear.pageCount | number_with_delimiter }} ({{ books.stats.currentPageRank | to_ordinal }})</td>
+        <td>{{ stats.thisYearBooks | number_with_delimiter }} ({{ stats.thisYearBooksRank | to_ordinal }})</td>
+        <td>{{ stats.thisYearPages | number_with_delimiter }} ({{ stats.thisYearPagesRank | to_ordinal }})</td>
       </tr>
       <tr>
         <td>All Time</td>
-        <td>{{ books.stats.totalBooks | number_with_delimiter }}</td>
-        <td>{{ books.stats.totalPages | number_with_delimiter }}</td>
+        <td>{{ stats.totalBooks | number_with_delimiter }}</td>
+        <td>{{ stats.totalPages | number_with_delimiter }}</td>
       </tr>
     </table>
   </div>
 </div>
+
+<label class="toggle bookStats-toggle" for="toggle">
+  <input type="checkbox" name="toggle" id="toggle" checked>
+  <span class="slider"></span>
+  <span class="icon">{{ "/src/img/icons/chart-simple-solid.svg" | svgContents: "icon" }}</span>
+</label>
 
 <script>
   const toggle = document.getElementById('toggle');

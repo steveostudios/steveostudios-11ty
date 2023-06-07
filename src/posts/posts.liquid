@@ -1,0 +1,17 @@
+---
+layout: layouts/base.liquid
+pagination:
+    data: posts
+    size: 1
+    alias: post
+permalink: "post/{{ post.title | slugify }}/"
+---
+<div class="page post">
+    <h1><div>{{ post.title }}</div> <div class="date">{{ post.date | date: "%B %e, %Y" }}</div></h1>
+    <div class="content">
+      <article>
+        {% markdown post.content, post.image, "posts" %}
+      </article>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,7 @@
         <ul class="socials">
           {% for social in me.socials %}
           <li>
-            <a href={{social.url}} alt={{social.network}}>{{ social.icon | svgContents: "icon" | safe }}</a>
+            <a href={{social.url}} alt={{social.network}}>{{ social.icon | svgContents: "icon" }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -19,7 +19,7 @@
           <li>
             <a href="/">
               <span class="icon">
-                {{ "/src/img/icons/home.svg" | svgContents: "icon" | safe }}
+                {{ "/src/img/icons/home.svg" | svgContents: "icon" }}
               </span>
               <span class="title">About</span>
             </a>
@@ -27,7 +27,7 @@
           <li>
             <a href="/blog">
               <span class="icon">
-                {{ "/src/img/icons/rss.svg" | svgContents: "icon" | safe }}
+                {{ "/src/img/icons/rss.svg" | svgContents: "icon" }}
               </span>
               <span class="title">Blog</span>
             </a>
@@ -35,7 +35,7 @@
           <li>
             <a href="/projects">
               <span class="icon">
-                {{ "/src/img/icons/code-solid.svg" | svgContents: "icon" | safe }}
+                {{ "/src/img/icons/code-solid.svg" | svgContents: "icon" }}
               </span>
               <span class="title">Projects</span>
             </a>
@@ -43,7 +43,7 @@
           <li>
             <a href="/books">
               <span class="icon">
-                {{ "/src/img/icons/books.svg" | svgContents: "icon" | safe }}
+                {{ "/src/img/icons/books.svg" | svgContents: "icon" }}
               </span>
               <span class="title">Books</span>
             </a>

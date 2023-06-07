@@ -42,19 +42,19 @@ layout: layouts/base.liquid
 
   <div class="enneagram personality">
     <h3>Enneagram</h3>
-    {{ "/src/img/icons/enneagram.svg" | svgContents: "icon" | safe }}
+    {{ "/src/img/icons/enneagram.svg" | svgContents: "icon" }}
     <span>{{ me.personality.enneagram}}</span>
   </div>
 
   <div class="briggsMyers personality">
     <h3>Briggs-Myers</h3>
-    {{ "/src/img/icons/briggsMyers.svg" | svgContents: "icon" | safe }}
+    {{ "/src/img/icons/briggsMyers.svg" | svgContents: "icon" }}
     <span>{{ me.personality.briggsMyers}}</span>
   </div>
 
   <div class="strengthsFinder personality">
     <h3>Strengths Finder</h3>
-    {{ "/src/img/icons/strengthsFinder.svg" | svgContents: "icon" | safe }}
+    {{ "/src/img/icons/strengthsFinder.svg" | svgContents: "icon" }}
     <ol>
       {% for strength in me.personality.strengthsFinder %}
       <li>{{ strength }}</li>
@@ -64,7 +64,7 @@ layout: layouts/base.liquid
 
   <div class="workingGenius personality">
     <h3>Working Genius</h3>
-    {{ "/src/img/icons/workingGenius.svg" | svgContents: "icon" | safe }}
+    {{ "/src/img/icons/workingGenius.svg" | svgContents: "icon" }}
     <ol>
       {% for genius in me.personality.workingGenius %}
       <li>{{ genius }}</li>

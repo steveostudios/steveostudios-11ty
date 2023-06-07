@@ -1,0 +1,27 @@
+{% assign src = book['cover'][0].thumbnails.large.url %}
+{% assign alt = book['title'] %}
+
+{% if book.fiction %}
+{% assign fiction = "fiction" %}
+{% else %}
+{% assign fiction = "nonfiction" %}
+{% endif %}
+
+{% if book.review == blank %}
+{% assign review = "false" %}
+{% else %}
+{% assign review = "true" %}
+{% endif %}
+
+<div class="book-cover" data-fiction="{{ fiction }}" data-stars="{{ book.stars }}" data-format="{{ book.format }}" data-review="{{ review }}">
+  <div class="book-wrapper page-count-{{ book.pages | divided_by: 100 | floor | times: 100 }}">
+    <a href="/book/{{ book.title | slug }}">
+      {% if src %}
+        {% image src, alt, "books" %}
+      {% endif %}      
+    </a>
+  </div> 
+  {% if book.progress %}
+    <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
+  {% endif %}
+</div>

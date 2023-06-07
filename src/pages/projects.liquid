@@ -1,43 +1,36 @@
 ---
 title: Projects
+layout: layouts/base.liquid
 ---
-  <ul class="page projects">
-    {%- for project in collections.projects -%}
-      <li>
-        <a href="{{ project.url }}">
-          <img src="{{ project.url }}{{ project.data.slider | first }}" />
-          <div>
-            <h2>
-              {{ project.data.title }}
-            </h2>
-            <p class="client">{{ project.data.client }}</p>
-            {%- if project.data.stack -%}
-              <ul class="stack">
-                {%- if project.data.stack.front -%}
-                  {% for item in project.data.stack.front %}
-                    <li class="front">
-                      {{ item }}
-                    </li>
-                  {% endfor %}
-                {%- endif -%}
-                {%- if project.data.stack.back -%}
-                  {% for item in project.data.stack.back %}
-                    <li class="back">
-                      {{ item }}
-                    </li>
-                  {% endfor %}
-                {%- endif -%}
-                {%- if project.data.stack.host -%}
-                  {% for item in project.data.stack.host %}
-                    <li class="host">
-                      {{ item }}
-                    </li>
-                  {% endfor %}
-                {%- endif -%}
-              </ul>
+<div class="page projects">
+  {% for project in projects %}
+    {% assign src = project['slides'][0].thumbnails.large.url %}
+    {% assign alt = project.name %} 
+    <li>
+      <a href="/project/{{ project.name | slugify }}">
+        {% image src, alt, "project" %}
+        <div>
+          <h2>{{ project.name }}</h2>
+          <p class="client">{{ project.client }}</p>
+          <ul class="stack">
+            {%- if project.front_end -%}
+              {% for item in project.front_end %}
+                <li class="front">{{ item }}</li>
+              {% endfor %}
             {%- endif -%}
-          </div>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+            {%- if project.back_end -%}
+              {% for item in project.back_end %}
+                <li class="back">{{ item }}</li>
+              {% endfor %}
+            {%- endif -%}
+            {%- if project.host -%}
+              {% for item in project.host %}
+                <li class="host">{{ item }}</li>
+              {% endfor %}
+            {%- endif -%}
+          </ul>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</div>

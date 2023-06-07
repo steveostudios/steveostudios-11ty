@@ -1,12 +1,20 @@
 .book-selector {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 16px;
 }
 
 .book-selector .group {
   display: flex;
-  gap: 2px;
+  gap: 1px;
+}
+
+.book-selector .group input:first-of-type + label {
+  border-radius: 4px 0 0 4px;
+}
+
+.book-selector .group input:last-of-type + label {
+  border-radius: 0 4px 4px 0;
 }
 
 .book-selector input[type="checkbox"] {
@@ -24,7 +32,7 @@
   padding: 2px 4px;
   font-size: 10px;
   cursor: pointer;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 .book-selector input[type="checkbox"]:not(:checked) + label:hover {
   background-color: var(--trim);
@@ -43,9 +51,17 @@
   border: 1px solid var(--primary-color);
   background: var(--white);
   padding: 2px 4px;
+  display: flex;
   font-size: 10px;
   cursor: pointer;
   border-radius: 4px;
+  fill: var(--primary-color);
+}
+
+.book-selector button:disabled {
+  opacity: 0.5;
+  border-color: var(--trim);
+  fill: var(--trim);
 }
 
 .book-selector svg {

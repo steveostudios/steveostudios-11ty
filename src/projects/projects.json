@@ -1,5 +1,0 @@
-{
-  "layout": "partials/project",
-  "permalink": "/projects/{{ page.fileSlug }}/",
-  "tags": "project"
-}

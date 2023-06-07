@@ -1,20 +1,17 @@
 ---
-title: Blog
+title: Posts
+layout: layouts/base.liquid
 ---
-  <ul class="page posts">
-    {% for post in collections.posts reversed %}
-      <li>
-        <a href="{{ post.url }}">
-          <div>
-            {%- if post.data.book -%}
-              {{ "/src/img/icons/book-light.svg" | svgContents: "icon" | safe }}
-            {%- endif -%}
-            {{ post.data.title }}
-          </div>
-          <div class="date">
-            {{ post.data.date | date: "%B %d, %Y" }}
-          </div>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="page posts">
+  {% for post in posts %}
+   
+    <li>
+      <a href="/post/{{ post.title | slugify }}">
+        <div>
+          <h2>{{ post.title }} {{ post.date | date: "%B %e, %Y" }}</h2>
+
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</div>

@@ -1,0 +1,66 @@
+---
+layout: layouts/base.liquid
+pagination:
+    data: books
+    size: 1
+    alias: book
+permalink: "book/{{ book.title | slugify }}/"
+---
+<div class="page book">
+  <h1>
+    {{ "/src/img/icons/book-light.svg" | svgContents: "icon" }} {{ book.title }}
+    {% if book.authors_name %}
+      <span>
+        By {% for author in book.authors_name %}
+          {{ author }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      </span>
+    {% endif %}
+  </h1>
+  <div class="content has-book">
+    <div>
+      {% if book.cover %}
+        {% include 'partials/bookCover' %}
+      {% endif %}
+      {% if book.fiction %}
+      {% assign fiction = "Fiction" %}
+      {% else %}
+      {% assign fiction = "Non-Fiction" %}
+      {% endif %}
+      {{ fiction }}
+      {% if book.pages %}
+        <p>{% if book.progress %}{{book.progress}}/{% endif %}{{ book.pages }} pgs</p>
+      {% endif %}
+      {% if book.url %}
+        <a href="{{ book.url }}">Get it here</a>
+      {% endif %}
+      {% if book.asin %}
+        <a href="https://www.amazon.com/dp/{{ book.asin }}/">Get it here</a>
+      {% endif %}
+    </div>
+    <article>
+      <div class="subheader">
+        <div class="stars">
+          <div class="stars-back">
+            {% for i in (1..5) %}
+              {{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}
+            {% endfor %} 
+          </div>
+          <div class="stars-front">
+            {% for i in (1..book.stars) %}
+              {{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}
+            {% endfor %} 
+          </div>
+        </div>
+        <div>Finished {{ book.dateFinish | date: "%B %e, %Y"}}</div>
+      </div>
+      {% if book.review == blank %}
+        <div class="review missing">I haven't reviewed this book yet.</div>
+      {% else %}
+        <div class="review">
+          {% markdown book.review, book.image, "books" %}
+        </div>
+      {% endif %}
+    </article>
+  </div>
+</div>

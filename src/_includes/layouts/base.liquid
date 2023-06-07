@@ -23,9 +23,9 @@
 
 <body>
   <div class="layout">
-    {% include partials/header.liquid %}
-      {{ content | safe }}
-    {% include partials/footer.liquid %}
+    {% include 'partials/header' %}
+      {{ content }}
+    {% include 'partials/footer' %}
   </div>
 </body>
 

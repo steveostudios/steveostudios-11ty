@@ -1,0 +1,19 @@
+---
+layout: layouts/base.liquid
+pagination:
+    data: projects
+    size: 1
+    alias: project
+permalink: "project/{{ project.name | slugify }}/"
+---
+<div class="page project">
+    <h1>{{ project.name }}</h1>
+    <div class="content">
+      {% include 'partials/slider' %}
+      {% include 'partials/projectMeta' %}
+      <article>
+        {% markdown project.content %}
+      </article>
+    </div>
+  </div>
+</div>
