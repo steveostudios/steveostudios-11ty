@@ -40,21 +40,3 @@
     </table>
   </div>
 </div>
-
-<label class="toggle bookStats-toggle" for="toggle">
-  <input type="checkbox" name="toggle" id="toggle" checked>
-  <span class="slider"></span>
-  <span class="icon">{{ "/src/img/icons/chart-simple-solid.svg" | svgContents: "icon" }}</span>
-</label>
-
-<script>
-  const toggle = document.getElementById('toggle');
-  toggle.addEventListener("change", function (e) {
-    const stats = document.getElementsByClassName("bookStats")[0];
-    if (toggle.checked) {
-      stats.classList.add("active");
-    } else {
-      stats.classList.remove("active");
-    }
-  })
-</script>

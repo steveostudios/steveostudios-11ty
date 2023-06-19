@@ -9,21 +9,24 @@
 }
 
 .posts li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
   padding: 2rem 0;
   color: var(--black);
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   font-weight: 700;
-  line-height: 1.5;
   flex-direction: column;
+  line-height: 0.875;
+  font-size: 2em;
 }
 
 .posts li a .date {
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--dark-grey);
 }
 
@@ -44,7 +47,7 @@
 .post h1 .date {
   font-weight: normal;
   font-size: 1rem;
-  color: var(--dark-grey)
+  color: var(--dark-grey);
 }
 
 .post h1 svg {
@@ -53,7 +56,6 @@
   fill: var(--primary-color);
   margin-right: 0.75rem;
 }
-
 
 .post h2 {
   font-size: 1.25rem;
@@ -76,7 +78,7 @@
 }
 
 .post table th {
-font-weight: 700;
+  font-weight: 700;
 }
 
 .post table td,

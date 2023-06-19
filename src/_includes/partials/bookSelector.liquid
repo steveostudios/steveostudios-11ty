@@ -1,5 +1,9 @@
 <div class="book-selector">
       <div class="group">
+        <input type="checkbox" id="stats" checked>
+        <label for="stats">{{ "/src/img/icons/chart-simple-solid.svg" | svgContents: "icon" }}</label>
+      </div>
+      <div class="group">
         <input type="checkbox" id="fiction" checked>
         <label for="fiction">Fiction</label>
         <input type="checkbox" id="non-fiction" checked>
@@ -52,6 +56,9 @@
   const audio = document.getElementById('audio');
   const hasPost = document.getElementById('hasPost');
   const missingPost = document.getElementById('missingPost');
+
+  const stats = document.getElementById("stats");
+  const bookStats = document.getElementsByClassName("bookStats")[0];
 
   const checkFiles = () => {
     const books = document.querySelectorAll('.book-cover');
@@ -159,6 +166,14 @@
   missingPost.addEventListener('click', () => {
    toggleSelector('missingPost');
   });
+
+  stats.addEventListener("click", () => {
+    if (stats.checked) {
+      bookStats.classList.add("active");
+    } else {
+      bookStats.classList.remove("active");
+    }
+  })
 
 
   clear.addEventListener('click', () => {
