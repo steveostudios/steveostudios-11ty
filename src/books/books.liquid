@@ -23,23 +23,36 @@ permalink: "book/{{ book.title | slugify }}/"
         {% include 'partials/bookCover' %}
       {% endif %}
       {% if book.fiction %}
-      {% assign fiction = "Fiction" %}
+        {% assign fiction = "Fiction" %}
       {% else %}
-      {% assign fiction = "Non-Fiction" %}
+        {% assign fiction = "Non-Fiction" %}
       {% endif %}
       {{ fiction }}
       {% if book.pages %}
-        <p>{% if book.progress %}{{book.progress}}/{% endif %}{{ book.pages }} pgs</p>
+        {% if book.pagesFinish %}
+          <p>{{ book.pagesFinish }}/{{ book.pages }} pgs</p>
+        {% endif %}
+        {% if book.minutesFinish %}
+          <p>{{ book.minutesFinish | divided_by: book.minutes | times: book.pages | floor }}/{{ book.pages }} pgs</p>
+        {% endif %}
+        {% if book.dateFinish %}
+          <p>{{ book.pages }} pgs</p>
+        {% endif %}
       {% endif %}
       {% if book.url %}
         <a href="{{ book.url }}">Get it here</a>
       {% endif %}
+      {% if book.format %}
+        <p>{{ book.format }}</p>
+      {% endif %}
       {% if book.asin %}
         <a href="https://www.amazon.com/dp/{{ book.asin }}/">Get it here</a>
       {% endif %}
+
     </div>
     <article>
       <div class="subheader">
+        {% if book.dateFinish %}
         <div class="stars">
           <div class="stars-back">
             {% for i in (1..5) %}
@@ -52,7 +65,10 @@ permalink: "book/{{ book.title | slugify }}/"
             {% endfor %} 
           </div>
         </div>
-        <div>Finished {{ book.dateFinish | date: "%B %e, %Y"}}</div>
+          <div>Finished {{ book.dateFinish | date: "%B %e, %Y"}}</div>
+        {% else %}
+          <div>Currently Reading</div>
+        {% endif %}
       </div>
       {% if book.review == blank %}
         <div class="review missing">I haven't reviewed this book yet.</div>

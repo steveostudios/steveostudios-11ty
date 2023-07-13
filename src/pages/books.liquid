@@ -7,7 +7,7 @@ layout: layouts/base.liquid
   {% include 'partials/bookSelector' %}
 
   <h3>Currently Reading </h3>
-  {% assign current_books = books | where: "progress" | sort: "dateStart" | reverse %}
+  {% assign current_books = books | currentlyReading | sort: "dateStart" | reverse %}
 
   <ul class="shelf">
     {% for book in current_books %}

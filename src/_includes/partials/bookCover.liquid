@@ -21,7 +21,7 @@
       {% endif %}      
     </a>
   </div> 
-  {% if book.progress %}
-    <progress id="file" max="{{book.pages}}" value="{{book.progress}}"></progress>
+  {% if book.progress < 1 %}
+    <progress id="file" value="{{book.progress}}"></progress>
   {% endif %}
 </div>
