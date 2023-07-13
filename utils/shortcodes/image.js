@@ -5,6 +5,7 @@ module.exports = {
     if (alt === undefined) {
       // You bet we throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+      return "";
     }
 
     if (format === "png") {
@@ -14,7 +15,7 @@ module.exports = {
         urlPath: `/img/${dir}`,
         outputDir: `./public/img/${dir}`,
       });
-      
+
       let data = metadata.png[metadata.png.length - 1];
       return `<img src="${data.url}"  alt="${alt}" loading="lazy" decoding="async">`;
     } else {
@@ -24,9 +25,9 @@ module.exports = {
         urlPath: `/img/${dir}`,
         outputDir: `./public/img/${dir}`,
       });
-      
+
       let data = metadata.jpeg[metadata.jpeg.length - 1];
       return `<img src="${data.url}"  alt="${alt}" loading="lazy" decoding="async">`;
     }
-  }
+  },
 };
