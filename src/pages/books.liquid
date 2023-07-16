@@ -18,7 +18,16 @@ layout: layouts/base.liquid
   {% for stat in collections.stats.yearStats %}
     {% assign year_string = stat.year | append: "" %}
     {% assign year_books = books | where: "year", year_string | sort: "dateFinish" | reverse %}
-    <h3>{{ stat.year }} <span>{{ stat.books | number_with_delimiter }} books</span><span>{{ stat.pages | number_with_delimiter }} pages</span></h3>
+    <h3>
+      <div>
+        {{ stat.year }} <span>{{ stat.books | number_with_delimiter }} books</span><span>{{ stat.pages | number_with_delimiter }} pages</span>
+      </div>
+      {% if goals[stat.year] %}
+        <div>
+          <progress id="file" max="{{ goals[stat.year] }}" value="{{ stat.books }}"></progress><span>{{ stat.books }}/{{ goals[stat.year] }} books</span>
+        </div>
+      {% endif %}
+      </h3>
     <ul class="shelf">
       {% for book in year_books %}
         {% include 'partials/bookCover' %}
