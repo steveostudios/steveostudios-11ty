@@ -13,7 +13,7 @@
 {% assign review = "true" %}
 {% endif %}
 
-{% assign sideWidth = book.pages | divided_by: 100 | times: 6 | plus: 4 %}
+{% assign sideWidth = book.pages | divided_by: 100 | times: 6 | plus: 4 | floor %}
 
 <div class="book-cover" 
   data-fiction="{{ fiction }}" 
@@ -24,11 +24,11 @@
 >
   <div class="book-cover-box">
     <div class="book-cover-box-face">
-  <a href="/book/{{ book.title | slug }}">
-      {% if src %}
-        {% image src, alt, "books" %}
-      {% endif %} 
-  </a>
+      <a href="/book/{{ book.title | slug }}">
+        {% if src %}
+          {% image src, alt, "books" %}
+        {% endif %} 
+      </a>
     </div>
     <div class="book-cover-box-side"></div>
     <div class="book-cover-box-back"></div>
