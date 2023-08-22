@@ -1,0 +1,180 @@
+.page.admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.page.admin h2 {
+  display: flex;
+  user-select: none;
+  gap: 1rem;
+}
+
+.page.admin h2 svg {
+  height: 1.5rem;
+  transition: all 0.125s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+.page.admin h2.visible svg {
+  transform: rotate(0deg);
+}
+
+.page.admin section {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  transition: all 0.125s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.page.admin section.visible {
+  height: auto;
+  max-height: 100rem;
+}
+
+.page.admin section table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.page.admin section table tr {
+  max-height: 3rem;
+}
+
+.page.admin section table tr.protected {
+  opacity: 0.25;
+}
+
+.page.admin section table tr td {
+  font-size: 1.25rem;
+}
+
+.page.admin section table tr th.cover {
+  width: 2rem;
+}
+.page.admin section table tr td.cover img {
+  margin-top: 0.25rem;
+  height: 3rem;
+}
+
+.page.admin section table tr td input {
+  font-size: 1.25rem;
+  font-family: monospace;
+  background-color: var(--trim);
+  border: none;
+  text-align: end;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.page.admin section table tr th.pages {
+  width: 8rem;
+}
+
+.page.admin section table tr th.date {
+  width: 12rem;
+}
+
+.page.admin section table tr th.stars {
+  width: 6rem;
+}
+
+/* Stars */
+
+.page.admin section table tr th.stars,
+.page.admin section table tr td.stars {
+  position: relative;
+}
+
+.page.admin section table tr th.stars svg,
+.page.admin section table tr td.stars svg {
+  width: 1rem;
+}
+
+.page.admin section table tr th.stars .stars-back,
+.page.admin section table tr td.stars .stars-back {
+  fill: var(--trim);
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.page.admin section table tr th.stars .stars-front,
+.page.admin section table tr td.stars .stars-front {
+  fill: var(--primary-color);
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.page.admin .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.page.admin .submit {
+  margin-top: 1rem;
+  background: var(--primary-color);
+  padding: 0.5rem 1rem;
+  color: var(--black);
+  margin-left: 8px;
+  border: none;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  align-self: flex-end;
+}
+
+.page.admin .submit:disabled {
+  background-color: var(--trim);
+  color: var(--white);
+}
+
+.page.admin .reset {
+  margin-top: 1rem;
+  background: var(--primary-color);
+  padding: 0.5rem 1rem;
+  color: var(--black);
+  margin-left: 8px;
+  border: none;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  align-self: flex-end;
+}
+
+.page.admin .reset:disabled {
+  background-color: var(--trim);
+  color: var(--white);
+}
+
+.page.admin section table tr td {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: none;
+  border-bottom: 1px solid var(--trim);
+  padding: 0 0.5rem;
+}
+
+.page.admin section table tr th {
+  background-color: var(--trim);
+}

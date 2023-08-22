@@ -5,7 +5,7 @@ const { numWithDelimiter, numToOrdinal } = require("./utils/filters/numbers");
 const { getStats } = require("./utils/collections/getBookStats");
 const { lineGraph } = require("./utils/shortcodes/graph");
 const { markdown } = require("./utils/shortcodes/markdown");
-const { currentlyReading } = require("./utils/filters/books");
+const { currentlyReading, notStarted } = require("./utils/filters/books");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["liquid"]);
@@ -24,6 +24,7 @@ module.exports = function (eleventyConfig) {
     (content) => `<pre>${inspect(content)}</pre>`
   );
   eleventyConfig.addFilter("currentlyReading", currentlyReading);
+  eleventyConfig.addFilter("notStarted", notStarted);
 
   // Shortcodes
   eleventyConfig.addLiquidShortcode("image", image);

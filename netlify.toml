@@ -6,3 +6,7 @@ package = "netlify-plugin-cache"
     "public/img", # Eleventy Image Disk Cache
     ".cache" # Remote Asset Cache
   ]
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

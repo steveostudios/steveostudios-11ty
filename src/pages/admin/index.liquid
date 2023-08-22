@@ -1,0 +1,298 @@
+---
+title: Admin
+---
+<div class="page admin">
+  <h2 data-id="start" class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Start a Book</span></h2>
+  <section class="section_start visible">
+    {% assign notStarted_books = books | notStarted | sort: "title"  %}
+    <table cell-padding="0">
+      <thead>
+        <tr>
+          <th class="cover"></th>
+          <th>Title</th>
+          <th class="pages">Pages</th>
+          <th class="date">Start Date</th>
+        </tr>
+      </thead>
+      {% for book in notStarted_books %}
+      {% assign src = book['cover'][0].thumbnails.large.url %}
+      {% assign alt = book['title'] %}
+        <tr data-id="{{ book.id }}">
+          <td class="cover">{% image src, alt, "books" %}</td>
+          <td>{{ book.title }}</td>
+          <td class="pages"><input data-id="{{ book.id }}" class="start_pagesFinish" type="number" min="0" max="{{book.pages}}" value="{{ book.pagesFinish }}"/>/{{ book.pages }}</td>
+          <td class="date"><input type="date" data-id="{{ book.id }}" class="start_dateStart"  /></td>
+        </tr>
+      {% endfor %}
+    </table>
+    <div class="buttons">
+      <button id="reset_start" class="reset" disabled>Reset</button>
+      <button id="submit_start" class="submit" disabled>Save</button>
+    </div>
+  </section>
+  <h2 data-id="read" class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Read a Book</span></h2>
+  <section class="section_read visible">
+    {% assign current_books = books | currentlyReading | sort: "dateStart" | reverse %}
+    <table>
+      <thead>
+        <tr>
+          <th class="cover"></th>
+          <th>Title</th>
+          <th class="pages">Pages</th>
+          <th class="date">Date Start</th>
+        </tr>
+      </thead>
+      {% for book in current_books %}
+        {% assign src = book['cover'][0].thumbnails.large.url %}
+        {% assign alt = book['title'] %}
+        <tr data-id="{{ book.id }}">
+          <td class="cover">{% image src, alt, "books" %}</td>
+          <td>{{ book.title }}</td>
+          <td class="pages"><input data-id="{{ book.id }}" class="read_pagesFinish" type="number" min="0" max="{{book.pages}}" value="{{ book.pagesFinish }}" data-initialValue="{{ book.pagesFinish }}"/>/{{ book.pages }}</td>
+          <td class="date"><input type="date" data-id="{{ book.id }}" class="read_dateStart" value="{{ book.dateStart }}" disabled/></td>
+        </tr>
+      {% endfor %}
+    </table>
+    <div class="buttons">
+      <button id="reset_read" class="reset" disabled>Reset</button>
+      <button id="submit_read" class="submit" disabled>Save</button>
+    </div>
+
+  </section>
+  <h2 data-id="finish"  class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Finish a Book</span></h2>
+  <section class="section_finish visible">
+    {% assign current_books = books | currentlyReading | sort: "dateStart" | reverse %}
+    <table>
+      <thead>
+        <tr>
+          <th class="cover"></th>
+          <th>Title</th>
+          <th class="stars">Stars</th>
+          <th class="date">Date Finish</th>
+        </tr>
+      </thead>
+      {% for book in current_books %}
+        {% assign src = book['cover'][0].thumbnails.large.url %}
+        {% assign alt = book['title'] %}
+        <tr data-id="{{ book.id }}">
+          <td class="cover">{% image src, alt, "books" %}</td>
+          <td>{{ book.title }}</td>
+          <td class="stars">
+          <div class="stars-back">
+            {% for i in (1..5) %}
+              {{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}
+            {% endfor %} 
+          </div>
+          <div class="stars-front">
+            {% for i in (1..book.stars) %}
+              {{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}
+            {% endfor %} 
+        </div></td>
+          <td class="date"><input type="date" data-id="{{ book.id }}" class="finish_dateFinish"  /></td>
+        </tr>
+      {% endfor %}
+    </table>
+        <div class="buttons">
+      <button id="reset_finish" class="reset" disabled>Reset</button>
+      <button id="submit_finish" class="submit" disabled>Save</button>
+    </div>
+
+  </section>
+</div>
+
+<script>
+  // post request
+  const postData = async (url = "", data = {}) => {
+    // Default options are marked with *
+    const response = await fetch(url, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, *cors, same-origin
+      header: {
+        "Origin": "*",
+        "Access-Control-Request-Method": "POST"
+      },
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    console.log(response)
+    return await response.json(); // parses JSON response into native JavaScript objects
+  }
+
+  // toggle sections
+  const h2 = document.querySelectorAll("h2").forEach(toggle => toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget.dataset.id)
+    if (toggle.classList.contains('visible')) {
+        toggle.classList.remove('visible');
+        document.querySelector(`.section_${e.currentTarget.dataset.id}`).classList.remove("visible")
+    } else {
+        toggle.classList.add('visible');
+        document.querySelector(`.section_${e.currentTarget.dataset.id}`).classList.add("visible")
+    }
+
+  }))
+
+  const allUpdates = {
+    start:[],
+    read: [],
+    finish: [],
+    protectedIds: ["recpBtCPKvE3tPxHL"]
+  }
+
+  const updateBook = (item, updateId) => {
+    if (!allUpdates[updateId].length || !allUpdates[updateId].find(el => el.id === item.id)) {
+      allUpdates[updateId].push(item)
+    return} 
+    allUpdates[updateId] = allUpdates[updateId].map(el => {
+      if (el.id === item.id) {
+        return {...el, ...item};
+      } else {
+        return el
+      }
+    }
+  )
+  }
+
+  const protectRows = (updateId) => {
+    allUpdates.protectedIds = [...allUpdates.protectedIds, ...allUpdates[updateId].map(item => item.id)]
+    allUpdates.protectedIds.forEach(id => {
+      document.querySelectorAll(`tr[data-id="${id}"]`).forEach(row => row.classList.add("protected"))
+      document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => input.disabled = true)
+    })
+  }
+
+  // start
+  const validateStart = () => {
+    const isEverything = (item) => Object.hasOwn(item, "dateStart") && Object.hasOwn(item, "pagesFinish");
+    if (!allUpdates.start.length) {
+      document.querySelector("#submit_start").disabled = true;
+      return
+    }
+    if (allUpdates.start.every(isEverything))  {
+      document.querySelector("#submit_start").disabled = false;
+    } else {
+      document.querySelector("#submit_start").disabled = true;
+    }
+  }
+
+  const validateStartReset = () => {
+    if (allUpdates.start.length) {
+      document.querySelector("#reset_start").disabled = false;
+    } else {
+      document.querySelector("#reset_start").disabled = true;
+    }
+  }
+
+  const start_dateStart = document.querySelectorAll(".start_dateStart").forEach(input => input.addEventListener("change", (e) => {
+    updateBook({id: e.currentTarget.dataset.id, dateStart: e.currentTarget.value}, "start");
+    validateStart()
+    validateStartReset()
+  }))
+
+  const start_pagesFinish = document.querySelectorAll(".start_pagesFinish").forEach(input => input.addEventListener("change", (e) => {
+    updateBook({id: e.currentTarget.dataset.id, pagesFinish: parseInt(e.currentTarget.value)}, "start")
+    validateStart()
+    validateStartReset()
+  }))
+
+  const startSave = document.querySelector("#submit_start").addEventListener("click", (e) => {
+    postData("http://localhost:9999/.netlify/functions/updateBook", {updates: allUpdates.start} )
+    protectRows("start");
+    validateStartReset()
+    allUpdates.start = [];
+    validateStart();
+  })
+
+  const startReset = document.querySelector("#reset_start").addEventListener("click", (e) => {
+    allUpdates.start = [];
+    validateStartReset()
+    validateStart();
+    document.querySelectorAll(".start_pagesFinish").forEach(input => input.value = "")
+    document.querySelectorAll(".start_dateStart").forEach(input => input.value = "")
+  })
+
+  // Read
+  const validateRead = () => {
+    const isEverything = (item) => Object.hasOwn(item, "pagesFinish"); 
+    if (!allUpdates.read.length) {
+      document.querySelector("#submit_read").disabled = true;
+      return
+    }
+    if (allUpdates.read.every(isEverything))  {
+      document.querySelector("#submit_read").disabled = false;
+    } else {
+      document.querySelector("#submit_read").disabled = true;
+    }
+  }
+
+  const validateReadReset = () => {
+    if (allUpdates.read.length) {
+      document.querySelector("#reset_read").disabled = false;
+    } else {
+      document.querySelector("#reset_read").disabled = true;
+    }
+  }
+
+  const read_pagesFinish = document.querySelectorAll(".read_pagesFinish").forEach(input => input.addEventListener("change", (e) => {
+    updateBook({id: e.currentTarget.dataset.id, pagesFinish: parseInt(e.currentTarget.value)}, "read")
+    validateRead()
+    validateReadReset()
+  }))
+
+  const readSave = document.querySelector("#submit_read").addEventListener("click", async (e) => {
+    postData("http://localhost:9999/.netlify/functions/updateBook", {updates: allUpdates.read} )
+    protectRows("read");
+    validateReadReset()
+    allUpdates.read = [];
+    validateRead()
+  })
+
+  const readReset = document.querySelector("#reset_read").addEventListener("click", (e) => {
+    allUpdates.read = [];
+    validateReadReset()
+    validateRead();
+    document.querySelectorAll(".read_pagesFinish").forEach(input => input.value = input.dataset.initialvalue)
+  })
+
+  // Finish
+  const validateFinish = () => {
+    const isEverything = (item) => Object.hasOwn(item.dateFinish) && Object.hasOwn(item, "pagesFinish"); 
+    if (!allUpdates.finish.length) {
+      document.querySelector("#submit_finish").disabled = true;
+      return
+    }
+    if (allUpdates.read.every(isEverything))  {
+      document.querySelector("#submit_finish").disabled = false;
+    } else {
+      document.querySelector("#submit_finish").disabled = true;
+    }
+  }
+
+  const validateFinishReset = () => {
+    if (allUpdates.finish.length) {
+      document.querySelector("#reset_finish").disabled = false;
+    } else {
+      document.querySelector("#reset_finish").disabled = true;
+    }
+  }
+
+  const finish_dateFinish = document.querySelectorAll(".finish_dateFinish").forEach(input => input.addEventListener("change", (e) => {
+    updateBook({id: e.currentTarget.dataset.id, dateFinish: e.currentTarget.value, pagesFinish: null}, "finish")
+    validateFinish()
+    validateFinishReset()
+  }))
+
+  const finishSave = document.querySelector("#submit_finish").addEventListener("click", async (e) => {
+    postData("http://localhost:9999/.netlify/functions/updateBook", {updates: allUpdates.finish} )
+    protectRows("finish");
+    allUpdates.finish = [];
+    validateFinish()
+  })
+
+  const finishReset = document.querySelector("#reset_finish").addEventListener("click", (e) => {
+    allUpdates.finish = [];
+    validateFinishReset()
+    validateFinish();
+    document.querySelectorAll(".finish_dateFinish").forEach(input => input.value = "")
+  })
+
+</script>

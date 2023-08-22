@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Greenfield",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "IN",
+				"name": "Indiana"
+			},
+			"timezone": "America/Indiana/Indianapolis",
+			"latitude": 39.7891,
+			"longitude": -85.8094
+		},
+		"timestamp": 1692725122121
+	}
+}
