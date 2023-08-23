@@ -1,3 +1,4 @@
+require("dotenv").config();
 const svgContents = require("eleventy-plugin-svg-contents");
 const inspect = require("util").inspect;
 const { image } = require("./utils/shortcodes/image");
@@ -12,6 +13,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(svgContents);
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
+
+  eleventyConfig.addGlobalData("env", process.env);
 
   // Collections
   eleventyConfig.addCollection("stats", getStats);

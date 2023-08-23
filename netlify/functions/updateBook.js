@@ -19,10 +19,17 @@ const ErrorWithStatus = (code, message) => {
 
 exports.handler = async function (event, context) {
   const body = JSON.parse(event.body);
+  console.log("1");
 
   if (Object.keys(body).length === 0 && body.constructor === Object)
     return ErrorWithStatus(400, "missing body");
-
+  console.log("2");
+  if (!Object.hasOwn(body, "code") || body.code.length !== 4)
+    return ErrorWithStatus(400, "authentication error");
+  console.log("3");
+  if (parseInt(body.code) !== parseInt(process.env.NETLIFY_FUNCTIONS_CODE))
+    return ErrorWithStatus(400, "authentication error 2");
+  console.log("4");
   if (!Object.hasOwn(body, "updates") || !body.updates.length)
     return ErrorWithStatus(400, "missing updates");
 

@@ -84,34 +84,36 @@
 
 /* Stars */
 
-.page.admin section table tr th.stars,
-.page.admin section table tr td.stars {
-  position: relative;
-}
-
-.page.admin section table tr th.stars svg,
-.page.admin section table tr td.stars svg {
-  width: 1rem;
-}
-
-.page.admin section table tr th.stars .stars-back,
-.page.admin section table tr td.stars .stars-back {
-  fill: var(--trim);
+.page.admin section table tr td.stars > div {
   display: flex;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  /* width: 100%; */
 }
 
-.page.admin section table tr th.stars .stars-front,
-.page.admin section table tr td.stars .stars-front {
+.page.admin section table tr td.stars button {
+  fill: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--trim);
+  border: none;
+}
+
+.page.admin section table tr td.stars button.active {
   fill: var(--primary-color);
-  display: flex;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  /* width: 100%; */
+}
+
+.page.admin section table tr td.stars button:first-of-type {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.page.admin section table tr td.stars button:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.page.admin section table tr td.stars button svg {
+  width: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .page.admin .buttons {
@@ -119,14 +121,13 @@
   align-items: center;
   justify-content: end;
   gap: 0.5rem;
+  height: 4rem;
 }
 
-.page.admin .submit {
-  margin-top: 1rem;
+.page.admin .buttons button {
   background: var(--primary-color);
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   color: var(--black);
-  margin-left: 8px;
   border: none;
   border-radius: 24px;
   text-decoration: none;
@@ -136,35 +137,26 @@
   justify-content: center;
   align-items: center;
   width: 12rem;
-  align-self: flex-end;
 }
 
-.page.admin .submit:disabled {
+.page.admin .buttons .reset {
+  width: 6rem;
+}
+
+.page.admin button:disabled {
   background-color: var(--trim);
   color: var(--white);
 }
 
-.page.admin .reset {
-  margin-top: 1rem;
-  background: var(--primary-color);
-  padding: 0.5rem 1rem;
-  color: var(--black);
-  margin-left: 8px;
+.page.admin .buttons input {
+  font-size: 1.25rem;
+  font-family: monospace;
+  background-color: var(--trim);
   border: none;
-  border-radius: 24px;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  align-self: flex-end;
-}
-
-.page.admin .reset:disabled {
-  background-color: var(--trim);
-  color: var(--white);
+  text-align: end;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  width: 6rem;
 }
 
 .page.admin section table tr td {

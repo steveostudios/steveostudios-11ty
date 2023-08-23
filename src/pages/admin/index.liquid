@@ -26,6 +26,7 @@ title: Admin
       {% endfor %}
     </table>
     <div class="buttons">
+      <input class="code_start" type="password" pattern="[0-9]*" inputmode="numeric" />
       <button id="reset_start" class="reset" disabled>Reset</button>
       <button id="submit_start" class="submit" disabled>Save</button>
     </div>
@@ -54,6 +55,7 @@ title: Admin
       {% endfor %}
     </table>
     <div class="buttons">
+      <input class="code_read" type="password" pattern="[0-9]*" inputmode="numeric" />
       <button id="reset_read" class="reset" disabled>Reset</button>
       <button id="submit_read" class="submit" disabled>Save</button>
     </div>
@@ -78,49 +80,52 @@ title: Admin
           <td class="cover">{% image src, alt, "books" %}</td>
           <td>{{ book.title }}</td>
           <td class="stars">
-          <div class="stars-back">
+            <div>
             {% for i in (1..5) %}
-              {{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}
-            {% endfor %} 
-          </div>
-          <div class="stars-front">
-            {% for i in (1..book.stars) %}
-              {{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}
-            {% endfor %} 
-        </div></td>
+              <button class="star finish_stars" data-id="{{ book.id }}" data-value="{{ i }}">{{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}</button>
+            {% endfor %}
+            </div>
+          </td>
           <td class="date"><input type="date" data-id="{{ book.id }}" class="finish_dateFinish"  /></td>
         </tr>
       {% endfor %}
     </table>
-        <div class="buttons">
+    <div class="buttons">
+      <input class="code_finish" type="password" pattern="[0-9]*" inputmode="numeric" />
       <button id="reset_finish" class="reset" disabled>Reset</button>
       <button id="submit_finish" class="submit" disabled>Save</button>
     </div>
-
   </section>
 </div>
 
 <script>
   // post request
   const postData = async (url = "", data = {}) => {
-    // Default options are marked with *
     const response = await fetch(url, {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
+      method: "POST",
+      mode: "cors",
       header: {
         "Origin": "*",
         "Access-Control-Request-Method": "POST"
       },
       body: JSON.stringify(data), // body data type must match "Content-Type" header
     });
-    console.log(response)
-    return await response.json(); // parses JSON response into native JavaScript objects
+    const json = await response.json(); 
+    
+    if (json.success) {
+      console.log(json.success, data.type)
+      protectRows(data.type);
+    }
+    document.querySelector(".code_start").value = "";
+    document.querySelector(".code_read").value = "";
+    document.querySelector(".code_finish").value = "";
+    validateAll()
+    console.log(json)
   }
 
   // toggle sections
   const h2 = document.querySelectorAll("h2").forEach(toggle => toggle.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(e.currentTarget.dataset.id)
     if (toggle.classList.contains('visible')) {
         toggle.classList.remove('visible');
         document.querySelector(`.section_${e.currentTarget.dataset.id}`).classList.remove("visible")
@@ -128,8 +133,16 @@ title: Admin
         toggle.classList.add('visible');
         document.querySelector(`.section_${e.currentTarget.dataset.id}`).classList.add("visible")
     }
-
   }))
+
+  const validateAll = () => {
+    validateStart()
+    validateStartReset()
+    validateRead();
+    validateReadReset();
+    validateFinish();
+    validateFinishReset();
+  }
 
   const allUpdates = {
     start:[],
@@ -158,6 +171,7 @@ title: Admin
       document.querySelectorAll(`tr[data-id="${id}"]`).forEach(row => row.classList.add("protected"))
       document.querySelectorAll(`input[data-id="${id}"]`).forEach(input => input.disabled = true)
     })
+    allUpdates[updateId] = [];
   }
 
   // start
@@ -167,7 +181,7 @@ title: Admin
       document.querySelector("#submit_start").disabled = true;
       return
     }
-    if (allUpdates.start.every(isEverything))  {
+    if (allUpdates.start.every(isEverything) && document.querySelector(".code_start").value.length === 4)  {
       document.querySelector("#submit_start").disabled = false;
     } else {
       document.querySelector("#submit_start").disabled = true;
@@ -175,7 +189,7 @@ title: Admin
   }
 
   const validateStartReset = () => {
-    if (allUpdates.start.length) {
+    if (allUpdates.start.length || document.querySelector(".code_start").value.length) {
       document.querySelector("#reset_start").disabled = false;
     } else {
       document.querySelector("#reset_start").disabled = true;
@@ -194,20 +208,22 @@ title: Admin
     validateStartReset()
   }))
 
-  const startSave = document.querySelector("#submit_start").addEventListener("click", (e) => {
-    postData("http://localhost:9999/.netlify/functions/updateBook", {updates: allUpdates.start} )
-    protectRows("start");
-    validateStartReset()
-    allUpdates.start = [];
+   const start_code = document.querySelector(".code_start").addEventListener("keyup", (e) => {
     validateStart();
+    validateStartReset();
+  })
+
+  const startSave = document.querySelector("#submit_start").addEventListener("click", (e) => {
+    postData("{{ env.NETLIFY_FUNCTIONS_URL }}/updateBook", {type: "start", code: document.querySelector(".code_start").value, updates: allUpdates.start} )
   })
 
   const startReset = document.querySelector("#reset_start").addEventListener("click", (e) => {
     allUpdates.start = [];
-    validateStartReset()
-    validateStart();
+    document.querySelector(".code_start").value = "";
     document.querySelectorAll(".start_pagesFinish").forEach(input => input.value = "")
     document.querySelectorAll(".start_dateStart").forEach(input => input.value = "")
+    validateStartReset()
+    validateStart();
   })
 
   // Read
@@ -217,7 +233,7 @@ title: Admin
       document.querySelector("#submit_read").disabled = true;
       return
     }
-    if (allUpdates.read.every(isEverything))  {
+    if (allUpdates.read.every(isEverything) && document.querySelector(".code_read").value.length === 4)  {
       document.querySelector("#submit_read").disabled = false;
     } else {
       document.querySelector("#submit_read").disabled = true;
@@ -225,7 +241,7 @@ title: Admin
   }
 
   const validateReadReset = () => {
-    if (allUpdates.read.length) {
+    if (allUpdates.read.length || document.querySelector(".code_read").value.length) {
       document.querySelector("#reset_read").disabled = false;
     } else {
       document.querySelector("#reset_read").disabled = true;
@@ -233,34 +249,36 @@ title: Admin
   }
 
   const read_pagesFinish = document.querySelectorAll(".read_pagesFinish").forEach(input => input.addEventListener("change", (e) => {
-    updateBook({id: e.currentTarget.dataset.id, pagesFinish: parseInt(e.currentTarget.value)}, "read")
-    validateRead()
-    validateReadReset()
+    updateBook({id: e.currentTarget.dataset.id, pagesFinish: parseInt(e.currentTarget.value)}, "read");
+    validateRead();
+    validateReadReset();
   }))
 
+  const read_code = document.querySelector(".code_read").addEventListener("keyup", (e) => {
+    validateRead();
+    validateReadReset();
+  })
+
   const readSave = document.querySelector("#submit_read").addEventListener("click", async (e) => {
-    postData("http://localhost:9999/.netlify/functions/updateBook", {updates: allUpdates.read} )
-    protectRows("read");
-    validateReadReset()
-    allUpdates.read = [];
-    validateRead()
+    postData("{{ env.NETLIFY_FUNCTIONS_URL }}/updateBook", {type: "read", code: document.querySelector(".code_read").value, updates: allUpdates.read} )
   })
 
   const readReset = document.querySelector("#reset_read").addEventListener("click", (e) => {
     allUpdates.read = [];
-    validateReadReset()
-    validateRead();
+    document.querySelector(".code_read").value = "";
     document.querySelectorAll(".read_pagesFinish").forEach(input => input.value = input.dataset.initialvalue)
+    validateReadReset();
+    validateRead();
   })
 
   // Finish
   const validateFinish = () => {
-    const isEverything = (item) => Object.hasOwn(item.dateFinish) && Object.hasOwn(item, "pagesFinish"); 
+    const isEverything = (item) => Object.hasOwn(item, "dateFinish") && Object.hasOwn(item, "stars") && Object.hasOwn(item, "pagesFinish"); 
     if (!allUpdates.finish.length) {
       document.querySelector("#submit_finish").disabled = true;
-      return
+      return;
     }
-    if (allUpdates.read.every(isEverything))  {
+    if (allUpdates.finish.every(isEverything) && document.querySelector(".code_finish").value.length === 4)  {
       document.querySelector("#submit_finish").disabled = false;
     } else {
       document.querySelector("#submit_finish").disabled = true;
@@ -268,31 +286,49 @@ title: Admin
   }
 
   const validateFinishReset = () => {
-    if (allUpdates.finish.length) {
+    if (allUpdates.finish.length || document.querySelector(".code_finish").value.length) {
       document.querySelector("#reset_finish").disabled = false;
     } else {
       document.querySelector("#reset_finish").disabled = true;
     }
   }
 
-  const finish_dateFinish = document.querySelectorAll(".finish_dateFinish").forEach(input => input.addEventListener("change", (e) => {
-    updateBook({id: e.currentTarget.dataset.id, dateFinish: e.currentTarget.value, pagesFinish: null}, "finish")
-    validateFinish()
-    validateFinishReset()
+  const finish_stars = document.querySelectorAll(".finish_stars").forEach(button => button.addEventListener("click", (e) => {
+    updateBook({id: e.currentTarget.dataset.id, stars: parseInt(e.currentTarget.dataset.value), pagesFinish: null}, "finish");
+    validateFinish();
+    validateFinishReset();
+
+    document.querySelectorAll(`[data-id="${e.currentTarget.dataset.id}"].finish_stars`).forEach(button => {
+      if (button.dataset.value <= parseInt(e.currentTarget.dataset.value)) {
+        button.classList.add("active");
+      } else {
+        button.classList.remove("active");
+      }
+    })
   }))
 
+  const finish_dateFinish = document.querySelectorAll(".finish_dateFinish").forEach(input => input.addEventListener("change", (e) => {
+    updateBook({id: e.currentTarget.dataset.id, dateFinish: e.currentTarget.value, pagesFinish: null}, "finish");
+    validateFinish();
+    validateFinishReset();
+  }))
+
+  const finish_code = document.querySelector(".code_finish").addEventListener("keyup", (e) => {
+    validateFinish();
+    validateFinishReset();
+  })
+
   const finishSave = document.querySelector("#submit_finish").addEventListener("click", async (e) => {
-    postData("http://localhost:9999/.netlify/functions/updateBook", {updates: allUpdates.finish} )
-    protectRows("finish");
-    allUpdates.finish = [];
-    validateFinish()
+    postData("{{ env.NETLIFY_FUNCTIONS_URL }}/updateBook", {type: "finish", code: document.querySelector(".code_finish").value, updates: allUpdates.finish} );
   })
 
   const finishReset = document.querySelector("#reset_finish").addEventListener("click", (e) => {
     allUpdates.finish = [];
-    validateFinishReset()
+    document.querySelector(".code_finish").value = "";
+    document.querySelectorAll(".finish_dateFinish").forEach(input => input.value = "");
+    document.querySelectorAll(".finish_stars").forEach(button => button.classList.remove("active"));
+    validateFinishReset();
     validateFinish();
-    document.querySelectorAll(".finish_dateFinish").forEach(input => input.value = "")
   })
 
 </script>
