@@ -1,7 +1,4 @@
-var Airtable = require("airtable");
-var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
-  process.env.AIRTABLE_BASE_BOOKS_BASE
-);
+import Airtable from "airtable";
 
 const headers = {
   "Access-Control-Allow-Origin": "*",
@@ -18,21 +15,28 @@ const ErrorWithStatus = (code, message) => {
 };
 
 exports.handler = async function (event, context) {
+  var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
+    process.env.AIRTABLE_BASE_BOOKS_BASE
+  );
   const body = JSON.parse(event.body);
-  console.log("1");
-
+  console.log("handler running...");
+  console.log(process.env.AIRTABLE_API_KEY.substring(0, 4));
+  console.log(process.env.AIRTABLE_BASE_BOOKS_BASE.substring(0, 4));
   if (Object.keys(body).length === 0 && body.constructor === Object)
     return ErrorWithStatus(400, "missing body");
-  console.log("2");
+  console.log("has body");
   if (!Object.hasOwn(body, "code") || body.code.length !== 4)
     return ErrorWithStatus(400, "authentication error");
-  console.log("3");
+  console.log("has code");
   if (parseInt(body.code) !== parseInt(process.env.NETLIFY_FUNCTIONS_CODE))
     return ErrorWithStatus(400, "authentication error 2");
-  console.log("4");
+  console.log("code looks good");
   if (!Object.hasOwn(body, "updates") || !body.updates.length)
     return ErrorWithStatus(400, "missing updates");
 
+  console.log("has updates");
+  console.log(body.updates);
+  console.log(base);
   await base("Books").update(
     body.updates.map((book) => {
       const { id, ...fields } = book;
@@ -56,7 +60,7 @@ exports.handler = async function (event, context) {
     headers,
     body: JSON.stringify({
       success: true,
-      message: ` updated`,
+      message: `books updated`,
     }),
   };
 };
