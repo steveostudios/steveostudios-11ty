@@ -124,6 +124,7 @@ title: Admin
     document.querySelector(".code_read").value = "";
     document.querySelector(".code_finish").value = "";
     validateAll()
+    validateDeploy();
     console.log(json)
   }
 
@@ -152,7 +153,7 @@ title: Admin
     start:[],
     read: [],
     finish: [],
-    protectedIds: ["recpBtCPKvE3tPxHL"]
+    protectedIds: []
   }
 
   const updateBook = (item, updateId) => {
@@ -336,8 +337,40 @@ title: Admin
   })
 
 // deploy
+  const validateDeploy = () => {
+    if (allUpdates.protectedIds.length) {
+      document.querySelector("#submit_deploy").disabled = false;
+    } else {
+      document.querySelector("#submit_deploy").disabled = true;
+    }
+  }
+
+  const postDeploy = async (url = "", data = {}) => {
+    const response = await fetch("{{ env.NETLIFY_FUNCTIONS_URL }}/deploy", {
+      method: "POST",
+      mode: "cors",
+      header: {
+        "Origin": "*",
+        "Access-Control-Request-Method": "POST"
+      },
+      body: JSON.stringify({
+        code: document.querySelector(".code_deploy").value
+      }), // body data type must match "Content-Type" header
+    });
+    const json = await response.json(); 
+    
+    if (json.success) {
+      console.log(json.success, data.type)
+      allUpdates.protectedIds = []
+    }
+    document.querySelector(".code_deploy").value = "";
+    validateAll()
+    validateDeploy();
+    console.log(json)
+  }
+
   const deploy = document.querySelector("#submit_deploy").addEventListener("click", async (e) => {
-    console.log("deploy")
+    postDeploy()
   })
 
 
