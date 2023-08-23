@@ -3,6 +3,10 @@ title: Admin
 ---
 <div class="page admin">
   <h2 data-id="start" class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Start a Book</span></h2>
+    <div class="buttons">
+      <input class="code_deploy" type="password" pattern="[0-9]*" inputmode="numeric" />
+      <button id="submit_deploy" class="submit" disabled>Deploy</button>
+    </div>
   <section class="section_start visible">
     {% assign notStarted_books = books | notStarted | sort: "title"  %}
     <table cell-padding="0">
@@ -208,7 +212,7 @@ title: Admin
     validateStartReset()
   }))
 
-   const start_code = document.querySelector(".code_start").addEventListener("keyup", (e) => {
+  const start_code = document.querySelector(".code_start").addEventListener("keyup", (e) => {
     validateStart();
     validateStartReset();
   })
@@ -330,5 +334,11 @@ title: Admin
     validateFinishReset();
     validateFinish();
   })
+
+// deploy
+  const deploy = document.querySelector("#submit_deploy").addEventListener("click", async (e) => {
+    console.log("deploy")
+  })
+
 
 </script>

@@ -37,25 +37,37 @@ exports.handler = async function (event, context) {
   console.log("has updates");
   console.log(body.updates);
   console.log(base);
-  await base("Books").update(
-    body.updates.map((book) => {
-      const { id, ...fields } = book;
+  await base("Books")
+    .update(
+      body.updates.map((book) => {
+        const { id, ...fields } = book;
+        return {
+          id,
+          fields,
+        };
+      })
+    )
+    .then((records) => {
+      records.forEach((record) => console.log(record.id, record.get("isbn")));
       return {
-        id,
-        fields,
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          success: true,
+          message: `books updated`,
+          books: records.map((record) => ({
+            id: record.id,
+            isbn: record.get("isbn"),
+          })),
+        }),
       };
-    }),
-    function (err, records) {
-      if (err) {
-        console.error(err);
-        return ErrorWithStatus(400, "could not update");
-      }
-      records.forEach(function (record) {
-        console.log(record.id, record.get("isbn"));
-      });
-    }
-  );
-  return {
+    })
+    .catch((err) => {
+      console.error(err);
+      return ErrorWithStatus(400, "could not update");
+    });
+
+  return await {
     statusCode: 200,
     headers,
     body: JSON.stringify({
