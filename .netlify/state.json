@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Louisville",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "KY",
+				"name": "Kentucky"
+			},
+			"timezone": "America/Kentucky/Louisville",
+			"latitude": 38.2539,
+			"longitude": -85.76
+		},
+		"timestamp": 1692886545887
+	}
+}

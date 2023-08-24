@@ -65,16 +65,11 @@ article pre {
 
 @media only screen and (max-width: 1200px) {
   header {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
   .page {
     max-width: calc(100% - 4rem);
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin: 0 2rem;
   }
   footer {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }

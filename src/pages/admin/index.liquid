@@ -2,134 +2,126 @@
 title: Admin
 ---
 <div class="page admin">
+  <div class="buttons">
+    <input class="code code_deploy" type="password" pattern="[0-9]*" inputmode="numeric" />
+    <button id="submit_deploy" class="save" disabled>Deploy</button>
+  </div>
   <h2 data-id="start" class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Start a Book</span></h2>
-    <div class="buttons">
-      <input class="code_deploy" type="password" pattern="[0-9]*" inputmode="numeric" />
-      <button id="submit_deploy" class="submit" disabled>Deploy</button>
-    </div>
   <section class="section_start visible">
     {% assign notStarted_books = books | notStarted | sort: "title"  %}
-    <table cell-padding="0">
-      <thead>
-        <tr>
-          <th class="cover"></th>
-          <th>Title</th>
-          <th class="pages">Pages</th>
-          <th class="date">Start Date</th>
-        </tr>
-      </thead>
+    <div class="table">
       {% for book in notStarted_books %}
       {% assign src = book['cover'][0].thumbnails.large.url %}
       {% assign alt = book['title'] %}
-        <tr data-id="{{ book.id }}">
-          <td class="cover">{% image src, alt, "books" %}</td>
-          <td>{{ book.title }}</td>
-          <td class="pages"><input data-id="{{ book.id }}" class="start_pagesFinish" type="number" min="0" max="{{book.pages}}" value="{{ book.pagesFinish }}"/>/{{ book.pages }}</td>
-          <td class="date"><input type="date" data-id="{{ book.id }}" class="start_dateStart"  /></td>
-        </tr>
+        <div class="book" data-id="{{ book.id }}">
+          <div class="book-section">
+            <div class="cover">{% image src, alt, "books" %}</div>
+            <div class="title">{{ book.title }}</div>
+          </div>
+          <div class="book-section">
+            <div class="pages"><input data-id="{{ book.id }}" class="start_pagesFinish" type="number" min="0" max="{{book.pages}}" value="{{ book.pagesFinish }}" inputmode="numeric"/>/{{ book.pages }}</div>
+            <div class="date"><input type="date" data-id="{{ book.id }}" class="start_dateStart" /></div>
+          </div>
+        </div>
       {% endfor %}
-    </table>
+    </div>
     <div class="buttons">
-      <input class="code_start" type="password" pattern="[0-9]*" inputmode="numeric" />
+      <input class="code code_start" type="password" pattern="[0-9]*" inputmode="numeric" />
       <button id="reset_start" class="reset" disabled>Reset</button>
-      <button id="submit_start" class="submit" disabled>Save</button>
+      <button id="submit_start" class="save" disabled>Save</button>
     </div>
   </section>
   <h2 data-id="read" class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Read a Book</span></h2>
   <section class="section_read visible">
     {% assign current_books = books | currentlyReading | sort: "dateStart" | reverse %}
-    <table>
-      <thead>
-        <tr>
-          <th class="cover"></th>
-          <th>Title</th>
-          <th class="pages">Pages</th>
-          <th class="date">Date Start</th>
-        </tr>
-      </thead>
+    <div class="table">
       {% for book in current_books %}
         {% assign src = book['cover'][0].thumbnails.large.url %}
         {% assign alt = book['title'] %}
-        <tr data-id="{{ book.id }}">
-          <td class="cover">{% image src, alt, "books" %}</td>
-          <td>{{ book.title }}</td>
-          <td class="pages"><input data-id="{{ book.id }}" class="read_pagesFinish" type="number" min="0" max="{{book.pages}}" value="{{ book.pagesFinish }}" data-initialValue="{{ book.pagesFinish }}"/>/{{ book.pages }}</td>
-          <td class="date"><input type="date" data-id="{{ book.id }}" class="read_dateStart" value="{{ book.dateStart }}" disabled/></td>
-        </tr>
+        <div class="book" data-id="{{ book.id }}">
+          <div class="book-section">
+            <div class="cover">{% image src, alt, "books" %}</div>
+            <div class="title">{{ book.title }}</div>
+          </div>
+          <div class="book-section"> 
+            <div class="pages"><input data-id="{{ book.id }}" class="read_pagesFinish" type="number" min="0" max="{{book.pages}}" value="{{ book.pagesFinish }}" data-initialValue="{{ book.pagesFinish }}" inputmode="numeric"/>/{{ book.pages }}</div>
+            <div class="date"><input type="date" data-id="{{ book.id }}" class="read_dateStart" value="{{ book.dateStart }}" disabled/></div>
+          </div>
+        </div>
       {% endfor %}
-    </table>
+    </div>
     <div class="buttons">
-      <input class="code_read" type="password" pattern="[0-9]*" inputmode="numeric" />
+      <input class="code code_read" type="password" pattern="[0-9]*" inputmode="numeric" />
       <button id="reset_read" class="reset" disabled>Reset</button>
-      <button id="submit_read" class="submit" disabled>Save</button>
+      <button id="submit_read" class="save" disabled>Save</button>
     </div>
 
   </section>
   <h2 data-id="finish"  class="visible"><div class="toggle">{{ "/src/img/icons/chevron-down-solid.svg" | svgContents: "icon"  }}</div><span>Finish a Book</span></h2>
   <section class="section_finish visible">
     {% assign current_books = books | currentlyReading | sort: "dateStart" | reverse %}
-    <table>
-      <thead>
-        <tr>
-          <th class="cover"></th>
-          <th>Title</th>
-          <th class="stars">Stars</th>
-          <th class="date">Date Finish</th>
-        </tr>
-      </thead>
+    <div class="table">
       {% for book in current_books %}
         {% assign src = book['cover'][0].thumbnails.large.url %}
         {% assign alt = book['title'] %}
-        <tr data-id="{{ book.id }}">
-          <td class="cover">{% image src, alt, "books" %}</td>
-          <td>{{ book.title }}</td>
-          <td class="stars">
-            <div>
-            {% for i in (1..5) %}
-              <button class="star finish_stars" data-id="{{ book.id }}" data-value="{{ i }}">{{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}</button>
-            {% endfor %}
+        <div class="book" data-id="{{ book.id }}">
+          <div class="book-section">
+            <div class="cover">{% image src, alt, "books" %}</div>
+            <div class="title">{{ book.title }}</div>
+          </div>
+          <div class="book-section">
+            <div class="stars">
+              <div>
+              {% for i in (1..5) %}
+                <button class="star finish_stars" data-id="{{ book.id }}" data-value="{{ i }}">{{ "/src/img/icons/star-solid.svg" | svgContents: "icon"  }}</button>
+              {% endfor %}
+              </div>
             </div>
-          </td>
-          <td class="date"><input type="date" data-id="{{ book.id }}" class="finish_dateFinish"  /></td>
-        </tr>
+          </div>
+          <div class="book-section">
+            <div class="date"><input type="date" data-id="{{ book.id }}" class="finish_dateFinish"  /></div>
+          </div>
+        </div>
       {% endfor %}
-    </table>
+    </div>
     <div class="buttons">
-      <input class="code_finish" type="password" pattern="[0-9]*" inputmode="numeric" />
+      <input class="code code_finish" type="password" pattern="[0-9]*" inputmode="numeric" />
       <button id="reset_finish" class="reset" disabled>Reset</button>
-      <button id="submit_finish" class="submit" disabled>Save</button>
+      <button id="submit_finish" class="save" disabled>Save</button>
     </div>
   </section>
-</div>
 
 <script>
-  // post request
-  const postData = async (url = "", data = {}) => {
-    const response = await fetch(url, {
-      method: "POST",
-      mode: "cors",
-      header: {
-        "Origin": "*",
-        "Access-Control-Request-Method": "POST"
-      },
-      body: JSON.stringify(data), // body data type must match "Content-Type" header
-    });
-    const json = await response.json(); 
-    
-    if (json.success) {
-      console.log(json.success, data.type)
-      protectRows(data.type);
-    }
-    document.querySelector(".code_start").value = "";
-    document.querySelector(".code_read").value = "";
-    document.querySelector(".code_finish").value = "";
-    validateAll()
-    validateDeploy();
-    console.log(json)
+  // start dom elements
+  const headers_all = document.querySelectorAll("h2");
+  const button_start_save = document.querySelector("#submit_start");
+  const button_start_reset = document.querySelector("#reset_start");
+  const input_start_code = document.querySelector(".code_start");
+  const inputs_start_pagesFinish = document.querySelectorAll(".start_pagesFinish");
+  const inputs_start_dateStart = document.querySelectorAll(".start_dateStart");
+  const inputs_read_pagesFinish = document.querySelectorAll(".read_pagesFinish");
+  const input_read_code = document.querySelector(".code_read");
+  const button_read_reset = document.querySelector("#reset_read");
+  const button_read_save = document.querySelector("#submit_read");
+  const input_finish_code = document.querySelector(".code_finish");
+  const inputs_finish_dateFinish = document.querySelectorAll(".finish_dateFinish");
+  const button_finish_reset = document.querySelector("#reset_finish")
+  const button_finish_save = document.querySelector("#submit_finish");
+  const buttons_finish_stars = document.querySelectorAll(".finish_stars");
+  const inputs_all_code = document.querySelectorAll(".code");
+  const buttons_all_reset = document.querySelectorAll(".reset");
+  const buttons_all_save = document.querySelectorAll(".save");
+  const input_deploy_code = document.querySelector(".code_deploy");
+  const button_desploy_save = document.querySelector("#submit_deploy")
+
+  const allUpdates = {
+    start:[],
+    read: [],
+    finish: [],
+    protectedIds: []
   }
 
-  // toggle sections
-  const h2 = document.querySelectorAll("h2").forEach(toggle => toggle.addEventListener("click", (e) => {
+  const h2 = headers_all.forEach(toggle => toggle.addEventListener("click", (e) => {
     e.preventDefault();
     if (toggle.classList.contains('visible')) {
         toggle.classList.remove('visible');
@@ -141,33 +133,73 @@ title: Admin
   }))
 
   const validateAll = () => {
-    validateStart()
-    validateStartReset()
-    validateRead();
-    validateReadReset();
-    validateFinish();
-    validateFinishReset();
+    // reset buttons
+    if (allUpdates.start.length || input_start_code.value.length) {
+      button_start_reset.disabled = false;
+    } else {
+      button_start_reset.disabled = true;
+    }
+    if (allUpdates.read.length || input_read_code.value.length) {
+      button_read_reset.disabled = false;
+    } else {
+      button_read_reset.disabled = true;
+    }
+    if (allUpdates.finish.length || input_finish_code.value.length) {
+      button_finish_reset.disabled = false;
+    } else {
+      button_finish_reset.disabled = true;
+    }
+    // save buttons
+    const allInputsFilled_start = (item) => Object.hasOwn(item, "dateStart") && Object.hasOwn(item, "pagesFinish");
+    if (!allUpdates.start.length || !allUpdates.start.every(allInputsFilled_start) || input_start_code.value.length !== 4)  {
+      button_start_save.disabled = true;
+    } else {
+      button_start_save.disabled = false;
+    }
+    const allInputsFilled_read = (item) => Object.hasOwn(item, "pagesFinish"); 
+    if (!allUpdates.read.length || !allUpdates.read.every(allInputsFilled_read) || input_read_code.value.length !== 4)  {
+      button_read_save.disabled = true;
+    } else {
+      button_read_save.disabled = false;
+    }
+    const allInputsFilled_finish = (item) => Object.hasOwn(item, "dateFinish") && Object.hasOwn(item, "stars") && Object.hasOwn(item, "pagesFinish"); 
+    if (!allUpdates.finish.length || !allUpdates.finish.every(allInputsFilled_finish) || input_finish_code.value.length !== 4)  {
+      button_finish_save.disabled = true;
+    } else {
+      button_finish_save.disabled = false;
+    }
+    // deploy button
+    if (!allUpdates.protectedIds.length || input_deploy_code.value.length !== 4) {
+      button_desploy_save.disabled = true;
+    } else {
+      button_desploy_save.disabled = false;
+    }
   }
 
-  const allUpdates = {
-    start:[],
-    read: [],
-    finish: [],
-    protectedIds: []
+  const toggleProcessing = (value) => {
+    console.log(value)
+    inputs_start_pagesFinish.forEach(item => item.disabled = value);
+    inputs_start_dateStart.forEach(item => item.disabled = value);
+    inputs_read_pagesFinish.forEach(item => item.disabled = value);
+    inputs_finish_dateFinish.forEach(item => item.disabled = value);
+    buttons_finish_stars.forEach(item => item.disabled = value);
+    inputs_all_code.forEach(item => item.disabled = value);
+    buttons_all_reset.forEach(item => item.disabled = value);
+    buttons_all_save.forEach(item => item.disabled = value);
   }
 
   const updateBook = (item, updateId) => {
     if (!allUpdates[updateId].length || !allUpdates[updateId].find(el => el.id === item.id)) {
       allUpdates[updateId].push(item)
-    return} 
+      return
+    } 
     allUpdates[updateId] = allUpdates[updateId].map(el => {
       if (el.id === item.id) {
         return {...el, ...item};
       } else {
         return el
       }
-    }
-  )
+    })
   }
 
   const protectRows = (updateId) => {
@@ -179,130 +211,54 @@ title: Admin
     allUpdates[updateId] = [];
   }
 
+  // all 
+  const onCodeChange = inputs_all_code.forEach(input => input.addEventListener("keyup", (e) => {
+    validateAll()
+  }))
+
   // start
-  const validateStart = () => {
-    const isEverything = (item) => Object.hasOwn(item, "dateStart") && Object.hasOwn(item, "pagesFinish");
-    if (!allUpdates.start.length) {
-      document.querySelector("#submit_start").disabled = true;
-      return
-    }
-    if (allUpdates.start.every(isEverything) && document.querySelector(".code_start").value.length === 4)  {
-      document.querySelector("#submit_start").disabled = false;
-    } else {
-      document.querySelector("#submit_start").disabled = true;
-    }
-  }
-
-  const validateStartReset = () => {
-    if (allUpdates.start.length || document.querySelector(".code_start").value.length) {
-      document.querySelector("#reset_start").disabled = false;
-    } else {
-      document.querySelector("#reset_start").disabled = true;
-    }
-  }
-
-  const start_dateStart = document.querySelectorAll(".start_dateStart").forEach(input => input.addEventListener("change", (e) => {
+  const start_dateStart = inputs_start_dateStart.forEach(input => input.addEventListener("change", (e) => {
     updateBook({id: e.currentTarget.dataset.id, dateStart: e.currentTarget.value}, "start");
-    validateStart()
-    validateStartReset()
+    validateAll()
   }))
 
-  const start_pagesFinish = document.querySelectorAll(".start_pagesFinish").forEach(input => input.addEventListener("change", (e) => {
+  const start_pagesFinish = inputs_start_pagesFinish.forEach(input => input.addEventListener("change", (e) => {
     updateBook({id: e.currentTarget.dataset.id, pagesFinish: parseInt(e.currentTarget.value)}, "start")
-    validateStart()
-    validateStartReset()
+    validateAll()
   }))
 
-  const start_code = document.querySelector(".code_start").addEventListener("keyup", (e) => {
-    validateStart();
-    validateStartReset();
+  const startSave = button_start_save.addEventListener("click", (e) => {
+    postRequest( "start", {updates: allUpdates.start} )
   })
 
-  const startSave = document.querySelector("#submit_start").addEventListener("click", (e) => {
-    postData("{{ env.NETLIFY_FUNCTIONS_URL }}/updateBook", {type: "start", code: document.querySelector(".code_start").value, updates: allUpdates.start} )
-  })
-
-  const startReset = document.querySelector("#reset_start").addEventListener("click", (e) => {
+  const startReset = button_start_reset.addEventListener("click", (e) => {
     allUpdates.start = [];
-    document.querySelector(".code_start").value = "";
-    document.querySelectorAll(".start_pagesFinish").forEach(input => input.value = "")
-    document.querySelectorAll(".start_dateStart").forEach(input => input.value = "")
-    validateStartReset()
-    validateStart();
+    input_start_code.value = "";
+    inputs_start_pagesFinish.forEach(input => input.value = "")
+    inputs_start_dateStart.forEach(input => input.value = "")
+    validateAll()
   })
 
   // Read
-  const validateRead = () => {
-    const isEverything = (item) => Object.hasOwn(item, "pagesFinish"); 
-    if (!allUpdates.read.length) {
-      document.querySelector("#submit_read").disabled = true;
-      return
-    }
-    if (allUpdates.read.every(isEverything) && document.querySelector(".code_read").value.length === 4)  {
-      document.querySelector("#submit_read").disabled = false;
-    } else {
-      document.querySelector("#submit_read").disabled = true;
-    }
-  }
-
-  const validateReadReset = () => {
-    if (allUpdates.read.length || document.querySelector(".code_read").value.length) {
-      document.querySelector("#reset_read").disabled = false;
-    } else {
-      document.querySelector("#reset_read").disabled = true;
-    }
-  }
-
-  const read_pagesFinish = document.querySelectorAll(".read_pagesFinish").forEach(input => input.addEventListener("change", (e) => {
+  const read_pagesFinish = inputs_read_pagesFinish.forEach(input => input.addEventListener("change", (e) => {
     updateBook({id: e.currentTarget.dataset.id, pagesFinish: parseInt(e.currentTarget.value)}, "read");
-    validateRead();
-    validateReadReset();
+    validateAll()
   }))
 
-  const read_code = document.querySelector(".code_read").addEventListener("keyup", (e) => {
-    validateRead();
-    validateReadReset();
+  const readSave = button_read_save.addEventListener("click", async (e) => {
+    postRequest("read", {updates: allUpdates.read} )
   })
 
-  const readSave = document.querySelector("#submit_read").addEventListener("click", async (e) => {
-    postData("{{ env.NETLIFY_FUNCTIONS_URL }}/updateBook", {type: "read", code: document.querySelector(".code_read").value, updates: allUpdates.read} )
-  })
-
-  const readReset = document.querySelector("#reset_read").addEventListener("click", (e) => {
+  const readReset = button_read_reset.addEventListener("click", (e) => {
     allUpdates.read = [];
-    document.querySelector(".code_read").value = "";
-    document.querySelectorAll(".read_pagesFinish").forEach(input => input.value = input.dataset.initialvalue)
-    validateReadReset();
-    validateRead();
+    input_read_code.value = "";
+    inputs_read_pagesFinish.forEach(input => input.value = input.dataset.initialvalue)
+    validateAll()
   })
 
   // Finish
-  const validateFinish = () => {
-    const isEverything = (item) => Object.hasOwn(item, "dateFinish") && Object.hasOwn(item, "stars") && Object.hasOwn(item, "pagesFinish"); 
-    if (!allUpdates.finish.length) {
-      document.querySelector("#submit_finish").disabled = true;
-      return;
-    }
-    if (allUpdates.finish.every(isEverything) && document.querySelector(".code_finish").value.length === 4)  {
-      document.querySelector("#submit_finish").disabled = false;
-    } else {
-      document.querySelector("#submit_finish").disabled = true;
-    }
-  }
-
-  const validateFinishReset = () => {
-    if (allUpdates.finish.length || document.querySelector(".code_finish").value.length) {
-      document.querySelector("#reset_finish").disabled = false;
-    } else {
-      document.querySelector("#reset_finish").disabled = true;
-    }
-  }
-
-  const finish_stars = document.querySelectorAll(".finish_stars").forEach(button => button.addEventListener("click", (e) => {
+  const finish_stars = buttons_finish_stars.forEach(button => button.addEventListener("click", (e) => {
     updateBook({id: e.currentTarget.dataset.id, stars: parseInt(e.currentTarget.dataset.value), pagesFinish: null}, "finish");
-    validateFinish();
-    validateFinishReset();
-
     document.querySelectorAll(`[data-id="${e.currentTarget.dataset.id}"].finish_stars`).forEach(button => {
       if (button.dataset.value <= parseInt(e.currentTarget.dataset.value)) {
         button.classList.add("active");
@@ -310,68 +266,60 @@ title: Admin
         button.classList.remove("active");
       }
     })
+    validateAll()
   }))
 
-  const finish_dateFinish = document.querySelectorAll(".finish_dateFinish").forEach(input => input.addEventListener("change", (e) => {
+  const finish_dateFinish = inputs_finish_dateFinish.forEach(input => input.addEventListener("change", (e) => {
     updateBook({id: e.currentTarget.dataset.id, dateFinish: e.currentTarget.value, pagesFinish: null}, "finish");
-    validateFinish();
-    validateFinishReset();
+    validateAll();
   }))
 
-  const finish_code = document.querySelector(".code_finish").addEventListener("keyup", (e) => {
-    validateFinish();
-    validateFinishReset();
+  const finishSave = button_finish_save.addEventListener("click", async (e) => {
+    postRequest("finish", {updates: allUpdates.finish} );
+
   })
 
-  const finishSave = document.querySelector("#submit_finish").addEventListener("click", async (e) => {
-    postData("{{ env.NETLIFY_FUNCTIONS_URL }}/updateBook", {type: "finish", code: document.querySelector(".code_finish").value, updates: allUpdates.finish} );
-  })
-
-  const finishReset = document.querySelector("#reset_finish").addEventListener("click", (e) => {
+  const finishReset = button_finish_reset.addEventListener("click", (e) => {
     allUpdates.finish = [];
-    document.querySelector(".code_finish").value = "";
-    document.querySelectorAll(".finish_dateFinish").forEach(input => input.value = "");
-    document.querySelectorAll(".finish_stars").forEach(button => button.classList.remove("active"));
-    validateFinishReset();
-    validateFinish();
+    input_finish_code.value = "";
+    inputs_finish_dateFinish.forEach(input => input.value = "");
+    buttons_finish_stars.forEach(button => button.classList.remove("active"));
+    validateAll()
   })
 
-// deploy
-  const validateDeploy = () => {
-    if (allUpdates.protectedIds.length) {
-      document.querySelector("#submit_deploy").disabled = false;
-    } else {
-      document.querySelector("#submit_deploy").disabled = true;
-    }
-  }
+// Deploy
+  const deploy = document.querySelector("#submit_deploy").addEventListener("click", async (e) => {
+    postDeploy("deploy", {})
+  })
 
-  const postDeploy = async (url = "", data = {}) => {
-    const response = await fetch("{{ env.NETLIFY_FUNCTIONS_URL }}/deploy", {
+  const postRequest = async (type, data) => {
+    toggleProcessing(true);
+    const code = document.querySelector(`.code_${type}`).value;
+    const url = type === "deploy" ? "deploy" : "updateBook"; 
+    const response = await fetch(`{{ env.NETLIFY_FUNCTIONS_URL }}/${url}`, {
       method: "POST",
       mode: "cors",
       header: {
         "Origin": "*",
         "Access-Control-Request-Method": "POST"
       },
-      body: JSON.stringify({
-        code: document.querySelector(".code_deploy").value
-      }), // body data type must match "Content-Type" header
+      body: JSON.stringify({code, ...data}),
     });
+
     const json = await response.json(); 
-    
+    console.log(json);
+
     if (json.success) {
-      console.log(json.success, data.type)
-      allUpdates.protectedIds = []
+      if (type === "deploy") {
+
+      } else {
+        protectRows(type);
+      }
     }
-    document.querySelector(".code_deploy").value = "";
+    inputs_all_code.value = ""
+    toggleProcessing(false);
     validateAll()
-    validateDeploy();
-    console.log(json)
   }
 
-  const deploy = document.querySelector("#submit_deploy").addEventListener("click", async (e) => {
-    postDeploy()
-  })
-
-
 </script>
+</div>

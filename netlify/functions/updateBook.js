@@ -19,24 +19,15 @@ exports.handler = async function (event, context) {
     process.env.AIRTABLE_BASE_BOOKS_BASE
   );
   const body = JSON.parse(event.body);
-  console.log("handler running...");
-  console.log(process.env.AIRTABLE_API_KEY.substring(0, 4));
-  console.log(process.env.AIRTABLE_BASE_BOOKS_BASE.substring(0, 4));
   if (Object.keys(body).length === 0 && body.constructor === Object)
     return ErrorWithStatus(400, "missing body");
-  console.log("has body");
   if (!Object.hasOwn(body, "code") || body.code.length !== 4)
     return ErrorWithStatus(400, "authentication error");
-  console.log("has code");
   if (parseInt(body.code) !== parseInt(process.env.NETLIFY_FUNCTIONS_CODE))
     return ErrorWithStatus(400, "authentication error 2");
-  console.log("code looks good");
   if (!Object.hasOwn(body, "updates") || !body.updates.length)
     return ErrorWithStatus(400, "missing updates");
 
-  console.log("has updates");
-  console.log(body.updates);
-  console.log(base);
   await base("Books")
     .update(
       body.updates.map((book) => {

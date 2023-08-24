@@ -1,6 +1,7 @@
 .page.admin {
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 
 .page.admin h2 {
@@ -26,7 +27,7 @@
   transition: all 0.125s ease-in-out;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .page.admin section.visible {
@@ -34,88 +35,11 @@
   max-height: 100rem;
 }
 
-.page.admin section table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.page.admin section table tr {
-  max-height: 3rem;
-}
-
 .page.admin section table tr.protected {
   opacity: 0.25;
 }
 
-.page.admin section table tr td {
-  font-size: 1.25rem;
-}
-
-.page.admin section table tr th.cover {
-  width: 2rem;
-}
-.page.admin section table tr td.cover img {
-  margin-top: 0.25rem;
-  height: 3rem;
-}
-
-.page.admin section table tr td input {
-  font-size: 1.25rem;
-  font-family: monospace;
-  background-color: var(--trim);
-  border: none;
-  text-align: end;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.25rem;
-}
-
-.page.admin section table tr th.pages {
-  width: 8rem;
-}
-
-.page.admin section table tr th.date {
-  width: 12rem;
-}
-
-.page.admin section table tr th.stars {
-  width: 6rem;
-}
-
-/* Stars */
-
-.page.admin section table tr td.stars > div {
-  display: flex;
-}
-
-.page.admin section table tr td.stars button {
-  fill: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: var(--trim);
-  border: none;
-}
-
-.page.admin section table tr td.stars button.active {
-  fill: var(--primary-color);
-}
-
-.page.admin section table tr td.stars button:first-of-type {
-  border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.page.admin section table tr td.stars button:last-of-type {
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-
-.page.admin section table tr td.stars button svg {
-  width: 1.25rem;
-  margin-bottom: 0.25rem;
-}
-
+/* button sections */
 .page.admin .buttons {
   display: flex;
   align-items: center;
@@ -159,14 +83,94 @@
   width: 6rem;
 }
 
-.page.admin section table tr td {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border: none;
+.page.admin .table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.page.admin .table .book {
+  display: flex;
   border-bottom: 1px solid var(--trim);
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.page.admin .table .book .book-section {
+  display: flex;
+  align-items: center;
+}
+
+.page.admin .table .book .book-section:first-of-type {
+  flex: 1;
+}
+.page.admin .table .book .book-section > div {
+  flex-direction: row;
   padding: 0 0.5rem;
 }
 
-.page.admin section table tr th {
+.page.admin .table .book .title {
+  flex: 1;
+}
+
+.page.admin .table .book .cover img {
+  width: 2rem;
+  margin-top: 0.25rem;
+  height: 3rem;
+}
+
+.page.admin .table .book input {
+  font-size: 1.25rem;
+  font-family: monospace;
   background-color: var(--trim);
+  border: none;
+  text-align: end;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.25rem;
+}
+
+/* Stars */
+.page.admin section .table .book .stars > div {
+  display: flex;
+}
+
+.page.admin section .table .book .stars button {
+  fill: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--trim);
+  border: none;
+}
+
+.page.admin section .table .book .stars button.active {
+  fill: var(--primary-color);
+}
+
+.page.admin section .table .book .stars button:first-of-type {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.page.admin section .table .book .stars button:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.page.admin section .table .book .stars button svg {
+  width: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 767px) {
+  .page.admin .table .book {
+    /* flex-direction: column; */
+  }
+
+  .page.admin .table .book .book-section {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .page.admin .buttons button {
+    width: 6rem;
+  }
 }

@@ -13,7 +13,7 @@ header {
 header:after {
   background: inherit;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   left: 0;
@@ -32,7 +32,7 @@ header .content {
   justify-content: space-between;
 }
 
-header .content>div {
+header .content > div {
   display: flex;
   align-items: center;
 }
@@ -184,14 +184,13 @@ header .socials li a:hover svg {
     flex-direction: column;
     padding: 0 1rem 1.5rem 1rem;
   }
-  
+
   header .content > div {
     justify-content: center;
-
   }
-    header .content .socials {
-      margin-bottom: 1rem;
-    }
+  header .content .socials {
+    margin-bottom: 1rem;
+  }
   header nav ul a .title {
     display: none;
   }
@@ -205,15 +204,15 @@ header .socials li a:hover svg {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
- header nav ul a .title {
-   display: none;
- }
+  header nav ul a .title {
+    display: none;
+  }
 
- header nav ul a {
-   padding: 0.5rem 1.5rem;
- }
+  header nav ul a {
+    padding: 0.5rem 1.5rem;
+  }
 
- header nav ul a .icon svg {
-   margin-right: 0;
- }
+  header nav ul a .icon svg {
+    margin-right: 0;
+  }
 }

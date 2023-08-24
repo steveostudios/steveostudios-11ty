@@ -13,21 +13,21 @@ footer {
 footer:after {
   background: inherit;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  transform: skewY(-1.5deg) translate(0,-90%);
+  transform: skewY(-1.5deg) translate(0, -90%);
   transform-origin: 100%;
   z-index: -1;
 }
 
 footer .content {
   display: flex;
-  width: 100%;
+  flex: 1;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: flex-end;
